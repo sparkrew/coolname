@@ -8,7 +8,7 @@ calls.
 **Components**: Theo consists of a preprocessor, an api-finder, a coverage-checker and a test-generator(WIP).
 
 - **Preprocessor** is maven plugin that creates a mapping of dependencies and package names at project build time. 
-  This lets us identify all the package names of the dependencies used in the project. Currently, the format of the
+    This lets us identify all the package names of the dependencies used in the project. Currently, the format of the
     mapping is a simple text file with each line containing a package name and the corresponding dependency.
 ```json
 {
@@ -135,3 +135,4 @@ do not exist please run the tests with [JaCoCo enabled](https://www.eclemma.org/
     - Select a set of open source projects that use third party dependencies
     - Run the tool on these projects and measure the increase in coverage of third party API calls
     - Analyze the results
+- Write tests for this project :)
