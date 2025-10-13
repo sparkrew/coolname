@@ -1,0 +1,41 @@
+[
+  {
+    "entryPoint" : "com.graphhopper.util.GHUtility.loadCustomModelFromJar",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.graphhopper.util.GHUtility.loadCustomModelFromJar", "com.fasterxml.jackson.databind.ObjectMapper.readValue" ],
+    "methodSlices" : [
+      "public static CustomModel loadCustomModelFromJar(String name) {\n        InputStream is = GHUtility.class.getResourceAsStream(\"/com/graphhopper/custom_models/\" + name);\n        String json = readJSONFileWithoutComments(new InputStreamReader(is));\n        ObjectMapper objectMapper = Jackson.newObjectMapper();\n        return objectMapper.readValue(json, CustomModel.class);\n    }"
+    ]
+  },
+  {
+    "entryPoint" : "com.graphhopper.reader.osm.WaySegmentParser.Pass2Handler.handleNode",
+    "thirdPartyMethod" : "org.slf4j.LoggerFactory.getLogger",
+    "thirdPartyPackage" : "org.slf4j",
+    "path" : [ "com.graphhopper.reader.osm.WaySegmentParser.Pass2Handler.handleNode", "com.graphhopper.reader.osm.WaySegmentParser.<clinit>", "org.slf4j.LoggerFactory.getLogger" ],
+    "methodSlices" : [
+      "public void handleNode(ReaderNode node) {\n            if (!handledNodes) {\n                LOGGER.info(\"pass2 - start reading OSM nodes\");\n                handledNodes = true;\n            }",
+      "private static final Logger LOGGER = LoggerFactory.getLogger(WaySegmentParser.class);"
+    ]
+  },
+  {
+    "entryPoint" : "com.puppycrawl.tools.checkstyle.Main.main",
+    "thirdPartyMethod" : "picocli.CommandLine.ParseResult.hasMatchedOption",
+    "thirdPartyPackage" : "picocli.CommandLine",
+    "path" : [ "com.puppycrawl.tools.checkstyle.Main.main", "com.puppycrawl.tools.checkstyle.Main.execute", "com.puppycrawl.tools.checkstyle.Main.CliOptions.validateCli", "picocli.CommandLine.ParseResult.hasMatchedOption" ],
+    "methodSlices" : [
+      "public static void main(String... args) throws IOException { final CliOptions cliOptions = new CliOptions();\n        final CommandLine commandLine = new CommandLine(cliOptions); final ParseResult parseResult = commandLine.parseArgs(args); exitStatus = execute(parseResult, cliOptions);\n                errorCounter = exitStatus;",
+      "private static int execute(ParseResult parseResult, CliOptions options)\n            throws IOException, CheckstyleException {         final List<File> filesToProcess = getFilesToProcess(options);\n        final List<String> messages = options.validateCli(parseResult, filesToProcess);",
+      "private List<String> validateCli(ParseResult parseResult, List<File> filesToProcess) { if (suppressionLineColumnNumber != null || configurationFile != null\n                        || propertiesFile != null || outputPath != null\n                        || parseResult.hasMatchedOption(OUTPUT_FORMAT_OPTION)) {\n                    result.add(\"Option '-t' cannot be used with other options.\");\n                }"
+    ]
+  },
+  {
+    "entryPoint" : "com.puppycrawl.tools.checkstyle.xpath.iterators.PrecedingIterator.next",
+    "thirdPartyMethod" : "net.sf.saxon.tree.util.Navigator.EmptyTextFilter.next",
+    "thirdPartyPackage" : "net.sf.saxon.tree.util",
+    "path" : [ "com.puppycrawl.tools.checkstyle.xpath.iterators.PrecedingIterator.next", "net.sf.saxon.tree.util.Navigator.EmptyTextFilter.next" ],
+    "methodSlices" : [
+      "public NodeInfo next() {\n        NodeInfo result = null;\n\n        while (result == null) {\n            if (descendantEnum != null) {\n                result = descendantEnum.next();\n            }"
+    ]
+  }
+]
