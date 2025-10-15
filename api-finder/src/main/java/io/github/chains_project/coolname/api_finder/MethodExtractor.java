@@ -1,19 +1,25 @@
 package io.github.chains_project.coolname.api_finder;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import io.github.chains_project.coolname.api_finder.utils.PackageMatcher;
+import io.github.chains_project.coolname.api_finder.model.*;
+import io.github.chains_project.coolname.api_finder.utils.PathWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sootup.callgraph.CallGraph;
 import sootup.callgraph.RapidTypeAnalysisAlgorithm;
 import sootup.core.inputlocation.AnalysisInputLocation;
+import sootup.core.jimple.basic.Value;
+import sootup.core.jimple.common.expr.AbstractInvokeExpr;
+import sootup.core.jimple.common.stmt.InvokableStmt;
+import sootup.core.jimple.common.stmt.JAssignStmt;
+import sootup.core.jimple.common.stmt.Stmt;
+import sootup.core.model.Body;
 import sootup.core.model.SootMethod;
 import sootup.core.signatures.MethodSignature;
 import sootup.java.bytecode.frontend.inputlocation.JavaClassPathAnalysisInputLocation;
+import sootup.java.core.JavaSootMethod;
 import sootup.java.core.views.JavaView;
 
-import java.io.File;
 import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -25,7 +31,7 @@ public class MethodExtractor {
 
     /**
      * This method processes the JAR file to extract third party API calls and their paths.
-     * It initializes the call graph,and finds paths that involve third-party method calls.
+     * It initializes the call graph, and finds paths that involve third-party method calls.
      *
      * @param pathToJar      Path to the JAR file to analyze.
      * @param reportPath     Path where the analysis report will be written.
@@ -42,8 +48,9 @@ public class MethodExtractor {
 
         AnalysisResult result = analyzeReachability(view, entryPoints, packageMapPath);
 
-        writeThirdPartyPathsToJson(result, reportPath);
-        log.info("Third party paths written to: " + reportPath);
+        // Write the three different output files
+        PathWriter.writeAllFormats(result, reportPath, view);
+        log.info("All analysis reports written successfully.");
     }
 
     private static JavaView createJavaView(String pathToJar) {
@@ -98,19 +105,10 @@ public class MethodExtractor {
                         );
 
                         if (path != null && !path.isEmpty()) {
-                            List<String> pathStrings = path.stream()
-                                    .map(MethodExtractor::getFilteredMethodSignature)
-                                    .collect(Collectors.toList());
-
-                            String thirdPartyPackage = extractPackageName(
-                                    getFilteredMethodSignature(thirdPartyMethod)
-                            );
-
                             ThirdPartyPath tpPath = new ThirdPartyPath(
-                                    getFilteredMethodSignature(publicMethod),
-                                    getFilteredMethodSignature(thirdPartyMethod),
-                                    thirdPartyPackage,
-                                    pathStrings
+                                    publicMethod,
+                                    thirdPartyMethod,
+                                    path
                             );
                             thirdPartyPaths.add(tpPath);
                         }
@@ -268,7 +266,7 @@ public class MethodExtractor {
         return className.substring(0, classDot);
     }
 
-    private static String getFilteredMethodSignature(MethodSignature method) {
+    public static String getFilteredMethodSignature(MethodSignature method) {
         String className = filterName(method.getDeclClassType().getFullyQualifiedName());
         String methodName = filterName(method.getName());
         return className + "." + methodName;
@@ -302,30 +300,211 @@ public class MethodExtractor {
         return PackageMatcher.containsPackage(packageName, packageMapPath);
     }
 
-    private static void writeThirdPartyPathsToJson(AnalysisResult result, String outputPath) {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+    /**
+     * Performs backward slicing on methods to extract only the relevant statements
+     * needed to reach a specific target (usually a third-party method call).
+     *
+     * This uses backward data-flow and control-flow analysis to identify which
+     * statements in a method actually contribute to the target call.
+     */
+    public static class MethodSlicer {
 
-        try {
-            File outputFile = new File(outputPath);
-            mapper.writeValue(outputFile, result);
-            log.info("Successfully wrote {} third-party paths to {}", result.thirdPartyPaths().size(),
-                    outputFile.getAbsolutePath());
-        } catch (Exception e) {
-            log.error("Failed to write third-party paths to JSON", e);
+        private static final Logger log = LoggerFactory.getLogger(MethodSlicer.class);
+
+        /**
+         * Extract method slices for all methods in a path.
+         * For each method, we perform backward slicing from the call to the next method
+         * in the path (or the third-party method if it's the last one).
+         */
+        public static List<String> extractMethodSlices(JavaView view, List<MethodSignature> path) {
+            List<String> slices = new ArrayList<>();
+
+            for (int i = 0; i < path.size(); i++) {
+                MethodSignature currentMethod = path.get(i);
+
+                // For the last method, we're interested in the call to the third-party method
+                // For other methods, we're interested in the call to the next method in the path
+                MethodSignature targetCall = (i < path.size() - 1) ? path.get(i + 1) : path.get(i);
+
+                String slice = performBackwardSlice(view, currentMethod, targetCall);
+                slices.add(slice);
+            }
+
+            return slices;
         }
-    }
 
-    private record AnalysisResult(
-            List<ThirdPartyPath> thirdPartyPaths
-    ) {
-    }
+        /**
+         * Perform backward slicing on a method to extract statements relevant to reaching
+         * the target method call. This identifies variables and statements that influence
+         * the target call through data and control dependencies.
+         */
+        private static String performBackwardSlice(JavaView view, MethodSignature methodSig,
+                                                   MethodSignature targetCall) {
+            try {
+                Optional<JavaSootMethod> methodOpt = view.getMethod(methodSig);
 
-    public record ThirdPartyPath(
-            String entryPoint,
-            String thirdPartyMethod,
-            String thirdPartyPackage,
-            List<String> path
-    ) {
+                if (methodOpt.isEmpty() || !methodOpt.get().hasBody()) {
+                    return "// Slicing not available for: " +
+                            getFilteredMethodSignature(methodSig);
+                }
+
+                SootMethod method = methodOpt.get();
+                Body body = method.getBody();
+                List<Stmt> stmts = body.getStmts();
+
+                // Step 1: Find the statement that invokes the target method
+                Stmt targetStmt = findTargetInvocation(stmts, targetCall);
+                if (targetStmt == null) {
+                    // If we can't find a specific target, just return a simplified version
+                    return extractSimplifiedBody(body);
+                }
+
+                // Step 2: Perform backward slicing from the target statement
+                Set<Stmt> relevantStmts = computeBackwardSlice(body, targetStmt);
+
+                // Step 3: Format the slice as readable code
+                return formatSlice(methodSig, relevantStmts, stmts);
+
+            } catch (Exception e) {
+                log.warn("Failed to slice method {}: {}", methodSig, e.getMessage());
+                return "// Error during slicing: " + e.getMessage();
+            }
+        }
+
+        /**
+         * Find the statement in the method that invokes the target method.
+         * This is our slicing criterion - the point from which we work backwards.
+         */
+        private static Stmt findTargetInvocation(List<Stmt> stmts, MethodSignature targetCall) {
+            for (Stmt stmt : stmts) {
+                // Check if this is a statement that can contain an invoke expression
+                if (stmt instanceof InvokableStmt) {
+                    InvokableStmt invokableStmt = (InvokableStmt) stmt;
+                    // Check if this statement invokes the target method
+                    if (invokableStmt.getInvokeExpr().isPresent() &&
+                            invokableStmt.getInvokeExpr().get().getMethodSignature().equals(targetCall)) {
+                        return stmt;
+                    }
+                } else if (stmt instanceof JAssignStmt) {
+                    // Assignment statements can also contain invoke expressions on the right side
+                    JAssignStmt assignStmt = (JAssignStmt) stmt;
+                    Value rightOp = assignStmt.getRightOp();
+                    if (rightOp instanceof AbstractInvokeExpr) {
+                        AbstractInvokeExpr invokeExpr = (AbstractInvokeExpr) rightOp;
+                        if (invokeExpr.getMethodSignature().equals(targetCall)) {
+                            return stmt;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+
+        /**
+         * Compute the backward slice from a target statement.
+         * This includes all statements that the target depends on through:
+         * - Data dependencies (variables used in the target)
+         * - Control dependencies (conditions that must be true to reach the target)
+         */
+        private static Set<Stmt> computeBackwardSlice(Body body, Stmt targetStmt) {
+            Set<Stmt> slice = new LinkedHashSet<>();
+            Set<Value> relevantValues = new HashSet<>();
+            Queue<Stmt> worklist = new LinkedList<>();
+
+            // Start with the target statement
+            worklist.add(targetStmt);
+            slice.add(targetStmt);
+
+            // Add all values used in the target statement
+            targetStmt.getUses().forEach(relevantValues::add);
+
+            // Work backwards through the method
+            List<Stmt> stmts = body.getStmts();
+
+            while (!worklist.isEmpty()) {
+                Stmt current = worklist.poll();
+                int currentIndex = stmts.indexOf(current);
+
+                // Look at all statements before the current one
+                for (int i = currentIndex - 1; i >= 0; i--) {
+                    Stmt predecessor = stmts.get(i);
+
+                    // Check if this statement defines any value we care about
+                    boolean isRelevant = false;
+
+                    // Check data dependencies - does this statement define a variable we use?
+                    if (predecessor instanceof JAssignStmt) {
+                        JAssignStmt assign = (JAssignStmt) predecessor;
+                        Value leftOp = assign.getLeftOp();
+
+                        // If this defines a value we need, add it to the slice
+                        if (relevantValues.contains(leftOp)) {
+                            isRelevant = true;
+                            // Now we also care about the values used in the right-hand side
+                            assign.getRightOp().getUses().forEach(relevantValues::add);
+                        }
+                    }
+
+                    // Check control dependencies - conditions that control whether we reach the target
+                    // For simplicity, we include all conditional statements (if, switch, etc.)
+                    if (predecessor.branches()) {
+                        isRelevant = true;
+                        // Add the values used in the condition
+                        predecessor.getUses().forEach(relevantValues::add);
+                    }
+
+                    // If this statement is relevant and not already in slice, add it
+                    if (isRelevant && slice.add(predecessor)) {
+                        worklist.add(predecessor);
+                    }
+                }
+            }
+
+            return slice;
+        }
+
+        /**
+         * Format the slice into readable code.
+         * Presents the relevant statements in their original order.
+         */
+        private static String formatSlice(MethodSignature methodSig, Set<Stmt> slice, List<Stmt> allStmts) {
+            StringBuilder sb = new StringBuilder();
+
+            sb.append("// Slice for: ").append(getFilteredMethodSignature(methodSig)).append("\n");
+            sb.append("// Contains ").append(slice.size()).append(" relevant statements\n\n");
+
+            // Keep statements in their original order
+            List<Stmt> orderedSlice = allStmts.stream()
+                    .filter(slice::contains)
+                    .collect(Collectors.toList());
+
+            for (Stmt stmt : orderedSlice) {
+                sb.append(stmt.toString()).append("\n");
+            }
+
+            return sb.toString();
+        }
+
+        /**
+         * Extract a simplified version of the method body.
+         * Used as a fallback when we can't perform proper slicing.
+         * This just removes some noise but keeps most of the method.
+         */
+        private static String extractSimplifiedBody(Body body) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("// Simplified body (full slicing not available)\n\n");
+
+            // Just return the body with some basic filtering
+            List<Stmt> stmts = body.getStmts();
+            for (Stmt stmt : stmts) {
+                // Skip some very basic statements that are just noise
+                String stmtStr = stmt.toString();
+                if (!stmtStr.contains("nop") && !stmtStr.trim().isEmpty()) {
+                    sb.append(stmtStr).append("\n");
+                }
+            }
+
+            return sb.toString();
+        }
     }
 }
