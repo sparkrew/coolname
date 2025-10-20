@@ -1,10 +1,15 @@
 package io.github.chains_project.coolname.api_finder;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import picocli.CommandLine;
 
 import java.nio.file.Path;
 
 public class Main {
+
+    static final Logger log = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) {
         int exitCode = new CommandLine(new CLIEntryPoint()).execute(args);
         System.exit(exitCode);
@@ -40,7 +45,8 @@ public class Main {
         @CommandLine.Option(
                 names = {"-p", "--package-name"},
                 paramLabel = "PACKAGE-NAME",
-                description = "The package name of the project under consideration to filter the events.",
+                description = "The package name of the project under consideration to filter them as not third-party " +
+                        "APIs.",
                 required = true
         )
         String packageName;
@@ -54,9 +60,20 @@ public class Main {
         )
         Path packageMapPath;
 
+        @CommandLine.Option(
+                names = {"-s", "--source-code-path"},
+                paramLabel = "SOURCE-CODE-PATH",
+                description = "The path to the source code root directory of the project under consideration."
+        )
+        String sourceCodePath;
+
         @Override
         public void run() {
-            MethodExtractor.process(jarPath, reportFile, packageName, packageMapPath);
+            if (sourceCodePath == null) {
+                log.warn("No source code path provided, skipping source code extraction.");
+                MethodExtractor.process(jarPath, reportFile, packageName, packageMapPath);
+            }
+            MethodExtractor.process(jarPath, reportFile, packageName, packageMapPath, sourceCodePath);
         }
     }
 }
