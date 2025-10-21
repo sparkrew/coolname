@@ -39,7 +39,6 @@ public class PreprocessingMojo extends AbstractMojo {
     public void execute() {
         Set<Artifact> dependencyArtifacts = project.getArtifacts();
         getLog().info("Processing dependencies to build package-to-dependency map");
-
         for (Artifact artifact : dependencyArtifacts) {
             String dependencyId = getArtifactLongId(artifact);
             File jarFile = artifact.getFile();

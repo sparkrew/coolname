@@ -41,9 +41,7 @@ public class MethodExtractor {
         JavaView view = createJavaView(pathToJar);
         Set<MethodSignature> entryPoints = detectEntryPoints(view, packageName);
         log.info("Found " + entryPoints.size() + " public methods as entry points.");
-
         AnalysisResult result = analyzeReachability(view, entryPoints, packageMapPath);
-
         // Write the three different output files
         PathWriter.writeAllFormats(result, reportPath, view, sourceRootPath);
         log.info("All analysis reports written successfully.");
@@ -67,18 +65,15 @@ public class MethodExtractor {
         try {
             RapidTypeAnalysisAlgorithm cha = new RapidTypeAnalysisAlgorithm(view);
             CallGraph cg = cha.initialize(new ArrayList<>(entryPoints));
-
             // Identify all third-party methods that are actually called in the codebase. We go backwards from
             // third-party methods to public methods to find all paths. This is because we expect this would be more
             // efficient than doing it the other way round, as there are usually much fewer third-party methods than
             // public methods.
             Set<MethodSignature> allThirdPartyMethods = findAllThirdPartyMethods(cg, packageMapPath);
             log.info("Found {} third-party methods in call graph", allThirdPartyMethods.size());
-
             // Build reverse call graph for efficient backward traversal. Otherwise, it takes painfully long time to
             // run with the forward graph (from public methods to third party methods).
             Map<MethodSignature, Set<MethodSignature>> reverseCallGraph = buildReverseCallGraph(cg);
-
             // For each third-party method, find all public methods that can reach it
             for (MethodSignature thirdPartyMethod : allThirdPartyMethods) {
                 // Find all methods that can reach this third-party method by traversing backwards
@@ -88,7 +83,6 @@ public class MethodExtractor {
                         entryPoints,
                         packageMapPath
                 );
-
                 // For each public method that can reach this third-party method,
                 // find the shortest direct path and create a ThirdPartyPath entry.
                 for (MethodSignature publicMethod : reachingMethods) {
@@ -181,19 +175,15 @@ public class MethodExtractor {
             MethodSignature target,
             Set<MethodSignature> entryPoints,
             Path packageMapPath) {
-
         Set<MethodSignature> reachingPublicMethods = new HashSet<>();
         Set<MethodSignature> visited = new HashSet<>();
         Deque<MethodSignature> queue = new ArrayDeque<>();
-
         queue.add(target);
         visited.add(target);
         while (!queue.isEmpty()) {
             MethodSignature current = queue.poll();
-
             // Get all methods that call the current method
             Set<MethodSignature> callers = reverseCallGraph.getOrDefault(current, Collections.emptySet());
-
             for (MethodSignature caller : callers) {
                 // Skip if it's a third-party method (we only want project methods in the path)
                 if (isThirdPartyMethod(caller, packageMapPath)) {
@@ -221,31 +211,25 @@ public class MethodExtractor {
             MethodSignature start,
             MethodSignature target,
             Path packageMapPath) {
-
         Deque<List<MethodSignature>> queue = new ArrayDeque<>();
         Set<MethodSignature> visited = new HashSet<>();
         queue.add(List.of(start));
         visited.add(start);
-
         while (!queue.isEmpty()) {
             List<MethodSignature> path = queue.poll();
             MethodSignature last = path.get(path.size() - 1);
-
             for (CallGraph.Call call : cg.callsFrom(last)) {
                 MethodSignature next = call.getTargetMethodSignature();
-
                 if (next.equals(target)) {
                     // Found the target - construct and return the complete path
                     List<MethodSignature> completePath = new ArrayList<>(path);
                     completePath.add(next);
-
                     // Verify this is a direct path (only target is third-party).
                     // Here, we do not consider the paths that have third party methods in between.
                     if (isDirectPath(completePath, packageMapPath)) {
                         return completePath;
                     }
                 }
-
                 // Only continue if this is not a third-party method and not visited
                 if (!isThirdPartyMethod(next, packageMapPath) && visited.add(next)) {
                     List<MethodSignature> newPath = new ArrayList<>(path);

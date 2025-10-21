@@ -38,13 +38,10 @@ public class PathWriter {
         String fullMethodsPath = basePath.replace(".json", "_full_methods.json");
         String entryPointPath = basePath.replace(".json", "_entry_point.json");
         String slicedPath = basePath.replace(".json", "_sliced.json");
-
         // Full methods for all methods in the path
         writeFullMethodsFormat(result, fullMethodsPath, view, sourceRootPath);
-
         // Entry point body only (only the outermost public method that we need to test)
         writeEntryPointFormat(result, entryPointPath, view, sourceRootPath);
-
         // Method slices (code slicing based on data/control flow)
         // This one is more complex. We have a basic version for now.
         writeSlicedFormat(result, slicedPath, sourceRootPath);
@@ -62,12 +59,10 @@ public class PathWriter {
             for (ThirdPartyPath tp : result.thirdPartyPaths()) {
                 // Extract full method bodies for all methods in the path
                 List<String> fullMethods = extractFullMethodBodies(view, tp.path(), sourceRootPath);
-
                 // Build the path as strings
                 List<String> pathStrings = tp.path().stream()
                         .map(MethodExtractor::getFilteredMethodSignature)
                         .collect(Collectors.toList());
-
                 String thirdPartyPackage = extractPackageName(
                         MethodExtractor.getFilteredMethodSignature(tp.thirdPartyMethod())
                 );
@@ -97,14 +92,11 @@ public class PathWriter {
     private static void writeEntryPointFormat(AnalysisResult result, String outputPath, JavaView view, String sourceRootPath) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
-
         try {
             List<EntryPointFocusedData> entryPointPaths = new ArrayList<>();
-
             for (ThirdPartyPath tp : result.thirdPartyPaths()) {
                 // Extract only the entry point body
                 String entryPointBody = extractMethodBody(view, tp.entryPoint(), sourceRootPath);
-
                 // Build the path as strings
                 List<String> pathStrings = tp.path().stream()
                         .map(MethodExtractor::getFilteredMethodSignature)

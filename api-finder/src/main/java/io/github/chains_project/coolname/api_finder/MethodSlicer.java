@@ -3,17 +3,17 @@ package io.github.chains_project.coolname.api_finder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sootup.core.signatures.MethodSignature;
+import sootup.java.core.views.JavaView;
 import spoon.reflect.CtModel;
 import spoon.reflect.code.*;
 import spoon.reflect.declaration.CtElement;
-import spoon.reflect.declaration.CtMethod;
+import spoon.reflect.declaration.CtExecutable;
 import spoon.reflect.declaration.CtType;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtVariableReference;
 import spoon.reflect.visitor.filter.TypeFilter;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Performs backward slicing on methods to extract only the relevant statements
@@ -45,7 +45,6 @@ public class MethodSlicer {
         if (sourceRootPath == null) {
             throw new IllegalArgumentException("Source root path is required for method slicing");
         }
-
         // Get the Spoon model once for all methods (this is cached in SourceCodeExtractor)
         CtModel model = SourceCodeExtractor.getModel(sourceRootPath);
         for (int i = 0; i < path.size() - 1; i++) {
@@ -74,15 +73,14 @@ public class MethodSlicer {
         String result;
         try {
             // Find the method in the Spoon model using SourceCodeExtractor's cached lookup
-            CtMethod<?> method = findMethodInModel(model, methodSig);
-            if (method == null || method.getBody() == null) {
+            CtExecutable<?> executable = findExecutableInModel(model, methodSig);
+            if (executable == null || executable.getBody() == null) {
                 log.debug("Method not found or has no body: {}", methodSig);
                 sliceCache.put(cacheKey, null);
                 return null;
             }
-            // Find the statements that invoke the target method
-            List<CtInvocation<?>> targetInvocations = findTargetInvocations(method, targetCall);
-
+            // Find the statements that invoke the target method (handles both regular methods and constructors)
+            List<CtElement> targetInvocations = findTargetInvocations(executable, targetCall);
             if (targetInvocations.isEmpty()) {
                 // If we can't find the target invocation, we return null, this happens mostly for third party methods
                 log.debug("Target invocation not found in method {} for target {}",
@@ -92,14 +90,12 @@ public class MethodSlicer {
             }
             // Perform backward slicing from each target invocation
             Set<CtStatement> relevantStatements = new LinkedHashSet<>();
-
-            for (CtInvocation<?> targetInvocation : targetInvocations) {
-                Set<CtStatement> slice = computeBackwardSlice(method, targetInvocation);
+            for (CtElement targetInvocation : targetInvocations) {
+                Set<CtStatement> slice = computeBackwardSlice(executable, targetInvocation);
                 relevantStatements.addAll(slice);
             }
             // Format the slice as readable code
-            result = formatSlice(methodSig, method, relevantStatements);
-
+            result = formatSlice(methodSig, executable, relevantStatements);
         } catch (Exception e) {
             log.debug("Failed to slice method {}: {}", methodSig, e.getMessage());
             result = null;
@@ -115,10 +111,9 @@ public class MethodSlicer {
      * Unfortunately, we have to re-implement some of the logic here as we need CtMethod.
      * If someone comes up with a better way to do this, please PR!
      */
-    private static CtMethod<?> findMethodInModel(CtModel model, MethodSignature methodSig) {
+    private static CtExecutable<?> findExecutableInModel(CtModel model, MethodSignature methodSig) {
         String className = methodSig.getDeclClassType().getFullyQualifiedName();
         String methodName = methodSig.getName();
-
         // Find the type (handles inner classes too)
         CtType<?> type = model.getAllTypes().stream()
                 .filter(t -> {
@@ -129,7 +124,6 @@ public class MethodSlicer {
                 })
                 .findFirst()
                 .orElse(null);
-
         if (type == null) {
             return null;
         }
@@ -140,7 +134,6 @@ public class MethodSlicer {
             return type.getElements(new TypeFilter<>(spoon.reflect.declaration.CtConstructor.class))
                     .stream()
                     .filter(c -> c.getParameters().size() == paramCount)
-                    .map(c -> (CtMethod<?>) c)
                     .findFirst()
                     .orElse(null);
         } else if ("<clinit>".equals(methodName)) {
@@ -160,15 +153,29 @@ public class MethodSlicer {
      * Find all invocations in the method that call the target method.
      * This is our slicing criterion - the points from which we work backwards.
      */
-    private static List<CtInvocation<?>> findTargetInvocations(CtMethod<?> method, MethodSignature targetCall) {
+    private static List<CtElement> findTargetInvocations(CtExecutable<?> executable, MethodSignature targetCall) {
         String targetMethodName = targetCall.getName();
         String targetClassName = targetCall.getDeclClassType().getFullyQualifiedName();
-
-        // Get all invocations in the method
-        List<CtInvocation<?>> allInvocations = method.getElements(new TypeFilter<>(CtInvocation.class));
-
+        List<CtElement> matchingElements = new ArrayList<>();
+        // Handle constructor targets (<init>)
+        if ("<init>".equals(targetMethodName)) {
+            // Look for constructor calls (new statements)
+            List<CtConstructorCall<?>> constructorCalls = executable.getElements(new TypeFilter<>(CtConstructorCall.class));
+            for (CtConstructorCall<?> call : constructorCalls) {
+                CtExecutableReference<?> exec = call.getExecutable();
+                String callClassName = exec.getDeclaringType() != null ?
+                        exec.getDeclaringType().getQualifiedName() : "";
+                if (callClassName.equals(targetClassName) ||
+                        callClassName.equals(targetClassName.replace('$', '.'))) {
+                    matchingElements.add(call);
+                }
+            }
+            return matchingElements;
+        }
+        // Regular method invocations
+        List<CtInvocation<?>> allInvocations = executable.getElements(new TypeFilter<>(CtInvocation.class));
         // Filter for invocations that match the target
-        return allInvocations.stream()
+        List<CtInvocation<?>> matchingInvocations = allInvocations.stream()
                 .filter(inv -> {
                     CtExecutableReference<?> exec = inv.getExecutable();
                     String invMethodName = exec.getSimpleName();
@@ -180,7 +187,9 @@ public class MethodSlicer {
                             (invClassName.equals(targetClassName) ||
                                     invClassName.equals(targetClassName.replace('$', '.')));
                 })
-                .collect(Collectors.toList());
+                .toList();
+        matchingElements.addAll(matchingInvocations);
+        return matchingElements;
     }
 
     /**
@@ -191,26 +200,24 @@ public class MethodSlicer {
      * <p>
      * Lookups should be O(1). Hope this helps performance, otherwise you can even finish a movie while this runs.
      */
-    private static Set<CtStatement> computeBackwardSlice(CtMethod<?> method, CtInvocation<?> targetInvocation) {
+    private static Set<CtStatement> computeBackwardSlice(CtExecutable<?> executable, CtElement targetElement) {
         Set<CtStatement> slice = new LinkedHashSet<>();
         Set<CtVariableReference<?>> relevantVariables = new HashSet<>();
         Queue<CtElement> worklist = new LinkedList<>();
-
         // This is the statement containing the target invocation
-        CtStatement targetStmt = getStatementContaining(targetInvocation);
+        CtStatement targetStmt = getStatementContaining(targetElement);
         if (targetStmt == null) {
             return slice;
         }
         slice.add(targetStmt);
-        worklist.add(targetInvocation);
+        worklist.add(targetElement);
         // Collect all variables used in the target invocation
-        List<CtVariableAccess<?>> variableAccesses = targetInvocation.getElements(
+        List<CtVariableAccess<?>> variableAccesses = targetElement.getElements(
                 new TypeFilter<>(CtVariableAccess.class)
         );
         variableAccesses.forEach(va -> relevantVariables.add(va.getVariable()));
-
         // Get all statements in the method body and create an index for O(1) lookup
-        List<CtStatement> allStatements = method.getBody().getStatements();
+        List<CtStatement> allStatements = executable.getBody().getStatements();
         Map<CtStatement, Integer> stmtIndexMap = new HashMap<>();
         for (int i = 0; i < allStatements.size(); i++) {
             stmtIndexMap.put(allStatements.get(i), i);
@@ -220,7 +227,6 @@ public class MethodSlicer {
         while (!worklist.isEmpty()) {
             CtElement current = worklist.poll();
             CtStatement currentStmt = getStatementContaining(current);
-
             if (currentStmt == null || !visited.add(currentStmt)) {
                 continue;
             }
@@ -231,7 +237,6 @@ public class MethodSlicer {
             // Look at all statements before the current one
             for (int i = currentIndex - 1; i >= 0; i--) {
                 CtStatement predecessor = allStatements.get(i);
-
                 // Skip if already processed
                 if (slice.contains(predecessor)) {
                     continue;
@@ -240,7 +245,6 @@ public class MethodSlicer {
                 // Check data dependencies - does this statement define a variable we use?
                 if (predecessor instanceof CtAssignment<?, ?> assignment) {
                     CtExpression<?> assigned = assignment.getAssigned();
-
                     if (assigned instanceof CtVariableAccess<?> varAccess) {
                         CtVariableReference<?> assignedVar = varAccess.getVariable();
                         if (relevantVariables.contains(assignedVar)) {
@@ -308,21 +312,18 @@ public class MethodSlicer {
      * Format the slice into readable code.
      * Presents the relevant statements in their original order with context.
      */
-    private static String formatSlice(MethodSignature methodSig, CtMethod<?> method,
+    private static String formatSlice(MethodSignature methodSig, CtExecutable<?> executable,
                                       Set<CtStatement> slice) {
         StringBuilder sb = new StringBuilder();
-
         // Get all statements in order
-        List<CtStatement> allStatements = method.getBody().getStatements();
-
+        List<CtStatement> allStatements = executable.getBody().getStatements();
         // Keep only the statements in the slice, in their original order
         List<CtStatement> orderedSlice = allStatements.stream()
                 .filter(slice::contains)
                 .toList();
-
         // Add each statement, we are super happy that the code could reach this point.
         for (CtStatement stmt : orderedSlice) {
-            sb.append(stmt.toString()).append("\n");
+            sb.append(stmt.prettyprint()).append("\n");
         }
         return sb.toString();
     }

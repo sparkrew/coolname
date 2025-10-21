@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import sootup.core.signatures.MethodSignature;
 import spoon.MavenLauncher;
 import spoon.reflect.CtModel;
+import spoon.reflect.declaration.CtConstructor;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
 
@@ -41,9 +42,7 @@ public class SourceCodeExtractor {
         if (model != null && sourceRootPath.equals(currentSourceRoot)) {
             return model;
         }
-
         log.info("Building Spoon model from source root: {}", sourceRootPath);
-
         try {
             MavenLauncher launcher = new MavenLauncher(sourceRootPath,
                     MavenLauncher.SOURCE_TYPE.APP_SOURCE);
@@ -51,17 +50,13 @@ public class SourceCodeExtractor {
             launcher.getEnvironment().setNoClasspath(true);
             launcher.getEnvironment().setCommentEnabled(true);
             launcher.getEnvironment().disableConsistencyChecks();
-
             model = launcher.buildModel();
             currentSourceRoot = sourceRootPath;
-
             // Clear caches when we build a new model
             methodCache.clear();
             typeCache.clear();
-
             log.info("Spoon model built successfully with {} types", model.getAllTypes().size());
             return model;
-
         } catch (Exception e) {
             log.error("Error building Spoon model: {}", e.getMessage(), e);
             model = null;
@@ -87,24 +82,19 @@ public class SourceCodeExtractor {
         }
         try {
             CtModel spoonModel = getOrCreateModel(sourceRootPath);
-
             // Get the fully qualified class name
             String className = methodSig.getDeclClassType().getFullyQualifiedName();
             String methodName = methodSig.getName();
-
             // Handle inner classes - Spoon uses $ for inner classes
             CtType<?> ctType = findTypeCached(spoonModel, className);
-
             if (ctType == null) {
                 log.debug("Type not found in Spoon model: {}", className);
                 // Cache the null result to avoid repeated lookups
                 methodCache.put(cacheKey, null);
                 return null;
             }
-
             // Handle special method names from bytecode
             String sourceCode = null;
-
             if ("<init>".equals(methodName)) {
                 // <init> represents a constructor
                 sourceCode = extractConstructor(ctType, methodSig);
@@ -146,34 +136,31 @@ public class SourceCodeExtractor {
         }
         // If there's only one method with this name, we are lucky, just return it
         if (candidateMethods.size() == 1) {
-            return candidateMethods.get(0).toString();
+            return candidateMethods.get(0).prettyprint();
         }
         // Multiple methods with same name - not so lucky this time, need to match by parameter types,
         // why? bcoz of overloading
         int paramCount = methodSig.getParameterTypes().size();
         var paramTypes = methodSig.getParameterTypes();
-
         // Try to find exact match by parameter count and types
         Optional<CtMethod<?>> exactMatch = candidateMethods.stream()
                 .filter(m -> m.getParameters().size() == paramCount)
                 .filter(m -> parametersMatch(m, paramTypes))
                 .findFirst();
-
         if (exactMatch.isPresent()) {
-            return exactMatch.toString();
+            return exactMatch.get().prettyprint();
         }
         // We are unlucky, Fall back to matching by parameter count only.
         Optional<CtMethod<?>> countMatch = candidateMethods.stream()
                 .filter(m -> m.getParameters().size() == paramCount)
                 .findFirst();
-
         if (countMatch.isPresent()) {
             log.debug("Multiple overloaded methods found for {}, matched by parameter count", methodName);
-            return countMatch.get().toString();
+            return countMatch.get().prettyprint();
         }
         // We are really unlucky! After all this effort, we just have to return the first method.
         log.debug("Multiple overloaded methods found for {}, returning first one", methodName);
-        return candidateMethods.get(0).toString();
+        return candidateMethods.get(0).prettyprint();
     }
 
     /**
@@ -190,10 +177,8 @@ public class SourceCodeExtractor {
         for (int i = 0; i < spoonParams.size(); i++) {
             var spoonParam = spoonParams.get(i);
             var sootParam = sootParams.get(i);
-
             String spoonTypeName = spoonParam.getType().getQualifiedName();
             String sootTypeName = sootParam.toString();
-
             // Try to match by simple name or qualified name
             if (!typesMatch(spoonTypeName, sootTypeName)) {
                 return false;
@@ -245,20 +230,22 @@ public class SourceCodeExtractor {
         }
         // If there's only one constructor, return it
         if (constructors.size() == 1) {
-            return constructors.get(0).toString();
+            return constructors.get(0).prettyprint();
         }
         // Try to match by parameter count
         int paramCount = methodSig.getParameterTypes().size();
-
-        Optional<?> matchingConstructor = constructors.stream()
-                .filter(c -> ((spoon.reflect.declaration.CtConstructor<?>) c).getParameters().size() == paramCount)
-                .findFirst();
+        Optional<? extends CtConstructor<?>> matchingConstructor =
+                constructors.stream()
+                        .map(c -> (CtConstructor<?>) c)
+                        .filter(c -> c.getParameters().size() == paramCount)
+                        .findFirst();
         if (matchingConstructor.isPresent()) {
-            return matchingConstructor.get().toString();
+            // Get the pretty-printed source code for the matching constructor, toString does not give proper source
+            return matchingConstructor.get().prettyprint();
         }
         // Screw it, we give up, fall back to first constructor
         log.debug("Multiple constructors found, returning first one for {}", ctType.getQualifiedName());
-        return constructors.get(0).toString();
+        return constructors.get(0).prettyprint();
     }
 
     /**
@@ -280,9 +267,8 @@ public class SourceCodeExtractor {
         // Combine all static blocks
         StringBuilder sb = new StringBuilder();
         sb.append(ctType.getQualifiedName()).append("\n");
-
         for (var block : staticBlocks) {
-            sb.append(block.toString()).append("\n");
+            sb.append(block.prettyprint()).append("\n");
         }
         return sb.toString();
     }
@@ -321,7 +307,6 @@ public class SourceCodeExtractor {
                 .filter(t -> t.getQualifiedName().equals(spoonName))
                 .findFirst()
                 .orElse(null);
-
         if (type != null) {
             return type;
         }
@@ -329,7 +314,6 @@ public class SourceCodeExtractor {
         if (fullyQualifiedName.contains("$")) {
             String outerClassName = fullyQualifiedName.substring(0, fullyQualifiedName.indexOf("$"));
             CtType<?> outerType = findTypeCached(spoonModel, outerClassName);
-
             if (outerType != null) {
                 String innerClassName = fullyQualifiedName.substring(fullyQualifiedName.lastIndexOf("$") + 1);
                 return outerType.getNestedType(innerClassName);
