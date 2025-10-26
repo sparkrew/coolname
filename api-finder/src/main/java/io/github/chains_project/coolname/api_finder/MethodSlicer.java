@@ -3,7 +3,6 @@ package io.github.chains_project.coolname.api_finder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sootup.core.signatures.MethodSignature;
-import sootup.java.core.views.JavaView;
 import spoon.reflect.CtModel;
 import spoon.reflect.code.*;
 import spoon.reflect.declaration.CtElement;
@@ -14,6 +13,8 @@ import spoon.reflect.reference.CtVariableReference;
 import spoon.reflect.visitor.filter.TypeFilter;
 
 import java.util.*;
+
+import static io.github.chains_project.coolname.api_finder.SourceCodeExtractor.currentSourceRoot;
 
 /**
  * Performs backward slicing on methods to extract only the relevant statements
@@ -32,11 +33,14 @@ public class MethodSlicer {
     // We keep a cache to avoid re-slicing the same methods multiple times
     // Otherwise, this takes an awful lot of time on large projects
     private static final Map<String, String> sliceCache = new HashMap<>();
+    protected static int fallbackCount = 0;
+    protected static int sliceCount = 0;
 
     /**
      * Extract method slices for all methods in a path.
      * For each method, we perform backward slicing from the call to the next method
      * in the path (or the third-party method if it's the last one).
+     * The slice includes the method signature and the target method call statement.
      */
     public static List<String> extractMethodSlices(List<MethodSignature> path, String sourceRootPath) {
         List<String> slices = new ArrayList<>();
@@ -47,10 +51,9 @@ public class MethodSlicer {
         }
         // Get the Spoon model once for all methods (this is cached in SourceCodeExtractor)
         CtModel model = SourceCodeExtractor.getModel(sourceRootPath);
+        // Process all methods instead of the last one (for third-party call)
         for (int i = 0; i < path.size() - 1; i++) {
             MethodSignature currentMethod = path.get(i);
-            // For methods before the last, we are interested in the call to the next method in the path
-            // For the last method, we are interested in the call to the third-party method
             MethodSignature targetCall = path.get(i + 1);
             String slice = performBackwardSlice(model, currentMethod, targetCall);
             slices.add(slice);
@@ -61,11 +64,12 @@ public class MethodSlicer {
     /**
      * Perform backward slicing on a method to extract statements relevant to reaching
      * the target method call. This works on actual source code using Spoon.
+     * Falls back to full method extraction if slicing fails.
      */
     private static String performBackwardSlice(CtModel model, MethodSignature methodSig,
                                                MethodSignature targetCall) {
         // Check cache first
-        String cacheKey = methodSig.toString() + "->" + targetCall.toString();
+        String cacheKey = methodSig.toString() + "->" + (targetCall != null ? targetCall.toString() : "LAST");
         if (sliceCache.containsKey(cacheKey)) {
             log.trace("Slice cache hit for {}", cacheKey);
             return sliceCache.get(cacheKey);
@@ -75,18 +79,37 @@ public class MethodSlicer {
             // Find the method in the Spoon model using SourceCodeExtractor's cached lookup
             CtExecutable<?> executable = findExecutableInModel(model, methodSig);
             if (executable == null || executable.getBody() == null) {
-                log.debug("Method not found or has no body: {}", methodSig);
-                sliceCache.put(cacheKey, null);
-                return null;
+                log.debug("Method not found or has no body: {}, falling back to full method extraction", methodSig);
+                // Fall back to full method extraction
+                String sourceRootPath = currentSourceRoot != null ? currentSourceRoot :
+                        SourceCodeExtractor.getCurrentSourceRoot();
+                result = SourceCodeExtractor.extractMethodFromSource(methodSig, sourceRootPath);
+                fallbackCount++;
+                sliceCache.put(cacheKey, result);
+                return result != null ? result : "";
             }
             // Find the statements that invoke the target method (handles both regular methods and constructors)
+            if (targetCall == null) {
+                log.error("Target call is null for method {}, falling back to full method extraction", methodSig);
+                // Fall back to full method extraction
+                String sourceRootPath = currentSourceRoot != null ? currentSourceRoot :
+                        SourceCodeExtractor.getCurrentSourceRoot();
+                result = SourceCodeExtractor.extractMethodFromSource(methodSig, sourceRootPath);
+                fallbackCount++;
+                sliceCache.put(cacheKey, result);
+                return result != null ? result : "";
+            }
             List<CtElement> targetInvocations = findTargetInvocations(executable, targetCall);
             if (targetInvocations.isEmpty()) {
-                // If we can't find the target invocation, we return null, this happens mostly for third party methods
-                log.debug("Target invocation not found in method {} for target {}",
+                // If we can't find the target invocation, fall back to full method extraction
+                log.debug("Target invocation not found in method {} for target {}, falling back to full method extraction",
                         methodSig, targetCall);
-                sliceCache.put(cacheKey, null);
-                return null;
+                String sourceRootPath = currentSourceRoot != null ? currentSourceRoot :
+                        SourceCodeExtractor.getCurrentSourceRoot();
+                result = SourceCodeExtractor.extractMethodFromSource(methodSig, sourceRootPath);
+                fallbackCount++;
+                sliceCache.put(cacheKey, result);
+                return result != null ? result : "";
             }
             // Perform backward slicing from each target invocation
             Set<CtStatement> relevantStatements = new LinkedHashSet<>();
@@ -94,15 +117,81 @@ public class MethodSlicer {
                 Set<CtStatement> slice = computeBackwardSlice(executable, targetInvocation);
                 relevantStatements.addAll(slice);
             }
-            // Format the slice as readable code
-            result = formatSlice(methodSig, executable, relevantStatements);
+            // Format the slice as readable code, including method signature and target call
+            result = formatSlice(methodSig, executable, relevantStatements, targetInvocations);
         } catch (Exception e) {
-            log.debug("Failed to slice method {}: {}", methodSig, e.getMessage());
-            result = null;
+            log.debug("Failed to slice method {}: {}, falling back to full method extraction",
+                    methodSig, e.getMessage());
+            // Fall back to full method extraction on any exception
+            try {
+                String sourceRootPath = currentSourceRoot != null ? currentSourceRoot :
+                        SourceCodeExtractor.getCurrentSourceRoot();
+                result = SourceCodeExtractor.extractMethodFromSource(methodSig, sourceRootPath);
+                fallbackCount++;
+                result = result != null ? result : "";
+            } catch (Exception fallbackException) {
+                log.warn("Full method extraction also failed for {}: {}",
+                        methodSig, fallbackException.getMessage());
+                result = "";
+            }
         }
         // Cache the result
         sliceCache.put(cacheKey, result);
+        sliceCount++;
         return result;
+    }
+
+    /**
+     * Extract the method signature as a string (method declaration without body).
+     * Returns the full declaration including modifiers, return type, method name, parameters, and throws clause.
+     */
+    private static String extractMethodSignature(CtExecutable<?> executable) {
+        String signature = executable.prettyprint();
+        // Remove the body part if present, but avoid cutting at '{' inside comments
+        int braceIndex = findFirstBraceOutsideComments(signature);
+        if (braceIndex > 0) {
+            signature = signature.substring(0, braceIndex).trim();
+        }
+        return signature;
+    }
+
+    /**
+     * Find the index of the first '{' that is not inside a comment.
+     */
+    private static int findFirstBraceOutsideComments(String text) {
+        boolean inLineComment = false;
+        boolean inBlockComment = false;
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            // Check for line comment start
+            if (!inBlockComment && i < text.length() - 1 && c == '/' && text.charAt(i + 1) == '/') {
+                inLineComment = true;
+                i++; // Skip next character
+                continue;
+            }
+            // Check for block comment start
+            if (!inLineComment && i < text.length() - 1 && c == '/' && text.charAt(i + 1) == '*') {
+                inBlockComment = true;
+                i++; // Skip next character
+                continue;
+            }
+            // Check for block comment end
+            if (inBlockComment && i < text.length() - 1 && c == '*' && text.charAt(i + 1) == '/') {
+                inBlockComment = false;
+                i++; // Skip next character
+                continue;
+            }
+            // Check for line comment end
+            if (inLineComment && c == '\n') {
+                inLineComment = false;
+                continue;
+            }
+            // Check for opening brace outside comments
+            if (!inLineComment && !inBlockComment && c == '{') {
+                return i;
+            }
+        }
+        return -1; // Not found
     }
 
     /**
@@ -310,21 +399,32 @@ public class MethodSlicer {
 
     /**
      * Format the slice into readable code.
-     * Presents the relevant statements in their original order with context.
+     * Presents the method signature, relevant statements in their original order,
+     * and ensures the target call is included.
      */
-    private static String formatSlice(MethodSignature methodSig, CtExecutable<?> executable,
-                                      Set<CtStatement> slice) {
+    private static String formatSlice(MethodSignature methodSignature, CtExecutable<?> executable,
+                                      Set<CtStatement> slice, List<CtElement> targetInvocations) {
         StringBuilder sb = new StringBuilder();
+        // Add method signature
+        sb.append(extractMethodSignature(executable)).append(" {\n");
         // Get all statements in order
         List<CtStatement> allStatements = executable.getBody().getStatements();
+        // Ensure target invocation statements are in the slice
+        for (CtElement targetInvocation : targetInvocations) {
+            CtStatement targetStmt = getStatementContaining(targetInvocation);
+            if (targetStmt != null) {
+                slice.add(targetStmt);
+            }
+        }
         // Keep only the statements in the slice, in their original order
         List<CtStatement> orderedSlice = allStatements.stream()
                 .filter(slice::contains)
                 .toList();
         // Add each statement, we are super happy that the code could reach this point.
         for (CtStatement stmt : orderedSlice) {
-            sb.append(stmt.prettyprint()).append("\n");
+            sb.append("    ").append(stmt.prettyprint()).append("\n");
         }
+        sb.append("}");
         return sb.toString();
     }
 

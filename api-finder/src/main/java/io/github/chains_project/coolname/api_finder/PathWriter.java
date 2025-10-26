@@ -1,10 +1,7 @@
-package io.github.chains_project.coolname.api_finder.utils;
+package io.github.chains_project.coolname.api_finder;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import io.github.chains_project.coolname.api_finder.MethodExtractor;
-import io.github.chains_project.coolname.api_finder.MethodSlicer;
-import io.github.chains_project.coolname.api_finder.SourceCodeExtractor;
 import io.github.chains_project.coolname.api_finder.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,11 +11,11 @@ import sootup.java.core.JavaSootMethod;
 import sootup.java.core.views.JavaView;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
+
+import static io.github.chains_project.coolname.api_finder.MethodSlicer.fallbackCount;
+import static io.github.chains_project.coolname.api_finder.MethodSlicer.sliceCount;
 
 /**
  * Handles writing analysis results in three different formats:
@@ -153,6 +150,8 @@ public class PathWriter {
             }
             File outputFile = new File(outputPath);
             mapper.writeValue(outputFile, Map.of("slicedPaths", slicedPaths));
+            log.info("Method slicing completed with {} fallbacks to full extraction and {} successful slices",
+                    fallbackCount, sliceCount);
             log.info("Successfully wrote {} sliced paths to {}", slicedPaths.size(),
                     outputFile.getAbsolutePath());
         } catch (Exception e) {
@@ -167,7 +166,7 @@ public class PathWriter {
     private static List<String> extractFullMethodBodies(JavaView view, List<MethodSignature> path, String sourceRootPath) {
         List<String> methodBodies = new ArrayList<>();
         // We do not want the bytecode of the third-party method itself
-        // Uncomment this line if the decision is changed.
+        // Comment this line if the decision is changed.
         path.remove(path.size() - 1);
         for (MethodSignature methodSig : path) {
             String body = extractMethodBody(view, methodSig, sourceRootPath);

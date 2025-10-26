@@ -31,7 +31,7 @@ public class SourceCodeExtractor {
     private static final Map<String, CtType<?>> typeCache = new HashMap<>();
     // Model cache
     private static CtModel model;
-    private static String currentSourceRoot;
+    protected static String currentSourceRoot;
 
     /**
      * Initialize or retrieve the Spoon model for the given source root.
@@ -63,6 +63,13 @@ public class SourceCodeExtractor {
             currentSourceRoot = null;
             throw new RuntimeException("Failed to build Spoon model", e);
         }
+    }
+
+    /**
+     * Get the current source root path.
+     */
+    public static String getCurrentSourceRoot() {
+        return currentSourceRoot;
     }
 
     /**

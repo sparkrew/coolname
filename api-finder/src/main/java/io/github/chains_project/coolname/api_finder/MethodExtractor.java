@@ -3,7 +3,6 @@ package io.github.chains_project.coolname.api_finder;
 import io.github.chains_project.coolname.api_finder.model.AnalysisResult;
 import io.github.chains_project.coolname.api_finder.model.ThirdPartyPath;
 import io.github.chains_project.coolname.api_finder.utils.PackageMatcher;
-import io.github.chains_project.coolname.api_finder.utils.PathWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sootup.callgraph.CallGraph;
@@ -100,7 +99,6 @@ public class MethodExtractor {
                                 thirdPartyMethod,
                                 packageMapPath
                         );
-
                         if (path != null && !path.isEmpty()) {
                             ThirdPartyPath tpPath = new ThirdPartyPath(
                                     publicMethod,
