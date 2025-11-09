@@ -85,10 +85,15 @@ mvn io.github.chains-project:theo-preprocessor-maven-plugin:1.0-SNAPSHOT:preproc
  java -jar /path-to-project/coolname/api-finder/target/api-finder-1.0-SNAPSHOT-jar-with-dependencies.jar process -m /path-to-previously-created/package-map.json -p package-name -j /path-to-project-jar -c /project-path/target/site/jacoco -s /path-to-project-source-code
 ```
 Here,
+<br>
 -m is for the package map file created in the previous step
+<br>
 -p is for the package name to be analyzed. For example, for pdfbox it can be "org.apache.pdfbox". You can find this by going to a class in the project and checking its package declaration. Package declaration is the line on top of a class such as "package org.apache.pdfbox"
+<br>
 -j is for the project jar file. You can find this under the target/ folder of the project after a successful build. It should be something like projectname-version.jar. Sometimes, some projects have a jar that contains all the dependencies with the name -projectname-version-jar-with-dependencies.jar. You MUST always use the jar with dependencies. If a separate jar does not exist we can assume the existing jar is the one with dependencies. You can clarify this by checking the pom file as well. (a quick google search or chatgpt will let you know.)
+<br>
 -c is for the jacoco report folder. This should be target/site/jacoco/ under the project folder.
+<br>
 -s is for the source code folder. This should be the main source code folder of the project. For example  /Users/username/Documents/pdfbox/pdfbox. Note that, we don't need to go to src/main/java. just passing the project root folder is enough. For a multi-module project such as the pdfbox in this example, the path should be the module folder (pdfbox/pdfbox in this case).
 16. Once you run this, a successful attempt should create the following reports.
 - coverage.json
@@ -113,9 +118,13 @@ python3 feedback_score.py --project-dir /path/to/project \
 ```
 
 You should pass 4 inputs.
+<br>
 --project-dir : path to the root folder of the project
+<br>
 --test-class : the fully qualified name of the test class to run
+<br>
 --method-class : the fully qualified name of the class that contains the target method (here the target method is the method that calls the third party method. In other words, this is the last method in the "path")
+<br>
 --target-method : the fully qualified name of the third party method to check coverage for.
 
 For example,
