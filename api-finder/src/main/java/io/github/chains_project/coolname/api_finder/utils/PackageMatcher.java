@@ -103,10 +103,7 @@ public class PackageMatcher {
                             .map(String::trim)
                             // # is to allow comments, not that it is important
                             .filter(line -> !line.isEmpty() && !line.startsWith("#"))
-                            .forEach(line -> {
-                                String normalized = line.endsWith(".") ? line : line + ".";
-                                prefixes.add(normalized);
-                            });
+                            .forEach(prefixes::add);
                 }
             } else {
                 log.warn("Ignored packages file not found: {}", DEFAULT_IGNORED_FILE);

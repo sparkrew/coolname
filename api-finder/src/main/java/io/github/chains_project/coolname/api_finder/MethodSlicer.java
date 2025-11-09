@@ -226,6 +226,7 @@ public class MethodSlicer {
                     .findFirst()
                     .orElse(null);
         } else if ("<clinit>".equals(methodName)) {
+            // ToDo: do not return null. return the static initializer block if present
             // Static initializer - return null as we can't slice these meaningfully, finally, an easy one
             return null;
         }

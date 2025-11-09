@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import picocli.CommandLine;
 
 import java.nio.file.Path;
+import java.util.List;
 
 public class Main {
 
@@ -34,10 +35,10 @@ public class Main {
         String jarPath;
 
         @CommandLine.Option(
-                names = {"-r", "--report-file"},
-                paramLabel = "REPORT-FILE",
-                description = "The path to the JSON file where analysis results should be written to. If not specified,"
-                        + " the report will be written to a file named third_party_apis.json",
+                names = {"-r", "--report-prefix"},
+                paramLabel = "REPORT-PREFIX",
+                description = "The path to the file prefix where analysis results should be written to. If not specified,"
+                        + " the reports will be written to the current folder with the prefix 'third_party_apis'.",
                 defaultValue = "third_party_apis.json"
         )
         String reportFile;
@@ -67,13 +68,23 @@ public class Main {
         )
         String sourceCodePath;
 
+        @CommandLine.Option(
+                names = {"-c", "--jacoco-files"},
+                paramLabel = "JACOCO-FILES",
+                description = "One or more JaCoCo XML report files",
+                required = true,
+                arity = "1..*"
+        )
+        List<Path> jacocoFiles;
+
         @Override
         public void run() {
             if (sourceCodePath == null) {
                 log.warn("No source code path provided, skipping source code extraction.");
                 MethodExtractor.process(jarPath, reportFile, packageName, packageMapPath);
             }
-            MethodExtractor.process(jarPath, reportFile, packageName, packageMapPath, sourceCodePath);
+            MethodExtractor.process(jarPath, reportFile, packageName, packageMapPath, sourceCodePath,
+                    jacocoFiles.stream().map(Path::toFile).toList());
         }
     }
 }

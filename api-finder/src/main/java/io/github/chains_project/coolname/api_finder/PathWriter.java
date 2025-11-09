@@ -2,6 +2,8 @@ package io.github.chains_project.coolname.api_finder;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import io.github.chains_project.coolname.api_finder.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +13,8 @@ import sootup.java.core.JavaSootMethod;
 import sootup.java.core.views.JavaView;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -42,6 +46,20 @@ public class PathWriter {
         // Method slices (code slicing based on data/control flow)
         // This one is more complex. We have a basic version for now.
         writeSlicedFormat(result, slicedPath, sourceRootPath);
+    }
+
+    /**
+     * Write path statistics (to justify the decision to select the shortest path) to a JSON file for analysis
+     */
+    public static void writePathStatsToJson(List<PathStats> stats) {
+        String statsPath = "path-stats.json";
+        try (FileWriter writer = new FileWriter(statsPath)) {
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            gson.toJson(stats, writer);
+            log.info("Path statistics written to: {}", statsPath);
+        } catch (IOException e) {
+            log.error("Failed to write path statistics to JSON", e);
+        }
     }
 
     /**

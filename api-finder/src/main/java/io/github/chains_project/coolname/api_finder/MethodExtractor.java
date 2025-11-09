@@ -1,6 +1,8 @@
 package io.github.chains_project.coolname.api_finder;
 
 import io.github.chains_project.coolname.api_finder.model.AnalysisResult;
+import io.github.chains_project.coolname.api_finder.model.PathNode;
+import io.github.chains_project.coolname.api_finder.model.PathStats;
 import io.github.chains_project.coolname.api_finder.model.ThirdPartyPath;
 import io.github.chains_project.coolname.api_finder.utils.PackageMatcher;
 import org.slf4j.Logger;
@@ -13,9 +15,14 @@ import sootup.core.signatures.MethodSignature;
 import sootup.java.bytecode.frontend.inputlocation.JavaClassPathAnalysisInputLocation;
 import sootup.java.core.views.JavaView;
 
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
+
+import static io.github.chains_project.coolname.api_finder.CoverageFilter.isAlreadyCoveredByTests;
+import static io.github.chains_project.coolname.api_finder.PathWriter.writePathStatsToJson;
 
 public class MethodExtractor {
 
@@ -31,16 +38,18 @@ public class MethodExtractor {
      * @param packageName    The package name of the project under consideration to filter the events.
      * @param packageMapPath Path to the package map file that contains the mapping of package names to Maven coordinates.
      * @param sourceRootPath Path to the project source code root directory (optional, can be null). If provided, actual source code will be extracted instead of Jimple IR.
+     * @param jacocoHtmlDirs List of JaCoCo HTML report directories to filter already covered methods (optional, can be empty).
      */
-    public static void process(String pathToJar, String reportPath, String packageName, Path packageMapPath, String sourceRootPath) {
-        // Start reading the jar with sootup. Here we use all the public methods as the entry points. That means we
-        // don't plan to do anything (generate tests etc) for private methods.
+    public static void process(String pathToJar, String reportPath, String packageName,
+                               Path packageMapPath, String sourceRootPath, List<File> jacocoHtmlDirs) {
+        // Start reading the jar with sootup. Here we use all the public methods as the entry points.
+        // That means we don't plan to do anything (generate tests etc) for private methods.
         // Don't want any more complications with reflections and all. What we are doing is complicated enough.
         ignoredPrefixes = PackageMatcher.loadIgnoredPrefixes(packageName);
         JavaView view = createJavaView(pathToJar);
         Set<MethodSignature> entryPoints = detectEntryPoints(view, packageName);
         log.info("Found " + entryPoints.size() + " public methods as entry points.");
-        AnalysisResult result = analyzeReachability(view, entryPoints, packageMapPath);
+        AnalysisResult result = analyzeReachability(view, entryPoints, packageMapPath, jacocoHtmlDirs);
         // Write the three different output files
         PathWriter.writeAllFormats(result, reportPath, view, sourceRootPath);
         log.info("All analysis reports written successfully.");
@@ -48,9 +57,10 @@ public class MethodExtractor {
 
     /**
      * Overloaded version without source root path for backward compatibility
+     * The jacocoHtmlDirs is also initialized as an empty list.
      */
     public static void process(String pathToJar, String reportPath, String packageName, Path packageMapPath) {
-        process(pathToJar, reportPath, packageName, packageMapPath, null);
+        process(pathToJar, reportPath, packageName, packageMapPath, null, new ArrayList<>());
     }
 
     private static JavaView createJavaView(String pathToJar) {
@@ -59,8 +69,9 @@ public class MethodExtractor {
     }
 
     private static AnalysisResult analyzeReachability(JavaView view, Set<MethodSignature> entryPoints,
-                                                      Path packageMapPath) {
+                                                      Path packageMapPath, List<File> jacocoHtmlDirs) {
         List<ThirdPartyPath> thirdPartyPaths = new ArrayList<>();
+        List<PathStats> allPathStats = new ArrayList<>();
         try {
             RapidTypeAnalysisAlgorithm cha = new RapidTypeAnalysisAlgorithm(view);
             CallGraph cg = cha.initialize(new ArrayList<>(entryPoints));
@@ -68,7 +79,7 @@ public class MethodExtractor {
             // third-party methods to public methods to find all paths. This is because we expect this would be more
             // efficient than doing it the other way round, as there are usually much fewer third-party methods than
             // public methods.
-            Set<MethodSignature> allThirdPartyMethods = findAllThirdPartyMethods(cg, packageMapPath);
+            Set<MethodSignature> allThirdPartyMethods = findAllThirdPartyMethods(cg, packageMapPath, jacocoHtmlDirs);
             log.info("Found {} third-party methods in call graph", allThirdPartyMethods.size());
             // Build reverse call graph for efficient backward traversal. Otherwise, it takes painfully long time to
             // run with the forward graph (from public methods to third party methods).
@@ -93,11 +104,15 @@ public class MethodExtractor {
                         // in order to reach the third-party method. It is important to note that, we still collect
                         // multiple paths to reach a third party method, as long as they originate from different public
                         // methods.
-                        List<MethodSignature> path = findShortestDirectPath(
+                        // We collect stats about all paths while finding the shortest path. But this is very expensive.
+                        // We can switch to the original version (findShortestDirectPath) that only finds the shortest
+                        // path if needed.
+                        List<MethodSignature> path = findShortestDirectPathWithStats(
                                 cg,
                                 publicMethod,
                                 thirdPartyMethod,
-                                packageMapPath
+                                packageMapPath,
+                                allPathStats
                         );
                         if (path != null && !path.isEmpty()) {
                             ThirdPartyPath tpPath = new ThirdPartyPath(
@@ -110,6 +125,7 @@ public class MethodExtractor {
                     }
                 }
             }
+            writePathStatsToJson(allPathStats);
         } catch (Exception e) {
             log.error("Failed to initialize call graph.", e);
         }
@@ -135,13 +151,17 @@ public class MethodExtractor {
     /**
      * Find all third-party methods that are actually called in the call graph
      */
-    private static Set<MethodSignature> findAllThirdPartyMethods(CallGraph cg, Path packageMapPath) {
+    private static Set<MethodSignature> findAllThirdPartyMethods(CallGraph cg, Path packageMapPath,
+                                                                 List<File> jacocoHtmlDirs) {
         Set<MethodSignature> thirdPartyMethods = new HashSet<>();
         // Iterate through all calls in the call graph
         for (MethodSignature method : cg.getMethodSignatures()) {
             for (CallGraph.Call call : cg.callsFrom(method)) {
                 MethodSignature target = call.getTargetMethodSignature();
                 if (isThirdPartyMethod(target, packageMapPath)) {
+                    if (isAlreadyCoveredByTests(method, target, jacocoHtmlDirs)) {
+                        continue;
+                    }
                     thirdPartyMethods.add(target);
                 }
             }
@@ -183,16 +203,25 @@ public class MethodExtractor {
             // Get all methods that call the current method
             Set<MethodSignature> callers = reverseCallGraph.getOrDefault(current, Collections.emptySet());
             for (MethodSignature caller : callers) {
-                // Skip if it's a third-party method (we only want project methods in the path)
+                if (visited.contains(caller)) {
+                    continue;
+                }
+                // Skip third-party methods (we only want project methods in the path)
                 if (isThirdPartyMethod(caller, packageMapPath)) {
                     continue;
                 }
-                // If this is a public method (entry point), add it to results
+                visited.add(caller);
+                // If this is a public method (entry point), add it to results,
+                // but we stop continuing traversing backward from it.
+                // That is, if we only want the shortest path to a public method from a third-party method with no
+                // intermediate public methods in between.
+                // Remove the else condition and move the queue.add outside to just continue traversing all methods
+                // and it is also possible to simplify the first if condition on visited.contains. Refer to an older
+                // commit (before 2025/11) for more info.
                 if (entryPoints.contains(caller)) {
                     reachingPublicMethods.add(caller);
-                }
-                // Continue traversing backwards if not visited
-                if (visited.add(caller)) {
+                } else {
+                    // Only continue traversing if it's not a public method
                     queue.add(caller);
                 }
             }
@@ -229,6 +258,116 @@ public class MethodExtractor {
                     }
                 }
                 // Only continue if this is not a third-party method and not visited
+                if (!isThirdPartyMethod(next, packageMapPath) && visited.add(next)) {
+                    List<MethodSignature> newPath = new ArrayList<>(path);
+                    newPath.add(next);
+                    queue.add(newPath);
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Count all paths and their statistics from start to target without storing them.
+     * Uses BFS with path length tracking to efficiently compute statistics.
+     *
+     * @return PathStats containing total count and length statistics, or null if no paths exist
+     */
+    private static PathStats countPathsAndStats(
+            CallGraph cg,
+            MethodSignature start,
+            MethodSignature target,
+            Path packageMapPath,
+            int maxDepth) {
+        // Queue stores: current method and current path length
+        Deque<PathNode> queue = new ArrayDeque<>();
+        // Simple visited set per level to avoid infinite loops within same depth
+        Map<Integer, Set<MethodSignature>> visitedPerDepth = new HashMap<>();
+        int totalPaths = 0;
+        int shortestLength = Integer.MAX_VALUE;
+        int longestLength = 0;
+        queue.add(new PathNode(start, 1));
+        visitedPerDepth.computeIfAbsent(1, k -> new HashSet<>()).add(start);
+        while (!queue.isEmpty()) {
+            PathNode current = queue.poll();
+            MethodSignature currentMethod = current.method();
+            int currentLength = current.pathLength();
+            // Stop exploring if we have exceeded max depth (only if maxDepth is set)
+            if (maxDepth > 0 && currentLength > maxDepth) {
+                continue;
+            }
+            for (CallGraph.Call call : cg.callsFrom(currentMethod)) {
+                MethodSignature next = call.getTargetMethodSignature();
+                int nextLength = currentLength + 1;
+                if (next.equals(target)) {
+                    // Found a path to target
+                    totalPaths++;
+                    shortestLength = Math.min(shortestLength, nextLength);
+                    longestLength = Math.max(longestLength, nextLength);
+                    // Don't continue from here since we reached the target
+                    continue;
+                }
+                // Only continue if this is not a third-party method
+                // Check depth limit only if maxDepth is specified (> 0)
+                if (!isThirdPartyMethod(next, packageMapPath)) {
+                    boolean withinDepthLimit = (maxDepth == 0) || (nextLength <= maxDepth);
+                    if (withinDepthLimit) {
+                        // Check if we have already visited this method at this depth
+                        Set<MethodSignature> visitedAtThisDepth = visitedPerDepth.get(nextLength);
+                        if (visitedAtThisDepth == null || !visitedAtThisDepth.contains(next)) {
+                            visitedPerDepth.computeIfAbsent(nextLength, k -> new HashSet<>()).add(next);
+                            queue.add(new PathNode(next, nextLength));
+                        }
+                    }
+                }
+            }
+        }
+        if (totalPaths == 0) {
+            return null;
+        }
+        return new PathStats(
+                getFilteredMethodSignature(start),
+                getFilteredMethodSignature(target),
+                totalPaths,
+                shortestLength,
+                longestLength
+        );
+    }
+
+    /**
+     * Modified version that logs statistics instead of finding shortest path.
+     * This can replace the call to findShortestDirectPath in analyzeReachability.
+     */
+    private static List<MethodSignature> findShortestDirectPathWithStats(
+            CallGraph cg,
+            MethodSignature start,
+            MethodSignature target,
+            Path packageMapPath,
+            List<PathStats> allStats) {
+        // Get statistics about all paths, Can add a depth to overcome memory problems
+        PathStats stats = countPathsAndStats(cg, start, target, packageMapPath, 19);
+        if (stats != null) {
+            allStats.add(stats);
+        }
+
+        // Find and return the shortest direct path as before
+        Deque<List<MethodSignature>> queue = new ArrayDeque<>();
+        Set<MethodSignature> visited = new HashSet<>();
+        queue.add(List.of(start));
+        visited.add(start);
+        while (!queue.isEmpty()) {
+            List<MethodSignature> path = queue.poll();
+            MethodSignature last = path.get(path.size() - 1);
+            for (CallGraph.Call call : cg.callsFrom(last)) {
+                MethodSignature next = call.getTargetMethodSignature();
+                if (next.equals(target)) {
+                    List<MethodSignature> completePath = new ArrayList<>(path);
+                    completePath.add(next);
+                    if (isDirectPath(completePath, packageMapPath)) {
+                        return completePath;
+                    }
+                }
                 if (!isThirdPartyMethod(next, packageMapPath) && visited.add(next)) {
                     List<MethodSignature> newPath = new ArrayList<>(path);
                     newPath.add(next);
