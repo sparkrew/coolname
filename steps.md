@@ -2,35 +2,35 @@
 
 1. https://github.com/apache/pdfbox - pdfbox
 2. https://github.com/Sayi/poi-tl - poi-tl
-3. https://github.com/checkstyle/checkstyle
-4. https://github.com/OpenHFT/Chronicle-Map
-5. https://github.com/classgraph/classgraph
-6. https://github.com/apache/commons-validator
-7. https://github.com/stanfordnlp/CoreNLP
-8. https://github.com/apache/flink - flink-core
-9. https://github.com/graphhopper/graphhopper - core
-10. https://github.com/google/guice - core
-11. https://github.com/helidon-io/helidon - openapi
-12. https://github.com/apache/httpcomponents-client - httpclient5
+3. https://github.com/immutables/immutables - gson
+4. https://github.com/google/jimfs - jmifs
+5. https://github.com/jooby-project/jooby/tree/3.x - jooby
+6. https://github.com/modelmapper/modelmapper - core
+7. https://github.com/apache/flink - flink-core
+8. https://github.com/graphhopper/graphhopper - core
+9. https://github.com/google/guice - core
+10. https://github.com/helidon-io/helidon - openapi
+11. https://github.com/apache/httpcomponents-client - httpclient5
+12. https://github.com/LibrePDF/OpenPDF - openpdf-core
+13. https://github.com/pf4j/pf4j - pf4j
+14. https://github.com/scribejava/scribejava - scribejava-core
+15. https://github.com/jtablesaw/tablesaw - json
+16. https://github.com/apache/tika - tika-core
+17. https://github.com/undertow-io/undertow - core
     <br>
     <br>
-13. https://github.com/immutables/immutables - gson
-14. https://github.com/radsz/jacop
-15. https://github.com/DiUS/java-faker
-16. https://github.com/jcabi/jcabi-github
-17. https://github.com/google/jimfs - jmifs
-18. https://github.com/jooby-project/jooby/tree/3.x - jooby
-19. https://github.com/redis/lettuce
-20. https://github.com/modelmapper/modelmapper - core
+18. https://github.com/radsz/jacop
+19. https://github.com/DiUS/java-faker
+20. https://github.com/jcabi/jcabi-github
+21. https://github.com/checkstyle/checkstyle
+22. https://github.com/OpenHFT/Chronicle-Map
+23. https://github.com/classgraph/classgraph
     <br>
     <br>
-21. https://github.com/mybatis/mybatis-3
-22. https://github.com/LibrePDF/OpenPDF - openpdf-core
-23. https://github.com/pf4j/pf4j - pf4j
-24. https://github.com/scribejava/scribejava - scribejava-core
-25. https://github.com/jtablesaw/tablesaw - json
-26. https://github.com/apache/tika - tika-core
-27. https://github.com/undertow-io/undertow - core
+24. https://github.com/apache/commons-validator
+25. https://github.com/stanfordnlp/CoreNLP
+26. https://github.com/redis/lettuce
+27. https://github.com/mybatis/mybatis-3
 28. https://github.com/FasterXML/woodstox
 
 ## Steps
@@ -48,7 +48,7 @@ Then, for each project above, run the following steps:
 5. if it is still unsuccessful, discard the project
 6. if it is successful, continue to the next steps 
 7. if it is a multi-module project, the module we consider is indicated after the hyphen in the link above 
-8. cd to the module directory for those multi-module projects 
+8. cd to the module directory for those multi-module projects (for single module projects just stay under the root folder.)
 9. check if the project has jacoco plugin configured in the pom.xml 
 10. if not, add the jacoco plugin configuration to the pom.xml as given below. This should place under the <build><plugins> section of the pom.xml. If it is placed under any other tag (pluginManagement, profiles etc.), it will not work. So, please double check.
 ```xml
@@ -76,7 +76,7 @@ Then, for each project above, run the following steps:
 11. Check if the surefire plugin is configured in the pom (<artifactId>maven-surefire-plugin</artifactId>). This can be also under the root pom.xml or the module pom.xml. This plugin should definitely be there. Then, check if it has a line similar to <configuration><argLine>something here</argLine>. IF it is there and it does not contain, @{argLine}, add that part. So for example, if the existing arline is, ` <argLine>@{surefireArgLine} -Xmx768m</argLine>` update it to ` <argLine>@{argLine} @{surefireArgLine} -Xmx768m</argLine>`. If the <argLine> tag is not there, no need to change anything. This change is required for jacoco to work properly with surefire.
 12. run mvn clean test. This should create jacoco reports under the folder target/site/jacoco/. IF not please troubleshoot. 
 13. Now we can finally start running the tool. 
-14. run the preprocessor with the following command. Make sure you run under the correct folder (if it is a multi-module project it should be under the module, other wise it should be the project root folder). Adjust the paths as needed.
+14. run the preprocessor with the following command. Make sure you run under the correct folder (if it is a multi-module project it should be under the module, otherwise it should be the project root folder). Adjust the paths as needed.
 ```bash
 mvn io.github.chains-project:theo-preprocessor-maven-plugin:1.0-SNAPSHOT:preprocess -DoutputFile=/add-project-path-here/package-map.json
 ```
