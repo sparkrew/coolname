@@ -78,7 +78,7 @@ Then, for each project above, run the following steps:
 13. Now we can finally start running the tool. 
 14. run the preprocessor with the following command. Make sure you run under the correct folder (if it is a multi-module project it should be under the module, otherwise it should be the project root folder). Adjust the paths as needed.
 ```bash
-mvn io.github.chains-project:theo-preprocessor-maven-plugin:1.0-SNAPSHOT:preprocess -DoutputFile=/add-project-path-here/package-map.json
+mvn io.github.chains-project:preprocessor-maven-plugin:1.0-SNAPSHOT:preprocess -DoutputFile=/add-project-path-here/package-map.json
 ```
 15. run the api-finder by running the following command. Adjust the paths as needed.
 ```bash
