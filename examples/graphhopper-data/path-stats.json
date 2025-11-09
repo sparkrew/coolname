@@ -1,0 +1,2704 @@
+[
+  {
+    "publicMethod": "com.graphhopper.reader.dem.AbstractTiffElevationProvider.getEle",
+    "thirdPartyMethod": "org.apache.xmlgraphics.image.codec.tiff.TIFFImageDecoder.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.getEdges",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.equals",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.equals",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Geometry.convexHull",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.toString",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.toString",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.setShortcutForPrepareEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.sortGraphForGivenOrdering",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.buildRestrictionsForOSMRestriction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 23,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 16,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.shuffle",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgesMap.putIfReserved",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.prepareForContraction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.isPermutation",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.ArrayEdgeIntAccess.setInt",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.LineIntIndex.store",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.range",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.ArrayEdgeIntAccess.getInt",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.RestrictionTopology.node",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 5,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.calcEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 16,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.calcPoints",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 16,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 43,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.finishSearch",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.getFinalEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.reverse",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.RestrictionTopology.way",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 5,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 14,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.forEveryEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 16,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 14,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.createViaEdgeRestriction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.getLast",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.calcNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 16,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.getEdgeCount",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 75,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.checkIfTopologyIsCompatibleWithRestriction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.comparePaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 17,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgesMap.getEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryOverlayBuilder.build",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 7,
+    "longestPathLength": 7
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.invert",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 26,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 31,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.getToEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntSet.add",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntScatterSet.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.calculatePriority",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.contractNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongLongHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongLongHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongLongHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongLongHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongLongHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongLongHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongLongHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongLongHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.EncodedValueSerializer.serializeEncodedValue",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonProcessingException.getMessage",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.EncodedValueSerializer.deserializeEncodedValue",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonProcessingException.getMessage",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.dem.AbstractTiffElevationProvider.getEle",
+    "thirdPartyMethod": "org.apache.xmlgraphics.image.codec.tiff.TIFFDecodeParam.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntLongHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntLongHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntLongHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntLongHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntLongHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntLongHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntLongHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntLongHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.BridgePathFinder.find",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.clear",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.close",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.clear",
+    "totalPaths": 38,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.calculatePriority",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.contractNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryOverlayBuilder.build",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 6,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.size",
+    "totalPaths": 8,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WaySegmentParser.Pass1Handler.handleWay",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.buildRestrictionTopologyForGraph",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.size",
+    "totalPaths": 28,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.size",
+    "totalPaths": 12,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.RestrictionMembers.getAllWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.size",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WaySegmentParser.Pass2Handler.handleWay",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.ReaderWay.toString",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.extractMembers",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.size",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.getMaxLat",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Envelope.getMaxY",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.BBox.fromEnvelope",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Envelope.getMaxY",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHObjectIntHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.ObjectIntAssociativeContainer.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.add",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.calculatePriority",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.add",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.disconnect",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.add",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.BreadthFirstSearch.start",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.add",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.contractNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.add",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.add",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.RoundTripRouting.calcPaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.add",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.AlternativeRoute.calcAlternatives",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.add",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.addEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.buildRestrictionsForOSMRestriction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 6,
+    "shortestPathLength": 2,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ViaRouting.calcPaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 6,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgesMap.putIfReserved",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.EdgeChangeBuilder.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.NodeBasedWitnessPathSearcher.findUpperBound",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.withoutConsecutiveDuplicates",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.runSearch",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.addEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 6,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 8,
+    "shortestPathLength": 5,
+    "longestPathLength": 19
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.TurnCostStorage.sortNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.initSearch",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 6,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.next",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ViaRouting.lookup",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 6,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.IndexStructureInfo.create",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.NodeBasedWitnessPathSearcher.init",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.calcNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.subList",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.comparePaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 4,
+    "shortestPathLength": 3,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.HeadingResolver.getEdgesWithDifferentHeading",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.sortGraphAlongHilbertCurve",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 5,
+    "shortestPathLength": 2,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryOverlayBuilder.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.add",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.AlternativeRoute.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 18,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.AbstractBidirAlgo.calcPath",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 36,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.AlternativeRoute.searchBest",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 31,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Dijkstra.calcPath",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.setBaseNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 19,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.BridgePathFinder.find",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryGraph.setBaseNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 19,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryOverlayBuilder.build",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 1,
+    "shortestPathLength": 7,
+    "longestPathLength": 7
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.EdgeChangeBuilder.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.get",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision.getVertices",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.addLast",
+    "totalPaths": 6,
+    "shortestPathLength": 5,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.addLast",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.DepthFirstSearch.start",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.addLast",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.addLast",
+    "totalPaths": 6,
+    "shortestPathLength": 5,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.addLast",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.addLast",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.addLast",
+    "totalPaths": 8,
+    "shortestPathLength": 5,
+    "longestPathLength": 19
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.dem.AbstractTiffElevationProvider.getEle",
+    "thirdPartyMethod": "org.apache.xmlgraphics.image.codec.util.SeekableStream.wrapInputStream",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.Restriction.toString",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.toString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.InMemConstructionIndex.InMemLeafEntry.toString",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.toString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.RoadDensityCalculator.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanArrayIntSet.contains",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.BaseGraphNodesAndEdges.sortEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.BaseGraphNodesAndEdges.relabelNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.doWork",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 5,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.sortGraphAlongHilbertCurve",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.isPermutation",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.LandmarkExplorer.setSubnetworks",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.forEach",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.AlternativeRoute.calcAlternatives",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.forEach",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.minTo",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntIntScatterMap.put",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.set",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntIntScatterMap.put",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.\u003cinit\u003e",
+    "thirdPartyMethod": "org.locationtech.jts.geom.GeometryFactory.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.createCircle",
+    "thirdPartyMethod": "org.locationtech.jts.geom.GeometryFactory.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.geom.GeometryFactory.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.create",
+    "thirdPartyMethod": "org.locationtech.jts.geom.GeometryFactory.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.createRectangle",
+    "thirdPartyMethod": "org.locationtech.jts.geom.GeometryFactory.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.contains",
+    "thirdPartyMethod": "org.locationtech.jts.geom.GeometryFactory.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.AreaIndex.\u003cinit\u003e",
+    "thirdPartyMethod": "org.locationtech.jts.geom.GeometryFactory.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntSet.contains",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntScatterSet.contains",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.getSubdivision",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntObjectHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntObjectHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntObjectHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.BridgePathFinder.find",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntObjectHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.LineIntIndex.query",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.LocationIndexTree.findClosest",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.RoundTripRouting.calcPaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.ShortestPathTree.getIsochroneEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.ObjectCollection.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.dem.AbstractTiffElevationProvider.getEle",
+    "thirdPartyMethod": "org.apache.xmlgraphics.image.codec.tiff.TIFFImageDecoder.decodeAsRaster",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.clear",
+    "totalPaths": 32,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.clear",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.ExternalBooleanEncodedValue.setBool",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.clear",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.clear",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanArrayIntSet.remove",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.clear",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongObjectHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongObjectHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongObjectHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHLongObjectHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.isEmpty",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.isEmpty",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.extractMembers",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.isEmpty",
+    "totalPaths": 6,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.getMinLat",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Envelope.getMinY",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.BBox.fromEnvelope",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Envelope.getMinY",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.triangulate.quadedge.Vertex.setZ",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LMApproximator.approximate",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.addAll",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision.isFrameVertex",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntSet.remove",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntScatterSet.remove",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.clear",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.calculatePriority",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.clear",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.disconnect",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.clear",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.contractNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.clear",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.run",
+    "thirdPartyMethod": "org.openstreetmap.osmosis.osmbinary.Fileformat.Blob.hasRaw",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.ArrayEdgeIntAccess.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ViaRouting.lookup",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.edgeBased",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 4,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.IndexStructureInfo.create",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.withoutConsecutiveDuplicates",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgesMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.comparePaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 9,
+    "shortestPathLength": 4,
+    "longestPathLength": 19
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.NodeBasedWitnessPathSearcher.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.TurnCostStorage.sortNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.sortGraphAlongHilbertCurve",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 5,
+    "shortestPathLength": 2,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.DijkstraOneToMany.IntArrayListWithCap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.nodeBased",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 4,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.iterator",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WaySegmentParser.Pass1Handler.handleWay",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.buildRestrictionTopologyForGraph",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.iterator",
+    "totalPaths": 6,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.iterator",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WaySegmentParser.Pass2Handler.handleWay",
+    "thirdPartyMethod": "com.carrotsearch.hppc.LongArrayList.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.hashCode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.hashCode",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayDeque.removeFirst",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.Triangulation.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectHashMap.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.run",
+    "thirdPartyMethod": "org.openstreetmap.osmosis.osmbinary.Fileformat.Blob.hasZlibData",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.setTolerance",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.getMaxLon",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Envelope.getMaxX",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.BBox.fromEnvelope",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Envelope.getMaxX",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.toString",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Geometry.getNumPoints",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.edgeBased",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntScatterSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.RoadDensityCalculator.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntScatterSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntScatterSet.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.nodeBased",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntScatterSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.AbstractBidirAlgo.calcPath",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 51,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.AlternativeRoute.searchBest",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 45,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Dijkstra.calcPath",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.LandmarkExplorer.setStartNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 42,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryGraph.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.BridgePathFinder.find",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryOverlayBuilder.build",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 1,
+    "shortestPathLength": 7,
+    "longestPathLength": 7
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.put",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.weighting.custom.CustomModelParser.createWeightingParameters",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Geometry.getGeometryType",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.minTo",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntIntScatterMap.getOrDefault",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.get",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntIntScatterMap.getOrDefault",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.readCountries",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.resolveCustomAreas",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.EncodedValueSerializer.serializeEncodedValue",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.MaxSpeedCalculator.createLegalDefaultSpeeds",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LMPreparationHandler.init",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.EncodedValueSerializer.deserializeEncodedValue",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Router.route",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.NodeBasedWitnessPathSearcher.init",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.buildRestrictionsForOSMRestriction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.iterator",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryGraph.unfavorVirtualEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.iterator",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.isPermutation",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.RoundTripRouting.calcPaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHObjectIntHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.ObjectIntHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHObjectIntHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.ObjectIntHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHObjectIntHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.ObjectIntHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHObjectIntHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.ObjectIntHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.has",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntIntScatterMap.containsKey",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.prepareForContraction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.sorting.IndirectComparator.AscendingIntComparator.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.SplitArea.fromJsonFeature",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Geometry.getNumGeometries",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.CustomArea.fromJsonFeature",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Geometry.getNumGeometries",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.toString",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Geometry.getNumGeometries",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.buildRestrictionsForOSMRestriction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 5,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.constant",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.zero",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.InMemConstructionIndex.InMemLeafEntry.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.NodeResult.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.calcNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.range",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.subList",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.HeadingResolver.getEdgesWithDifferentHeading",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryOverlayBuilder.build",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 8
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.invert",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.\u003cinit\u003e",
+    "thirdPartyMethod": "org.locationtech.jts.geom.impl.PackedCoordinateSequence.Double.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.BaseGraphNodesAndEdges.sortEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.BaseGraphNodesAndEdges.relabelNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.sortGraphAlongHilbertCurve",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.isPermutation",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryGraph.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.contains",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.contains",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.getLast",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.RestrictionTopology.way",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.calcNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.CHPathCalculator.calcPaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.buildRestrictionsForOSMRestriction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.RestrictionTopology.node",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.calcEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.calcPoints",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ViaRouting.lookup",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.isEmpty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntScatterSet.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 5,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.ArrayEdgeIntAccess.setInt",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.set",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.setShortcutForPrepareEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.range",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.prepareForContraction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.set",
+    "totalPaths": 3,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.invert",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.set",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 9
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.readCountries",
+    "thirdPartyMethod": "com.bedatadriven.jackson.datatype.jts.JtsModule.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.resolveCustomAreas",
+    "thirdPartyMethod": "com.bedatadriven.jackson.datatype.jts.JtsModule.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LMPreparationHandler.init",
+    "thirdPartyMethod": "com.bedatadriven.jackson.datatype.jts.JtsModule.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.LandmarkExplorer.initLandmarkWeights",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.forEach",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryGraph.create",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.forEach",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.forEach",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate",
+    "thirdPartyMethod": "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.setSites",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntIntScatterMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 5,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.LandmarkExplorer.initLandmarkWeights",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.size",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryGraph.create",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.size",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.size",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectMap.size",
+    "totalPaths": 4,
+    "shortestPathLength": 4,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectScatterMap.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.BridgePathFinder.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntObjectScatterMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntContainer.size",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.coll.GHIntHashSet.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntContainer.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.contractNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntContainer.size",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.contains",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.BreadthFirstSearch.start",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.contains",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.AlternativeRoute.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.contains",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.weighting.AvoidEdgesWeighting.calcEdgeWeight",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntSet.contains",
+    "totalPaths": 19,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.Polygon.getMinLon",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Envelope.getMinX",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.shapes.BBox.fromEnvelope",
+    "thirdPartyMethod": "org.locationtech.jts.geom.Envelope.getMinX",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.\u003cinit\u003e",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.toString",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.OSMRestrictionConverter.buildRestrictionsForOSMRestriction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 27,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 5,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.prepareForContraction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.querygraph.EdgeChangeBuilder.apply",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.LineIntIndex.store",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.OrigEdgeIteratorImpl.next",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.weighting.QueryGraphWeighting.calcTurnMillis",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 29,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.ArrayEdgeIntAccess.getInt",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.TurnCostStorage.sortNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.finishSearch",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.getFinalEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgesMap.next",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.getFromEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.getShortcutForPrepareEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.Path.forEveryEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 29,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.weighting.QueryGraphWeighting.calcTurnWeight",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 28,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.getLast",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.subList",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.OrigEdgeIteratorImpl.getAdjNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.comparePaths",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 26,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.OrigEdgeIteratorImpl.setBaseNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.reader.osm.WayToEdgesMap.getEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.invert",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.OrigEdgeIteratorImpl.getOrigEdgeKeyFirst",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.setRestrictions",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 19,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 22,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction.getToEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntArrayList.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.util.GHUtility.readCountries",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.registerModule",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.resolveCustomAreas",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.registerModule",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LMPreparationHandler.init",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.registerModule",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.calcSortOrder",
+    "thirdPartyMethod": "com.carrotsearch.hppc.sorting.IndirectSort.mergesort",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.CHPreparationGraph.prepareForContraction",
+    "thirdPartyMethod": "com.carrotsearch.hppc.sorting.IndirectSort.mergesort",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.sortGraphAlongHilbertCurve",
+    "thirdPartyMethod": "com.carrotsearch.hppc.sorting.IndirectSort.mergesort",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntContainer.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.EdgeBasedNodeContractor.contractNode",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntContainer.iterator",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ch.PrepareContractionHierarchies.doWork",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntContainer.iterator",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 7
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.index.LineIntIndex.onEdge",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.add",
+    "totalPaths": 19,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks",
+    "thirdPartyMethod": "com.carrotsearch.hppc.IntHashSet.add",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 2,
+    "shortestPathLength": 6,
+    "longestPathLength": 7
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 2,
+    "shortestPathLength": 6,
+    "longestPathLength": 7
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 32,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 2,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.BaseGraphNodesAndEdges.sortEdges",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.storage.BaseGraphNodesAndEdges.relabelNodes",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.ev.ExternalBooleanEncodedValue.setBool",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsRecursive",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanArrayIntSet.add",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.graphhopper.GraphHopper.sortGraphAlongHilbertCurve",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "com.graphhopper.util.ArrayUtil.isPermutation",
+    "thirdPartyMethod": "com.carrotsearch.hppc.BitSet.set",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  }
+]

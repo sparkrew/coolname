@@ -1,0 +1,148 @@
+[ {
+  "method" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.error(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.warn(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.info(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.debug(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.isWarnEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.isTraceEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.trace(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.bouncycastle.jce.provider.BouncyCastleProvider.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.KeyTransRecipientId.getSerialNumber()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.KeyTransRecipientId.getIssuer()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cert.X509CertificateHolder.getIssuer()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.isDebugEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.bouncycastle.asn1.ASN1InputStream.<init>(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.ASN1InputStream.readObject()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.x509.TBSCertificate.getInstance(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.ASN1InputStream.close()",
+  "covered" : false
+}, {
+  "method" : "org.bouncycastle.asn1.x509.TBSCertificate.getSubjectPublicKeyInfo()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.x509.SubjectPublicKeyInfo.getAlgorithm()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.x509.TBSCertificate.getIssuer()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.x509.TBSCertificate.getSerialNumber()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.ASN1Integer.getValue()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.cms.IssuerAndSerialNumber.<init>(org.bouncycastle.asn1.x500.X500Name, java.math.BigInteger)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.x509.AlgorithmIdentifier.getAlgorithm()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.ASN1ObjectIdentifier.getId()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.DEROctetString.<init>(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.cms.RecipientIdentifier.<init>(org.bouncycastle.asn1.cms.IssuerAndSerialNumber)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.cms.KeyTransRecipientInfo.<init>(org.bouncycastle.asn1.cms.RecipientIdentifier, org.bouncycastle.asn1.x509.AlgorithmIdentifier, org.bouncycastle.asn1.ASN1OctetString)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cert.X509CertificateHolder.<init>(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.CMSEnvelopedData.<init>(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.CMSEnvelopedData.getRecipientInfos()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.RecipientInformationStore.getRecipients()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.RecipientInformation.getRID()",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.RecipientId.match(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient.<init>(java.security.PrivateKey)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.cms.RecipientInformation.getContent(org.bouncycastle.cms.Recipient)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.util.Arrays.copyOf(byte[], int)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.ASN1Primitive.encodeTo(java.io.OutputStream, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.cms.RecipientInfo.<init>(org.bouncycastle.asn1.cms.KeyTransRecipientInfo)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.DERSet.<init>(org.bouncycastle.asn1.ASN1Encodable)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.ASN1ObjectIdentifier.<init>(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.x509.AlgorithmIdentifier.<init>(org.bouncycastle.asn1.ASN1ObjectIdentifier, org.bouncycastle.asn1.ASN1Encodable)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.cms.EncryptedContentInfo.<init>(org.bouncycastle.asn1.ASN1ObjectIdentifier, org.bouncycastle.asn1.x509.AlgorithmIdentifier, org.bouncycastle.asn1.ASN1OctetString)",
+  "covered" : false
+}, {
+  "method" : "org.bouncycastle.asn1.cms.EnvelopedData.<init>(org.bouncycastle.asn1.cms.OriginatorInfo, org.bouncycastle.asn1.ASN1Set, org.bouncycastle.asn1.cms.EncryptedContentInfo, org.bouncycastle.asn1.ASN1Set)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.cms.ContentInfo.<init>(org.bouncycastle.asn1.ASN1ObjectIdentifier, org.bouncycastle.asn1.ASN1Encodable)",
+  "covered" : true
+}, {
+  "method" : "org.bouncycastle.asn1.cms.ContentInfo.toASN1Primitive()",
+  "covered" : true
+} ]

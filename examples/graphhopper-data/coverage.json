@@ -1,0 +1,757 @@
+[ {
+  "method" : "com.carrotsearch.hppc.IntArrayList.toString()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.sym()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.get(int)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.net.URL, java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "de.westnordost.osm_legal_default_speeds.LegalDefaultSpeeds.<init>(java.util.Map, java.util.Map)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.add(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$Blob.parseFrom(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$Blob.hasRaw()",
+  "covered" : false
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$Blob.getRaw()",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.ByteString.toByteArray()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$Blob.hasZlibData()",
+  "covered" : false
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$Blob.getZlibData()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$Blob.getRawSize()",
+  "covered" : true
+}, {
+  "method" : "com.bedatadriven.jackson.datatype.jts.JtsModule.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.registerModule(com.fasterxml.jackson.databind.Module)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.BitSet.get(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.BitSet.clear(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectScatterMap.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.iterator()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectScatterMap.indexOf(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectScatterMap.indexInsert(int, int, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectScatterMap.indexGet(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.HashOrderMixing.constant(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntSet.clear()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntSet.add(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.size()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.get(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.GeometryFactory.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.Coordinate[])",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayList.size()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayList.<init>(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayList.addAll(com.carrotsearch.hppc.LongContainer)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.size()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectHashMap.<init>(int)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.procedures.IntObjectProcedure)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.<init>(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.addAll(com.carrotsearch.hppc.IntContainer)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongSet.contains(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.sorting.IndirectSort.mergesort(int, int, com.carrotsearch.hppc.sorting.IndirectComparator)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.prep.PreparedPolygon.getGeometry()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Geometry.isRectangle()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Geometry.getEnvelopeInternal()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntDoubleHashMap.<init>(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntDoubleHashMap.put(int, double)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntDoubleHashMap.forEach(java.util.function.Consumer)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.LongSet.clear()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.isEmpty()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.iterator()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.LongSet.add(long)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.PrecisionModel.<init>(double)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.GeometryFactory.<init>(org.locationtech.jts.geom.PrecisionModel)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntHashSet.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntHashSet.add(int)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.valueToTree(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonProcessingException.getMessage()",
+  "covered" : false
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Relation.getKeysList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Relation.getValsList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Relation.getId()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Relation.getMemidsList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Relation.getRolesSidList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Relation.getTypesList()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntIndexedContainer.size()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntIndexedContainer.set(int, int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.from(int[])",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveBlock.getGranularity()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveBlock.getLatOffset()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveBlock.getLonOffset()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveBlock.getDateGranularity()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveBlock.getStringtable()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$StringTable.getSCount()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$StringTable.getS(int)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.ByteString.toStringUtf8()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Envelope.getMinY()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntContainer.size()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.resize(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.set(int, int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.contains(int)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.oPrev()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntSet.release()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongSet.release()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readTree(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.treeToValue(com.fasterxml.jackson.core.TreeNode, java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$DenseNodes.getIdList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$DenseNodes.getLatList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$DenseNodes.getLonList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$DenseNodes.getKeysValsList()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntHashSet.size()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntContainer.iterator()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.LongHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.LongSet.removeAll(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntIntScatterMap.getOrDefault(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntIntScatterMap.put(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntSet.contains(int)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ArrayNode.forEach(java.util.function.Consumer)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntScatterSet.<init>(int)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayList.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayList.add(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.BitSet.<init>(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.BitSet.set(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayList.iterator()",
+  "covered" : false
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$HeaderBlock.parseFrom(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$HeaderBlock.getRequiredFeaturesList()",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.ProtocolStringList.iterator()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$HeaderBlock.getOsmosisReplicationTimestamp()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.orig()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntHashSet.<init>(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongHashSet.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.ObjectIntAssociativeContainer.size()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.LongScatterSet.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.prep.PreparedGeometry.intersects(org.locationtech.jts.geom.Geometry)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.BitSet.<init>(long[], int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayList.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.dPrev()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$BlobHeader.parseFrom(byte[])",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIntMap.put(long, int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.hashCode()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlgraphics.image.codec.util.SeekableStream.wrapInputStream(java.io.InputStream, boolean)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlgraphics.image.codec.tiff.TIFFDecodeParam.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlgraphics.image.codec.tiff.TIFFImageDecoder.<init>(org.apache.xmlgraphics.image.codec.util.SeekableStream, org.apache.xmlgraphics.image.codec.tiff.TIFFDecodeParam)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlgraphics.image.codec.tiff.TIFFImageDecoder.decodeAsRaster()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.io.Reader, java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.dest()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.lNext()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntHashSet.addAll(int[])",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntHashSet.contains(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectHashMap.put(int, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectHashMap.get(int)",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveBlock.parseFrom(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveBlock.getPrimitivegroupList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveGroup.getDense()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveGroup.getNodesList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveGroup.getWaysList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$PrimitiveGroup.getRelationsList()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIntMap.indexOf(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIntMap.indexGet(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIntMap.indexReplace(int, int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.release()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectHashMap.values()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.ObjectCollection.iterator()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.lang.String, java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision.getEdges()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayDeque.getLast()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayDeque.removeLast()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.trimToSize()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectHashMap.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayDeque.isEmpty()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayDeque.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayDeque.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.BitSet.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Geometry.getNumGeometries()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Geometry.getGeometryN(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.toArray()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.index.strtree.STRtree.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.prep.PreparedGeometryFactory.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.prep.PreparedGeometryFactory.create(org.locationtech.jts.geom.Geometry)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Polygon.getEnvelopeInternal()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.index.strtree.STRtree.insert(org.locationtech.jts.geom.Envelope, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.index.strtree.STRtree.build()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.util.PolygonExtracter.getPolygons(org.locationtech.jts.geom.Geometry, java.util.List)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.ObjectIntHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntIntScatterMap.containsKey(int)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntIndexedContainer.isEmpty()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Envelope.<init>(double, double, double, double)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.index.strtree.STRtree.query(org.locationtech.jts.geom.Envelope)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.GeometryFactory.createPoint(org.locationtech.jts.geom.Coordinate)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.cursors.IntCursor.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.clear()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.BitSet.get(long)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.algorithm.RectangleLineIntersector.intersects(org.locationtech.jts.geom.Coordinate, org.locationtech.jts.geom.Coordinate)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntScatterSet.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntIntScatterMap.<init>(int)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.geom.Envelope.getMaxY()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.algorithm.RectangleLineIntersector.<init>(org.locationtech.jts.geom.Envelope)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.impl.PackedCoordinateSequence$Double.<init>(org.locationtech.jts.geom.Coordinate[], int)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.CoordinateSequence)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.prep.PreparedPolygon.<init>(org.locationtech.jts.geom.Polygonal)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.prep.PreparedGeometry.getGeometry()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntScatterSet.remove(int)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.dNext()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$BlobHeader.getType()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongArrayDeque.removeLast()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.util.Assert.equals(java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayList.equals(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntScatterSet.add(int)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.setSites(java.util.Collection)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.setTolerance(double)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.getEdges(org.locationtech.jts.geom.GeometryFactory)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.geom.Geometry.convexHull()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.DelaunayTriangulationBuilder.getSubdivision()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision.getVertices(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision.isFrameVertex(org.locationtech.jts.triangulate.quadedge.Vertex)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.Vertex.setZ(double)",
+  "covered" : false
+}, {
+  "method" : "de.westnordost.osm_legal_default_speeds.LegalDefaultSpeeds.isRelevantTagKey(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.setVisibility(com.fasterxml.jackson.annotation.PropertyAccessor, com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.writeValueAsBytes(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(byte[], java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Way.getKeysList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Way.getValsList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Way.getId()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Way.getRefsList()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIndexedContainer.add(long)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.Geometry.getGeometryType()",
+  "covered" : false
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Node.getKeysList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Node.getValsList()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Node.getId()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Node.getLat()",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Osmformat$Node.getLon()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIntScatterMap.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.BitSet.cardinality()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIntMap.containsKey(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIntMap.get(long)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.containsKey(int)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntSet.forEach(com.carrotsearch.hppc.procedures.IntProcedure)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongIntMap.forEach(com.carrotsearch.hppc.procedures.LongIntProcedure)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.getOrDefault(int, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntScatterSet.contains(int)",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.geom.Geometry.getNumPoints()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.geom.Envelope.getMaxX()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayDeque.size()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.oNext()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayDeque.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayDeque.removeFirst()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.geom.Envelope.getMinX()",
+  "covered" : false
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.Vertex.getCoordinate()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.Vertex.midPoint(org.locationtech.jts.triangulate.quadedge.Vertex)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.GeometryFactory.createLinearRing(org.locationtech.jts.geom.Coordinate[])",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.GeometryFactory.createMultiPolygon(org.locationtech.jts.geom.Polygon[])",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.predicates.IntObjectPredicate)",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.getPrimary()",
+  "covered" : true
+}, {
+  "method" : "org.locationtech.jts.geom.prep.PreparedGeometry.contains(org.locationtech.jts.geom.Geometry)",
+  "covered" : true
+}, {
+  "method" : "org.openstreetmap.osmosis.osmbinary.Fileformat$BlobHeader.getDatasize()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongHashSet.<init>(com.carrotsearch.hppc.LongContainer)",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.LongHashSet.size()",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.sorting.IndirectComparator$AscendingIntComparator.<init>(int[])",
+  "covered" : false
+}, {
+  "method" : "com.carrotsearch.hppc.IntHashSet.from(int[])",
+  "covered" : true
+}, {
+  "method" : "com.carrotsearch.hppc.IntArrayDeque.<init>(int)",
+  "covered" : false
+} ]

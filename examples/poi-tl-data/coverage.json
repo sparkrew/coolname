@@ -1,0 +1,2392 @@
+[ {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getStyle()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.StringUtils.isNotEmpty(java.lang.CharSequence)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setStyle(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.isBold()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setBold(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getColor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.StringUtils.isNotBlank(java.lang.CharSequence)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setColor(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getCharacterSpacing()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setCharacterSpacing(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getFontFamily(org.apache.poi.xwpf.usermodel.XWPFRun$FontCharRange)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getFontFamily()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setFontFamily(java.lang.String, org.apache.poi.xwpf.usermodel.XWPFRun$FontCharRange)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getFontSizeAsDouble()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setFontSize(double)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.isItalic()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setItalic(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.isStrikeThrough()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setStrikeThrough(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getUnderline()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setUnderline(org.apache.poi.xwpf.usermodel.UnderlinePatterns)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getUnderlineColor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setUnderlineColor(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.util.Units.pixelToEMU(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.addPicture(java.io.InputStream, int, java.lang.String, int, int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.getTable()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.getRows()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.ClassUtils.getShortClassName(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTOfPieChart.addNewSer()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.addNewCat()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.addNewVal()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.addNewIdx()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTUnsignedInt.setVal(long)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.addNewOrder()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr.getHeaderReferenceList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHdrFtrRef.getId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFHyperlinkRun.getCTHyperlink()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHyperlink.copy()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFHyperlinkRun.getCTR()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.copy()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFHyperlinkRun.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHyperlink, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR, org.apache.poi.xwpf.usermodel.IRunBody)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFFieldRun.getCTField()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSimpleField.copy()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFFieldRun.getCTR()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFFieldRun.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSimpleField, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR, org.apache.poi.xwpf.usermodel.IRunBody)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getCTR()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR, org.apache.poi.xwpf.usermodel.IRunBody)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtBlock.getSdtPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtBlock.getSdtContent()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.getCTChart()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTChart.isSetTitle()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTChart.unsetTitle()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTChart.getTitle()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.setTitleText(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.setTitleOverlay(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.getRow(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.removeCell(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.getTableCells()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.getCtRow()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.sizeOfTcArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.removeTc(int)",
+  "covered" : false
+}, {
+  "method" : "com.microsoft.schemas.vml.CTShape.getImagedataList()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.collections4.CollectionUtils.isNotEmpty(java.util.Collection)",
+  "covered" : false
+}, {
+  "method" : "com.microsoft.schemas.vml.CTShape.getImagedataArray(int)",
+  "covered" : false
+}, {
+  "method" : "com.microsoft.schemas.vml.CTImageData.setId2(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.getCell(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getCTTc()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc.getTcPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTcPr.getGridSpan()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDecimalNumber.getVal()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDecimalNumber.setVal(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtContentRun.addNewR()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtPr.getDataBinding()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComments.getComments()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComment.getCtComment()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTComment.getId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.getCTTbl()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl.getTblPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl.addNewTblPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.isSetTblW()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.addNewTblW()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getParent()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IRunBody.getPart()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFHeaderFooter.addPictureData(byte[], int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getBodyElements()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getHeaderList()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getFooterList()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getFootnotes()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getEndnotes()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getDocComments()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ss.util.CellRangeAddress.<init>(int, int, int, int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.formatRange(org.apache.poi.ss.util.CellRangeAddress)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFDataSourcesFactory.fromArray(java.lang.Number[], java.lang.String, int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getRuns()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFFieldRun.setFieldInstruction(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.createRun()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toParent()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toNextSibling()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.SchemaType.getName()",
+  "covered" : false
+}, {
+  "method" : "javax.xml.namespace.QName.getNamespaceURI()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.beginElement(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.getObject()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.dispose()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.FootnoteEndnoteIdManager.<init>(org.apache.poi.xwpf.usermodel.XWPFDocument)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFEndnote.getId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFEndnote.getCTFtnEdn()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.FootnoteEndnoteIdManager.nextId()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFtnEdn.setId(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFEndnotes.addEndnote(org.apache.poi.xwpf.usermodel.XWPFEndnote)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.isSetColor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.xgetColor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STHexColor.getStringValue()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.isSetSz()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.getSz()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.getVal()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STBorder$Enum.toString()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable$XWPFBorderType.valueOf(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.insertNewTc(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.getBody()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc, org.apache.poi.xwpf.usermodel.XWPFTableRow, org.apache.poi.xwpf.usermodel.IBody)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getIRuns()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getCTP()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.selectPath(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toNextSelection()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getBody()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFHeaderFooter.getXWPFDocument()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getRelationId(org.apache.poi.ooxml.POIXMLDocumentPart)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.isSetPPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.getPPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.isSetSectPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getSectPr()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getDocument()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDocument1.getBody()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody.isSetSectPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody.getSectPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.getLastRenderedPageBreakList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.getTblW()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblWidth.setType(org.openxmlformats.schemas.wordprocessingml.x2006.main.STTblWidth$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblWidth.setW(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblGrid.addNewGridCol()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblGridCol.setW(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.microsoft.schemas.vml.CTShape.getAlt()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBody.insertNewParagraph(org.apache.xmlbeans.XmlCursor)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP, org.apache.poi.xwpf.usermodel.IBody)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toPrevSibling()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toCursor(org.apache.xmlbeans.XmlCursor)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toEndToken()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFNum.getCTNum()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTNum.getNumId()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTNum.getAbstractNumId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFNumbering.getAbstractNum(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFAbstractNum.getCTAbstractNum()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum.isSetNsid()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum.unsetNsid()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum.isSetTmpl()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum.unsetTmpl()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum.setAbstractNumId(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDrawing.sizeOfAnchorArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDrawing.getAnchorArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.wordprocessingDrawing.CTAnchor.getDocPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDrawing.sizeOfInlineArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDrawing.getInlineArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.wordprocessingDrawing.CTInline.getDocPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtContentRun.setRArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBody.insertNewTbl(org.apache.xmlbeans.XmlCursor)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.setWidth(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.getWidthType()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblLayoutType.setType(org.openxmlformats.schemas.wordprocessingml.x2006.main.STTblLayoutType$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.setWidth(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.tuple.ImmutablePair.of(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.tuple.Pair.getLeft()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.tuple.Pair.getRight()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.text()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.toString()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.isSetExplosion()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.getExplosion()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTUnsignedInt.getVal()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setText(java.lang.String, int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.addNewFldChar()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFldChar.setFldCharType(org.openxmlformats.schemas.wordprocessingml.x2006.main.STFldCharType$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.addNewInstrText()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTText.setStringValue(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.monitor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.impl.CTPImpl.get_store()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.impl.values.TypeStore.insert_element_user(org.apache.xmlbeans.QNameSet, javax.xml.namespace.QName, int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTChartSpace.isSetExternalData()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTChartSpace.getExternalData()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTChartSpace.addNewExternalData()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTExternalData.setId(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTExternalData.isSetAutoUpdate()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTExternalData.addNewAutoUpdate()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTBoolean.setVal(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFStyle.getStyleId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFStyles.styleExist(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFStyle.setStyleId(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFStyle.getCTStyle()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.isSetDefault()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.xgetDefault()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.util.POIXMLUnits.parseOnOff(org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STOnOff)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.getType()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.getStyleId()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.unsetDefault()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.isSetName()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.getName()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTString.getVal()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.StringUtils.isBlank(java.lang.CharSequence)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTString.setVal(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.isSetBasedOn()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTStyle.getBasedOn()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFStyles.addStyle(org.apache.poi.xwpf.usermodel.XWPFStyle)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTChart.getPlotArea()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPlotArea.sizeOfValAxArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPlotArea.getValAxArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTValAx.getAxId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFValueAxis.<init>(org.openxmlformats.schemas.drawingml.x2006.chart.CTValAx)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.collections4.CollectionUtils.isEmpty(java.util.Collection)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getTableRow()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getWidth()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getWidthType()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getPart()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.util.Units.pixelToPoints(double)",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.InputSource.<init>(java.io.Reader)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.util.DocumentHelper.readDocument(org.xml.sax.InputSource)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Document.getDocumentElement()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.impl.schema.XmlObjectFactory.parse(org.w3c.dom.Node, org.apache.xmlbeans.XmlOptions)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.set(org.apache.xmlbeans.XmlObject)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr.isSetPgMar()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr.getPgMar()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr.isSetPgSz()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr.getPgSz()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.insertNewFieldRun(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSimpleField.setInstr(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSimpleField.setDirty(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTable.setRef(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTable.getTableColumns()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumns.setCount(long)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumns.sizeOfTableColumnArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumns.removeTableColumn(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumns.addNewTableColumn()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumn.setId(long)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumn.setName(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.tuple.Pair.getKey()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.tuple.Pair.getValue()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.POIXMLFactory.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageMar.xgetLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STTwipsMeasure.getStringValue()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageMar.xgetTop()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STSignedTwipsMeasure.getStringValue()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageMar.xgetBottom()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageMar.xgetRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageMar.xgetGutter()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.isSetTrPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.getTrPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.addNewTrPr()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.setHeight(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.sizeOfTrHeightArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.addNewTrHeight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.getTrHeightArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHeight.setHRule(org.openxmlformats.schemas.wordprocessingml.x2006.main.STHeightRule$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.sizeOfTblHeaderArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.addNewTblHeader()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.getTblHeaderArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTOnOff.setVal(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.sizeOfCantSplitArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.addNewCantSplit()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTrPr.getCantSplitArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getText(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getEmbeddedPictures()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBody.getParagraphs()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.addRow(org.apache.poi.xwpf.usermodel.XWPFTableRow, int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow, org.apache.poi.xwpf.usermodel.XWPFTable)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.set(org.apache.xmlbeans.XmlObject)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTcPr.getVMerge()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTVMerge.getVal()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getParagraphArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDocument1.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlObject.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.util.IOUtils.toByteArray(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.util.IOUtils.closeQuietly(java.io.Closeable)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtContentBlock.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl, org.apache.poi.xwpf.usermodel.IBody)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBookmark.setId(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBookmark.getId()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTMarkupRange.setId(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.<init>(org.apache.poi.openxml4j.opc.PackagePart)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.impl.schema.DocumentFactory.newInstance()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum.addNewLvl()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.isSetPPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.getPPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.addNewPPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPrBase.isSetInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPrBase.getInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPrBase.addNewInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.setLeft(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STNumberFormat$Enum.forInt(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.addNewNumFmt()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTNumFmt.setVal(org.openxmlformats.schemas.wordprocessingml.x2006.main.STNumberFormat$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.addNewLvlText()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLevelText.setVal(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.addNewStart()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.setIlvl(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.addNewLvlJc()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTJc.setVal(org.openxmlformats.schemas.wordprocessingml.x2006.main.STJc$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTLvl.addNewRPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRPr.addNewRFonts()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFonts.setAscii(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFonts.setHAnsi(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFonts.setHint(org.openxmlformats.schemas.wordprocessingml.x2006.main.STHint$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFAbstractNum.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFNumbering.addAbstractNum(org.apache.poi.xwpf.usermodel.XWPFAbstractNum)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFNumbering.addNum(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.springframework.util.Assert.state(boolean, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.TypedValue.<init>(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.createParagraph()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setText(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.util.IdentifierManager.reserve(long)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPicture.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toLastChild()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTComment.setPArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.isSetRPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.getRPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.addNewRPr()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFPictureData.getData()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFPictureData.getPictureType()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBookmark.setName(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTNonVisualDrawingProps.getDescr()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBody.getTables()",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.spel.CodeFlow.lastDescriptor()",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.spel.CodeFlow.loadTarget(org.springframework.asm.MethodVisitor)",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.spel.CodeFlow.insertCheckCast(org.springframework.asm.MethodVisitor, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.springframework.asm.MethodVisitor.visitLdcInsn(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.springframework.asm.MethodVisitor.visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String, boolean)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHyperlink.getRArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSimpleField.getRArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRPr.sizeOfColorArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRPr.getColorArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRPr.addNewColor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTColor.setVal(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTColor.isSetThemeColor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTColor.unsetThemeColor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRPr.sizeOfHighlightArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRPr.getHighlightArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRPr.addNewHighlight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STHighlightColor$Enum.forInt(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHighlight.setVal(org.openxmlformats.schemas.wordprocessingml.x2006.main.STHighlightColor$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.setVerticalAlignment(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData.<init>(org.apache.poi.xddf.usermodel.chart.XDDFChart)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChart.getChartSeries()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTOfPieChart.getSerList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.getCat()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.getVal()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.addBreak(org.apache.poi.xwpf.usermodel.BreakType)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody.xmlText(org.apache.xmlbeans.XmlOptions)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.addParagraph()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getParagraphs()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.removeParagraph(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.compress.utils.IOUtils.closeQuietly(java.io.Closeable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFValueAxis.getPosition()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFValueAxis.setTitle(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.insertNewTableRow(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTVMerge.setVal(org.openxmlformats.schemas.wordprocessingml.x2006.main.STMerge$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.removeRow(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFDataSourcesFactory.fromDataSource(org.openxmlformats.schemas.drawingml.x2006.chart.CTAxDataSource)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFDataSourcesFactory.fromDataSource(org.openxmlformats.schemas.drawingml.x2006.chart.CTNumDataSource)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData$Series.<init>(org.apache.poi.xddf.usermodel.chart.XDDFChartData, org.apache.poi.xddf.usermodel.chart.XDDFDataSource, org.apache.poi.xddf.usermodel.chart.XDDFNumericalDataSource)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtRun.getSdtPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtRun.getSdtContent()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFFootnote.getId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFFootnote.getCTFtnEdn()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFFootnotes.addFootnote(org.apache.poi.xwpf.usermodel.XWPFFootnote)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr.getFooterReferenceList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.isSetTblLayout()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.getTblLayout()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.addNewTblLayout()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBodyElement.getElementType()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComment.removeTable(org.apache.poi.xwpf.usermodel.XWPFTable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComment.removeParagraph(org.apache.poi.xwpf.usermodel.XWPFParagraph)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IRunBody.getDocument()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setNumID(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setNumILvl(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl.setTrArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.tuple.Pair.of(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.POIXMLDocumentPart$RelationPart.getRelationship()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackageRelationship.getId()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTComment.setTblArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getParagraph()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getPart()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getDocument()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComments.createComment(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComment.setAuthor(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComment.setDate(java.util.Calendar)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComment.setInitials(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFComment.createParagraph()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.addNewCommentReference()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTMarkup.setId(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.sizeOfBrArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.sizeOfCrArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.sizeOfTabArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.impl.CTRImpl.monitor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.impl.CTRImpl.get_store()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.impl.values.TypeStore.find_all_element_users(org.apache.xmlbeans.QNameSet, java.util.List)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTEmpty.getDomNode()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.getNodeName()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.addBreak()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.addCarriageReturn()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.addTab()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.addNewBr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBr.getType()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBr.setType(org.openxmlformats.schemas.wordprocessingml.x2006.main.STBrType$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBr.getClear()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBr.setClear(org.openxmlformats.schemas.wordprocessingml.x2006.main.STBrClear$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTText.getStringValue()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDataBinding.getXpath()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRun.getDocument()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.getDrawingList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.selectPath(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlObject.xmlText()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.impl.schema.DocumentFactory.parse(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlObject.set(org.apache.xmlbeans.XmlObject)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getText()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setAlignment(org.apache.poi.xwpf.usermodel.ParagraphAlignment)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setSpacingBetween(double, org.apache.poi.xwpf.usermodel.LineSpacingRule)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setSpacingBeforeLines(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setSpacingAfterLines(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setSpacingBefore(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setSpacingAfter(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.addNewPPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.isSetInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.addNewInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.setLeftChars(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.isSetLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.unsetLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.setRightChars(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.isSetRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.unsetRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.setHangingChars(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.isSetHanging()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.unsetHanging()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.setFirstLineChars(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.isSetFirstLine()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTInd.unsetFirstLine()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.isSetPBdr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getPBdr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.addNewPBdr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.isSetLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.getLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.addNewLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.isSetTop()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.getTop()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.addNewTop()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.isSetRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.getRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.addNewRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.isSetBottom()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.getBottom()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPBdr.addNewBottom()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.isSetShd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getShd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.addNewShd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTShd.setVal(org.openxmlformats.schemas.wordprocessingml.x2006.main.STShd$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STShd$Enum.forInt(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTShd.setColor(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTShd.setFill(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setStyle(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.isSetKeepLines()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getKeepLines()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.addNewKeepLines()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setKeepNext(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.setPageBreak(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.isSetWidowControl()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getWidowControl()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.addNewWidowControl()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.isSetWordWrap()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getWordWrap()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.addNewWordWrap()",
+  "covered" : false
+}, {
+  "method" : "javax.xml.namespace.QName.<init>(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.impl.CTNonVisualDrawingPropsImpl.monitor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.impl.CTNonVisualDrawingPropsImpl.get_store()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.impl.values.TypeStore.find_attribute_user(javax.xml.namespace.QName)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.SimpleValue.getStringValue()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTxbxContent.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFSDT.<init>(org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtBlock, org.apache.poi.xwpf.usermodel.IBody)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.createRow()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.createCell()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.currentTokenType()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor$TokenType.isStart()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.hasNextToken()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toNextToken()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFSheet.getTables()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFSheet.createTable(org.apache.poi.ss.util.AreaReference)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFTable.getCTTable()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTable.addNewTableColumns()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblGrid.insertNewGridCol(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblGrid.removeGridCol(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtContentRun.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.getTblBorders()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.addNewTblBorders()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.isSetBottom()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.addNewBottom()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.isSetLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.addNewLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.isSetTop()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.addNewTop()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.isSetRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.addNewRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.isSetInsideH()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.addNewInsideH()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.isSetInsideV()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.addNewInsideV()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.getBottom()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.setSz(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.getLeft()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.getTop()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.getRight()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.getInsideH()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblBorders.getInsideV()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTOfPieChart.isSetVaryColors()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTOfPieChart.unsetVaryColors()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTOfPieChart.getVaryColors()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTOfPieChart.addNewVaryColors()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.unsetExplosion()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.addNewExplosion()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.getPackagePart()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.POIXMLDocumentPart$RelationPart.getDocumentPart()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.setChartIndex(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.getWorkbook()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.setWorkbook(org.apache.poi.xssf.usermodel.XSSFWorkbook)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.getAllNamespaces(java.util.Map)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData.removeSeries(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBodyElement.getBody()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.removeXml()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.setHyperlinkArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHyperlink)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.setFldSimpleArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSimpleField)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.setRArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFFactory.getInstance()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.POIXMLDocumentPart.getPackagePart()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackagePart.getOutputStream()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.POIXMLException.<init>(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.<init>(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableRow.getTableICells()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getTextRecursively()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFSDTCell.getContent()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.ISDTContent.getText()",
+  "covered" : false
+}, {
+  "method" : "org.apache.batik.transcoder.TranscoderException.getMessage()",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.ExpressionParser.parseExpression(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.Expression.getValue(org.springframework.expression.EvaluationContext)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.ParagraphAlignment.valueOf(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.setTableAlignment(org.apache.poi.xwpf.usermodel.TableRowAlign)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable.setCellMargins(int, int, int, int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.isSetTblInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.getTblInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblPr.addNewTblInd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.isSetRPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getRPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.addNewRPr()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.QNameSet.forArray(javax.xml.namespace.QName[])",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFDataSourcesFactory.fromArray(java.lang.String[], java.lang.String, int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFHeaderFooter.removeTable(org.apache.poi.xwpf.usermodel.XWPFTable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFHeaderFooter.removeParagraph(org.apache.poi.xwpf.usermodel.XWPFParagraph)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.getPictList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.getPictArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTable$XWPFBorderType.toString()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STBorder$Enum.forString(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.setVal(org.openxmlformats.schemas.wordprocessingml.x2006.main.STBorder$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.setSpace(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBorder.setColor(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFHeaderFooter._getHdrFtr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHdrFtr.setTblArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow.setTcArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBody.getXWPFDocument()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getRelationById(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackagePart.getRelationshipsByType(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackageRelationshipCollection.iterator()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackageRelationship.getTargetMode()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackageRelationship.getTargetURI()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFRelation.getRelation()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackagePart.addExternalRelationship(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.time.StopWatch.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.time.StopWatch.start()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.time.StopWatch.stop()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.time.StopWatch.getNanoTime()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData.getSeries(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData$Series.replaceData(org.apache.poi.xddf.usermodel.chart.XDDFDataSource, org.apache.poi.xddf.usermodel.chart.XDDFNumericalDataSource)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.setSheetTitle(java.lang.String, int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData$Series.setTitle(java.lang.String, org.apache.poi.ss.util.CellReference)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetAt(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtContentBlock.removeP(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc.setTblArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackagingURIHelper.createPartName(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.OPCPackage.createPart(org.apache.poi.openxml4j.opc.PackagePartName, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackagePart.addRelationship(org.apache.poi.openxml4j.opc.PackagePartName, org.apache.poi.openxml4j.opc.TargetMode, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPPr.getNumPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTNumPr.getIlvl()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTNumPr.getNumId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.codec.binary.Base64.isBase64(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.codec.binary.Base64.decodeBase64(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFPicture.getCTPicture()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.picture.CTPicture.getBlipFill()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTBlipFillProperties.getBlip()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTBlip.setEmbed(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFChart.getChartSeries()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData.getSeriesCount()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData$Series.getValuesData()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFNumericalDataSource.getFormatCode()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFNumericalDataSource.setFormatCode(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData.addSeries(org.apache.poi.xddf.usermodel.chart.XDDFDataSource, org.apache.poi.xddf.usermodel.chart.XDDFNumericalDataSource)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackagePart.getRelatedPart(org.apache.poi.openxml4j.opc.PackageRelationship)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackagePart.getInputStream()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.util.Units.pointsToPixel(double)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTcPr.addNewVMerge()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSimpleField.addNewR()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.openxml4j.opc.PackageRelationship.getRelationshipType()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getText()",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.AccessException.<init>(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getTables()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc.removeTbl(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc.removeP(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFNumbering.getAbstractNums()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum.getAbstractNumId()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFNumbering.getNums()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.isSetSpPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.getSpPr()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.XDDFShapeProperties.<init>(org.openxmlformats.schemas.drawingml.x2006.main.CTShapeProperties)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTTitle.isSetTx()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTTitle.addNewTx()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTTitle.getTx()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTTx.isSetStrRef()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTTx.unsetStrRef()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTTx.isSetRich()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTTx.addNewRich()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTTx.getRich()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTTextBody.sizeOfPArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTTextBody.removeP(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTTextBody.getPArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraph.sizeOfRArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraph.removeR(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTTextParagraph.getRArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTRegularTextRun.setT(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTGraphicalObject.getGraphicData()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTGraphicalObjectData.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlCursor.toChild(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTRelId.getId()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTRelId.setId(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtCell.getSdtPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtCell.getSdtContent()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.wordprocessingDrawing.CTAnchor.getGraphic()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.wordprocessingDrawing.CTInline.getGraphic()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.getObjectList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.removeHyperlink(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.removeFldSimple(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.removeR(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPlotArea.sizeOfOfPieChartArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPlotArea.getOfPieChartArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTxbxContent.setPArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlOptions.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlOptions.setSaveInner()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlOptions.setUseDefaultNamespace()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlOptions.setSaveAggressiveNamespaces()",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlOptions.setCharacterEncoding(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlOptions.setEntityExpansionLimit(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.XmlOptions.setSaveSuggestedPrefixes(java.util.Map)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageSz.xgetW()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageSz.xgetH()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageSz.isSetOrient()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageSz.getOrient()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STPageOrientation$Enum.intValue()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.getBodyElements()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTxbxContent.removeP(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFRow.removeCell(org.apache.poi.ss.usermodel.Cell)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.isSetDLbls()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.addNewDLbls()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.getDLbls()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTDLbls.isSetShowLeaderLines()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTDLbls.getShowLeaderLines()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTDLbls.addNewShowLeaderLines()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.compress.utils.IOUtils.toByteArray(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTxbxContent.addNewP()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFTableCell.setVerticalAlignment(org.apache.poi.xwpf.usermodel.XWPFTableCell$XWPFVertAlign)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc.isSetTcPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc.addNewTcPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTcPr.isSetShd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTcPr.getShd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTcPr.addNewShd()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDrawing.getAnchorList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTNonVisualDrawingProps.setId(long)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTDrawing.getInlineList()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTc.setPArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFDocument.getNumbering()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getNumID()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFNumbering.getNum(java.math.BigInteger)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFAbstractNum.getAbstractNum()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTAbstractNum.copy()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtContentCell.newCursor()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.util.IdentifierManager.reserveNew()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBody.getBodyElements()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.isWordWrapped()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTShd.getVal()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STShd$Enum.intValue()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTShd.isSetFill()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTShd.xgetFill()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getAlignment()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getSpacingBeforeLines()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getSpacingAfterLines()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getSpacingBefore()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getSpacingAfter()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getSpacingBetween()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getSpacingLineRule()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData.getSeries()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData$Series.getCategoryData()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFDataSource.isNumeric()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTAxDataSource.isSetNumRef()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTAxDataSource.unsetNumRef()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTAxDataSource.isSetNumLit()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTAxDataSource.unsetNumLit()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.chart.XDDFChartData$Series.plot()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.unsetSpPr()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xddf.usermodel.XDDFShapeProperties.getXmlObject()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.setSpPr(org.openxmlformats.schemas.drawingml.x2006.main.CTShapeProperties)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.chart.CTPieSer.addNewSpPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.drawingml.x2006.main.CTShapeProperties.set(org.apache.xmlbeans.XmlObject)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.IBody.getPart()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody.addNewSectPr()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR.getDrawingArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP.set(org.apache.xmlbeans.XmlObject)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody.set(org.apache.xmlbeans.XmlObject)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHyperlink.setId(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHyperlink.addNewR()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody.removeTbl(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody.removeP(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody.removeSdt(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTxbxContent.sizeOfPArray()",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.spel.standard.SpelExpressionParser.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.spel.support.StandardEvaluationContext.<init>(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.springframework.expression.spel.support.StandardEvaluationContext.addPropertyAccessor(org.springframework.expression.PropertyAccessor)",
+  "covered" : false
+}, {
+  "method" : "org.apache.batik.transcoder.image.PNGTranscoder.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.batik.transcoder.Transcoder.setErrorHandler(org.apache.batik.transcoder.ErrorHandler)",
+  "covered" : false
+}, {
+  "method" : "org.apache.batik.transcoder.Transcoder.addTranscodingHint(org.apache.batik.transcoder.TranscodingHints$Key, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.batik.transcoder.TranscoderInput.<init>(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "org.apache.batik.transcoder.TranscoderOutput.<init>(java.io.OutputStream)",
+  "covered" : false
+}, {
+  "method" : "org.apache.batik.transcoder.Transcoder.transcode(org.apache.batik.transcoder.TranscoderInput, org.apache.batik.transcoder.TranscoderOutput)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.sizeOfColorArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.getColorArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.addNewColor()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.sizeOfIArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.getIArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.addNewI()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.sizeOfBArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.getBArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.addNewB()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.sizeOfSzArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.getSzArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.addNewSz()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHpsMeasure.setVal(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.sizeOfStrikeArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.getStrikeArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.addNewStrike()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.sizeOfUArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.getUArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.addNewU()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.UnderlinePatterns.getValue()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STUnderline$Enum.forInt(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTUnderline.setVal(org.openxmlformats.schemas.wordprocessingml.x2006.main.STUnderline$Enum)",
+  "covered" : false
+}, {
+  "method" : "org.apache.xmlbeans.impl.schema.SimpleTypeFactory.newInstance()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STHexColorAuto$Enum.forString(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STHexColorAuto.setEnumValue(org.apache.xmlbeans.StringEnumAbstractBase)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STHexColorRGB.setStringValue(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTUnderline.setColor(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.sizeOfRFontsArray()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.getRFontsArray(int)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTParaRPr.addNewRFonts()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFonts.setEastAsia(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFonts.setCs(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.ClassUtils.getSimpleName(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSdtContentBlock.setPArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.ooxml.POIXMLDocument.write(java.io.OutputStream)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl.getTblGrid()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTbl.addNewTblGrid()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTHdrFtr.setPArray(int, org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP)",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPicture.selectPath(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFParagraph.getPartType()",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xwpf.usermodel.XWPFSDT.getContent()",
+  "covered" : false
+}, {
+  "method" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTcPr.addNewGridSpan()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.StringUtils.isEmpty(java.lang.CharSequence)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFWorkbook.write(java.io.OutputStream)",
+  "covered" : false
+}, {
+  "method" : "org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(java.io.InputStream)",
+  "covered" : false
+} ]
