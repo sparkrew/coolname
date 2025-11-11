@@ -1,0 +1,231 @@
+{
+  "slicedPaths" : [ {
+    "entryPoint" : "io.jooby.Jooby.getTmpdir",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getString",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Jooby.getTmpdir" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Environment.getProperty",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getString",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Environment.getProperty" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.ServerOptions.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getString",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.ServerOptions.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Environment.loadEnvironment",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getString",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Environment.loadEnvironment" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Cookie.create",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getString",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Cookie.create" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Environment.getProperty",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getString",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Environment.getProperty" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getConfig",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.problem.ProblemDetailsHandler.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.handler.Cors.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getConfig",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.handler.Cors.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Environment.getProperties",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getConfig",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Environment.getProperties" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getIntList",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.problem.ProblemDetailsHandler.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.internal.ServiceRegistryImpl.getOrNull",
+    "thirdPartyMethod" : "jakarta.inject.Provider.get",
+    "thirdPartyPackage" : "jakarta.inject",
+    "path" : [ "io.jooby.internal.ServiceRegistryImpl.getOrNull" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.handler.RateLimitHandler.apply",
+    "thirdPartyMethod" : "io.github.bucket4j.ConsumptionProbe.getRemainingTokens",
+    "thirdPartyPackage" : "io.github.bucket4j",
+    "path" : [ "io.jooby.handler.RateLimitHandler.apply" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.handler.RateLimitHandler.apply",
+    "thirdPartyMethod" : "io.github.bucket4j.Bucket.tryConsumeAndReturnRemaining",
+    "thirdPartyPackage" : "io.github.bucket4j",
+    "path" : [ "io.jooby.handler.RateLimitHandler.apply" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getStringList",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.problem.ProblemDetailsHandler.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.handler.RateLimitHandler.apply",
+    "thirdPartyMethod" : "io.github.bucket4j.ConsumptionProbe.isConsumed",
+    "thirdPartyPackage" : "io.github.bucket4j",
+    "path" : [ "io.jooby.handler.RateLimitHandler.apply" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.handler.Cors.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getAnyRef",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.handler.Cors.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Jooby.ready",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getAnyRef",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Jooby.ready" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.ServiceRegistry.mapOf",
+    "thirdPartyMethod" : "jakarta.inject.Provider.getClass",
+    "thirdPartyPackage" : "jakarta.inject",
+    "path" : [ "io.jooby.ServiceRegistry.mapOf", "io.jooby.ServiceRegistry.multiBinder" ],
+    "methodSlices" : [ "/**\n * Map binder. You can gradually put service of the same type and retrieve them all as map.\n *\n * @param keyType\n * \t\tKey Type.\n * @param valueType\n * \t\tService Type.\n * @return A new map binder.\n * @param <K>\n * \t\tKey type.\n * @param <V>\n * \t\tService type.\n */\ndefault <K, V> MapBinder<K, V> mapOf(@NonNull\nClass<K> keyType, @NonNull\nReified<V> valueType) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.ServiceRegistry.setOf",
+    "thirdPartyMethod" : "jakarta.inject.Provider.getClass",
+    "thirdPartyPackage" : "jakarta.inject",
+    "path" : [ "io.jooby.ServiceRegistry.setOf", "io.jooby.ServiceRegistry.multiBinder" ],
+    "methodSlices" : [ "/**\n * Set binder. You can gradually add service of the same type and retrieve them all as set.\n *\n * @param type\n * \t\tType.\n * @return A new set binder.\n * @param <T>\n * \t\tService type.\n */\ndefault <T> MultiBinder<T> setOf(@NonNull\nReified<T> type) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.ServiceRegistry.listOf",
+    "thirdPartyMethod" : "jakarta.inject.Provider.getClass",
+    "thirdPartyPackage" : "jakarta.inject",
+    "path" : [ "io.jooby.ServiceRegistry.listOf", "io.jooby.ServiceRegistry.multiBinder" ],
+    "methodSlices" : [ "/**\n * List binder. You can gradually add service of the same type and retrieve them all as list.\n *\n * @param type\n * \t\tType.\n * @return A new list binder.\n * @param <T>\n * \t\tService type.\n */\ndefault <T> MultiBinder<T> listOf(@NonNull\nReified<T> type) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.ServiceRegistry.mapOf",
+    "thirdPartyMethod" : "jakarta.inject.Provider.getClass",
+    "thirdPartyPackage" : "jakarta.inject",
+    "path" : [ "io.jooby.ServiceRegistry.mapOf", "io.jooby.ServiceRegistry.multiBinder" ],
+    "methodSlices" : [ "/**\n * Map binder. You can gradually put service of the same type and retrieve them all as map.\n *\n * @param keyType\n * \t\tKey Type.\n * @param valueType\n * \t\tService Type.\n * @return A new map binder.\n * @param <K>\n * \t\tKey type.\n * @param <V>\n * \t\tService type.\n */\ndefault <K, V> MapBinder<K, V> mapOf(@NonNull\nClass<K> keyType, @NonNull\nReified<V> valueType) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.ServiceRegistry.setOf",
+    "thirdPartyMethod" : "jakarta.inject.Provider.getClass",
+    "thirdPartyPackage" : "jakarta.inject",
+    "path" : [ "io.jooby.ServiceRegistry.setOf", "io.jooby.ServiceRegistry.multiBinder" ],
+    "methodSlices" : [ "/**\n * Set binder. You can gradually add service of the same type and retrieve them all as set.\n *\n * @param type\n * \t\tType.\n * @return A new set binder.\n * @param <T>\n * \t\tService type.\n */\ndefault <T> MultiBinder<T> setOf(@NonNull\nReified<T> type) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.ServiceRegistry.listOf",
+    "thirdPartyMethod" : "jakarta.inject.Provider.getClass",
+    "thirdPartyPackage" : "jakarta.inject",
+    "path" : [ "io.jooby.ServiceRegistry.listOf", "io.jooby.ServiceRegistry.multiBinder" ],
+    "methodSlices" : [ "/**\n * List binder. You can gradually add service of the same type and retrieve them all as list.\n *\n * @param type\n * \t\tType.\n * @return A new list binder.\n * @param <T>\n * \t\tService type.\n */\ndefault <T> MultiBinder<T> listOf(@NonNull\nReified<T> type) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.problem.ProblemDetailsHandler.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.handler.Cors.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.handler.Cors.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Jooby.problemDetailsIsEnabled",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Jooby.problemDetailsIsEnabled" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Environment.getProperty",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Environment.getProperty", "io.jooby.Environment.hasPath" ],
+    "methodSlices" : [ "/**\n * Get a property under the given key or <code>null</code> when missing.\n *\n * @param key\n * \t\tProperty key.\n * @return Property value or <code>null</code> when missing.\n */\n@Nullable\npublic String getProperty(@NonNull\nString key) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.ServerOptions.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.ServerOptions.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Environment.getProperties",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Environment.getProperties", "io.jooby.Environment.hasPath" ],
+    "methodSlices" : [ "/**\n * List all the properties under the given key. Example:\n *\n * <pre>\n * user.name = \"name\"\n * user.password = \"pass\"\n * </pre>\n *\n * A call to <code>getProperties(\"user\", \"u\")</code> give you a map like: <code>\n * {u.name: name, u.password: pass}</code>\n *\n * @param key\n * \t\tKey.\n * @param prefix\n * \t\tPrefix to use or <code>null</code> for none.\n * @return Properties under that key or empty map.\n */\n@NonNull\npublic Map<String, String> getProperties(@NonNull\nString key, @Nullable\nString prefix) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.Environment.loadEnvironment",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Environment.loadEnvironment" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Jooby.ready",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Jooby.ready" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Cookie.create",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Cookie.create" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Environment.getProperty",
+    "thirdPartyMethod" : "com.typesafe.config.Config.hasPath",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Environment.getProperty", "io.jooby.Environment.hasPath" ],
+    "methodSlices" : [ "/**\n * Get a property under the given key or use the given default value when missing.\n *\n * @param key\n * \t\tProperty key.\n * @param defaults\n * \t\tDefault value.\n * @return Property or default value.\n */\n@NonNull\npublic String getProperty(@NonNull\nString key, @NonNull\nString defaults) {\n}" ]
+  }, {
+    "entryPoint" : "io.jooby.handler.RateLimitHandler.apply",
+    "thirdPartyMethod" : "io.github.bucket4j.ConsumptionProbe.getNanosToWaitForRefill",
+    "thirdPartyPackage" : "io.github.bucket4j",
+    "path" : [ "io.jooby.handler.RateLimitHandler.apply" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getBoolean",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.problem.ProblemDetailsHandler.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.handler.Cors.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getBoolean",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.handler.Cors.from" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.Jooby.problemDetailsIsEnabled",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getBoolean",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.Jooby.problemDetailsIsEnabled" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "io.jooby.ServerOptions.from",
+    "thirdPartyMethod" : "com.typesafe.config.Config.getBoolean",
+    "thirdPartyPackage" : "com.typesafe.config",
+    "path" : [ "io.jooby.ServerOptions.from" ],
+    "methodSlices" : [ ]
+  } ]
+}

@@ -1,0 +1,649 @@
+[ {
+  "method" : "com.google.common.base.Preconditions.checkNotNull(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Iterables.getLast(java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.copyOf(java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitTypeInsn(int, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitInsn(int)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Type.getConstructorDescriptor(java.lang.reflect.Constructor)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String, boolean)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Preconditions.checkNotNull(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Preconditions.checkState(boolean, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Lists.newArrayList()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.of(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableList$Builder.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableList$Builder.addAll(java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList$Builder.build()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.copyOf(java.util.Collection)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.MoreObjects.toStringHelper(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.MoreObjects$ToStringHelper.add(java.lang.String, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.MoreObjects$ToStringHelper.toString()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Preconditions.checkArgument(boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Strings.repeat(java.lang.String, int)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.size()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.toArray(java.lang.Object[])",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.get(int)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.subList(int, int)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassVisitor.<init>(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Iterables.getOnlyElement(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.copyOf(java.util.Collection)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableList.builder()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableList$Builder.add(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Sets.newHashSet()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Maps.newHashMap()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.builder()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMap$Builder.put(java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMap$Builder.buildOrThrow()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.copyOf(java.lang.Object[])",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Preconditions.checkState(boolean, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitVarInsn(int, int)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Type.getType(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Type.getInternalName(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Lists.transform(java.util.List, com.google.common.base.Function)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.LoadingCache.getUnchecked(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Lists.reverse(java.util.List)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.iterator()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.of()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.of(java.lang.Object, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableList.of(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Preconditions.checkArgument(boolean, java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Objects.hashCode(java.lang.Object[])",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Optional.absent()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Optional.fromNullable(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Preconditions.checkArgument(boolean, java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ListMultimap.put(java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.of()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Objects.equal(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Streams.stream(java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.builder()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet$Builder.add(java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet$Builder.addAll(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet$Builder.build()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.toArray(java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Preconditions.checkArgument(boolean, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.copyOf(java.util.Map)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Sets.newLinkedHashSet(java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Multiset.add(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.Cache.getIfPresent(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.Cache.put(java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.entrySet()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.iterator()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet$Builder.add(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.of(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.of()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Maps.newLinkedHashMap()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Sets.newLinkedHashSet()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableList.copyOf(java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.isEmpty()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMultimap.builder()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMultimap$Builder.put(java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMultimap$Builder.build()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Suppliers.memoize(com.google.common.base.Supplier)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassReader.<init>(java.io.InputStream)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassReader.accept(org.objectweb.asm.ClassVisitor, int)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.CacheLoader.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMultimap.values()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Sets.newHashSet(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.keySet()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Sets.difference(java.util.Set, java.util.Set)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.get(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMultimap.entries()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableCollection.iterator()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Maps.immutableEntry(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Preconditions.checkState(boolean, java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.objectweb.asm.Type.getMethodDescriptor(java.lang.reflect.Method)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Optional.of(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableList.equals(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Preconditions.checkNotNull(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ArrayListMultimap.create()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Preconditions.checkState(boolean, java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Multimap.putAll(java.lang.Object, java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Multimap.get(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.asList()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ListMultimap.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableList.of(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.copyOf(java.lang.Object[])",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Type.getDescriptor(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ListMultimap.get(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.LoadingCache.asMap()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.stream()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Stopwatch.createUnstarted()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.Cache.cleanUp()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Stopwatch.elapsed(java.util.concurrent.TimeUnit)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Stopwatch.reset()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Stopwatch.start()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Ordering.from(java.util.Comparator)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Ordering.lexicographical()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Equivalence.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Sets.newConcurrentHashSet()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.HashMultimap.create()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Splitter.splitToList(java.lang.CharSequence)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.HashMultimap.put(java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.HashMultimap.asMap()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.HashMultimap.removeAll(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Joiner.join(java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Iterables.concat(java.lang.Iterable, java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "org.objectweb.asm.AnnotationVisitor.<init>(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.builderWithExpectedSize(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.size()",
+  "covered" : false
+}, {
+  "method" : "org.objectweb.asm.Type.getSort()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.isEmpty()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Multimap.put(java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMultimap.asMap()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Maps.newLinkedHashMap(java.util.Map)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Lists.newArrayList(java.lang.Iterable)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ObjectArrays.concat(java.lang.Object[], java.lang.Object[], java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Multimap.asMap()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableSet$Builder.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.CaseFormat.to(com.google.common.base.CaseFormat, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitLdcInsn(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitIntInsn(int, int)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.builderWithExpectedSize(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableListMultimap.of()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.MultimapBuilder.linkedHashKeys()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys.arrayListValues()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.MultimapBuilder$ListMultimapBuilder.build()",
+  "covered" : false
+}, {
+  "method" : "jakarta.inject.Named.value()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableListMultimap.flatteningToImmutableListMultimap(java.util.function.Function, java.util.function.Function)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Multimap.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ListMultimap.keySet()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.cache.CacheBuilder.newBuilder()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.cache.CacheBuilder.weakKeys()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.cache.CacheBuilder.weakValues()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.cache.CacheLoader.from(com.google.common.base.Function)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.cache.CacheBuilder.build(com.google.common.cache.CacheLoader)",
+  "covered" : false
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.<init>(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Ordering.natural()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Ordering.reverse()",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Type.getOpcode(int)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Type.getSize()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Multimap.remove(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Multimap.removeAll(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Multiset.elementSet()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Splitter.on(char)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Joiner.on(char)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.CacheBuilder.softValues()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.CacheBuilder.removalListener(com.google.common.cache.RemovalListener)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.CacheBuilder.build()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.cache.LoadingCache.get(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Ordering.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.contains(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Preconditions.checkArgument(boolean, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object[])",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableList.forEach(java.util.function.Consumer)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.SetMultimap.put(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.LinkedHashMultimap.create()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Maps.newIdentityHashMap()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Maps.transformValues(java.util.Map, com.google.common.base.Function)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.Joiner$MapJoiner.appendTo(java.lang.StringBuilder, java.util.Map)",
+  "covered" : false
+}, {
+  "method" : "org.objectweb.asm.ClassWriter.<init>(int)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassWriter.visit(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[])",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassWriter.visitSource(java.lang.String, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassWriter.visitField(int, java.lang.String, java.lang.String, java.lang.String, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.FieldVisitor.visitEnd()",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassWriter.visitMethod(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[])",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitCode()",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitFieldInsn(int, java.lang.String, java.lang.String, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitMaxs(int, int)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitEnd()",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassWriter.visitEnd()",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.ClassWriter.toByteArray()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Throwables.getStackTraceAsString(java.lang.Throwable)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Handle.<init>(int, java.lang.String, java.lang.String, java.lang.String, boolean)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.toImmutableSet()",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Multimap.values()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMap.size()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Multimap.keySet()",
+  "covered" : true
+}, {
+  "method" : "jakarta.inject.Provider.get()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.base.MoreObjects$ToStringHelper.add(java.lang.String, boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Maps.filterKeys(java.util.Map, com.google.common.base.Predicate)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Joiner.on(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Joiner.withKeyValueSeparator(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Label.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitTableSwitchInsn(int, int, org.objectweb.asm.Label, org.objectweb.asm.Label[])",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitLabel(org.objectweb.asm.Label)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.MethodVisitor.visitFrame(int, int, java.lang.Object[], int, java.lang.Object[])",
+  "covered" : true
+}, {
+  "method" : "com.google.common.base.Preconditions.checkState(boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Multimaps.filterKeys(com.google.common.collect.ListMultimap, com.google.common.base.Predicate)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableListMultimap.copyOf(com.google.common.collect.Multimap)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableListMultimap.asMap()",
+  "covered" : true
+}, {
+  "method" : "org.aopalliance.intercept.MethodInterceptor.invoke(org.aopalliance.intercept.MethodInvocation)",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.ImmutableMap$Builder.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.common.collect.Maps.filterValues(java.util.Map, com.google.common.base.Predicate)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableMap$Builder.putAll(java.util.Map)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.ImmutableSet.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.objectweb.asm.Type.getMethodType(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.collect.Iterables.getOnlyElement(java.lang.Iterable, java.lang.Object)",
+  "covered" : true
+} ]

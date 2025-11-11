@@ -1,0 +1,97 @@
+[ {
+  "method" : "com.typesafe.config.Config.hasPath(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.getString(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigFactory.empty()",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.withFallback(com.typesafe.config.ConfigMergeable)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigFactory.parseResources(java.lang.ClassLoader, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.isEmpty()",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.getConfig(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.typesafe.config.Config.getBoolean(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.typesafe.config.Config.getIntList(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.typesafe.config.Config.getStringList(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "jakarta.inject.Provider.get()",
+  "covered" : false
+}, {
+  "method" : "com.typesafe.config.Config.resolve()",
+  "covered" : true
+}, {
+  "method" : "jakarta.inject.Named.value()",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.origin()",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigOrigin.description()",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigParseOptions.defaults()",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigParseOptions.setOriginDescription(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigFactory.parseProperties(java.util.Properties, com.typesafe.config.ConfigParseOptions)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigFactory.systemEnvironment()",
+  "covered" : true
+}, {
+  "method" : "io.github.bucket4j.Bucket.tryConsumeAndReturnRemaining(long)",
+  "covered" : false
+}, {
+  "method" : "io.github.bucket4j.ConsumptionProbe.isConsumed()",
+  "covered" : false
+}, {
+  "method" : "io.github.bucket4j.ConsumptionProbe.getRemainingTokens()",
+  "covered" : false
+}, {
+  "method" : "io.github.bucket4j.ConsumptionProbe.getNanosToWaitForRefill()",
+  "covered" : false
+}, {
+  "method" : "com.typesafe.config.ConfigFactory.parseFile(java.io.File)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.getAnyRef(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.getDuration(java.lang.String, java.util.concurrent.TimeUnit)",
+  "covered" : true
+}, {
+  "method" : "jakarta.inject.Provider.getClass()",
+  "covered" : false
+}, {
+  "method" : "com.typesafe.config.Config.getInt(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.getMemorySize(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigMemorySize.toBytes()",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.Config.entrySet()",
+  "covered" : true
+}, {
+  "method" : "com.typesafe.config.ConfigFactory.parseMap(java.util.Map, java.lang.String)",
+  "covered" : true
+} ]

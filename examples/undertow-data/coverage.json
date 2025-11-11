@@ -1,0 +1,1114 @@
+[ {
+  "method" : "org.xnio.IoUtils.safeClose(java.io.Closeable)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.drainListener(long, org.xnio.ChannelListener, org.xnio.ChannelExceptionHandler)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.getReadSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListener$Setter.set(org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.resumeReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListener.handleEvent(java.nio.channels.Channel)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.debugf(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.anyAreSet(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.terminateWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.truncateWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.allAreSet(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap.builder()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap$Builder.set(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap$Builder.addAll(org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap$Builder.getMap()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.XnioSsl.openSslConnection(org.xnio.XnioIoThread, java.net.InetSocketAddress, org.xnio.ChannelListener, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.IoFuture.addNotifier(org.xnio.IoFuture$Notifier, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.logf(java.lang.String, org.jboss.logging.Logger$Level, java.lang.Throwable, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.writeFinal(java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.hasRemaining(java.nio.Buffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.wildfly.common.Assert.checkNotNullParamWithNullPointerException(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.suspendReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListener$SimpleSetter.get()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.invokeChannelListener(java.nio.channels.Channel, org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.isOpen()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.getOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.anyAreSet(long, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getPeerAddress(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.remaining(java.nio.Buffer[])",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.write(java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.wakeupWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.resumeWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.suspendWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.awaitWritable()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioIoThread.getWorker()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getPeerAddress()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.take(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.terminateWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitReadableByteChannel.<init>(org.xnio.conduits.StreamSourceConduit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.IoUtils.transfer(java.nio.channels.ReadableByteChannel, long, java.nio.ByteBuffer, java.nio.channels.WritableByteChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap.get(org.xnio.Option, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.<init>(org.xnio.conduits.StreamSourceConduit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.suspendAccepts()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.ConnectedChannel.isOpen()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.ConnectedChannel.getIoThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.ConnectedChannel.getPeerAddress()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListener$SimpleSetter.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.setReadListener(org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.read(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FutureResult.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FutureResult.getIoFuture()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.suspendReads()",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.trace(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.transferFrom(org.xnio.channels.StreamSourceChannel, long, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getSourceChannel()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitWritableByteChannel.<init>(org.xnio.conduits.StreamSinkConduit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.setCloseListener(org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.setWriteListener(org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.getCloseSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.getWriteSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.isWriteResumed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.ReadTimeoutException.<init>(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getSinkChannel()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.suspendWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.longBitMask(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.close()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getLocalAddress()",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.isTraceEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.tracef(java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioIoThread.openStreamConnection(java.net.SocketAddress, org.xnio.ChannelListener, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getIoThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.resumeWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.resumeReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.read(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.tracef(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.flushingChannelListener(org.xnio.ChannelListener, org.xnio.ChannelExceptionHandler)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.invokeChannelListener(java.util.concurrent.Executor, java.nio.channels.Channel, org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.writeBlocking(java.nio.channels.WritableByteChannel, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.IoUtils.safeClose(java.io.Closeable[])",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.isReadResumed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.PushBackStreamSourceConduit.pushBack(org.xnio.Pooled)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.PushBackStreamSourceConduit.wakeupReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.shutdownWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.flush()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.awaitReadable(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.<init>(org.xnio.conduits.StreamSinkConduit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap.get(org.xnio.Option, boolean)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.allAreClear(long, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.transferTo(long, long, java.nio.channels.FileChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ReadReadyHandler.forceTermination()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.getIoThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.transferFrom(java.nio.channels.FileChannel, long, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkChannelWrappingConduit.<init>(org.xnio.channels.StreamSinkChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceChannelWrappingConduit.<init>(org.xnio.channels.StreamSourceChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.<init>(org.xnio.channels.Configurable, org.xnio.conduits.StreamSinkConduit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.EmptyStreamSourceConduit.<init>(org.xnio.XnioIoThread)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.<init>(org.xnio.channels.Configurable, org.xnio.conduits.StreamSourceConduit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.allAreClear(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.suspendReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.getReadListener()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ReadReadyHandler.readReady()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ReadReadyHandler.terminated()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Pooled.getResource()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.terminateReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.write(java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.copy(java.nio.ByteBuffer[], int, int, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.supportsOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.getLogger(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.wakeupWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.getReadThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap.get(org.xnio.Option, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.SslChannel.getSslSession()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.setReadReadyHandler(org.xnio.conduits.ReadReadyHandler)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.isReadResumed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.copy(java.nio.ByteBuffer, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.http.HttpUpgrade.performUpgrade(org.xnio.XnioWorker, java.net.InetSocketAddress, java.net.URI, java.util.Map, org.xnio.ChannelListener, org.xnio.ChannelListener, org.xnio.OptionMap, org.xnio.http.HandshakeChecker)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Option.setBuilder()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Option$SetBuilder.add(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Option$SetBuilder.create()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getWorker()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.setConduit(org.xnio.conduits.StreamSinkConduit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.setConduit(org.xnio.conduits.StreamSourceConduit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioIoThread.execute(java.lang.Runnable)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.drain(org.xnio.channels.StreamSourceChannel, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.anyAreClear(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.getReadSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.wakeupReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.WriteReadyHandler$ChannelListenerHandler.<init>(org.xnio.channels.SuspendableWriteChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkChannelWrappingConduit.setWriteReadyHandler(org.xnio.conduits.WriteReadyHandler)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Xnio.getInstance(java.lang.ClassLoader)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap$Builder.set(org.xnio.Option, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Xnio.createWorker(org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.getIoThreadCount()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.shutdownNow()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.openListenerAdapter(org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.createStreamConnectionServer(java.net.SocketAddress, org.xnio.ChannelListener, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.resumeAccepts()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.getLocalAddress()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap.create(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap.contains(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.JsseSslUtils.createSSLContext(javax.net.ssl.KeyManager[], javax.net.ssl.TrustManager[], java.security.SecureRandom, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getLocalAddress(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.suspendWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioExecutor$Key.remove()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.suspendWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.flush()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.write(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.resumeWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.isReadResumed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.isWriteResumed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.getWriteListener()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.transferTo(long, long, java.nio.channels.FileChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.resumeReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.suspendReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioIoThread.executeAfter(java.lang.Runnable, long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.transferTo(long, java.nio.ByteBuffer, org.xnio.channels.StreamSinkChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap.get(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Sequence.size()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Sequence.toArray(java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.getCloseSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.getDelegatingSetter(org.xnio.ChannelListener$Setter, java.nio.channels.Channel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.getAcceptSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.getWorker()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.read(java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.read(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.getWorker()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.supportsOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.truncateWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.wakeupReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.setOption(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.read(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.getConduit()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.setWriteReadyHandler(org.xnio.conduits.WriteReadyHandler)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Option.cast(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.IoFuture.getStatus()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.write(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.awaitWritable(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.Conduits.writeFinalBasic(org.xnio.conduits.StreamSinkConduit, java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.shutdownWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.flush()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.terminateReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.PushBackStreamSourceConduit.terminateReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.transferBlocking(org.xnio.channels.StreamSinkChannel, java.nio.channels.FileChannel, long, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.flushBlocking(org.xnio.channels.SuspendableWriteChannel)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.tracef(java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.CloseableChannel.getIoThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.CloseableChannel.getWorker()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.isShutdown()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.WriteReadyHandler.terminated()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FutureResult.setException(java.io.IOException)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.getOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.isWriteResumed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.write(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.invokeChannelExceptionHandler(java.nio.channels.Channel, org.xnio.ChannelExceptionHandler, java.io.IOException)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.setOption(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap$Builder.set(org.xnio.Option, boolean)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.readBlocking(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.DelegatingBasicLogger.<init>(org.jboss.logging.Logger)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.execute(java.lang.Runnable)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.isDebugEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.debugf(java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.Conduits.writeFinalBasic(org.xnio.conduits.StreamSinkConduit, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.dump(java.nio.ByteBuffer, java.lang.Appendable, int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.OptionMap.get(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.debugf(java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.closingChannelListener()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.closingChannelExceptionHandler()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.writeShutdownChannelListener(org.xnio.ChannelListener, org.xnio.ChannelExceptionHandler)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Pooled.close()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.IoFuture.getException()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.writeFinal(java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.getCloseSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.hasRemaining(java.nio.Buffer[])",
+  "covered" : false
+}, {
+  "method" : "org.wildfly.common.Assert.checkNotNullParam(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Option$SetBuilder.add(org.xnio.Option, org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.getConduit()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.WriteReadyHandler.writeReady()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.remaining(java.nio.Buffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.writeFinal(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.awaitWritable(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.allAreSet(long, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.FixedLengthOverflowException.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.SslClientAuthMode.values()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.SslClientAuthMode.ordinal()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.readBlocking(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer, long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.PushBackStreamSourceConduit.<init>(org.xnio.conduits.StreamSourceConduit)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.info(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.copy(java.nio.ByteBuffer, java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.getLogger(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.awaitReadable(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.SslConnection.writeClosed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.isReadShutdown()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.isOpen()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.openStreamConnection(java.net.SocketAddress, org.xnio.ChannelListener, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Sequence.of(java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.getOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.wakeupAccepts()",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.logf(java.lang.String, org.jboss.logging.Logger$Level, java.lang.Throwable, java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.read(java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.getLocalAddress(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FinishedIoFuture.<init>(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.getOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.awaitReadable(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FutureResult.setResult(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Option.simple(java.lang.Class, java.lang.String, java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.wakeupReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.setOption(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.supportsOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.awaitReadable()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.writeFinalBasic(org.xnio.channels.StreamSinkChannel, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.awaitReadable()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.isWriteShutdown()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.getCloseListener()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.intBitMask(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelListeners.delegatingChannelListener(java.nio.channels.Channel, org.xnio.ChannelListener$SimpleSetter)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.setCloseListener(org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.write(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.awaitReadable()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Buffers.copy(int, java.nio.ByteBuffer, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Messages.getBundle(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.isOpen()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.IoUtils.directExecutor()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FutureResult.<init>(java.util.concurrent.Executor)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FutureResult.addCancelHandler(org.xnio.Cancellable)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.transferTo(long, java.nio.ByteBuffer, org.xnio.channels.StreamSinkChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.openStreamConnection(java.net.SocketAddress, java.net.SocketAddress, org.xnio.ChannelListener, org.xnio.ChannelListener, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.shutdownReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.transferFrom(java.nio.channels.FileChannel, long, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.close()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.awaitAcceptable()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.getWriteThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ChannelExceptionHandler.handleException(java.nio.channels.Channel, java.io.IOException)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.getWriteThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.IoFuture$HandlingNotifier.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.supportsOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.getAcceptThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.transferTo(long, long, java.nio.channels.FileChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.accept()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.SslConnection.getSourceChannel()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.SslConnection.getSinkChannel()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AssembledConnectedSslStreamChannel.<init>(org.xnio.channels.SslChannel, org.xnio.channels.StreamSourceChannel, org.xnio.channels.StreamSinkChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.writeFinal(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.getMessageLogger(java.lang.Class, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.awaitWritable(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSourceConduit.resumeReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.http.HttpUpgrade.performUpgrade(org.xnio.StreamConnection, java.net.URI, java.util.Map, org.xnio.ChannelListener, org.xnio.http.HandshakeChecker)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.writeBlocking(java.nio.channels.GatheringByteChannel, java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.SslChannel.getOption(org.xnio.Option)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.XnioSsl.<init>(org.xnio.Xnio, javax.net.ssl.SSLContext, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.getWorker()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.IoFuture.cancel()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.getIoThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.getCloseSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.close()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FutureResult.setCancelled()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.getReadThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.isOpen()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Pooled.free()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSinkConduit.transferFrom(java.nio.channels.FileChannel, long, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Pool.allocate()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.close()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.write(java.nio.ByteBuffer[], int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.http.HttpUpgrade.performUpgrade(org.xnio.XnioWorker, org.xnio.ssl.XnioSsl, java.net.InetSocketAddress, java.net.URI, java.util.Map, org.xnio.ChannelListener, org.xnio.ChannelListener, org.xnio.OptionMap, org.xnio.http.ExtendedHandshakeChecker)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.http.HttpUpgrade.performUpgrade(org.xnio.XnioWorker, java.net.InetSocketAddress, java.net.URI, java.util.Map, org.xnio.ChannelListener, org.xnio.ChannelListener, org.xnio.OptionMap, org.xnio.http.ExtendedHandshakeChecker)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.isOpen()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.BufferAllocator.allocate(int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Sequence.iterator()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.wakeupWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioIoThread.openStreamConnection(java.net.SocketAddress, java.net.SocketAddress, org.xnio.ChannelListener, org.xnio.ChannelListener, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.wildfly.common.Assert.checkMinimumParameter(java.lang.String, int, int)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.isOpen()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.JsseSslUtils.createSSLContext(org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.JsseSslUtils.createSSLEngine(javax.net.ssl.SSLContext, org.xnio.OptionMap, java.net.InetSocketAddress)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.WriteTimeoutException.<init>(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.SslConnection.getSslSession()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.http.HttpUpgrade.performUpgrade(org.xnio.StreamConnection, java.net.URI, java.util.Map, org.xnio.ChannelListener, org.xnio.http.ExtendedHandshakeChecker)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSourceChannel.getWorker()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioIoThread.executeAtInterval(java.lang.Runnable, long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.writeFinal(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.getIoThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.WriteReadyHandler.forceTermination()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.close()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.awaitWritable()",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.debug(java.lang.Object, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.createUdpServer(java.net.InetSocketAddress, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.MulticastMessageChannel.setOption(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.MulticastMessageChannel.getIoThread()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.JsseXnioSsl.getSslEngine(org.xnio.ssl.SslConnection)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.getWriteSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.getCloseSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.getCloseSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.shutdownReads()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.isWriteShutdown()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.isReadShutdown()",
+  "covered" : false
+}, {
+  "method" : "org.jboss.logging.Logger.debugf(java.lang.String, java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Bits.anyAreClear(long, long)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.AbstractStreamSinkConduit.resumeWrites()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.http.RedirectException.getLocation()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.SslChannel.getHandshakeSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.SslChannel.setOption(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.SslChannel.startHandshake()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.awaitReadable(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Xnio.getInstance()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.Xnio.createFileSystemWatcher(java.lang.String, org.xnio.OptionMap)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FileSystemWatcher.watchPath(java.io.File, org.xnio.FileChangeCallback)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.setOption(org.xnio.Option, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.SslConnection.startHandshake()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.SslConnection.getHandshakeSetter()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FileSystemWatcher.close()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSinkChannel.write(java.nio.ByteBuffer[])",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.<init>(org.xnio.XnioIoThread)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.StreamSinkChannel.transferFrom(org.xnio.channels.StreamSourceChannel, long, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.MulticastMessageChannel.sendTo(java.net.SocketAddress, java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.isAcceptResumed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.<init>(org.xnio.channels.SuspendableReadChannel)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.SslConnection.readClosed()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.ConduitStreamSourceChannel.getCloseListener()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.EmptyStreamSourceChannel.<init>(org.xnio.XnioIoThread)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.setReadListener(org.xnio.channels.SuspendableReadChannel, org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.Channels.setWriteListener(org.xnio.channels.SuspendableWriteChannel, org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioExecutor.executeAfter(java.lang.Runnable, long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.shutdown()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.XnioWorker.awaitTermination()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.ssl.SslConnection.<init>(org.xnio.XnioIoThread)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FileChangeEvent.getFile()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FileChangeEvent.getType()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.FileChangeEvent$Type.name()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.StreamConnection.setCloseListener(org.xnio.ChannelListener)",
+  "covered" : false
+}, {
+  "method" : "org.xnio.conduits.StreamSourceConduit.getWorker()",
+  "covered" : false
+}, {
+  "method" : "org.xnio.channels.AcceptingChannel.awaitAcceptable(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+} ]

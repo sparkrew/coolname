@@ -1,0 +1,268 @@
+[
+  {
+    "publicMethod": "io.jooby.Jooby.getTmpdir",
+    "thirdPartyMethod": "com.typesafe.config.Config.getString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Environment.getProperty",
+    "thirdPartyMethod": "com.typesafe.config.Config.getString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.ServerOptions.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getString",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Environment.loadEnvironment",
+    "thirdPartyMethod": "com.typesafe.config.Config.getString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Cookie.create",
+    "thirdPartyMethod": "com.typesafe.config.Config.getString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Environment.getProperty",
+    "thirdPartyMethod": "com.typesafe.config.Config.getString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getConfig",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.handler.Cors.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getConfig",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Environment.getProperties",
+    "thirdPartyMethod": "com.typesafe.config.Config.getConfig",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getIntList",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.internal.ServiceRegistryImpl.getOrNull",
+    "thirdPartyMethod": "jakarta.inject.Provider.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.handler.RateLimitHandler.apply",
+    "thirdPartyMethod": "io.github.bucket4j.ConsumptionProbe.getRemainingTokens",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.handler.RateLimitHandler.apply",
+    "thirdPartyMethod": "io.github.bucket4j.Bucket.tryConsumeAndReturnRemaining",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getStringList",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.handler.RateLimitHandler.apply",
+    "thirdPartyMethod": "io.github.bucket4j.ConsumptionProbe.isConsumed",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.handler.Cors.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getAnyRef",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Jooby.ready",
+    "thirdPartyMethod": "com.typesafe.config.Config.getAnyRef",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.ServiceRegistry.mapOf",
+    "thirdPartyMethod": "jakarta.inject.Provider.getClass",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.ServiceRegistry.setOf",
+    "thirdPartyMethod": "jakarta.inject.Provider.getClass",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.ServiceRegistry.listOf",
+    "thirdPartyMethod": "jakarta.inject.Provider.getClass",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.ServiceRegistry.mapOf",
+    "thirdPartyMethod": "jakarta.inject.Provider.getClass",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.ServiceRegistry.setOf",
+    "thirdPartyMethod": "jakarta.inject.Provider.getClass",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.ServiceRegistry.listOf",
+    "thirdPartyMethod": "jakarta.inject.Provider.getClass",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.handler.Cors.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 7,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Jooby.problemDetailsIsEnabled",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Environment.getProperty",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.ServerOptions.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 17,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Environment.getProperties",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.Environment.loadEnvironment",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Jooby.ready",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Cookie.create",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.Environment.getProperty",
+    "thirdPartyMethod": "com.typesafe.config.Config.hasPath",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "io.jooby.handler.RateLimitHandler.apply",
+    "thirdPartyMethod": "io.github.bucket4j.ConsumptionProbe.getNanosToWaitForRefill",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.problem.ProblemDetailsHandler.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getBoolean",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.handler.Cors.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getBoolean",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.Jooby.problemDetailsIsEnabled",
+    "thirdPartyMethod": "com.typesafe.config.Config.getBoolean",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "io.jooby.ServerOptions.from",
+    "thirdPartyMethod": "com.typesafe.config.Config.getBoolean",
+    "totalPaths": 5,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  }
+]
