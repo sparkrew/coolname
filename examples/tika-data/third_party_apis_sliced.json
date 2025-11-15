@@ -1,0 +1,171 @@
+{
+  "slicedPaths" : [ {
+    "entryPoint" : "org.apache.tika.config.TikaActivator.removedService",
+    "thirdPartyMethod" : "org.osgi.framework.BundleContext.ungetService",
+    "thirdPartyPackage" : "org.osgi.framework",
+    "path" : [ "org.apache.tika.config.TikaActivator.removedService" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.detect.XmlRootExtractor.extractRootElement",
+    "thirdPartyMethod" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.detect.XmlRootExtractor.extractRootElement" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.mime.MimeTypesReader.resolveEntity",
+    "thirdPartyMethod" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.mime.MimeTypesReader.resolveEntity" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.io.TikaInputStream.get" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod" : "org.apache.commons.io.IOUtils.closeQuietly",
+    "thirdPartyPackage" : "org.apache.commons.io",
+    "path" : [ "org.apache.tika.embedder.ExternalEmbedder.embed" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod" : "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.Builder.get",
+    "thirdPartyPackage" : "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream",
+    "path" : [ "org.apache.tika.embedder.ExternalEmbedder.embed" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.config.TikaActivator.addingService",
+    "thirdPartyMethod" : "org.osgi.framework.BundleContext.getService",
+    "thirdPartyPackage" : "org.osgi.framework",
+    "path" : [ "org.apache.tika.config.TikaActivator.addingService" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod" : "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder",
+    "thirdPartyPackage" : "org.apache.commons.io.output",
+    "path" : [ "org.apache.tika.embedder.ExternalEmbedder.embed" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod" : "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.toString",
+    "thirdPartyPackage" : "org.apache.commons.io.output",
+    "path" : [ "org.apache.tika.embedder.ExternalEmbedder.embed" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.config.TikaActivator.addingService",
+    "thirdPartyMethod" : "org.osgi.framework.ServiceReference.getProperty",
+    "thirdPartyPackage" : "org.osgi.framework",
+    "path" : [ "org.apache.tika.config.TikaActivator.addingService" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.config.TikaActivator.stop",
+    "thirdPartyMethod" : "org.osgi.util.tracker.ServiceTracker.close",
+    "thirdPartyPackage" : "org.osgi.util.tracker",
+    "path" : [ "org.apache.tika.config.TikaActivator.stop" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.detect.XmlRootExtractor.extractRootElement",
+    "thirdPartyMethod" : "org.apache.commons.io.input.CloseShieldInputStream.wrap",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.detect.XmlRootExtractor.extractRootElement", "org.apache.tika.detect.XmlRootExtractor.extractRootElement" ],
+    "methodSlices" : [ "public QName extractRootElement(byte[] data) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.detect.XmlRootExtractor.extractRootElement",
+    "thirdPartyMethod" : "org.apache.commons.io.input.CloseShieldInputStream.wrap",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.detect.XmlRootExtractor.extractRootElement", "org.apache.tika.detect.XmlRootExtractor.extractRootElement" ],
+    "methodSlices" : [ "public QName extractRootElement(byte[] data) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.parser.RecursiveParserWrapper.EmbeddedParserDecorator.parse",
+    "thirdPartyMethod" : "org.apache.commons.io.input.CloseShieldInputStream.wrap",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.parser.RecursiveParserWrapper.EmbeddedParserDecorator.parse" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod" : "org.apache.commons.io.IOUtils.closeQuietly",
+    "thirdPartyPackage" : "org.apache.commons.io",
+    "path" : [ "org.apache.tika.embedder.ExternalEmbedder.embed" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod" : "org.apache.commons.io.input.TaggedInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.io.TikaInputStream.get", "org.apache.tika.io.TikaInputStream.<init>" ],
+    "methodSlices" : [ "/**\n * Casts or wraps the given stream to a TikaInputStream instance.\n * This method can be used to access the functionality of this class\n * even when given just a normal input stream instance.\n * <p>\n * The given temporary file provider is used for any temporary files,\n * and should be disposed when the returned stream is no longer used.\n * <p>\n * Use this method instead of the {@link #get(InputStream)} alternative\n * when you <em>don't</em> explicitly close the returned stream. The\n * recommended access pattern is:\n * <pre>\n * try (TemporaryResources tmp = new TemporaryResources()) {\n *     TikaInputStream stream = TikaInputStream.get(..., tmp);\n *     // process stream but don't close it\n * }\n * </pre>\n * <p>\n * The given stream instance will <em>not</em> be closed when the\n * {@link TemporaryResources#close()} method is called by the\n * try-with-resources statement. The caller is expected to explicitly\n * close the original stream when it's no longer used.\n *\n * @param stream\n * \t\tnormal input stream\n * @return a TikaInputStream instance\n * @since Apache Tika 0.10\n */\npublic static TikaInputStream get(InputStream stream, TemporaryResources tmp, Metadata metadata) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod" : "org.apache.commons.io.input.TaggedInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.io.TikaInputStream.get", "org.apache.tika.io.TikaInputStream.<init>" ],
+    "methodSlices" : [ "/**\n * Creates a TikaInputStream from the given array of bytes. The length of\n * the array is stored as input metadata in the given metadata instance.\n * <p>\n * Note that you must always explicitly close the returned stream as in\n * some cases it may end up writing the given data to a temporary file.\n *\n * @param data\n * \t\tinput data\n * @param metadata\n * \t\tmetadata instance\n * @return a TikaInputStream instance\n */\npublic static TikaInputStream get(byte[] data, Metadata metadata) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod" : "org.apache.commons.io.input.TaggedInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.io.TikaInputStream.get", "org.apache.tika.io.TikaInputStream.<init>" ],
+    "methodSlices" : [ "/**\n * Casts or wraps the given stream to a TikaInputStream instance.\n * This method can be used to access the functionality of this class\n * even when given just a normal input stream instance.\n * <p>\n * The given temporary file provider is used for any temporary files,\n * and should be disposed when the returned stream is no longer used.\n * <p>\n * Use this method instead of the {@link #get(InputStream)} alternative\n * when you <em>don't</em> explicitly close the returned stream. The\n * recommended access pattern is:\n * <pre>\n * try (TemporaryResources tmp = new TemporaryResources()) {\n *     TikaInputStream stream = TikaInputStream.get(..., tmp);\n *     // process stream but don't close it\n * }\n * </pre>\n * <p>\n * The given stream instance will <em>not</em> be closed when the\n * {@link TemporaryResources#close()} method is called by the\n * try-with-resources statement. The caller is expected to explicitly\n * close the original stream when it's no longer used.\n *\n * @param stream\n * \t\tnormal input stream\n * @return a TikaInputStream instance\n * @since Apache Tika 0.10\n */\npublic static TikaInputStream get(InputStream stream, TemporaryResources tmp, Metadata metadata) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod" : "org.apache.commons.io.input.TaggedInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.io.TikaInputStream.get", "org.apache.tika.io.TikaInputStream.<init>" ],
+    "methodSlices" : [ "/**\n * Creates a TikaInputStream from the given array of bytes. The length of\n * the array is stored as input metadata in the given metadata instance.\n * <p>\n * Note that you must always explicitly close the returned stream as in\n * some cases it may end up writing the given data to a temporary file.\n *\n * @param data\n * \t\tinput data\n * @param metadata\n * \t\tmetadata instance\n * @return a TikaInputStream instance\n */\npublic static TikaInputStream get(byte[] data, Metadata metadata) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod" : "org.apache.commons.io.input.TaggedInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.io.TikaInputStream.get", "org.apache.tika.io.TikaInputStream.<init>" ],
+    "methodSlices" : [ "/**\n * Creates a TikaInputStream from the given array of bytes. The length of\n * the array is stored as input metadata in the given metadata instance.\n * <p>\n * Note that you must always explicitly close the returned stream as in\n * some cases it may end up writing the given data to a temporary file.\n *\n * @param data\n * \t\tinput data\n * @param metadata\n * \t\tmetadata instance\n * @return a TikaInputStream instance\n */\npublic static TikaInputStream get(byte[] data, Metadata metadata) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod" : "org.apache.commons.io.input.TaggedInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.io.TikaInputStream.get", "org.apache.tika.io.TikaInputStream.<init>" ],
+    "methodSlices" : [ "/**\n * Creates a TikaInputStream from the given array of bytes. The length of\n * the array is stored as input metadata in the given metadata instance.\n * <p>\n * Note that you must always explicitly close the returned stream as in\n * some cases it may end up writing the given data to a temporary file.\n *\n * @param data\n * \t\tinput data\n * @param metadata\n * \t\tmetadata instance\n * @return a TikaInputStream instance\n */\npublic static TikaInputStream get(byte[] data, Metadata metadata) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod" : "org.apache.commons.io.input.TaggedInputStream.<init>",
+    "thirdPartyPackage" : "org.apache.commons.io.input",
+    "path" : [ "org.apache.tika.io.TikaInputStream.get", "org.apache.tika.io.TikaInputStream.<init>" ],
+    "methodSlices" : [ "/**\n * Creates a TikaInputStream from the given array of bytes. The length of\n * the array is stored as input metadata in the given metadata instance.\n * <p>\n * Note that you must always explicitly close the returned stream as in\n * some cases it may end up writing the given data to a temporary file.\n *\n * @param data\n * \t\tinput data\n * @param metadata\n * \t\tmetadata instance\n * @return a TikaInputStream instance\n */\npublic static TikaInputStream get(byte[] data, Metadata metadata) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.config.TikaActivator.start",
+    "thirdPartyMethod" : "org.osgi.util.tracker.ServiceTracker.<init>",
+    "thirdPartyPackage" : "org.osgi.util.tracker",
+    "path" : [ "org.apache.tika.config.TikaActivator.start" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.fork.ForkClient.<init>",
+    "thirdPartyMethod" : "org.apache.commons.io.IOUtils.copy",
+    "thirdPartyPackage" : "org.apache.commons.io",
+    "path" : [ "org.apache.tika.fork.ForkClient.<init>", "org.apache.tika.fork.ForkClient.createBootstrapJar", "org.apache.tika.fork.ForkClient.fillBootstrapJar" ],
+    "methodSlices" : [ "public ForkClient(Path tikaDir, ParserFactoryFactory parserFactoryFactory, List<String> java, TimeoutLimits timeoutLimits) throws IOException, TikaException {\n    this(tikaDir, parserFactoryFactory, null, java, timeoutLimits);\n}", "/**\n * Creates a temporary jar file that can be used to bootstrap the forked\n * server process. Remember to remove the file when no longer used.\n *\n * @return the created jar file\n * @throws IOException\n * \t\tif the bootstrap archive could not be created\n */\nprivate static File createBootstrapJar() throws IOException {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.tika.io.BoundedInputStream.transferTo",
+    "thirdPartyMethod" : "org.apache.commons.io.IOUtils.copy",
+    "thirdPartyPackage" : "org.apache.commons.io",
+    "path" : [ "org.apache.tika.io.BoundedInputStream.transferTo" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.parser.NetworkParser.ParsingTask.run",
+    "thirdPartyMethod" : "org.apache.commons.io.IOUtils.copy",
+    "thirdPartyPackage" : "org.apache.commons.io",
+    "path" : [ "org.apache.tika.parser.NetworkParser.ParsingTask.run" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod" : "org.apache.commons.io.IOUtils.copy",
+    "thirdPartyPackage" : "org.apache.commons.io",
+    "path" : [ "org.apache.tika.embedder.ExternalEmbedder.embed" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.tika.config.TikaActivator.start",
+    "thirdPartyMethod" : "org.osgi.util.tracker.ServiceTracker.open",
+    "thirdPartyPackage" : "org.osgi.util.tracker",
+    "path" : [ "org.apache.tika.config.TikaActivator.start" ],
+    "methodSlices" : [ ]
+  } ]
+}

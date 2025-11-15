@@ -1,0 +1,254 @@
+[
+  {
+    "publicMethod": "com.github.scribejava.core.base64.Base64.getInstance",
+    "thirdPartyMethod": "org.apache.commons.codec.binary.Base64.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.base64.Base64.encode",
+    "thirdPartyMethod": "org.apache.commons.codec.binary.Base64.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.base64.Base64.encodeUrlWithoutPadding",
+    "thirdPartyMethod": "org.apache.commons.codec.binary.Base64.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.readTree",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.readTree",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.readTree",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.readTree",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.asText",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.asText",
+    "totalPaths": 7,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.asText",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.asText",
+    "totalPaths": 4,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.base64.Base64.getInstance",
+    "thirdPartyMethod": "org.apache.commons.codec.binary.Base64.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.base64.Base64.encode",
+    "thirdPartyMethod": "org.apache.commons.codec.binary.Base64.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.base64.Base64.encodeUrlWithoutPadding",
+    "thirdPartyMethod": "org.apache.commons.codec.binary.Base64.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.asInt",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.intValue",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.get",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.get",
+    "totalPaths": 6,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.get",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.get",
+    "totalPaths": 4,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.textValue",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.oauth.OAuth20Service.convert",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth1AccessTokenJSONExtractor.instance",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.builder.api.DefaultApi20.getAccessTokenExtractor",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.instance",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.instance",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.generateError",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.revoke.OAuth2RevokeTokenResponseConverter.convert",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.OAuth1RequestTokenJSONExtractor.instance",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.builder.api.DefaultApi20.getDeviceAuthorizationExtractor",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.oauth.OAuth20Service.revokeToken",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.ObjectMapper.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.asInt",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  }
+]

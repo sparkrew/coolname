@@ -1,0 +1,198 @@
+[
+  {
+    "publicMethod": "org.apache.tika.config.TikaActivator.removedService",
+    "thirdPartyMethod": "org.osgi.framework.BundleContext.ungetService",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.detect.XmlRootExtractor.extractRootElement",
+    "thirdPartyMethod": "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.mime.MimeTypesReader.resolveEntity",
+    "thirdPartyMethod": "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod": "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod": "org.apache.commons.io.IOUtils.closeQuietly",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod": "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.Builder.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.config.TikaActivator.addingService",
+    "thirdPartyMethod": "org.osgi.framework.BundleContext.getService",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod": "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod": "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.toString",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.config.TikaActivator.addingService",
+    "thirdPartyMethod": "org.osgi.framework.ServiceReference.getProperty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.config.TikaActivator.stop",
+    "thirdPartyMethod": "org.osgi.util.tracker.ServiceTracker.close",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.detect.XmlRootExtractor.extractRootElement",
+    "thirdPartyMethod": "org.apache.commons.io.input.CloseShieldInputStream.wrap",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.tika.detect.XmlRootExtractor.extractRootElement",
+    "thirdPartyMethod": "org.apache.commons.io.input.CloseShieldInputStream.wrap",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.tika.parser.RecursiveParserWrapper.EmbeddedParserDecorator.parse",
+    "thirdPartyMethod": "org.apache.commons.io.input.CloseShieldInputStream.wrap",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod": "org.apache.commons.io.IOUtils.closeQuietly",
+    "totalPaths": 4,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod": "org.apache.commons.io.input.TaggedInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod": "org.apache.commons.io.input.TaggedInputStream.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod": "org.apache.commons.io.input.TaggedInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod": "org.apache.commons.io.input.TaggedInputStream.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod": "org.apache.commons.io.input.TaggedInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod": "org.apache.commons.io.input.TaggedInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.tika.io.TikaInputStream.get",
+    "thirdPartyMethod": "org.apache.commons.io.input.TaggedInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.tika.config.TikaActivator.start",
+    "thirdPartyMethod": "org.osgi.util.tracker.ServiceTracker.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.fork.ForkClient.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.io.IOUtils.copy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.tika.io.BoundedInputStream.transferTo",
+    "thirdPartyMethod": "org.apache.commons.io.IOUtils.copy",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.parser.NetworkParser.ParsingTask.run",
+    "thirdPartyMethod": "org.apache.commons.io.IOUtils.copy",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.embedder.ExternalEmbedder.embed",
+    "thirdPartyMethod": "org.apache.commons.io.IOUtils.copy",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.tika.config.TikaActivator.start",
+    "thirdPartyMethod": "org.osgi.util.tracker.ServiceTracker.open",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "slicedPaths" : [ {
+    "entryPoint" : "tech.tablesaw.io.json.JsonReader.read",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.iterator",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "tech.tablesaw.io.json.JsonReader.read", "tech.tablesaw.io.json.JsonReader.convertArrayOfArrays" ],
+    "methodSlices" : [ "@Override\npublic Table read(JsonReadOptions options) {\n    JsonNode jsonObj = null;\n    try {\n        jsonObj = mapper.readTree(options.source().createReader(null));\n    } catch (IOException e) {\n        throw new RuntimeIOException(e);\n    }\n    if (options.path() != null) {\n        jsonObj = jsonObj.at(options.path());\n    }\n    if (!jsonObj.isArray()) {\n        throw new IllegalStateException(\"Only reading a JSON array is currently supported. The array must hold an array or object for each row.\");\n    }\n    if (jsonObj.size() == 0) {\n        return Table.create(options.tableName());\n    }\n    JsonNode firstNode = jsonObj.get(0);\n    if (firstNode.isArray()) {\n        return convertArrayOfArrays(jsonObj, options);\n    }\n    return convertArrayOfObjects(jsonObj, options);\n}" ]
+  }, {
+    "entryPoint" : "tech.tablesaw.io.jsonl.JsonlReader.read",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.iterator",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "tech.tablesaw.io.jsonl.JsonlReader.read", "tech.tablesaw.io.jsonl.JsonlReader.convertObjects" ],
+    "methodSlices" : [ "@Override\npublic Table read(JsonlReadOptions options) {\n    ObjectReader stream = mapper.readerFor(JsonNode.class);\n    try {\n        Reader reader = options.source().createReader(null);\n        JsonParser parser = stream.createParser(reader);\n        Iterator<JsonNode> iter = stream.readValues(parser);\n        return convertObjects(iter, options);\n    } catch (IOException e) {\n        throw new RuntimeIOException(e);\n    }\n}" ]
+  } ]
+}

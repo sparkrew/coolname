@@ -1,0 +1,2767 @@
+[
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 3,
+    "shortestPathLength": 4,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueComparator.setReference",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getCause",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getCause",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getCause",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getCause",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setClassLoader",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setClassLoader",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setClassLoader",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setClassLoader",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setClassLoader",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setClassLoader",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getName",
+    "totalPaths": 51,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.read",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.KryoException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.write",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.KryoException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.Output.position",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.KryoException.getCause",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.KryoException.getCause",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractZipFileWithPermissions",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.zip.ZipFile.getEntries",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.NoFetchingInput.\u003cinit\u003e",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.Input.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.io.compression.XZInputStreamFactory.create",
+    "thirdPartyMethod": "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.KryoUtils.applyRegistrations",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getRegistration",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerSnapshot.resolveSchemaCompatibility",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 14,
+    "shortestPathLength": 7,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.\u003cinit\u003e",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerSnapshot.restoreSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.PojoTypeInfo.createSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.GenericTypeInfo.createSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.duplicate",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.Logger.\u003cinit\u003e",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettings.builder",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.KryoUtils.applyRegistrations",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.register",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLinkName",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getStackTrace",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getStackTrace",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getStackTrace",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getStackTrace",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 4,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueComparator.setReference",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.writeObject",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.NoFetchingInput.read",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.KryoException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 4,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueComparator.setReference",
+    "thirdPartyMethod": "org.objenesis.strategy.StdInstantiatorStrategy.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.getBestLineBreak",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.getBestLineBreak",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerSnapshot.resolveSchemaCompatibility",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.\u003cinit\u003e",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerSnapshot.restoreSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.PojoTypeInfo.createSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.GenericTypeInfo.createSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.duplicate",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.setLogger",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.NoFetchingInput.read",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.KryoBufferUnderflowException.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.read",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.ObjectMap.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.write",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.ObjectMap.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 51,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 54,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 54,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 54,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 54,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 54,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 51,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 51,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 54,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 54,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 51,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 51,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.schema.CoreSchema.\u003cinit\u003e",
+    "totalPaths": 54,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.tar.TarArchiveEntry.isDirectory",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.PojoTypeInfo.toString",
+    "thirdPartyMethod": "org.apache.commons.lang3.StringUtils.join",
+    "totalPaths": 19,
+    "shortestPathLength": 2,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.Output.reset",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.read",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getClassLoader",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.loadFromString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContext",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContext",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContext",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContext",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setReferences",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setReferences",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setReferences",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setReferences",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setReferences",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setReferences",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblemMark",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblemMark",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblemMark",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblemMark",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.tar.TarArchiveEntry.isSymbolicLink",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 3,
+    "shortestPathLength": 4,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueComparator.setReference",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextTarEntry",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractZipFileWithPermissions",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.zip.ZipFile.getInputStream",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblem",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblem",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblem",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblem",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.FlinkConfigRepresenter.\u003cinit\u003e",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.representer.StandardRepresenter.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getLine",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getLine",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getLine",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getLine",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.dumpToString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.dumpToString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.ExecutionConfig.configure",
+    "thirdPartyMethod": "org.apache.commons.compress.utils.Sets.newHashSet",
+    "totalPaths": 84,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.RestartStrategyOptions.RestartStrategyType.values",
+    "thirdPartyMethod": "org.apache.commons.compress.utils.Sets.newHashSet",
+    "totalPaths": 89,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.RestartStrategyDescriptionUtils.getRestartStrategyDescription",
+    "thirdPartyMethod": "org.apache.commons.compress.utils.Sets.newHashSet",
+    "totalPaths": 84,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.RestartStrategyOptions.RestartStrategyType.of",
+    "thirdPartyMethod": "org.apache.commons.compress.utils.Sets.newHashSet",
+    "totalPaths": 89,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getColumn",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getColumn",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getColumn",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getColumn",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractZipFileWithPermissions",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.zip.ZipFile.close",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.operators.Keys.ExpressionKeys.toString",
+    "thirdPartyMethod": "org.apache.commons.lang3.StringUtils.join",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractZipFileWithPermissions",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.zip.ZipFile.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.\u003cinit\u003e",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Serializer.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.Serializers.DummyAvroKryoSerializerClass.\u003cinit\u003e",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Serializer.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContextMark",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContextMark",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContextMark",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContextMark",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.Output.flush",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.ParameterTool.fromArgs",
+    "thirdPartyMethod": "org.apache.commons.lang3.math.NumberUtils.isNumber",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.MultipleParameterTool.fromArgs",
+    "thirdPartyMethod": "org.apache.commons.lang3.math.NumberUtils.isNumber",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getName",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getName",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getName",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.Mark.getName",
+    "totalPaths": 53,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractZipFileWithPermissions",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.isDirectory",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.newInstance",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractZipFileWithPermissions",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getUnixMode",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.KryoBufferUnderflowException.getMessage",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.Output.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.Output.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.Input.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerSnapshot.resolveSchemaCompatibility",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.\u003cinit\u003e",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerSnapshot.restoreSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.PojoTypeInfo.createSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.GenericTypeInfo.createSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.duplicate",
+    "thirdPartyMethod": "com.esotericsoftware.minlog.Log.TRACE",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getNextRegistrationId",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getNextRegistrationId",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getNextRegistrationId",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getNextRegistrationId",
+    "totalPaths": 16,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getNextRegistrationId",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getNextRegistrationId",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getNextRegistrationId",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getNextRegistrationId",
+    "totalPaths": 16,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.io.Output.close",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.YamlEngineException.setStackTrace",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.YamlEngineException.setStackTrace",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.YamlEngineException.setStackTrace",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.YamlEngineException.setStackTrace",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.KryoRegistration.getSerializer",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.SerializerFactory.ReflectionSerializerFactory.newSerializer",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Dump.\u003cinit\u003e",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.TypeExtractor.getInputFormatTypes",
+    "thirdPartyMethod": "org.apache.commons.lang3.ClassUtils.primitiveToWrapper",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.TypeExtractor.createTypeInfo",
+    "thirdPartyMethod": "org.apache.commons.lang3.ClassUtils.primitiveToWrapper",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.TypeExtractor.getBinaryOperatorReturnType",
+    "thirdPartyMethod": "org.apache.commons.lang3.ClassUtils.primitiveToWrapper",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.TypeExtractor.getUnaryOperatorReturnType",
+    "thirdPartyMethod": "org.apache.commons.lang3.ClassUtils.primitiveToWrapper",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.TypeExtractor.getForObject",
+    "thirdPartyMethod": "org.apache.commons.lang3.ClassUtils.primitiveToWrapper",
+    "totalPaths": 16,
+    "shortestPathLength": 5,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.TypeExtractor.getForClass",
+    "thirdPartyMethod": "org.apache.commons.lang3.ClassUtils.primitiveToWrapper",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.TypeExtractor.createTypeInfo",
+    "thirdPartyMethod": "org.apache.commons.lang3.ClassUtils.primitiveToWrapper",
+    "totalPaths": 15,
+    "shortestPathLength": 6,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.duplicate",
+    "thirdPartyMethod": "org.apache.commons.lang3.exception.CloneFailedException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.io.compression.ZStandardInputStreamFactory.create",
+    "thirdPartyMethod": "org.apache.commons.compress.compressors.zstandard.ZstdCompressorInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.readClassAndObject",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.Load.loadFromInputStream",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.KryoUtils.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.copy",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.KryoUtils.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.copy",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.copy",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.io.compression.Bzip2InputStreamFactory.create",
+    "thirdPartyMethod": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.ClosureCleaner.clean",
+    "thirdPartyMethod": "org.apache.commons.lang3.ClassUtils.isPrimitiveOrWrapper",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getDirectoryEntries",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.operators.util.JoinHashMap.insertOrReplace",
+    "thirdPartyMethod": "org.apache.commons.collections.map.AbstractHashedMap.HashEntry.setValue",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.NoFetchingInput.read",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.KryoException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.NoFetchingInput.readBytes",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.KryoException.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.NoFetchingInput.skip",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.KryoException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.KryoUtils.applyRegistrations",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.register",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractZipFileWithPermissions",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getName",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.YamlEngineException.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.YamlEngineException.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.YamlEngineException.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.exceptions.YamlEngineException.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 4,
+    "longestPathLength": 6
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueComparator.setReference",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.\u003cinit\u003e",
+    "totalPaths": 15,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.ValueComparator.setReference",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.register",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.GlobalConfiguration.loadConfiguration",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertToObject",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.convertAndDumpYamlFromFlatMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.DelegatingConfiguration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertConfigToWritableLines",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.loadYamlFile",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseMapToString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.YamlParserUtils.toYAMLString",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertToList",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.convertValue",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.ConfigurationUtils.parseStringToMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 34,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.configuration.Configuration.toFileWritableMap",
+    "thirdPartyMethod": "org.snakeyaml.engine.v2.api.DumpSettings.builder",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 6,
+    "shortestPathLength": 3,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setRegistrationRequired",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setRegistrationRequired",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setRegistrationRequired",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setRegistrationRequired",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setRegistrationRequired",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.setRegistrationRequired",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.read",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.ObjectMap.put",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.write",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.util.ObjectMap.put",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.operators.util.JoinHashMap.Prober.lookupMatch",
+    "thirdPartyMethod": "org.apache.commons.collections.map.AbstractHashedMap.HashEntry.getValue",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.operators.util.JoinHashMap.insertOrReplace",
+    "thirdPartyMethod": "org.apache.commons.collections.map.AbstractHashedMap.HashEntry.getValue",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.read",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getGraphContext",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.JavaSerializer.write",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.getGraphContext",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.readObject",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.common.operators.util.JoinHashMap.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.collections.map.AbstractHashedMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.util.Utils.getSerializerTree",
+    "thirdPartyMethod": "org.apache.commons.lang3.StringUtils.repeat",
+    "totalPaths": 89,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.writeClassAndObject",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.createInstance",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.deserialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.serialize",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.getKryo",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializer.copy",
+    "thirdPartyMethod": "com.esotericsoftware.kryo.Kryo.addDefaultSerializer",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractTarFile",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream.close",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.flink.util.CompressionUtils.extractZipFileWithPermissions",
+    "thirdPartyMethod": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.isUnixSymlink",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  }
+]

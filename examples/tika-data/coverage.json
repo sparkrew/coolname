@@ -1,0 +1,70 @@
+[ {
+  "method" : "org.osgi.framework.ServiceReference.getProperty(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.osgi.framework.BundleContext.getService(org.osgi.framework.ServiceReference)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.<init>(byte[])",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.IOUtils.copy(java.io.InputStream, java.io.OutputStream)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.io.input.TaggedInputStream.<init>(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.input.ClosedInputStream.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.io.input.CloseShieldInputStream.wrap(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.input.TaggedInputStream.reset()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.io.input.TaggedInputStream.mark(int)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream$Builder.get()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.IOUtils.closeQuietly(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.toString(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.builder()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setByteArray(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.get()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.io.FilenameUtils.getPrefixLength(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.osgi.framework.BundleContext.ungetService(org.osgi.framework.ServiceReference)",
+  "covered" : false
+}, {
+  "method" : "org.osgi.util.tracker.ServiceTracker.<init>(org.osgi.framework.BundleContext, java.lang.String, org.osgi.util.tracker.ServiceTrackerCustomizer)",
+  "covered" : false
+}, {
+  "method" : "org.osgi.util.tracker.ServiceTracker.open()",
+  "covered" : false
+}, {
+  "method" : "org.osgi.util.tracker.ServiceTracker.close()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setOffset(int)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setLength(int)",
+  "covered" : true
+} ]

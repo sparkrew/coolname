@@ -1,0 +1,16 @@
+[
+  {
+    "publicMethod": "tech.tablesaw.io.json.JsonReader.read",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.iterator",
+    "totalPaths": 3,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "tech.tablesaw.io.jsonl.JsonlReader.read",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.JsonNode.iterator",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  }
+]

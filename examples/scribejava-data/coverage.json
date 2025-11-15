@@ -1,0 +1,37 @@
+[ {
+  "method" : "jakarta.xml.bind.DatatypeConverter.printBase64Binary(byte[])",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readTree(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.get(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.asText()",
+  "covered" : false
+}, {
+  "method" : "javax.xml.bind.DatatypeConverter.printBase64Binary(byte[])",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.codec.binary.Base64.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.codec.binary.Base64.encodeToString(byte[])",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.textValue()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.intValue()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.asInt(int)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.asInt()",
+  "covered" : false
+} ]

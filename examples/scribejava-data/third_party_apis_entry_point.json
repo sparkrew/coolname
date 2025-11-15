@@ -1,0 +1,219 @@
+{
+  "entryPointPaths" : [ {
+    "entryPoint" : "com.github.scribejava.core.base64.Base64.getInstance",
+    "entryPointBody" : "public static Base64 getInstance() {\n    Base64 localInstance = instance;\n    if (localInstance == null) {\n        synchronized(Base64.class) {\n            localInstance = instance;\n            if (localInstance == null) {\n                localInstance = createInstance();\n                instance = localInstance;\n            }\n        }\n    }\n    return localInstance;\n}",
+    "thirdPartyMethod" : "org.apache.commons.codec.binary.Base64.<init>",
+    "thirdPartyPackage" : "org.apache.commons.codec.binary",
+    "path" : [ "com.github.scribejava.core.base64.Base64.getInstance", "com.github.scribejava.core.base64.Base64.createInstance", "com.github.scribejava.core.base64.CommonsCodecBase64.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.base64.Base64.encode",
+    "entryPointBody" : "public static String encode(byte[] bytes) {\n    return getInstance().internalEncode(bytes);\n}",
+    "thirdPartyMethod" : "org.apache.commons.codec.binary.Base64.<init>",
+    "thirdPartyPackage" : "org.apache.commons.codec.binary",
+    "path" : [ "com.github.scribejava.core.base64.Base64.encode", "com.github.scribejava.core.base64.CommonsCodecBase64.internalEncode", "com.github.scribejava.core.base64.CommonsCodecBase64.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.base64.Base64.encodeUrlWithoutPadding",
+    "entryPointBody" : "public static String encodeUrlWithoutPadding(byte[] bytes) {\n    return getInstance().internalEncodeUrlWithoutPadding(bytes);\n}",
+    "thirdPartyMethod" : "org.apache.commons.codec.binary.Base64.<init>",
+    "thirdPartyPackage" : "org.apache.commons.codec.binary",
+    "path" : [ "com.github.scribejava.core.base64.Base64.encodeUrlWithoutPadding", "com.github.scribejava.core.base64.CommonsCodecBase64.internalEncodeUrlWithoutPadding", "com.github.scribejava.core.base64.CommonsCodecBase64.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError",
+    "entryPointBody" : "/**\n * Related documentation: https://tools.ietf.org/html/rfc6749#section-5.2\n *\n * @param response\n * \t\tresponse\n * @throws java.io.IOException\n * \t\tIOException\n */\npublic void generateError(Response response) throws IOException {\n    final String responseBody = response.getBody();\n    final JsonNode responseBodyJson;\n    try {\n        responseBodyJson = OBJECT_MAPPER.readTree(responseBody);\n    } catch (JsonProcessingException ex) {\n        throw new OAuth2AccessTokenErrorResponse(null, null, null, response);\n    }\n    final JsonNode errorUriInString = responseBodyJson.get(\"error_uri\");\n    URI errorUri;\n    try {\n        errorUri = (errorUriInString == null) ? null : URI.create(errorUriInString.asText());\n    } catch (IllegalArgumentException iae) {\n        errorUri = null;\n    }\n    OAuth2Error errorCode;\n    try {\n        errorCode = OAuth2Error.parseFrom(extractRequiredParameter(responseBodyJson, \"error\", responseBody).asText());\n    } catch (IllegalArgumentException iaE) {\n        // non oauth standard error code\n        errorCode = null;\n    }\n    final JsonNode errorDescription = responseBodyJson.get(\"error_description\");\n    throw new OAuth2AccessTokenErrorResponse(errorCode, errorDescription == null ? null : errorDescription.asText(), errorUri, response);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readTree",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "entryPointBody" : "@Override\npublic OAuth2AccessToken extract(Response response) throws IOException {\n    final String body = response.getBody();\n    Preconditions.checkEmptyString(body, \"Response body is incorrect. Can't extract a token from an empty string\");\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createToken(body);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readTree",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract", "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract",
+    "entryPointBody" : "@Override\npublic T extract(Response response) throws IOException {\n    final String rawBody = response.getBody();\n    Preconditions.checkEmptyString(rawBody, \"Response body is incorrect. Can't extract a token from an empty string\");\n    final JsonNode body = OBJECT_MAPPER.readTree(rawBody);\n    final JsonNode token = body.get(OAuthConstants.TOKEN);\n    final JsonNode secret = body.get(OAuthConstants.TOKEN_SECRET);\n    if ((token == null) || (secret == null)) {\n        throw new OAuthException((\"Response body is incorrect. Can't extract token and secret from this: '\" + rawBody) + '\\'', null);\n    }\n    return createToken(token.asText(), secret.asText(), rawBody);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readTree",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "entryPointBody" : "public DeviceAuthorization extract(Response response) throws IOException {\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createDeviceAuthorization(response.getBody());\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readTree",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract", "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.createDeviceAuthorization" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError",
+    "entryPointBody" : "/**\n * Related documentation: https://tools.ietf.org/html/rfc6749#section-5.2\n *\n * @param response\n * \t\tresponse\n * @throws java.io.IOException\n * \t\tIOException\n */\npublic void generateError(Response response) throws IOException {\n    final String responseBody = response.getBody();\n    final JsonNode responseBodyJson;\n    try {\n        responseBodyJson = OBJECT_MAPPER.readTree(responseBody);\n    } catch (JsonProcessingException ex) {\n        throw new OAuth2AccessTokenErrorResponse(null, null, null, response);\n    }\n    final JsonNode errorUriInString = responseBodyJson.get(\"error_uri\");\n    URI errorUri;\n    try {\n        errorUri = (errorUriInString == null) ? null : URI.create(errorUriInString.asText());\n    } catch (IllegalArgumentException iae) {\n        errorUri = null;\n    }\n    OAuth2Error errorCode;\n    try {\n        errorCode = OAuth2Error.parseFrom(extractRequiredParameter(responseBodyJson, \"error\", responseBody).asText());\n    } catch (IllegalArgumentException iaE) {\n        // non oauth standard error code\n        errorCode = null;\n    }\n    final JsonNode errorDescription = responseBodyJson.get(\"error_description\");\n    throw new OAuth2AccessTokenErrorResponse(errorCode, errorDescription == null ? null : errorDescription.asText(), errorUri, response);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.asText",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "entryPointBody" : "@Override\npublic OAuth2AccessToken extract(Response response) throws IOException {\n    final String body = response.getBody();\n    Preconditions.checkEmptyString(body, \"Response body is incorrect. Can't extract a token from an empty string\");\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createToken(body);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.asText",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract", "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract",
+    "entryPointBody" : "@Override\npublic T extract(Response response) throws IOException {\n    final String rawBody = response.getBody();\n    Preconditions.checkEmptyString(rawBody, \"Response body is incorrect. Can't extract a token from an empty string\");\n    final JsonNode body = OBJECT_MAPPER.readTree(rawBody);\n    final JsonNode token = body.get(OAuthConstants.TOKEN);\n    final JsonNode secret = body.get(OAuthConstants.TOKEN_SECRET);\n    if ((token == null) || (secret == null)) {\n        throw new OAuthException((\"Response body is incorrect. Can't extract token and secret from this: '\" + rawBody) + '\\'', null);\n    }\n    return createToken(token.asText(), secret.asText(), rawBody);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.asText",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "entryPointBody" : "public DeviceAuthorization extract(Response response) throws IOException {\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createDeviceAuthorization(response.getBody());\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.asText",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract", "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.createDeviceAuthorization" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.base64.Base64.getInstance",
+    "entryPointBody" : "public static Base64 getInstance() {\n    Base64 localInstance = instance;\n    if (localInstance == null) {\n        synchronized(Base64.class) {\n            localInstance = instance;\n            if (localInstance == null) {\n                localInstance = createInstance();\n                instance = localInstance;\n            }\n        }\n    }\n    return localInstance;\n}",
+    "thirdPartyMethod" : "org.apache.commons.codec.binary.Base64.<init>",
+    "thirdPartyPackage" : "org.apache.commons.codec.binary",
+    "path" : [ "com.github.scribejava.core.base64.Base64.getInstance", "com.github.scribejava.core.base64.Base64.createInstance", "com.github.scribejava.core.base64.CommonsCodecBase64.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.base64.Base64.encode",
+    "entryPointBody" : "public static String encode(byte[] bytes) {\n    return getInstance().internalEncode(bytes);\n}",
+    "thirdPartyMethod" : "org.apache.commons.codec.binary.Base64.<init>",
+    "thirdPartyPackage" : "org.apache.commons.codec.binary",
+    "path" : [ "com.github.scribejava.core.base64.Base64.encode", "com.github.scribejava.core.base64.CommonsCodecBase64.internalEncode", "com.github.scribejava.core.base64.CommonsCodecBase64.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.base64.Base64.encodeUrlWithoutPadding",
+    "entryPointBody" : "public static String encodeUrlWithoutPadding(byte[] bytes) {\n    return getInstance().internalEncodeUrlWithoutPadding(bytes);\n}",
+    "thirdPartyMethod" : "org.apache.commons.codec.binary.Base64.<init>",
+    "thirdPartyPackage" : "org.apache.commons.codec.binary",
+    "path" : [ "com.github.scribejava.core.base64.Base64.encodeUrlWithoutPadding", "com.github.scribejava.core.base64.CommonsCodecBase64.internalEncodeUrlWithoutPadding", "com.github.scribejava.core.base64.CommonsCodecBase64.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "entryPointBody" : "@Override\npublic OAuth2AccessToken extract(Response response) throws IOException {\n    final String body = response.getBody();\n    Preconditions.checkEmptyString(body, \"Response body is incorrect. Can't extract a token from an empty string\");\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createToken(body);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.asInt",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract", "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.createToken" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "entryPointBody" : "public DeviceAuthorization extract(Response response) throws IOException {\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createDeviceAuthorization(response.getBody());\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.intValue",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract", "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.createDeviceAuthorization" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError",
+    "entryPointBody" : "/**\n * Related documentation: https://tools.ietf.org/html/rfc6749#section-5.2\n *\n * @param response\n * \t\tresponse\n * @throws java.io.IOException\n * \t\tIOException\n */\npublic void generateError(Response response) throws IOException {\n    final String responseBody = response.getBody();\n    final JsonNode responseBodyJson;\n    try {\n        responseBodyJson = OBJECT_MAPPER.readTree(responseBody);\n    } catch (JsonProcessingException ex) {\n        throw new OAuth2AccessTokenErrorResponse(null, null, null, response);\n    }\n    final JsonNode errorUriInString = responseBodyJson.get(\"error_uri\");\n    URI errorUri;\n    try {\n        errorUri = (errorUriInString == null) ? null : URI.create(errorUriInString.asText());\n    } catch (IllegalArgumentException iae) {\n        errorUri = null;\n    }\n    OAuth2Error errorCode;\n    try {\n        errorCode = OAuth2Error.parseFrom(extractRequiredParameter(responseBodyJson, \"error\", responseBody).asText());\n    } catch (IllegalArgumentException iaE) {\n        // non oauth standard error code\n        errorCode = null;\n    }\n    final JsonNode errorDescription = responseBodyJson.get(\"error_description\");\n    throw new OAuth2AccessTokenErrorResponse(errorCode, errorDescription == null ? null : errorDescription.asText(), errorUri, response);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.get",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "entryPointBody" : "@Override\npublic OAuth2AccessToken extract(Response response) throws IOException {\n    final String body = response.getBody();\n    Preconditions.checkEmptyString(body, \"Response body is incorrect. Can't extract a token from an empty string\");\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createToken(body);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.get",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract", "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract",
+    "entryPointBody" : "@Override\npublic T extract(Response response) throws IOException {\n    final String rawBody = response.getBody();\n    Preconditions.checkEmptyString(rawBody, \"Response body is incorrect. Can't extract a token from an empty string\");\n    final JsonNode body = OBJECT_MAPPER.readTree(rawBody);\n    final JsonNode token = body.get(OAuthConstants.TOKEN);\n    final JsonNode secret = body.get(OAuthConstants.TOKEN_SECRET);\n    if ((token == null) || (secret == null)) {\n        throw new OAuthException((\"Response body is incorrect. Can't extract token and secret from this: '\" + rawBody) + '\\'', null);\n    }\n    return createToken(token.asText(), secret.asText(), rawBody);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.get",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "entryPointBody" : "public DeviceAuthorization extract(Response response) throws IOException {\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createDeviceAuthorization(response.getBody());\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.get",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract", "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.createDeviceAuthorization" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "entryPointBody" : "public DeviceAuthorization extract(Response response) throws IOException {\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createDeviceAuthorization(response.getBody());\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.textValue",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract", "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.createDeviceAuthorization" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError",
+    "entryPointBody" : "/**\n * Related documentation: https://tools.ietf.org/html/rfc6749#section-5.2\n *\n * @param response\n * \t\tresponse\n * @throws java.io.IOException\n * \t\tIOException\n */\npublic void generateError(Response response) throws IOException {\n    final String responseBody = response.getBody();\n    final JsonNode responseBodyJson;\n    try {\n        responseBodyJson = OBJECT_MAPPER.readTree(responseBody);\n    } catch (JsonProcessingException ex) {\n        throw new OAuth2AccessTokenErrorResponse(null, null, null, response);\n    }\n    final JsonNode errorUriInString = responseBodyJson.get(\"error_uri\");\n    URI errorUri;\n    try {\n        errorUri = (errorUriInString == null) ? null : URI.create(errorUriInString.asText());\n    } catch (IllegalArgumentException iae) {\n        errorUri = null;\n    }\n    OAuth2Error errorCode;\n    try {\n        errorCode = OAuth2Error.parseFrom(extractRequiredParameter(responseBodyJson, \"error\", responseBody).asText());\n    } catch (IllegalArgumentException iaE) {\n        // non oauth standard error code\n        errorCode = null;\n    }\n    final JsonNode errorDescription = responseBodyJson.get(\"error_description\");\n    throw new OAuth2AccessTokenErrorResponse(errorCode, errorDescription == null ? null : errorDescription.asText(), errorUri, response);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract",
+    "entryPointBody" : "@Override\npublic OAuth2AccessToken extract(Response response) throws IOException {\n    final String body = response.getBody();\n    Preconditions.checkEmptyString(body, \"Response body is incorrect. Can't extract a token from an empty string\");\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createToken(body);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.extract", "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.generateError", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract",
+    "entryPointBody" : "@Override\npublic T extract(Response response) throws IOException {\n    final String rawBody = response.getBody();\n    Preconditions.checkEmptyString(rawBody, \"Response body is incorrect. Can't extract a token from an empty string\");\n    final JsonNode body = OBJECT_MAPPER.readTree(rawBody);\n    final JsonNode token = body.get(OAuthConstants.TOKEN);\n    final JsonNode secret = body.get(OAuthConstants.TOKEN_SECRET);\n    if ((token == null) || (secret == null)) {\n        throw new OAuthException((\"Response body is incorrect. Can't extract token and secret from this: '\" + rawBody) + '\\'', null);\n    }\n    return createToken(token.asText(), secret.asText(), rawBody);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.extract", "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "entryPointBody" : "public DeviceAuthorization extract(Response response) throws IOException {\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createDeviceAuthorization(response.getBody());\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract", "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.generateError", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.oauth.OAuth20Service.convert",
+    "entryPointBody" : "@Override\npublic Void convert(Response response) throws IOException {\n    checkForErrorRevokeToken(response);\n    response.close();\n    return null;\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.oauth.OAuth20Service.convert", "com.github.scribejava.core.oauth.OAuth20Service.access", "com.github.scribejava.core.oauth.OAuth20Service.checkForErrorRevokeToken", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth1AccessTokenJSONExtractor.instance",
+    "entryPointBody" : "public static OAuth1AccessTokenJSONExtractor instance() {\n    return InstanceHolder.INSTANCE;\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth1AccessTokenJSONExtractor.instance", "com.github.scribejava.core.extractors.OAuth1AccessTokenJSONExtractor.InstanceHolder.<clinit>", "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.builder.api.DefaultApi20.getAccessTokenExtractor",
+    "entryPointBody" : "/**\n * Returns the access token extractor.\n *\n * @return access token extractor\n */\npublic TokenExtractor<OAuth2AccessToken> getAccessTokenExtractor() {\n    return OAuth2AccessTokenJsonExtractor.instance();\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.builder.api.DefaultApi20.getAccessTokenExtractor", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.instance",
+    "entryPointBody" : "public static DeviceAuthorizationJsonExtractor instance() {\n    return InstanceHolder.INSTANCE;\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.instance", "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.InstanceHolder.<clinit>", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.instance",
+    "entryPointBody" : "public static OAuth2AccessTokenJsonExtractor instance() {\n    return InstanceHolder.INSTANCE;\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.instance", "com.github.scribejava.core.extractors.OAuth2AccessTokenJsonExtractor.InstanceHolder.<clinit>", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.generateError",
+    "entryPointBody" : "public void generateError(Response response) throws IOException {\n    OAuth2AccessTokenJsonExtractor.instance().generateError(response);\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.generateError", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.revoke.OAuth2RevokeTokenResponseConverter.convert",
+    "entryPointBody" : "public Void convert(Response response) throws IOException {\n    if (response.getCode() != 200) {\n        OAuth2AccessTokenJsonExtractor.instance().generateError(response);\n    }\n    return null;\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.revoke.OAuth2RevokeTokenResponseConverter.convert", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.OAuth1RequestTokenJSONExtractor.instance",
+    "entryPointBody" : "public static OAuth1RequestTokenJSONExtractor instance() {\n    return InstanceHolder.INSTANCE;\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.OAuth1RequestTokenJSONExtractor.instance", "com.github.scribejava.core.extractors.OAuth1RequestTokenJSONExtractor.InstanceHolder.<clinit>", "com.github.scribejava.core.extractors.AbstractOAuth1JSONTokenExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.builder.api.DefaultApi20.getDeviceAuthorizationExtractor",
+    "entryPointBody" : "public DeviceAuthorizationJsonExtractor getDeviceAuthorizationExtractor() {\n    return DeviceAuthorizationJsonExtractor.instance();\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.builder.api.DefaultApi20.getDeviceAuthorizationExtractor", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.oauth.OAuth20Service.revokeToken",
+    "entryPointBody" : "public void revokeToken(String tokenToRevoke, TokenTypeHint tokenTypeHint) throws IOException, InterruptedException, ExecutionException {\n    final OAuthRequest request = createRevokeTokenRequest(tokenToRevoke, tokenTypeHint);\n    try (Response response = execute(request)) {\n        checkForErrorRevokeToken(response);\n    }\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.oauth.OAuth20Service.revokeToken", "com.github.scribejava.core.oauth.OAuth20Service.checkForErrorRevokeToken", "com.github.scribejava.core.extractors.AbstractJsonExtractor.<clinit>" ]
+  }, {
+    "entryPoint" : "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract",
+    "entryPointBody" : "public DeviceAuthorization extract(Response response) throws IOException {\n    if (response.getCode() != 200) {\n        generateError(response);\n    }\n    return createDeviceAuthorization(response.getBody());\n}",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.asInt",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind",
+    "path" : [ "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.extract", "com.github.scribejava.core.extractors.DeviceAuthorizationJsonExtractor.createDeviceAuthorization" ]
+  } ]
+}

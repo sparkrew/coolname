@@ -1,0 +1,76 @@
+[ {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.get(int)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.iterator()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.isTextual()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.size()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.textValue()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.asText()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.createArrayNode()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.createObjectNode()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.convertValue(java.lang.Object, java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ObjectNode.set(java.lang.String, com.fasterxml.jackson.databind.JsonNode)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ArrayNode.add(com.fasterxml.jackson.databind.JsonNode)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.github.wnameless.json.flattener.JsonFlattener.flatten(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readTree(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.fieldNames()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.has(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.datatype.jsr310.JavaTimeModule.<init>()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.registerModule(com.fasterxml.jackson.databind.Module)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.at(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.isArray()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.get(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readerFor(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectReader.createParser(java.io.Reader)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectReader.readValues(com.fasterxml.jackson.core.JsonParser)",
+  "covered" : true
+} ]
