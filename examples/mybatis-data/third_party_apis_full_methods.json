@@ -1,0 +1,219 @@
+{
+  "fullMethodsPaths" : [ {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.warn",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn" ],
+    "fullMethods" : [ "@Override\npublic void warn(String s) {\n    log.warn(MARKER, s);\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isTraceEnabled",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.isTraceEnabled",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isTraceEnabled" ],
+    "fullMethods" : [ "@Override\npublic boolean isTraceEnabled() {\n    return log.isTraceEnabled();\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void trace(String s) {\n    log.trace(MARKER, s);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.debug",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.debug", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void debug(String s) {\n    log.logIfEnabled(FQCN, Level.DEBUG, MARKER, ((Message) (new SimpleMessage(s))), null);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void debug(String s) {\n    log.debug(MARKER, s);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.trace",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.trace", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void trace(String s) {\n    log.logIfEnabled(FQCN, Level.TRACE, MARKER, ((Message) (new SimpleMessage(s))), null);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void error(String s, Throwable e) {\n    log.logIfEnabled(FQCN, Level.ERROR, MARKER, ((Message) (new SimpleMessage(s))), e);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2Impl.<init>",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2Impl.<init>", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ],
+    "fullMethods" : [ "public Log4j2Impl(String clazz) {\n    Logger logger = LogManager.getLogger(clazz);\n    if (logger instanceof AbstractLogger) {\n        log = new Log4j2AbstractLoggerImpl(((AbstractLogger) (logger)));\n    } else {\n        log = new Log4j2LoggerImpl(logger);\n    }\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.warn",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.warn", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void warn(String s) {\n    log.logIfEnabled(FQCN, Level.WARN, MARKER, ((Message) (new SimpleMessage(s))), null);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void error(String s, Throwable e) {\n    log.error(MARKER, s, e);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void error(String s) {\n    log.logIfEnabled(FQCN, Level.ERROR, MARKER, ((Message) (new SimpleMessage(s))), null);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void error(String s) {\n    log.error(MARKER, s);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ],
+    "fullMethods" : [ "@Override\npublic void warn(String s) {\n    log.warn(MARKER, s);\n}", "" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.intercept",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.MethodProxy.invokeSuper",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.intercept" ],
+    "fullMethods" : [ "@Override\npublic Object intercept(Object enhanced, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {\n    final String methodName = method.getName();\n    lock.lock();\n    try {\n        if (WRITE_REPLACE_METHOD.equals(methodName)) {\n            Object original;\n            if (constructorArgTypes.isEmpty()) {\n                original = objectFactory.create(type);\n            } else {\n                original = objectFactory.create(type, constructorArgTypes, constructorArgs);\n            }\n            PropertyCopier.copyBeanProperties(type, enhanced, original);\n            if (lazyLoader.size() > 0) {\n                return new CglibSerialStateHolder(original, lazyLoader.getProperties(), objectFactory, constructorArgTypes, constructorArgs);\n            } else {\n                return original;\n            }\n        }\n        if ((lazyLoader.size() > 0) && (!FINALIZE_METHOD.equals(methodName))) {\n            if (aggressive || lazyLoadTriggerMethods.contains(methodName)) {\n                lazyLoader.loadAll();\n            } else if (PropertyNamer.isSetter(methodName)) {\n                final String property = PropertyNamer.methodToProperty(methodName);\n                lazyLoader.remove(property);\n            } else if (PropertyNamer.isGetter(methodName)) {\n                final String property = PropertyNamer.methodToProperty(methodName);\n                if (lazyLoader.hasLoader(property)) {\n                    lazyLoader.load(property);\n                }\n            }\n        }\n        return methodProxy.invokeSuper(enhanced, args);\n    } catch (Throwable t) {\n        throw ExceptionUtil.unwrapThrowable(t);\n    } finally {\n        lock.unlock();\n    }\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.intercept",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.MethodProxy.invokeSuper",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.intercept" ],
+    "fullMethods" : [ "@Override\npublic Object intercept(Object enhanced, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {\n    final Object o = super.invoke(enhanced, method, args);\n    return o instanceof AbstractSerialStateHolder ? o : methodProxy.invokeSuper(o, args);\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.create",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.create",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.error",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error" ],
+    "fullMethods" : [ "@Override\npublic void error(String s, Throwable e) {\n    log.error(MARKER, s, e);\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.isTraceEnabled",
+    "thirdPartyMethod" : "org.apache.logging.log4j.spi.ExtendedLoggerWrapper.isTraceEnabled",
+    "thirdPartyPackage" : "org.apache.logging.log4j.spi",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.isTraceEnabled" ],
+    "fullMethods" : [ "@Override\npublic boolean isTraceEnabled() {\n    return log.isTraceEnabled();\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.debug",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug" ],
+    "fullMethods" : [ "@Override\npublic void debug(String s) {\n    log.debug(MARKER, s);\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.create",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.create",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setCallback",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setCallback",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setInterfaces",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setInterfaces",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.trace",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.trace",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.trace" ],
+    "fullMethods" : [ "@Override\npublic void trace(String s) {\n    log.trace(s);\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.<init>",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.<init>",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isDebugEnabled",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isDebugEnabled" ],
+    "fullMethods" : [ "@Override\npublic boolean isDebugEnabled() {\n    return log.isDebugEnabled();\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.error",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error" ],
+    "fullMethods" : [ "@Override\npublic void error(String s) {\n    log.error(MARKER, s);\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setSuperclass",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setSuperclass",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ],
+    "fullMethods" : [ "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}", "static Object createStaticProxy(Class<?> type, Callback callback, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    LogHolder.log.warn(\"CglibProxyFactory is deprecated. Use another proxy factory implementation.\");\n    Enhancer enhancer = new Enhancer();\n    enhancer.setCallback(callback);\n    enhancer.setSuperclass(type);\n    try {\n        type.getDeclaredMethod(WRITE_REPLACE_METHOD);\n        // ObjectOutputStream will call writeReplace of objects returned by writeReplace\n        if (LogHolder.log.isDebugEnabled()) {\n            LogHolder.log.debug(((WRITE_REPLACE_METHOD + \" method was found on bean \") + type) + \", make sure it returns this\");\n        }\n    } catch (NoSuchMethodException e) {\n        enhancer.setInterfaces(new Class[]{ WriteReplaceInterface.class });\n    } catch (SecurityException e) {\n        // nothing to do here\n    }\n    Object enhanced;\n    if (constructorArgTypes.isEmpty()) {\n        enhanced = enhancer.create();\n    } else {\n        Class<?>[] typesArray = constructorArgTypes.toArray(new Class[constructorArgTypes.size()]);\n        Object[] valuesArray = constructorArgs.toArray(new Object[constructorArgs.size()]);\n        enhanced = enhancer.create(typesArray, valuesArray);\n    }\n    return enhanced;\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j.Log4jImpl.isTraceEnabled",
+    "thirdPartyMethod" : "org.apache.log4j.Logger.isTraceEnabled",
+    "thirdPartyPackage" : "org.apache.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j.Log4jImpl.isTraceEnabled" ],
+    "fullMethods" : [ "@Override\npublic boolean isTraceEnabled() {\n    return log.isTraceEnabled();\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.isTraceEnabled",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isTraceEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.isTraceEnabled" ],
+    "fullMethods" : [ "@Override\npublic boolean isTraceEnabled() {\n    return log.isTraceEnabled();\n}" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.trace",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace" ],
+    "fullMethods" : [ "@Override\npublic void trace(String s) {\n    log.trace(MARKER, s);\n}" ]
+  } ]
+}

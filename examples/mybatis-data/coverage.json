@@ -1,0 +1,97 @@
+[ {
+  "method" : "org.apache.log4j.Logger.isDebugEnabled()",
+  "covered" : true
+}, {
+  "method" : "org.apache.logging.log4j.Logger.isDebugEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.logging.log4j.Logger.isTraceEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.isDebugEnabled()",
+  "covered" : true
+}, {
+  "method" : "net.sf.cglib.proxy.MethodProxy.invokeSuper(java.lang.Object, java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "org.apache.logging.log4j.message.SimpleMessage.<init>(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.apache.logging.log4j.spi.ExtendedLoggerWrapper.logIfEnabled(java.lang.String, org.apache.logging.log4j.Level, org.apache.logging.log4j.Marker, org.apache.logging.log4j.message.Message, java.lang.Throwable)",
+  "covered" : true
+}, {
+  "method" : "org.apache.log4j.Logger.log(java.lang.String, org.apache.log4j.Priority, java.lang.Object, java.lang.Throwable)",
+  "covered" : true
+}, {
+  "method" : "org.apache.log4j.Logger.getLogger(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.isTraceEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.logging.log4j.Logger.error(org.apache.logging.log4j.Marker, java.lang.String, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.warn(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.debug(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.apache.logging.log4j.spi.ExtendedLoggerWrapper.isDebugEnabled()",
+  "covered" : true
+}, {
+  "method" : "org.apache.logging.log4j.Logger.debug(org.apache.logging.log4j.Marker, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.logging.log4j.spi.AbstractLogger.getName()",
+  "covered" : true
+}, {
+  "method" : "org.apache.logging.log4j.spi.AbstractLogger.getMessageFactory()",
+  "covered" : true
+}, {
+  "method" : "org.apache.logging.log4j.spi.ExtendedLoggerWrapper.<init>(org.apache.logging.log4j.spi.ExtendedLogger, java.lang.String, org.apache.logging.log4j.message.MessageFactory)",
+  "covered" : true
+}, {
+  "method" : "org.apache.logging.log4j.Logger.trace(org.apache.logging.log4j.Marker, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.logging.log4j.Logger.warn(org.apache.logging.log4j.Marker, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.logging.log4j.MarkerManager.getMarker(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.logging.log4j.LogManager.getLogger(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "net.sf.cglib.proxy.Enhancer.<init>()",
+  "covered" : false
+}, {
+  "method" : "net.sf.cglib.proxy.Enhancer.setCallback(net.sf.cglib.proxy.Callback)",
+  "covered" : false
+}, {
+  "method" : "net.sf.cglib.proxy.Enhancer.setSuperclass(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "net.sf.cglib.proxy.Enhancer.create()",
+  "covered" : false
+}, {
+  "method" : "net.sf.cglib.proxy.Enhancer.setInterfaces(java.lang.Class[])",
+  "covered" : false
+}, {
+  "method" : "org.apache.logging.log4j.spi.ExtendedLoggerWrapper.isTraceEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.trace(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.log4j.Logger.isTraceEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.LogFactory.getLog(java.lang.String)",
+  "covered" : true
+} ]

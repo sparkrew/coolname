@@ -1,0 +1,219 @@
+{
+  "entryPointPaths" : [ {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn",
+    "entryPointBody" : "@Override\npublic void warn(String s) {\n    log.warn(MARKER, s);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.warn",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isTraceEnabled",
+    "entryPointBody" : "@Override\npublic boolean isTraceEnabled() {\n    return log.isTraceEnabled();\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.isTraceEnabled",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isTraceEnabled" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace",
+    "entryPointBody" : "@Override\npublic void trace(String s) {\n    log.trace(MARKER, s);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.debug",
+    "entryPointBody" : "@Override\npublic void debug(String s) {\n    log.logIfEnabled(FQCN, Level.DEBUG, MARKER, ((Message) (new SimpleMessage(s))), null);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.debug", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug",
+    "entryPointBody" : "@Override\npublic void debug(String s) {\n    log.debug(MARKER, s);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.trace",
+    "entryPointBody" : "@Override\npublic void trace(String s) {\n    log.logIfEnabled(FQCN, Level.TRACE, MARKER, ((Message) (new SimpleMessage(s))), null);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.trace", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error",
+    "entryPointBody" : "@Override\npublic void error(String s, Throwable e) {\n    log.logIfEnabled(FQCN, Level.ERROR, MARKER, ((Message) (new SimpleMessage(s))), e);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2Impl.<init>",
+    "entryPointBody" : "public Log4j2Impl(String clazz) {\n    Logger logger = LogManager.getLogger(clazz);\n    if (logger instanceof AbstractLogger) {\n        log = new Log4j2AbstractLoggerImpl(((AbstractLogger) (logger)));\n    } else {\n        log = new Log4j2LoggerImpl(logger);\n    }\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2Impl.<init>", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.warn",
+    "entryPointBody" : "@Override\npublic void warn(String s) {\n    log.logIfEnabled(FQCN, Level.WARN, MARKER, ((Message) (new SimpleMessage(s))), null);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.warn", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "entryPointBody" : "@Override\npublic void error(String s, Throwable e) {\n    log.error(MARKER, s, e);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error",
+    "entryPointBody" : "@Override\npublic void error(String s) {\n    log.logIfEnabled(FQCN, Level.ERROR, MARKER, ((Message) (new SimpleMessage(s))), null);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error", "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "entryPointBody" : "@Override\npublic void error(String s) {\n    log.error(MARKER, s);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn",
+    "entryPointBody" : "@Override\npublic void warn(String s) {\n    log.warn(MARKER, s);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.MarkerManager.getMarker",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn", "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.<clinit>" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.intercept",
+    "entryPointBody" : "@Override\npublic Object intercept(Object enhanced, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {\n    final String methodName = method.getName();\n    lock.lock();\n    try {\n        if (WRITE_REPLACE_METHOD.equals(methodName)) {\n            Object original;\n            if (constructorArgTypes.isEmpty()) {\n                original = objectFactory.create(type);\n            } else {\n                original = objectFactory.create(type, constructorArgTypes, constructorArgs);\n            }\n            PropertyCopier.copyBeanProperties(type, enhanced, original);\n            if (lazyLoader.size() > 0) {\n                return new CglibSerialStateHolder(original, lazyLoader.getProperties(), objectFactory, constructorArgTypes, constructorArgs);\n            } else {\n                return original;\n            }\n        }\n        if ((lazyLoader.size() > 0) && (!FINALIZE_METHOD.equals(methodName))) {\n            if (aggressive || lazyLoadTriggerMethods.contains(methodName)) {\n                lazyLoader.loadAll();\n            } else if (PropertyNamer.isSetter(methodName)) {\n                final String property = PropertyNamer.methodToProperty(methodName);\n                lazyLoader.remove(property);\n            } else if (PropertyNamer.isGetter(methodName)) {\n                final String property = PropertyNamer.methodToProperty(methodName);\n                if (lazyLoader.hasLoader(property)) {\n                    lazyLoader.load(property);\n                }\n            }\n        }\n        return methodProxy.invokeSuper(enhanced, args);\n    } catch (Throwable t) {\n        throw ExceptionUtil.unwrapThrowable(t);\n    } finally {\n        lock.unlock();\n    }\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.MethodProxy.invokeSuper",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.intercept" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.intercept",
+    "entryPointBody" : "@Override\npublic Object intercept(Object enhanced, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {\n    final Object o = super.invoke(enhanced, method, args);\n    return o instanceof AbstractSerialStateHolder ? o : methodProxy.invokeSuper(o, args);\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.MethodProxy.invokeSuper",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.intercept" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.create",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.create",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "entryPointBody" : "@Override\npublic void error(String s, Throwable e) {\n    log.error(MARKER, s, e);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.error",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.isTraceEnabled",
+    "entryPointBody" : "@Override\npublic boolean isTraceEnabled() {\n    return log.isTraceEnabled();\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.spi.ExtendedLoggerWrapper.isTraceEnabled",
+    "thirdPartyPackage" : "org.apache.logging.log4j.spi",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.isTraceEnabled" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug",
+    "entryPointBody" : "@Override\npublic void debug(String s) {\n    log.debug(MARKER, s);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.debug",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.create",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.create",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setCallback",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setCallback",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setInterfaces",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setInterfaces",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.trace",
+    "entryPointBody" : "@Override\npublic void trace(String s) {\n    log.trace(s);\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.trace",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.trace" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.<init>",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.<init>",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isDebugEnabled",
+    "entryPointBody" : "@Override\npublic boolean isDebugEnabled() {\n    return log.isDebugEnabled();\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isDebugEnabled" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "entryPointBody" : "@Override\npublic void error(String s) {\n    log.error(MARKER, s);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.error",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedResultObjectProxyImpl callback = new EnhancedResultObjectProxyImpl(type, lazyLoader, configuration, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setSuperclass",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "entryPointBody" : "public static Object createProxy(Object target, Map<String, ResultLoaderMap.LoadPair> unloadedProperties, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs) {\n    final Class<?> type = target.getClass();\n    EnhancedDeserializationProxyImpl callback = new EnhancedDeserializationProxyImpl(type, unloadedProperties, objectFactory, constructorArgTypes, constructorArgs);\n    Object enhanced = createStaticProxy(type, callback, constructorArgTypes, constructorArgs);\n    PropertyCopier.copyBeanProperties(type, target, enhanced);\n    return enhanced;\n}",
+    "thirdPartyMethod" : "net.sf.cglib.proxy.Enhancer.setSuperclass",
+    "thirdPartyPackage" : "net.sf.cglib.proxy",
+    "path" : [ "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy", "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.createStaticProxy" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j.Log4jImpl.isTraceEnabled",
+    "entryPointBody" : "@Override\npublic boolean isTraceEnabled() {\n    return log.isTraceEnabled();\n}",
+    "thirdPartyMethod" : "org.apache.log4j.Logger.isTraceEnabled",
+    "thirdPartyPackage" : "org.apache.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j.Log4jImpl.isTraceEnabled" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.isTraceEnabled",
+    "entryPointBody" : "@Override\npublic boolean isTraceEnabled() {\n    return log.isTraceEnabled();\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isTraceEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.isTraceEnabled" ]
+  }, {
+    "entryPoint" : "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace",
+    "entryPointBody" : "@Override\npublic void trace(String s) {\n    log.trace(MARKER, s);\n}",
+    "thirdPartyMethod" : "org.apache.logging.log4j.Logger.trace",
+    "thirdPartyPackage" : "org.apache.logging.log4j",
+    "path" : [ "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace" ]
+  } ]
+}

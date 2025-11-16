@@ -1,0 +1,254 @@
+[
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn",
+    "thirdPartyMethod": "org.apache.logging.log4j.Logger.warn",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isTraceEnabled",
+    "thirdPartyMethod": "org.apache.logging.log4j.Logger.isTraceEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.debug",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.trace",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2Impl.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 36,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.warn",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.error",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.warn",
+    "thirdPartyMethod": "org.apache.logging.log4j.MarkerManager.getMarker",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.intercept",
+    "thirdPartyMethod": "net.sf.cglib.proxy.MethodProxy.invokeSuper",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.intercept",
+    "thirdPartyMethod": "net.sf.cglib.proxy.MethodProxy.invokeSuper",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.create",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.create",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "thirdPartyMethod": "org.apache.logging.log4j.Logger.error",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl.isTraceEnabled",
+    "thirdPartyMethod": "org.apache.logging.log4j.spi.ExtendedLoggerWrapper.isTraceEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.debug",
+    "thirdPartyMethod": "org.apache.logging.log4j.Logger.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.create",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.create",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.setCallback",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.setCallback",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.setInterfaces",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.setInterfaces",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.trace",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.trace",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.isDebugEnabled",
+    "thirdPartyMethod": "org.apache.logging.log4j.Logger.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.error",
+    "thirdPartyMethod": "org.apache.logging.log4j.Logger.error",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedResultObjectProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.setSuperclass",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.EnhancedDeserializationProxyImpl.createProxy",
+    "thirdPartyMethod": "net.sf.cglib.proxy.Enhancer.setSuperclass",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j.Log4jImpl.isTraceEnabled",
+    "thirdPartyMethod": "org.apache.log4j.Logger.isTraceEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.isTraceEnabled",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isTraceEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.ibatis.logging.log4j2.Log4j2LoggerImpl.trace",
+    "thirdPartyMethod": "org.apache.logging.log4j.Logger.trace",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  }
+]
