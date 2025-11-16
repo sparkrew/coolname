@@ -1,0 +1,249 @@
+{
+  "entryPointPaths" : [ {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.digester.Rule.<init>",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester", "org.apache.commons.validator.ValidatorResources.addOldArgRules", "org.apache.commons.validator.ValidatorResources.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.digester.Rule.<init>",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester", "org.apache.commons.validator.ValidatorResources.addOldArgRules", "org.apache.commons.validator.ValidatorResources.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.digester.Rule.<init>",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester", "org.apache.commons.validator.ValidatorResources.addOldArgRules", "org.apache.commons.validator.ValidatorResources.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSetFactory.<init>",
+    "entryPointBody" : "/**\n * Constructs a new instance.\n */\npublic FormSetFactory() {\n    // empty\n}",
+    "thirdPartyMethod" : "org.apache.commons.digester.AbstractObjectCreationFactory.<init>",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.FormSetFactory.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.getForm",
+    "entryPointBody" : "/**\n * <p>Gets a {@code Form} based on the name of the form and the\n * {@link Locale} that most closely matches the {@link Locale}\n * passed in.  The order of {@link Locale} matching is:</p>\n * <ol>\n *    <li>language + country + variant</li>\n *    <li>language + country</li>\n *    <li>language</li>\n *    <li>default locale</li>\n * </ol>\n *\n * @param language\n * \t\tThe locale's language.\n * @param country\n * \t\tThe locale's country.\n * @param variant\n * \t\tThe locale's language variant.\n * @param formKey\n * \t\tThe key for the Form.\n * @return The validator Form.\n * @since 1.1\n */\npublic Form getForm(final String language, final String country, final String variant, final String formKey) {\n    Form form = null;\n    // Try language/country/variant\n    String key = buildLocale(language, country, variant);\n    if (!key.isEmpty()) {\n        final FormSet formSet = getFormSets().get(key);\n        if (formSet != null) {\n            form = formSet.getForm(formKey);\n        }\n    }\n    final String localeKey = key;\n    // Try language/country\n    if (form == null) {\n        key = buildLocale(language, country, null);\n        if (!key.isEmpty()) {\n            final FormSet formSet = getFormSets().get(key);\n            if (formSet != null) {\n                form = formSet.getForm(formKey);\n            }\n        }\n    }\n    // Try language\n    if (form == null) {\n        key = buildLocale(language, null, null);\n        if (!key.isEmpty()) {\n            final FormSet formSet = getFormSets().get(key);\n            if (formSet != null) {\n                form = formSet.getForm(formKey);\n            }\n        }\n    }\n    // Try default formset\n    if (form == null) {\n        form = defaultFormSet.getForm(formKey);\n        key = \"default\";\n    }\n    if (form == null) {\n        if (getLog().isWarnEnabled()) {\n            getLog().warn((((\"Form '\" + formKey) + \"' not found for locale '\") + localeKey) + \"'\");\n        }\n    } else if (getLog().isDebugEnabled()) {\n        getLog().debug((((((\"Form '\" + formKey) + \"' found in formset '\") + key) + \"' for locale '\") + localeKey) + \"'\");\n    }\n    return form;\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isWarnEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.getForm" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "entryPointBody" : "/**\n * Add a {@code FormSet} to this {@code ValidatorResources}\n * object.  It will be associated with the {@link Locale} of the\n * {@code FormSet}.\n *\n * @param fs\n * \t\tThe form set to add.\n * @since 1.1\n */\npublic void addFormSet(final FormSet fs) {\n    final String key = buildKey(fs);\n    if (key.isEmpty()) {\n        // there can only be one default formset\n        if (getLog().isWarnEnabled() && (defaultFormSet != null)) {\n            // warn the user he might not get the expected results\n            getLog().warn(\"Overriding default FormSet definition.\");\n        }\n        defaultFormSet = fs;\n    } else {\n        final FormSet formset = getFormSets().get(key);\n        if (formset == null) {\n            // it hasn't been included yet\n            if (getLog().isDebugEnabled()) {\n                getLog().debug((\"Adding FormSet '\" + fs) + \"'.\");\n            }\n        } else if (getLog().isWarnEnabled()) {\n            // warn the user he might not\n            // get the expected results\n            getLog().warn(\"Overriding FormSet definition. Duplicate for locale: \" + key);\n        }\n        getFormSets().put(key, fs);\n    }\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isWarnEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addFormSet" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.Field.validate",
+    "entryPointBody" : "/**\n * Run the configured validations on this field.  Run all validations\n * in the depends clause over each item in turn, returning when the first\n * one fails.\n *\n * @param params\n * \t\tA Map of parameter class names to parameter values to pass\n * \t\tinto validation methods.\n * @param actions\n * \t\tA Map of validator names to ValidatorAction objects.\n * @return A ValidatorResults object containing validation messages for\nthis field.\n * @throws ValidatorException\n * \t\tIf an error occurs during validation.\n */\npublic ValidatorResults validate(final Map<String, Object> params, final Map<String, ValidatorAction> actions) throws ValidatorException {\n    if (getDepends() == null) {\n        return new ValidatorResults();\n    }\n    final ValidatorResults allResults = new ValidatorResults();\n    final Object bean = params.get(Validator.BEAN_PARAM);\n    final int numberOfFieldsToValidate = (isIndexed()) ? getIndexedPropertySize(bean) : 1;\n    for (int fieldNumber = 0; fieldNumber < numberOfFieldsToValidate; fieldNumber++) {\n        final ValidatorResults results = new ValidatorResults();\n        synchronized(dependencyList) {\n            for (final String depend : dependencyList) {\n                final ValidatorAction action = actions.get(depend);\n                if (action == null) {\n                    handleMissingAction(depend);\n                }\n                final boolean good = validateForRule(action, results, actions, params, fieldNumber);\n                if (!good) {\n                    allResults.merge(results);\n                    return allResults;\n                }\n            }\n        }\n        allResults.merge(results);\n    }\n    return allResults;\n}",
+    "thirdPartyMethod" : "org.apache.commons.beanutils.PropertyUtils.getProperty",
+    "thirdPartyPackage" : "org.apache.commons.beanutils",
+    "path" : [ "org.apache.commons.validator.Field.validate", "org.apache.commons.validator.Field.getIndexedPropertySize" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.util.ValidatorUtils.getValueAsString",
+    "entryPointBody" : "/**\n * Convenience method for getting a value from a bean property as a\n * {@link String}.  If the property is a {@code String[]} or\n * {@link Collection} and it is empty, an empty {@link String}\n * \"\" is returned.  Otherwise, property.toString() is returned.  This method\n * may return {@code null} if there was an error retrieving the\n * property.\n *\n * @param bean\n * \t\tThe bean object.\n * @param property\n * \t\tThe name of the property to access.\n * @return The value of the property.\n */\npublic static String getValueAsString(final Object bean, final String property) {\n    Object value = null;\n    try {\n        value = PropertyUtils.getProperty(bean, property);\n    } catch (final ReflectiveOperationException e) {\n        LOG.error(e.getMessage(), e);\n    }\n    if (value == null) {\n        return null;\n    }\n    if (value instanceof String[]) {\n        return ((String[]) (value)).length > 0 ? value.toString() : \"\";\n    }\n    if (value instanceof Collection) {\n        return ((Collection<?>) (value)).isEmpty() ? \"\" : value.toString();\n    }\n    return value.toString();\n}",
+    "thirdPartyMethod" : "org.apache.commons.beanutils.PropertyUtils.getProperty",
+    "thirdPartyPackage" : "org.apache.commons.beanutils",
+    "path" : [ "org.apache.commons.validator.util.ValidatorUtils.getValueAsString" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.Form.<init>",
+    "entryPointBody" : "/**\n * Constructs a new instance.\n */\npublic Form() {\n    // empty\n}",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.Form.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.Field.<init>",
+    "entryPointBody" : "/**\n * Constructs a new instance.\n */\npublic Field() {\n    // empty\n}",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.Field.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create an empty ValidatorResources object.\n */\npublic ValidatorResources() {\n}",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.util.ValidatorUtils.copyFastHashMap",
+    "entryPointBody" : "/**\n * Makes a deep copy of a {@code FastHashMap} if the values\n * are {@code Msg}, {@code Arg},\n * or {@code Var}. Otherwise, it is a shallow copy.\n *\n * @param fastHashMap\n * \t\t{@code FastHashMap} to copy.\n * @return FastHashMap A copy of the {@code FastHashMap} that was\npassed in.\n * @deprecated This method is not part of Validator's public API.  Validator\nwill use it internally until FastHashMap references are removed.  Use\ncopyMap() instead.\n */\n@Deprecated\npublic static FastHashMap copyFastHashMap(final FastHashMap fastHashMap) {\n    final FastHashMap results = new FastHashMap();\n    // FastHashMap is not generic\n    @SuppressWarnings(\"unchecked\")\n    final Iterator<Entry<String, ?>> iterator = fastHashMap.entrySet().iterator();\n    while (iterator.hasNext()) {\n        final Entry<String, ?> entry = iterator.next();\n        final String key = entry.getKey();\n        final Object value = entry.getValue();\n        if (value instanceof Msg) {\n            results.put(key, ((Msg) (value)).clone());\n        } else if (value instanceof Arg) {\n            results.put(key, ((Arg) (value)).clone());\n        } else if (value instanceof Var) {\n            results.put(key, ((Var) (value)).clone());\n        } else {\n            results.put(key, value);\n        }\n    } \n    results.setFast(true);\n    return results;\n}",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.util.ValidatorUtils.copyFastHashMap" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSet.addConstant",
+    "entryPointBody" : "/**\n * Add a {@code Constant} to the locale level.\n *\n * @param name\n * \t\tThe constant name\n * @param value\n * \t\tThe constant value\n */\npublic void addConstant(final String name, final String value) {\n    if (constants.containsKey(name)) {\n        getLog().error((((\"Constant '\" + name) + \"' already exists in FormSet[\") + displayKey()) + \"] - ignoring.\");\n    } else {\n        constants.put(name, value);\n    }\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.FormSet.addConstant" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.begin",
+    "entryPointBody" : "@Override\npublic void begin(final String namespace, final String name, final Attributes attributes) {\n    // Create the Arg\n    final Arg arg = new Arg();\n    arg.setKey(attributes.getValue(\"key\"));\n    arg.setName(attributes.getValue(\"name\"));\n    if (\"false\".equalsIgnoreCase(attributes.getValue(\"resource\"))) {\n        arg.setResource(false);\n    }\n    try {\n        final int length = \"arg\".length();// skip the arg prefix\n\n        arg.setPosition(Integer.parseInt(name.substring(length)));\n    } catch (final Exception ex) {\n        getLog().error(((((\"Error parsing Arg position: \" + name) + \" \") + arg) + \" \") + ex);\n    }\n    // Add the arg to the parent field\n    ((Field) (getDigester().peek(0))).addArg(arg);\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.begin" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSet.addForm",
+    "entryPointBody" : "/**\n * Add a {@code Form} to the {@code FormSet}.\n *\n * @param f\n * \t\tThe form\n */\npublic void addForm(final Form f) {\n    final String formName = f.getName();\n    if (forms.containsKey(formName)) {\n        getLog().error((((\"Form '\" + formName) + \"' already exists in FormSet[\") + displayKey()) + \"] - ignoring.\");\n    } else {\n        forms.put(f.getName(), f);\n    }\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.FormSet.addForm" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addValidatorAction",
+    "entryPointBody" : "/**\n * Add a {@code ValidatorAction} to the resource.  It also creates an\n * instance of the class based on the {@code ValidatorAction}s\n * class name and retrieves the {@code Method} instance and sets them\n * in the {@code ValidatorAction}.\n *\n * @param va\n * \t\tThe validator action.\n */\npublic void addValidatorAction(final ValidatorAction va) {\n    va.init();\n    getActions().put(va.getName(), va);\n    if (getLog().isDebugEnabled()) {\n        getLog().debug(((\"Add ValidatorAction: \" + va.getName()) + \",\") + va.getClassname());\n    }\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addValidatorAction" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "entryPointBody" : "/**\n * Checks if the field is a valid date.\n *\n * <p>The {@link Locale} is used with {@link java.text.DateFormat}. The {@link java.text.DateFormat#setLenient(boolean)}\n * method is set to {@code false} for all.\n * </p>\n *\n * @param value\n * \t\tThe value validation is being performed on.\n * @param locale\n * \t\tThe Locale to use to parse the date (system default if null)\n * @return the converted Date value.\n */\npublic static Date formatDate(final String value, final Locale locale) {\n    Date date = null;\n    if (value == null) {\n        return null;\n    }\n    try {\n        // Get the formatters to check against\n        DateFormat formatterShort = null;\n        DateFormat formatterDefault = null;\n        if (locale != null) {\n            formatterShort = DateFormat.getDateInstance(DateFormat.SHORT, locale);\n            formatterDefault = DateFormat.getDateInstance(DateFormat.DEFAULT, locale);\n        } else {\n            formatterShort = DateFormat.getDateInstance(DateFormat.SHORT, Locale.getDefault());\n            formatterDefault = DateFormat.getDateInstance(DateFormat.DEFAULT, Locale.getDefault());\n        }\n        // Turn off lenient parsing\n        formatterShort.setLenient(false);\n        formatterDefault.setLenient(false);\n        // Firstly, try with the short form\n        try {\n            date = formatterShort.parse(value);\n        } catch (final ParseException e) {\n            // Fall back on the default one\n            date = formatterDefault.parse(value);\n        }\n    } catch (final ParseException e) {\n        // Bad date, so LOG and return null\n        if (LOG.isDebugEnabled()) {\n            LOG.debug((((((\"Date parse failed value=[\" + value) + \"], \") + \"locale=[\") + locale) + \"] \") + e);\n        }\n    }\n    return date;\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.GenericTypeValidator.formatDate" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "entryPointBody" : "/**\n * Checks if the field is a valid date.\n *\n * <p>The pattern is used with {@link java.text.SimpleDateFormat}.\n * If strict is true, then the length will be checked so '2/12/1999' will\n * not pass validation with the format 'MM/dd/yyyy' because the month isn't\n * two digits. The {@link java.text.SimpleDateFormat#setLenient(boolean)}\n * method is set to {@code false} for all.\n * </p>\n *\n * @param value\n * \t\tThe value validation is being performed on.\n * @param datePattern\n * \t\tThe pattern passed to {@link SimpleDateFormat}.\n * @param strict\n * \t\tWhether or not to have an exact match of the\n * \t\tdatePattern.\n * @return the converted Date value.\n */\npublic static Date formatDate(final String value, final String datePattern, final boolean strict) {\n    Date date = null;\n    if (((value == null) || (datePattern == null)) || datePattern.isEmpty()) {\n        return null;\n    }\n    try {\n        final SimpleDateFormat formatter = new SimpleDateFormat(datePattern);\n        formatter.setLenient(false);\n        date = formatter.parse(value);\n        if (strict && (datePattern.length() != value.length())) {\n            date = null;\n        }\n    } catch (final ParseException e) {\n        // Bad date so return null\n        if (LOG.isDebugEnabled()) {\n            LOG.debug(((((((((\"Date parse failed value=[\" + value) + \"], \") + \"pattern=[\") + datePattern) + \"], \") + \"strict=[\") + strict) + \"] \") + e);\n        }\n    }\n    return date;\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.GenericTypeValidator.formatDate" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSetFactory.createObject",
+    "entryPointBody" : "/**\n * <p>Create or retrieve a {@code FormSet} for the specified\n *    attributes.</p>\n *\n * @param attributes\n * \t\tThe sax attributes for the formset element.\n * @return The FormSet for a locale.\n * @throws Exception\n * \t\tIf an error occurs creating the FormSet.\n */\n@Override\npublic Object createObject(final Attributes attributes) throws Exception {\n    final ValidatorResources resources = ((ValidatorResources) (digester.peek(0)));\n    final String language = attributes.getValue(\"language\");\n    final String country = attributes.getValue(\"country\");\n    final String variant = attributes.getValue(\"variant\");\n    return createFormSet(resources, language, country, variant);\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.FormSetFactory.createObject", "org.apache.commons.validator.FormSetFactory.createFormSet" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addConstant",
+    "entryPointBody" : "/**\n * Add a global constant to the resource.\n *\n * @param name\n * \t\tThe constant name.\n * @param value\n * \t\tThe constant value.\n */\npublic void addConstant(final String name, final String value) {\n    if (getLog().isDebugEnabled()) {\n        getLog().debug(((\"Adding Global Constant: \" + name) + \",\") + value);\n    }\n    hConstants.put(name, value);\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addConstant" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.getForm",
+    "entryPointBody" : "/**\n * <p>Gets a {@code Form} based on the name of the form and the\n * {@link Locale} that most closely matches the {@link Locale}\n * passed in.  The order of {@link Locale} matching is:</p>\n * <ol>\n *    <li>language + country + variant</li>\n *    <li>language + country</li>\n *    <li>language</li>\n *    <li>default locale</li>\n * </ol>\n *\n * @param language\n * \t\tThe locale's language.\n * @param country\n * \t\tThe locale's country.\n * @param variant\n * \t\tThe locale's language variant.\n * @param formKey\n * \t\tThe key for the Form.\n * @return The validator Form.\n * @since 1.1\n */\npublic Form getForm(final String language, final String country, final String variant, final String formKey) {\n    Form form = null;\n    // Try language/country/variant\n    String key = buildLocale(language, country, variant);\n    if (!key.isEmpty()) {\n        final FormSet formSet = getFormSets().get(key);\n        if (formSet != null) {\n            form = formSet.getForm(formKey);\n        }\n    }\n    final String localeKey = key;\n    // Try language/country\n    if (form == null) {\n        key = buildLocale(language, country, null);\n        if (!key.isEmpty()) {\n            final FormSet formSet = getFormSets().get(key);\n            if (formSet != null) {\n                form = formSet.getForm(formKey);\n            }\n        }\n    }\n    // Try language\n    if (form == null) {\n        key = buildLocale(language, null, null);\n        if (!key.isEmpty()) {\n            final FormSet formSet = getFormSets().get(key);\n            if (formSet != null) {\n                form = formSet.getForm(formKey);\n            }\n        }\n    }\n    // Try default formset\n    if (form == null) {\n        form = defaultFormSet.getForm(formKey);\n        key = \"default\";\n    }\n    if (form == null) {\n        if (getLog().isWarnEnabled()) {\n            getLog().warn((((\"Form '\" + formKey) + \"' not found for locale '\") + localeKey) + \"'\");\n        }\n    } else if (getLog().isDebugEnabled()) {\n        getLog().debug((((((\"Form '\" + formKey) + \"' found in formset '\") + key) + \"' for locale '\") + localeKey) + \"'\");\n    }\n    return form;\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.getForm" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "entryPointBody" : "/**\n * Add a {@code FormSet} to this {@code ValidatorResources}\n * object.  It will be associated with the {@link Locale} of the\n * {@code FormSet}.\n *\n * @param fs\n * \t\tThe form set to add.\n * @since 1.1\n */\npublic void addFormSet(final FormSet fs) {\n    final String key = buildKey(fs);\n    if (key.isEmpty()) {\n        // there can only be one default formset\n        if (getLog().isWarnEnabled() && (defaultFormSet != null)) {\n            // warn the user he might not get the expected results\n            getLog().warn(\"Overriding default FormSet definition.\");\n        }\n        defaultFormSet = fs;\n    } else {\n        final FormSet formset = getFormSets().get(key);\n        if (formset == null) {\n            // it hasn't been included yet\n            if (getLog().isDebugEnabled()) {\n                getLog().debug((\"Adding FormSet '\" + fs) + \"'.\");\n            }\n        } else if (getLog().isWarnEnabled()) {\n            // warn the user he might not\n            // get the expected results\n            getLog().warn(\"Overriding FormSet definition. Duplicate for locale: \" + key);\n        }\n        getFormSets().put(key, fs);\n    }\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addFormSet" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSetFactory.createObject",
+    "entryPointBody" : "/**\n * <p>Create or retrieve a {@code FormSet} for the specified\n *    attributes.</p>\n *\n * @param attributes\n * \t\tThe sax attributes for the formset element.\n * @return The FormSet for a locale.\n * @throws Exception\n * \t\tIf an error occurs creating the FormSet.\n */\n@Override\npublic Object createObject(final Attributes attributes) throws Exception {\n    final ValidatorResources resources = ((ValidatorResources) (digester.peek(0)));\n    final String language = attributes.getValue(\"language\");\n    final String country = attributes.getValue(\"country\");\n    final String variant = attributes.getValue(\"variant\");\n    return createFormSet(resources, language, country, variant);\n}",
+    "thirdPartyMethod" : "org.apache.commons.digester.Digester.peek",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.FormSetFactory.createObject" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.begin",
+    "entryPointBody" : "@Override\npublic void begin(final String namespace, final String name, final Attributes attributes) {\n    // Create the Arg\n    final Arg arg = new Arg();\n    arg.setKey(attributes.getValue(\"key\"));\n    arg.setName(attributes.getValue(\"name\"));\n    if (\"false\".equalsIgnoreCase(attributes.getValue(\"resource\"))) {\n        arg.setResource(false);\n    }\n    try {\n        final int length = \"arg\".length();// skip the arg prefix\n\n        arg.setPosition(Integer.parseInt(name.substring(length)));\n    } catch (final Exception ex) {\n        getLog().error(((((\"Error parsing Arg position: \" + name) + \" \") + arg) + \" \") + ex);\n    }\n    // Add the arg to the parent field\n    ((Field) (getDigester().peek(0))).addArg(arg);\n}",
+    "thirdPartyMethod" : "org.apache.commons.digester.Digester.peek",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.begin" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addValidatorAction",
+    "entryPointBody" : "/**\n * Add a {@code ValidatorAction} to the resource.  It also creates an\n * instance of the class based on the {@code ValidatorAction}s\n * class name and retrieves the {@code Method} instance and sets them\n * in the {@code ValidatorAction}.\n *\n * @param va\n * \t\tThe validator action.\n */\npublic void addValidatorAction(final ValidatorAction va) {\n    va.init();\n    getActions().put(va.getName(), va);\n    if (getLog().isDebugEnabled()) {\n        getLog().debug(((\"Add ValidatorAction: \" + va.getName()) + \",\") + va.getClassname());\n    }\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addValidatorAction" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "entryPointBody" : "/**\n * Checks if the field is a valid date.\n *\n * <p>The {@link Locale} is used with {@link java.text.DateFormat}. The {@link java.text.DateFormat#setLenient(boolean)}\n * method is set to {@code false} for all.\n * </p>\n *\n * @param value\n * \t\tThe value validation is being performed on.\n * @param locale\n * \t\tThe Locale to use to parse the date (system default if null)\n * @return the converted Date value.\n */\npublic static Date formatDate(final String value, final Locale locale) {\n    Date date = null;\n    if (value == null) {\n        return null;\n    }\n    try {\n        // Get the formatters to check against\n        DateFormat formatterShort = null;\n        DateFormat formatterDefault = null;\n        if (locale != null) {\n            formatterShort = DateFormat.getDateInstance(DateFormat.SHORT, locale);\n            formatterDefault = DateFormat.getDateInstance(DateFormat.DEFAULT, locale);\n        } else {\n            formatterShort = DateFormat.getDateInstance(DateFormat.SHORT, Locale.getDefault());\n            formatterDefault = DateFormat.getDateInstance(DateFormat.DEFAULT, Locale.getDefault());\n        }\n        // Turn off lenient parsing\n        formatterShort.setLenient(false);\n        formatterDefault.setLenient(false);\n        // Firstly, try with the short form\n        try {\n            date = formatterShort.parse(value);\n        } catch (final ParseException e) {\n            // Fall back on the default one\n            date = formatterDefault.parse(value);\n        }\n    } catch (final ParseException e) {\n        // Bad date, so LOG and return null\n        if (LOG.isDebugEnabled()) {\n            LOG.debug((((((\"Date parse failed value=[\" + value) + \"], \") + \"locale=[\") + locale) + \"] \") + e);\n        }\n    }\n    return date;\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.GenericTypeValidator.formatDate" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "entryPointBody" : "/**\n * Checks if the field is a valid date.\n *\n * <p>The pattern is used with {@link java.text.SimpleDateFormat}.\n * If strict is true, then the length will be checked so '2/12/1999' will\n * not pass validation with the format 'MM/dd/yyyy' because the month isn't\n * two digits. The {@link java.text.SimpleDateFormat#setLenient(boolean)}\n * method is set to {@code false} for all.\n * </p>\n *\n * @param value\n * \t\tThe value validation is being performed on.\n * @param datePattern\n * \t\tThe pattern passed to {@link SimpleDateFormat}.\n * @param strict\n * \t\tWhether or not to have an exact match of the\n * \t\tdatePattern.\n * @return the converted Date value.\n */\npublic static Date formatDate(final String value, final String datePattern, final boolean strict) {\n    Date date = null;\n    if (((value == null) || (datePattern == null)) || datePattern.isEmpty()) {\n        return null;\n    }\n    try {\n        final SimpleDateFormat formatter = new SimpleDateFormat(datePattern);\n        formatter.setLenient(false);\n        date = formatter.parse(value);\n        if (strict && (datePattern.length() != value.length())) {\n            date = null;\n        }\n    } catch (final ParseException e) {\n        // Bad date so return null\n        if (LOG.isDebugEnabled()) {\n            LOG.debug(((((((((\"Date parse failed value=[\" + value) + \"], \") + \"pattern=[\") + datePattern) + \"], \") + \"strict=[\") + strict) + \"] \") + e);\n        }\n    }\n    return date;\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.GenericTypeValidator.formatDate" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSetFactory.createObject",
+    "entryPointBody" : "/**\n * <p>Create or retrieve a {@code FormSet} for the specified\n *    attributes.</p>\n *\n * @param attributes\n * \t\tThe sax attributes for the formset element.\n * @return The FormSet for a locale.\n * @throws Exception\n * \t\tIf an error occurs creating the FormSet.\n */\n@Override\npublic Object createObject(final Attributes attributes) throws Exception {\n    final ValidatorResources resources = ((ValidatorResources) (digester.peek(0)));\n    final String language = attributes.getValue(\"language\");\n    final String country = attributes.getValue(\"country\");\n    final String variant = attributes.getValue(\"variant\");\n    return createFormSet(resources, language, country, variant);\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.FormSetFactory.createObject", "org.apache.commons.validator.FormSetFactory.createFormSet" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "entryPointBody" : "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addConstant",
+    "entryPointBody" : "/**\n * Add a global constant to the resource.\n *\n * @param name\n * \t\tThe constant name.\n * @param value\n * \t\tThe constant value.\n */\npublic void addConstant(final String name, final String value) {\n    if (getLog().isDebugEnabled()) {\n        getLog().debug(((\"Adding Global Constant: \" + name) + \",\") + value);\n    }\n    hConstants.put(name, value);\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addConstant" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.getForm",
+    "entryPointBody" : "/**\n * <p>Gets a {@code Form} based on the name of the form and the\n * {@link Locale} that most closely matches the {@link Locale}\n * passed in.  The order of {@link Locale} matching is:</p>\n * <ol>\n *    <li>language + country + variant</li>\n *    <li>language + country</li>\n *    <li>language</li>\n *    <li>default locale</li>\n * </ol>\n *\n * @param language\n * \t\tThe locale's language.\n * @param country\n * \t\tThe locale's country.\n * @param variant\n * \t\tThe locale's language variant.\n * @param formKey\n * \t\tThe key for the Form.\n * @return The validator Form.\n * @since 1.1\n */\npublic Form getForm(final String language, final String country, final String variant, final String formKey) {\n    Form form = null;\n    // Try language/country/variant\n    String key = buildLocale(language, country, variant);\n    if (!key.isEmpty()) {\n        final FormSet formSet = getFormSets().get(key);\n        if (formSet != null) {\n            form = formSet.getForm(formKey);\n        }\n    }\n    final String localeKey = key;\n    // Try language/country\n    if (form == null) {\n        key = buildLocale(language, country, null);\n        if (!key.isEmpty()) {\n            final FormSet formSet = getFormSets().get(key);\n            if (formSet != null) {\n                form = formSet.getForm(formKey);\n            }\n        }\n    }\n    // Try language\n    if (form == null) {\n        key = buildLocale(language, null, null);\n        if (!key.isEmpty()) {\n            final FormSet formSet = getFormSets().get(key);\n            if (formSet != null) {\n                form = formSet.getForm(formKey);\n            }\n        }\n    }\n    // Try default formset\n    if (form == null) {\n        form = defaultFormSet.getForm(formKey);\n        key = \"default\";\n    }\n    if (form == null) {\n        if (getLog().isWarnEnabled()) {\n            getLog().warn((((\"Form '\" + formKey) + \"' not found for locale '\") + localeKey) + \"'\");\n        }\n    } else if (getLog().isDebugEnabled()) {\n        getLog().debug((((((\"Form '\" + formKey) + \"' found in formset '\") + key) + \"' for locale '\") + localeKey) + \"'\");\n    }\n    return form;\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.getForm" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "entryPointBody" : "/**\n * Add a {@code FormSet} to this {@code ValidatorResources}\n * object.  It will be associated with the {@link Locale} of the\n * {@code FormSet}.\n *\n * @param fs\n * \t\tThe form set to add.\n * @since 1.1\n */\npublic void addFormSet(final FormSet fs) {\n    final String key = buildKey(fs);\n    if (key.isEmpty()) {\n        // there can only be one default formset\n        if (getLog().isWarnEnabled() && (defaultFormSet != null)) {\n            // warn the user he might not get the expected results\n            getLog().warn(\"Overriding default FormSet definition.\");\n        }\n        defaultFormSet = fs;\n    } else {\n        final FormSet formset = getFormSets().get(key);\n        if (formset == null) {\n            // it hasn't been included yet\n            if (getLog().isDebugEnabled()) {\n                getLog().debug((\"Adding FormSet '\" + fs) + \"'.\");\n            }\n        } else if (getLog().isWarnEnabled()) {\n            // warn the user he might not\n            // get the expected results\n            getLog().warn(\"Overriding FormSet definition. Duplicate for locale: \" + key);\n        }\n        getFormSets().put(key, fs);\n    }\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addFormSet" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.util.ValidatorUtils.getValueAsString",
+    "entryPointBody" : "/**\n * Convenience method for getting a value from a bean property as a\n * {@link String}.  If the property is a {@code String[]} or\n * {@link Collection} and it is empty, an empty {@link String}\n * \"\" is returned.  Otherwise, property.toString() is returned.  This method\n * may return {@code null} if there was an error retrieving the\n * property.\n *\n * @param bean\n * \t\tThe bean object.\n * @param property\n * \t\tThe name of the property to access.\n * @return The value of the property.\n */\npublic static String getValueAsString(final Object bean, final String property) {\n    Object value = null;\n    try {\n        value = PropertyUtils.getProperty(bean, property);\n    } catch (final ReflectiveOperationException e) {\n        LOG.error(e.getMessage(), e);\n    }\n    if (value == null) {\n        return null;\n    }\n    if (value instanceof String[]) {\n        return ((String[]) (value)).length > 0 ? value.toString() : \"\";\n    }\n    if (value instanceof Collection) {\n        return ((Collection<?>) (value)).isEmpty() ? \"\" : value.toString();\n    }\n    return value.toString();\n}",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.util.ValidatorUtils.getValueAsString" ]
+  } ]
+}

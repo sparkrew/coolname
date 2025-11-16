@@ -1,0 +1,289 @@
+[
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.digester.Rule.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 5,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.digester.Rule.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 5,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.digester.Rule.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 5,
+    "longestPathLength": 5
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.FormSetFactory.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.digester.AbstractObjectCreationFactory.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.getForm",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isWarnEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isWarnEnabled",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.Field.validate",
+    "thirdPartyMethod": "org.apache.commons.beanutils.PropertyUtils.getProperty",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.util.ValidatorUtils.getValueAsString",
+    "thirdPartyMethod": "org.apache.commons.beanutils.PropertyUtils.getProperty",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.collections.FastHashMap.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.Form.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.collections.FastHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.Field.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.collections.FastHashMap.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.collections.FastHashMap.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.collections.FastHashMap.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.collections.FastHashMap.\u003cinit\u003e",
+    "totalPaths": 3,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.util.ValidatorUtils.copyFastHashMap",
+    "thirdPartyMethod": "org.apache.commons.collections.FastHashMap.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.FormSet.addConstant",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.error",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.begin",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.error",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.FormSet.addForm",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.error",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.addValidatorAction",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.FormSetFactory.createObject",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.addConstant",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.getForm",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.isDebugEnabled",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.FormSetFactory.createObject",
+    "thirdPartyMethod": "org.apache.commons.digester.Digester.peek",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.begin",
+    "thirdPartyMethod": "org.apache.commons.digester.Digester.peek",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.addValidatorAction",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.FormSetFactory.createObject",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.\u003cinit\u003e",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.addConstant",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.getForm",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.debug",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.apache.commons.validator.util.ValidatorUtils.getValueAsString",
+    "thirdPartyMethod": "org.apache.commons.logging.Log.error",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  }
+]

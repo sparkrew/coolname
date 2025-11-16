@@ -1,0 +1,361 @@
+[ {
+  "method" : "org.antlr.v4.runtime.tree.ParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.ParserRuleContext.<init>(org.antlr.v4.runtime.ParserRuleContext, int)",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.ANTLRErrorStrategy.sync(org.antlr.v4.runtime.Parser)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.ParserATNSimulator.adaptivePredict(org.antlr.v4.runtime.TokenStream, int, org.antlr.v4.runtime.ParserRuleContext)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.ANTLRErrorStrategy.reportError(org.antlr.v4.runtime.Parser, org.antlr.v4.runtime.RecognitionException)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.ANTLRErrorStrategy.recover(org.antlr.v4.runtime.Parser, org.antlr.v4.runtime.RecognitionException)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.TokenStream.LA(int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.tree.TerminalNode.getPayload()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.Token.getType()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.NoViableAltException.<init>(org.antlr.v4.runtime.Parser)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.ConvertUtilsBean.register(org.apache.commons.beanutils.Converter, java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.ParserRuleContext.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.beanutils.PropertyUtils.getPropertyDescriptors(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "com.google.common.reflect.ClassPath.from(java.lang.ClassLoader)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.Token.getText()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.Token.getTokenIndex()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.RecognitionException.getCtx()",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.RuleContext.getRuleIndex()",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.Recognizer.getRuleNames()",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.ANTLRErrorStrategy.recoverInline(org.antlr.v4.runtime.Parser)",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.ANTLRErrorStrategy.reportMatch(org.antlr.v4.runtime.Parser)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.ConvertUtilsBean.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.PropertyUtilsBean.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.BeanUtilsBean.<init>(org.apache.commons.beanutils.ConvertUtilsBean, org.apache.commons.beanutils.PropertyUtilsBean)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.isDebugEnabled()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.debug(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine$ParseResult.hasMatchedOption(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "net.sf.saxon.tree.util.Navigator$AxisFilter.<init>(net.sf.saxon.tree.iter.AxisIterator, net.sf.saxon.pattern.NodePredicate)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.beanutils.converters.BooleanConverter.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.converters.ArrayConverter.<init>(java.lang.Class, org.apache.commons.beanutils.Converter)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.converters.ByteConverter.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.converters.CharacterConverter.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.converters.DoubleConverter.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.converters.FloatConverter.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.converters.IntegerConverter.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.converters.LongConverter.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.converters.ShortConverter.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.TokenStream.LT(int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.FailedPredicateException.<init>(org.antlr.v4.runtime.Parser, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.Lexer.<init>(org.antlr.v4.runtime.CharStream)",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.atn.LexerATNSimulator.<init>(org.antlr.v4.runtime.Lexer, org.antlr.v4.runtime.atn.ATN, org.antlr.v4.runtime.dfa.DFA[], org.antlr.v4.runtime.atn.PredictionContextCache)",
+  "covered" : false
+}, {
+  "method" : "org.apache.tools.ant.types.EnumeratedAttribute.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.BaseErrorListener.<init>()",
+  "covered" : false
+}, {
+  "method" : "net.sf.saxon.om.NodeInfo.iterateAxis(int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.ParserRuleContext.copyFrom(org.antlr.v4.runtime.ParserRuleContext)",
+  "covered" : false
+}, {
+  "method" : "org.apache.tools.ant.types.Path.<init>(org.apache.tools.ant.Project)",
+  "covered" : false
+}, {
+  "method" : "net.sf.saxon.trans.XPathException.getMessage()",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.tree.iter.AxisIterator.next()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.ParserRuleContext.getStart()",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.tree.iter.SingleNodeIterator.makeIterator(net.sf.saxon.om.NodeInfo)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.InputMismatchException.<init>(org.antlr.v4.runtime.Parser)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.BailErrorStrategy.recoverInline(org.antlr.v4.runtime.Parser)",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.Lexer.emit(org.antlr.v4.runtime.Token)",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine.<init>(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine.setUsageHelpWidth(int)",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine.setCaseInsensitiveEnumValuesAllowed(boolean)",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine.parseArgs(java.lang.String[])",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine$ParseResult.isVersionHelpRequested()",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine$ParameterException.getMessage()",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine$ParseResult.isUsageHelpRequested()",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine.usage(java.io.PrintStream)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.BailErrorStrategy.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.CharStreams.fromString(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CommonTokenStream.<init>(org.antlr.v4.runtime.TokenSource)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.LexerATNSimulator.getLine()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.LexerATNSimulator.getCharPositionInLine()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CharStream.LA(int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CharStream.consume()",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.Configuration.newConfiguration()",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.om.GenericTreeInfo.<init>(net.sf.saxon.Configuration)",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.sxpath.XPathExpression.createDynamicContext(net.sf.saxon.om.Item)",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.sxpath.XPathExpression.evaluate(net.sf.saxon.sxpath.XPathDynamicContext)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.Parser.<init>(org.antlr.v4.runtime.TokenStream)",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.atn.ParserATNSimulator.<init>(org.antlr.v4.runtime.Parser, org.antlr.v4.runtime.atn.ATN, org.antlr.v4.runtime.dfa.DFA[], org.antlr.v4.runtime.atn.PredictionContextCache)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.BufferedTokenStream.getHiddenTokensToLeft(int)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.PropertyUtils.getPropertyDescriptor(java.lang.Object, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.beanutils.BeanUtilsBean.copyProperty(java.lang.Object, java.lang.String, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.tree.AbstractParseTreeVisitor.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.ParserRuleContext.getChild(int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.tree.ParseTree.getPayload()",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.sxpath.XPathEvaluator.<init>(net.sf.saxon.Configuration)",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.sxpath.XPathEvaluator.createExpression(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.RuntimeMetaData.checkVersion(java.lang.String, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.PredictionContextCache.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.VocabularyImpl.<init>(java.lang.String[], java.lang.String[])",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.Vocabulary.getLiteralName(int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.Vocabulary.getSymbolicName(int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.ATNDeserializer.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.ATNDeserializer.deserialize(char[])",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.ATN.getNumberOfDecisions()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.ATN.getDecisionState(int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.dfa.DFA.<init>(org.antlr.v4.runtime.atn.DecisionState, int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CharStream.index()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CharStream.seek(int)",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.om.NodeInfo.getParent()",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.om.NodeInfo.equals(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.apache.tools.ant.BuildException.<init>(java.lang.String, org.apache.tools.ant.Location)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.Token.getLine()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.Token.getCharPositionInLine()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CommonToken.<init>(org.antlr.v4.runtime.Token)",
+  "covered" : false
+}, {
+  "method" : "net.sf.saxon.tree.iter.EmptyIterator.ofNodes()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CommonToken.getCharPositionInLine()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CommonToken.getLine()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CommonToken.getText()",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.tree.iter.ArrayIterator$OfNodes.<init>(net.sf.saxon.om.NodeInfo[])",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.tree.ParseTree.getChild(int)",
+  "covered" : true
+}, {
+  "method" : "net.sf.saxon.tree.util.Navigator$AncestorEnumeration.<init>(net.sf.saxon.om.NodeInfo, boolean)",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.tree.ParseTree.accept(org.antlr.v4.runtime.tree.ParseTreeVisitor)",
+  "covered" : true
+}, {
+  "method" : "org.apache.tools.ant.Task.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.antlr.v4.runtime.CommonTokenStream.fill()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.ParserATNSimulator.setPredictionMode(org.antlr.v4.runtime.atn.PredictionMode)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.BufferedTokenStream.getHiddenTokensToLeft(int, int)",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.BufferedTokenStream.getHiddenTokensToRight(int, int)",
+  "covered" : true
+}, {
+  "method" : "picocli.CommandLine$ParameterException.getCommandLine()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.CommonToken.getType()",
+  "covered" : true
+}, {
+  "method" : "org.antlr.v4.runtime.atn.ParserATNSimulator.clearDFA()",
+  "covered" : true
+}, {
+  "method" : "org.reflections.Reflections.<init>(java.lang.String, org.reflections.scanners.Scanner[])",
+  "covered" : true
+}, {
+  "method" : "org.reflections.Reflections.getResources(java.util.regex.Pattern)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)",
+  "covered" : true
+} ]

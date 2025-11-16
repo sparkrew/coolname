@@ -1,0 +1,249 @@
+{
+  "slicedPaths" : [ {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.digester.Rule.<init>",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester", "org.apache.commons.validator.ValidatorResources.addOldArgRules", "org.apache.commons.validator.ValidatorResources.<init>" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}", "/**\n * Initialize the digester.\n */\nprivate Digester initDigester() {\n    URL rulesUrl = this.getClass().getResource(VALIDATOR_RULES)\n    if (rulesUrl == null) {\n    // Fix for Issue# VALIDATOR-195\n    rulesUrl = ValidatorResources.class.getResource(VALIDATOR_RULES);\n}\n    if (getLog().isDebugEnabled()) {\n    getLog().debug((\"Loading rules from '\" + rulesUrl) + \"'\");\n}\n    final Digester digester = DigesterLoader.createDigester(rulesUrl)\n    // Add rules for arg0-arg3 elements\naddOldArgRules(digester)\n}", "/**\n * Create a {@code Rule} to handle {@code arg0-arg3}\n * elements. This will allow validation.xml files that use the\n * versions of the DTD prior to Validator 1.2.0 to continue\n * working.\n */\nprivate void addOldArgRules(final Digester digester) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.digester.Rule.<init>",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester", "org.apache.commons.validator.ValidatorResources.addOldArgRules", "org.apache.commons.validator.ValidatorResources.<init>" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}", "/**\n * Initialize the digester.\n */\nprivate Digester initDigester() {\n    URL rulesUrl = this.getClass().getResource(VALIDATOR_RULES)\n    if (rulesUrl == null) {\n    // Fix for Issue# VALIDATOR-195\n    rulesUrl = ValidatorResources.class.getResource(VALIDATOR_RULES);\n}\n    if (getLog().isDebugEnabled()) {\n    getLog().debug((\"Loading rules from '\" + rulesUrl) + \"'\");\n}\n    final Digester digester = DigesterLoader.createDigester(rulesUrl)\n    // Add rules for arg0-arg3 elements\naddOldArgRules(digester)\n}", "/**\n * Create a {@code Rule} to handle {@code arg0-arg3}\n * elements. This will allow validation.xml files that use the\n * versions of the DTD prior to Validator 1.2.0 to continue\n * working.\n */\nprivate void addOldArgRules(final Digester digester) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.digester.Rule.<init>",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester", "org.apache.commons.validator.ValidatorResources.addOldArgRules", "org.apache.commons.validator.ValidatorResources.<init>" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}", "/**\n * Initialize the digester.\n */\nprivate Digester initDigester() {\n    URL rulesUrl = this.getClass().getResource(VALIDATOR_RULES)\n    if (rulesUrl == null) {\n    // Fix for Issue# VALIDATOR-195\n    rulesUrl = ValidatorResources.class.getResource(VALIDATOR_RULES);\n}\n    if (getLog().isDebugEnabled()) {\n    getLog().debug((\"Loading rules from '\" + rulesUrl) + \"'\");\n}\n    final Digester digester = DigesterLoader.createDigester(rulesUrl)\n    // Add rules for arg0-arg3 elements\naddOldArgRules(digester)\n}", "/**\n * Create a {@code Rule} to handle {@code arg0-arg3}\n * elements. This will allow validation.xml files that use the\n * versions of the DTD prior to Validator 1.2.0 to continue\n * working.\n */\nprivate void addOldArgRules(final Digester digester) {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSetFactory.<init>",
+    "thirdPartyMethod" : "org.apache.commons.digester.AbstractObjectCreationFactory.<init>",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.FormSetFactory.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.getForm",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isWarnEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.getForm" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isWarnEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addFormSet" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.Field.validate",
+    "thirdPartyMethod" : "org.apache.commons.beanutils.PropertyUtils.getProperty",
+    "thirdPartyPackage" : "org.apache.commons.beanutils",
+    "path" : [ "org.apache.commons.validator.Field.validate", "org.apache.commons.validator.Field.getIndexedPropertySize" ],
+    "methodSlices" : [ "/**\n * Run the configured validations on this field.  Run all validations\n * in the depends clause over each item in turn, returning when the first\n * one fails.\n *\n * @param params\n * \t\tA Map of parameter class names to parameter values to pass\n * \t\tinto validation methods.\n * @param actions\n * \t\tA Map of validator names to ValidatorAction objects.\n * @return A ValidatorResults object containing validation messages for\nthis field.\n * @throws ValidatorException\n * \t\tIf an error occurs during validation.\n */\npublic ValidatorResults validate(final Map<String, Object> params, final Map<String, ValidatorAction> actions) throws ValidatorException {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.util.ValidatorUtils.getValueAsString",
+    "thirdPartyMethod" : "org.apache.commons.beanutils.PropertyUtils.getProperty",
+    "thirdPartyPackage" : "org.apache.commons.beanutils",
+    "path" : [ "org.apache.commons.validator.util.ValidatorUtils.getValueAsString" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.Form.<init>",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.Form.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.Field.<init>",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.Field.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.util.ValidatorUtils.copyFastHashMap",
+    "thirdPartyMethod" : "org.apache.commons.collections.FastHashMap.<init>",
+    "thirdPartyPackage" : "org.apache.commons.collections",
+    "path" : [ "org.apache.commons.validator.util.ValidatorUtils.copyFastHashMap" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSet.addConstant",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.FormSet.addConstant" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.begin",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.begin" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSet.addForm",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.FormSet.addForm" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addValidatorAction",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addValidatorAction" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.GenericTypeValidator.formatDate" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.GenericTypeValidator.formatDate" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSetFactory.createObject",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.FormSetFactory.createObject", "org.apache.commons.validator.FormSetFactory.createFormSet" ],
+    "methodSlices" : [ "/**\n * <p>Create or retrieve a {@code FormSet} for the specified\n *    attributes.</p>\n *\n * @param attributes\n * \t\tThe sax attributes for the formset element.\n * @return The FormSet for a locale.\n * @throws Exception\n * \t\tIf an error occurs creating the FormSet.\n */\n@Override\npublic Object createObject(final Attributes attributes) throws Exception {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addConstant",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addConstant" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.getForm",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.getForm" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addFormSet" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSetFactory.createObject",
+    "thirdPartyMethod" : "org.apache.commons.digester.Digester.peek",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.FormSetFactory.createObject" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.begin",
+    "thirdPartyMethod" : "org.apache.commons.digester.Digester.peek",
+    "thirdPartyPackage" : "org.apache.commons.digester",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.begin" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addValidatorAction",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addValidatorAction" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.GenericTypeValidator.formatDate" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.GenericTypeValidator.formatDate",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.GenericTypeValidator.formatDate" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.FormSetFactory.createObject",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.FormSetFactory.createObject", "org.apache.commons.validator.FormSetFactory.createFormSet" ],
+    "methodSlices" : [ "/**\n * <p>Create or retrieve a {@code FormSet} for the specified\n *    attributes.</p>\n *\n * @param attributes\n * \t\tThe sax attributes for the formset element.\n * @return The FormSet for a locale.\n * @throws Exception\n * \t\tIf an error occurs creating the FormSet.\n */\n@Override\npublic Object createObject(final Attributes attributes) throws Exception {\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.<init>",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.<init>", "org.apache.commons.validator.ValidatorResources.initDigester" ],
+    "methodSlices" : [ "/**\n * Create a ValidatorResources object from an InputStream.\n *\n * @param in\n * \t\tInputStream to a validation.xml configuration file.  It's the client's\n * \t\tresponsibility to close this stream.\n * @throws SAXException\n * \t\tif the validation XML files are not valid or well-formed.\n * @throws IOException\n * \t\tif an I/O error occurs processing the XML files\n * @since 1.1\n */\npublic ValidatorResources(final InputStream in) throws IOException, SAXException {\n    this(new InputStream[]{ in });\n}" ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addConstant",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addConstant" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.getForm",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.getForm" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.ValidatorResources.addFormSet",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.ValidatorResources.addFormSet" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.apache.commons.validator.util.ValidatorUtils.getValueAsString",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error",
+    "thirdPartyPackage" : "org.apache.commons.logging",
+    "path" : [ "org.apache.commons.validator.util.ValidatorUtils.getValueAsString" ],
+    "methodSlices" : [ ]
+  } ]
+}

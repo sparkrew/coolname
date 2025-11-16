@@ -1,0 +1,1288 @@
+[ {
+  "method" : "kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()",
+  "covered" : false
+}, {
+  "method" : "kotlin.ResultKt.throwOnFailure(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(java.lang.Object, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.reactive.AwaitKt.awaitFirstOrElse(org.reactivestreams.Publisher, kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.map(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.unix.DomainSocketAddress.<init>(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.ObjectPool.returnObject(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.then()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.debug(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.debug(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.isActive()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.debug(java.lang.String, java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.Timer.newTimeout(io.netty.util.TimerTask, long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.create(java.util.function.Consumer, reactor.core.publisher.FluxSink$OverflowStrategy)",
+  "covered" : false
+}, {
+  "method" : "kotlin.jvm.internal.Intrinsics.checkNotNullParameter(java.lang.Object, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.reactive.AwaitKt.awaitFirstOrNull(org.reactivestreams.Publisher, kotlin.coroutines.Continuation)",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.reactive.ReactiveFlowKt.asFlow(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.CharsetUtil.encoder(java.nio.charset.Charset)",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.reactive.AwaitKt.awaitLast(org.reactivestreams.Publisher, kotlin.coroutines.Continuation)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.flatMap(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.onErrorMap(java.lang.Class, java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.toFuture()",
+  "covered" : false
+}, {
+  "method" : "kotlin.coroutines.jvm.internal.ContinuationImpl.<init>(kotlin.coroutines.Continuation)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.just(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelDuplexHandler.<init>()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.isTraceEnabled()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.isDebugEnabled()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLoggerFactory.getInstance(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.SystemPropertyUtil.get(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.epoll.Epoll.isAvailable()",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.flow.FlowKt.toList$default(kotlinx.coroutines.flow.Flow, java.util.List, kotlin.coroutines.Continuation, int, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.id()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.debug(java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.eventLoop()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.EventLoop.schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.UnpooledByteBufAllocator.buffer(int)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.resetReaderIndex()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.readableBytes()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.readBytes(byte[])",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.release()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.warn(java.lang.String, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "brave.Span.name(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "brave.Span.tag(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "brave.Span.start()",
+  "covered" : false
+}, {
+  "method" : "kotlin.jvm.functions.Function1.invoke(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.reactive.AwaitKt.awaitFirst(org.reactivestreams.Publisher, kotlin.coroutines.Continuation)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$Many.tryEmitNext(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$EmitResult.orThrow()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.trace(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.Recycler$Handle.recycle(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.merge(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.onErrorReturn(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.last()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$Many.asFlux()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.next()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.attr(io.netty.util.AttributeKey)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.Attribute.set(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.pipeline()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelPipeline.get(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.close()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelFuture.awaitUninterruptibly()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.isNumber()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.EventExecutorGroup.scheduleAtFixedRate(java.lang.Runnable, long, long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.observation.Observation.stop()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelHandlerContext.write(java.lang.Object, io.netty.channel.ChannelPromise)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelPromise.trySuccess()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.EventExecutorGroup.submit(java.lang.Runnable)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelHandlerContext.channel()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelInitializer.exceptionCaught(io.netty.channel.ChannelHandlerContext, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.Disposable.isDisposed()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.Disposable.dispose()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.SoftReferenceObjectPool.<init>(org.apache.commons.pool2.PooledObjectFactory)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.then()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.CoreSubscriber.onComplete()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.expand(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.flatMapIterable(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.writeBytes(byte[])",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.valueToTree(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.DefaultPromise.<init>(io.netty.util.concurrent.EventExecutor)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.PromiseCombiner.<init>(io.netty.util.concurrent.EventExecutor)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.Timer.stop()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.PromiseCombiner.add(io.netty.util.concurrent.Future)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.EventExecutorGroup.shutdownGracefully(long, long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.PromiseCombiner.finish(io.netty.util.concurrent.Promise)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.reduce(java.util.function.BiFunction)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ObjectNode.remove(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "rx.RxReactiveStreams.toObservable(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.hasAttr(io.netty.util.AttributeKey)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.Attribute.get()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.flush()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.debug(java.lang.String, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ObjectNode.replace(java.lang.String, com.fasterxml.jackson.databind.JsonNode)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks.many()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$ManySpec.multicast()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$MulticastSpec.directBestEffort()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.fromCompletionStage(java.util.function.Supplier)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.onErrorMap(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.doOnError(java.util.function.Consumer)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.onErrorResume(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.error(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.warn(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.error(java.lang.String, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.Recycler.get()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.flatMapMany(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.onErrorResume(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ArrayNode.set(int, com.fasterxml.jackson.databind.JsonNode)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Single.toFlowable()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.from(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.onBackpressureLatest()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.treeToValue(com.fasterxml.jackson.core.TreeNode, java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.kqueue.KQueue.isAvailable()",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.Bootstrap.option(io.netty.channel.ChannelOption, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "javax.enterprise.inject.spi.BeanManager.createCreationalContext(javax.enterprise.context.spi.Contextual)",
+  "covered" : false
+}, {
+  "method" : "javax.enterprise.inject.spi.BeanManager.getReference(javax.enterprise.inject.spi.Bean, java.lang.reflect.Type, javax.enterprise.context.spi.CreationalContext)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.get(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.ScheduledFuture.cancel(boolean)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.DefaultEventExecutorGroup.<init>(int, java.util.concurrent.ThreadFactory)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.nio.NioEventLoopGroup.<init>(int, java.util.concurrent.ThreadFactory)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.defer(java.util.function.Supplier)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Operators.toCoreSubscriber(org.reactivestreams.Subscriber)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.nioBuffer()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.writeBytes(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.writerIndex()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.readerIndex(int)",
+  "covered" : false
+}, {
+  "method" : "rx.Observable.toSingle()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.CoreSubscriber.currentContext()",
+  "covered" : false
+}, {
+  "method" : "org.LatencyUtils.LatencyStats.getIntervalHistogram()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Completable.fromPublisher(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.isArray()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.NetUtil.createByteArrayFromIpAddressString(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "kotlin.collections.SetsKt.emptySet()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.Recycler.<init>()",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.Bootstrap.<init>()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelDuplexHandler.channelInactive(io.netty.channel.ChannelHandlerContext)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.touch(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.mergeSequential(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.collectList()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.FluxSink.next(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.observation.transport.SenderContext.<init>(io.micrometer.observation.transport.Propagator$Setter, io.micrometer.observation.transport.Kind)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.isNull()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.numberValue()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.CoreSubscriber.onSubscribe(org.reactivestreams.Subscription)",
+  "covered" : false
+}, {
+  "method" : "org.LatencyUtils.PauseDetector.shutdown()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.EventExecutorGroup.next()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Observable.singleOrError()",
+  "covered" : false
+}, {
+  "method" : "org.HdrHistogram.Histogram.add(org.HdrHistogram.AbstractHistogram)",
+  "covered" : false
+}, {
+  "method" : "brave.Tracing.tracer()",
+  "covered" : false
+}, {
+  "method" : "brave.propagation.TraceContextOrSamplingFlags.create(brave.propagation.TraceContext)",
+  "covered" : false
+}, {
+  "method" : "brave.Tracer.nextSpan(brave.propagation.TraceContextOrSamplingFlags)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.info(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.group.ChannelGroup.add(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelInboundHandlerAdapter.channelActive(io.netty.channel.ChannelHandlerContext)",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.common.KeyValues.of(io.micrometer.common.KeyValue[])",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.common.KeyValues.empty()",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.reactive.AwaitKt.awaitSingle(org.reactivestreams.Publisher, kotlin.coroutines.Continuation)",
+  "covered" : false
+}, {
+  "method" : "reactor.util.function.Tuple2.getT2()",
+  "covered" : false
+}, {
+  "method" : "reactor.util.function.Tuple2.getT1()",
+  "covered" : false
+}, {
+  "method" : "org.reactivestreams.Subscriber.onSubscribe(org.reactivestreams.Subscription)",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.observation.Observation.start()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPoolConfig.getMaxTotal()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPoolConfig.getMaxIdle()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPoolConfig.getMinIdle()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPoolConfig.getTestOnBorrow()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPoolConfig.getTestOnCreate()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPoolConfig.getTestOnReturn()",
+  "covered" : false
+}, {
+  "method" : "kotlin.collections.ArraysKt.asSequence(double[])",
+  "covered" : false
+}, {
+  "method" : "kotlin.sequences.SequencesKt.toList(kotlin.sequences.Sequence)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.fromCompletionStage(java.util.concurrent.CompletionStage)",
+  "covered" : false
+}, {
+  "method" : "kotlin.collections.CollectionsKt.emptyList()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.discardSomeReadBytes()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.fromCallable(java.util.concurrent.Callable)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Maybe.toFlowable()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.from(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.doOnNext(java.util.function.Consumer)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.NetUtil.isValidIpV4Address(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.HdrHistogram.Histogram.getMinValue()",
+  "covered" : false
+}, {
+  "method" : "org.HdrHistogram.Histogram.getMaxValue()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.warn(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Flowable.fromPublisher(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Flowable.singleElement()",
+  "covered" : false
+}, {
+  "method" : "redis.clients.authentication.core.TokenAuthConfig.getIdentityProviderConfig()",
+  "covered" : false
+}, {
+  "method" : "redis.clients.authentication.core.IdentityProviderConfig.getProvider()",
+  "covered" : false
+}, {
+  "method" : "redis.clients.authentication.core.TokenAuthConfig.getTokenManagerConfig()",
+  "covered" : false
+}, {
+  "method" : "redis.clients.authentication.core.TokenManager.<init>(redis.clients.authentication.core.IdentityProvider, redis.clients.authentication.core.TokenManagerConfig)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.disconnect()",
+  "covered" : false
+}, {
+  "method" : "kotlin.jvm.internal.Lambda.<init>(int)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.uring.IoUring.isAvailable()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.config()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelConfig.setAutoRead(boolean)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelDuplexHandler.userEventTriggered(io.netty.channel.ChannelHandlerContext, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.defer(java.util.function.Supplier)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelInboundHandlerAdapter.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ArrayNode.addAll(com.fasterxml.jackson.databind.node.ArrayNode)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.remoteAddress()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelDuplexHandler.channelActive(io.netty.channel.ChannelHandlerContext)",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.future.FutureKt.await(java.util.concurrent.CompletionStage, kotlin.coroutines.Continuation)",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.Bootstrap.config()",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.BootstrapConfig.group()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.fromIterable(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.flatMap(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "rx.Single.toObservable()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.Timeout.cancel()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.discardReadBytes()",
+  "covered" : false
+}, {
+  "method" : "reactor.util.context.Context.empty()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.Exceptions.failWithOverflow()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.trace(java.lang.String, java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(io.netty.channel.ChannelHandlerContext)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.NetUtil.isValidIpV6Address(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelHandlerContext.pipeline()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ArrayNode.<init>(com.fasterxml.jackson.databind.node.JsonNodeFactory)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelFuture.isSuccess()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelFuture.cause()",
+  "covered" : false
+}, {
+  "method" : "redis.clients.authentication.core.Token.getUser()",
+  "covered" : false
+}, {
+  "method" : "redis.clients.authentication.core.Token.getValue()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.Exceptions.nullOrNegativeRequestException(long)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.warn(java.lang.String, java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogLevel.ordinal()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.log(io.netty.util.internal.logging.InternalLogLevel, java.lang.String, java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.toString()",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.core.instrument.Tags.empty()",
+  "covered" : false
+}, {
+  "method" : "org.LatencyUtils.SimplePauseDetector.<init>(long, long, int)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.writeByte(int)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.EventExecutorGroup.isShuttingDown()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.subscribe(java.util.function.Consumer, java.util.function.Consumer)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelHandlerContext.fireChannelUnregistered()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$ManySpec.replay()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$MulticastReplaySpec.latest()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.trace(java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.timeout(java.time.Duration)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.then(reactor.core.publisher.Mono)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.doFinally(java.util.function.Consumer)",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint.newBuilder()",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint$Builder.serviceName(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint$Builder.ip(java.net.InetAddress)",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint$Builder.port(int)",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint$Builder.build()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelFuture.addListener(io.netty.util.concurrent.GenericFutureListener)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.empty()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.fromFuture(java.util.concurrent.CompletableFuture)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.concatWith(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.filter(java.util.function.Predicate)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.switchIfEmpty(reactor.core.publisher.Mono)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.filter(java.util.function.Predicate)",
+  "covered" : false
+}, {
+  "method" : "reactor.util.function.Tuples.of(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.observation.Observation.error(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.isBoolean()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.isReadable()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.markReaderIndex()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.refCnt()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.toString(java.nio.charset.Charset)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.writeBytes(io.netty.buffer.ByteBuf)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Maybe.toFlowable()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPool.returnObject(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.size()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ArrayNode.remove(int)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.isTextual()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.warn(java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.NullNode.getInstance()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readTree(byte[])",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Observable.toFlowable(io.reactivex.rxjava3.core.BackpressureStrategy)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.isObject()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelHandlerContext.alloc()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBufAllocator.buffer(int)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelHandlerContext.fireChannelRegistered()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.SoftReferenceObjectPool.returnObject(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.asText()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelInitializer.<init>()",
+  "covered" : false
+}, {
+  "method" : "brave.Tracer.nextSpan()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.group.ChannelGroup.remove(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.EventExecutorGroup.isShutdown()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.EventExecutorGroup.isTerminated()",
+  "covered" : false
+}, {
+  "method" : "org.HdrHistogram.Histogram.getValueAtPercentile(double)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.local.LocalAddress.<init>(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.common.KeyValues.and(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.asBoolean()",
+  "covered" : false
+}, {
+  "method" : "io.netty.handler.ssl.SslContextBuilder.forClient()",
+  "covered" : false
+}, {
+  "method" : "io.netty.handler.ssl.SslContextBuilder.sslProvider(io.netty.handler.ssl.SslProvider)",
+  "covered" : false
+}, {
+  "method" : "io.netty.handler.ssl.SslContextBuilder.keyStoreType(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.handler.ssl.SslContextBuilder.protocols(java.lang.String[])",
+  "covered" : false
+}, {
+  "method" : "io.netty.handler.ssl.SslContextBuilder.ciphers(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBufUtil.writeUtf8(io.netty.buffer.ByteBuf, java.lang.CharSequence)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBufUtil.writeAscii(io.netty.buffer.ByteBuf, java.lang.CharSequence)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.ensureWritable(int)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.nioBuffer(int, int)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.writerIndex(int)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.map(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "brave.Span.finish()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.Future.isSuccess()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Single.fromPublisher(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "rx.RxReactiveStreams.toCompletable(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "io.netty.handler.ssl.OpenSsl.isAvailable()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.trace(java.lang.String, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Observable.toFlowable(io.reactivex.BackpressureStrategy)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.AttributeKey.newInstance(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.socket.nio.NioChannelOption.of(java.net.SocketOption)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.Unpooled.wrappedBuffer(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.clear()",
+  "covered" : false
+}, {
+  "method" : "kotlin.coroutines.jvm.internal.Boxing.boxLong(long)",
+  "covered" : false
+}, {
+  "method" : "org.LatencyUtils.LatencyStats.recordLatency(long)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.EventLoop.submit(java.lang.Runnable)",
+  "covered" : false
+}, {
+  "method" : "org.LatencyUtils.LatencyStats.stop()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.DefaultThreadFactory.<init>(java.lang.String, boolean)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.readerIndex()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.capacity()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.justOrEmpty(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.handler.codec.MessageToByteEncoder.<init>(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.reactivestreams.Subscriber.onComplete()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.epoll.EpollIoHandler.newFactory()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.MultiThreadIoEventLoopGroup.<init>(int, java.util.concurrent.ThreadFactory, io.netty.channel.IoHandlerFactory)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.alloc()",
+  "covered" : false
+}, {
+  "method" : "rx.RxReactiveStreams.toSingle(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "org.LatencyUtils.PauseDetector.<init>()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.EventExecutorGroup.iterator()",
+  "covered" : false
+}, {
+  "method" : "redis.clients.authentication.core.TokenManager.start(redis.clients.authentication.core.TokenListener, boolean)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$Many.tryEmitError(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "redis.clients.authentication.core.TokenManager.stop()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Observable.singleElement()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Single.fromPublisher(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "org.reactivestreams.Subscriber.onNext(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.core.instrument.Timer.record(long, java.util.concurrent.TimeUnit)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Flowable.fromPublisher(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.get(int)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.onBackpressureDrop()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.publishOn(reactor.core.scheduler.Scheduler)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Observable.fromPublisher(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.forEachByte(int, int, io.netty.util.ByteProcessor)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.skipBytes(int)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.deferContextual(java.util.function.Function)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ObjectNode.<init>(com.fasterxml.jackson.databind.node.JsonNodeFactory)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(io.netty.channel.ChannelHandlerContext, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.isOpen()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelFuture.syncUninterruptibly()",
+  "covered" : false
+}, {
+  "method" : "org.reactivestreams.Subscriber.onError(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "kotlin.jvm.internal.Intrinsics.checkNotNull(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "brave.Span.error(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.localAddress()",
+  "covered" : false
+}, {
+  "method" : "org.HdrHistogram.Histogram.getTotalCount()",
+  "covered" : false
+}, {
+  "method" : "io.netty.resolver.dns.DnsNameResolverBuilder.<init>()",
+  "covered" : false
+}, {
+  "method" : "io.netty.resolver.dns.DnsNameResolverBuilder.datagramChannelType(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "io.netty.resolver.dns.DnsNameResolverBuilder.socketChannelType(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "io.netty.resolver.dns.DefaultDnsCnameCache.<init>()",
+  "covered" : false
+}, {
+  "method" : "io.netty.resolver.dns.DnsNameResolverBuilder.cnameCache(io.netty.resolver.dns.DnsCnameCache)",
+  "covered" : false
+}, {
+  "method" : "io.netty.resolver.dns.DefaultDnsCache.<init>()",
+  "covered" : false
+}, {
+  "method" : "io.netty.resolver.dns.DnsNameResolverBuilder.resolveCache(io.netty.resolver.dns.DnsCache)",
+  "covered" : false
+}, {
+  "method" : "io.netty.resolver.dns.DnsAddressResolverGroup.<init>(io.netty.resolver.dns.DnsNameResolverBuilder)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.SystemPropertyUtil.getInt(java.lang.String, int)",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBufUtil.utf8MaxBytes(java.lang.CharSequence)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.info(java.lang.String, java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.HashedWheelTimer.<init>(java.util.concurrent.ThreadFactory)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.scheduler.Schedulers.fromExecutorService(java.util.concurrent.ExecutorService, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.HashedWheelTimer.start()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Single.toFlowable()",
+  "covered" : false
+}, {
+  "method" : "brave.Span.isNoop()",
+  "covered" : false
+}, {
+  "method" : "brave.Span.kind(brave.Span$Kind)",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.Bootstrap.attr(io.netty.util.AttributeKey, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.kqueue.KQueueIoHandler.newFactory()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.PooledObject.getObject()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPool.<init>(org.apache.commons.pool2.PooledObjectFactory, org.apache.commons.pool2.impl.GenericObjectPoolConfig)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.group.ChannelGroup.toArray(java.lang.Object[])",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.group.ChannelGroup.close()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelConfig.isAutoRead()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelPipeline.fireUserEventTriggered(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.block()",
+  "covered" : false
+}, {
+  "method" : "io.netty.buffer.ByteBuf.readByte()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Single.toObservable()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.Future.cause()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.log(io.netty.util.internal.logging.InternalLogLevel, java.lang.String, java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint.serviceName()",
+  "covered" : false
+}, {
+  "method" : "brave.Span.remoteServiceName(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint.ipv6()",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint.ipv4()",
+  "covered" : false
+}, {
+  "method" : "zipkin2.Endpoint.portAsInt()",
+  "covered" : false
+}, {
+  "method" : "brave.Span.remoteIpAndPort(java.lang.String, int)",
+  "covered" : false
+}, {
+  "method" : "brave.Span.annotate(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.SoftReferenceObjectPool.borrowObject()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.AttributeKey.valueOf(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.isErrorEnabled()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.Future.isDone()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.Future.isCancelled()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.DefaultPromise.setSuccess(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.DefaultPromise.setFailure(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.Future.addListener(io.netty.util.concurrent.GenericFutureListener)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.write(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.Channel.writeAndFlush(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Single.toObservable()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Completable.toFlowable()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.info(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.CoreSubscriber.onNext(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.CoreSubscriber.onError(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Completable.toFlowable()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.group.DefaultChannelGroup.<init>(io.netty.util.concurrent.EventExecutor)",
+  "covered" : false
+}, {
+  "method" : "io.micrometer.observation.ObservationRegistry.getCurrentObservation()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.GenericObjectPool.borrowObject()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Observable.fromPublisher(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.ObjectMapper.readTree(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.BootstrapConfig.attrs()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.JsonNode.iterator()",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.logging.InternalLogger.log(io.netty.util.internal.logging.InternalLogLevel, java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.Exceptions.throwIfFatal(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "org.reactivestreams.Subscription.cancel()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.Exceptions.unwrap(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "reactor.util.context.Context.getOrDefault(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.Exceptions.addSuppressed(java.lang.Throwable, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.impl.DefaultPooledObject.<init>(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Flux.subscribe(java.util.function.Consumer, java.util.function.Consumer, java.lang.Runnable)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.internal.PlatformDependent.directBufferPreferred()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelInboundHandlerAdapter.channelRegistered(io.netty.channel.ChannelHandlerContext)",
+  "covered" : false
+}, {
+  "method" : "brave.Tracing.currentTracer()",
+  "covered" : false
+}, {
+  "method" : "brave.Tracer.currentSpan()",
+  "covered" : false
+}, {
+  "method" : "brave.Span.context()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Observable.singleElement()",
+  "covered" : false
+}, {
+  "method" : "reactor.util.context.Context.of(java.lang.Object, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.util.concurrent.SucceededFuture.<init>(io.netty.util.concurrent.EventExecutor, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Observable.singleOrError()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.pool2.BasePooledObjectFactory.<init>()",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.rxjava3.core.Flowable.singleElement()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Sinks$Many.tryEmitComplete()",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.fromSupplier(java.util.function.Supplier)",
+  "covered" : false
+}, {
+  "method" : "reactor.core.publisher.Mono.defaultIfEmpty(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.Bootstrap.resolver(io.netty.resolver.AddressResolverGroup)",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.Bootstrap.channel(java.lang.Class)",
+  "covered" : false
+}, {
+  "method" : "io.netty.bootstrap.Bootstrap.group(io.netty.channel.EventLoopGroup)",
+  "covered" : false
+}, {
+  "method" : "io.reactivex.Completable.fromPublisher(org.reactivestreams.Publisher)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.node.ArrayNode.add(com.fasterxml.jackson.databind.JsonNode)",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.uring.IoUringIoHandler.newFactory()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelPromise.isVoid()",
+  "covered" : false
+}, {
+  "method" : "io.netty.channel.ChannelPromise.addListener(io.netty.util.concurrent.GenericFutureListener)",
+  "covered" : false
+}, {
+  "method" : "kotlinx.coroutines.flow.FlowKt.toSet$default(kotlinx.coroutines.flow.Flow, java.util.Set, kotlin.coroutines.Continuation, int, java.lang.Object)",
+  "covered" : false
+} ]

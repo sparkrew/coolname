@@ -1,0 +1,70 @@
+[ {
+  "method" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.collections.FastHashMap.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.digester.Digester.push(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.digester.Digester.parse(java.io.InputStream)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.isWarnEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.warn(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.logging.Log.isDebugEnabled()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.debug(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.beanutils.PropertyUtils.getProperty(java.lang.Object, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.error(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.digester.Digester.peek(int)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.digester.Digester.addRule(java.lang.String, org.apache.commons.digester.Rule)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.digester.xmlrules.DigesterLoader.createDigester(java.net.URL)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.digester.Digester.setNamespaceAware(boolean)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.digester.Digester.setValidating(boolean)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.digester.Digester.setUseContextClassLoader(boolean)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.digester.Digester.register(java.lang.String, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.collections.FastHashMap.entrySet()",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.collections.FastHashMap.put(java.lang.Object, java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.collections.FastHashMap.setFast(boolean)",
+  "covered" : true
+}, {
+  "method" : "org.apache.commons.digester.Rule.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.digester.AbstractObjectCreationFactory.<init>()",
+  "covered" : false
+} ]
