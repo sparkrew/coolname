@@ -1,0 +1,1720 @@
+[ {
+  "method" : "org.w3c.dom.Document.getElementsByTagName(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.NodeList.getLength()",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.NodeList.item(int)",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.Node.getNodeType()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.writeMessage(int, com.google.protobuf.MessageLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.writeUInt32(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.writeString(com.google.protobuf.CodedOutputStream, int, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.writeBool(int, boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableMessage$ExtensionWriter.writeUntil(int, com.google.protobuf.CodedOutputStream)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.UnknownFieldSet.writeTo(com.google.protobuf.CodedOutputStream)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.clone()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.clear()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.parseWithIOException(com.google.protobuf.Parser, com.google.protobuf.CodedInputStream, com.google.protobuf.ExtensionRegistryLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.AbstractParser.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.size()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.setMessage(com.google.protobuf.AbstractMessage)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.<init>(com.google.protobuf.AbstractMessage, com.google.protobuf.AbstractMessage$BuilderParent, boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Parser.parseFrom(byte[])",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$IntList.addInt(int)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Document.createElement(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.getMessage(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.dispose()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.ByteString.copyFromUtf8(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.getMessageOrBuilderList()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.emptyList()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.getCount()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.ByteString.toStringUtf8()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.ByteString.isValidUtf8()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.dispose()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.addAllMessages(java.lang.Iterable)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.clearField(com.google.protobuf.Descriptors$FieldDescriptor)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.parseWithIOException(com.google.protobuf.Parser, java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Parser.parseFrom(com.google.protobuf.ByteString)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(com.google.protobuf.Parser, java.io.InputStream, com.google.protobuf.ExtensionRegistryLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.setMessage(int, com.google.protobuf.AbstractMessage)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.addBuilder(int, com.google.protobuf.AbstractMessage)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readTag()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.InvalidProtocolBufferException.unwrapIOException()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readMessage(com.google.protobuf.Parser, com.google.protobuf.ExtensionRegistryLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.addMessage(com.google.protobuf.AbstractMessage)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.getBuilder()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readMessage(com.google.protobuf.MessageLite$Builder, com.google.protobuf.ExtensionRegistryLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.parseUnknownField(com.google.protobuf.CodedInputStream, com.google.protobuf.ExtensionRegistryLite, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(com.google.protobuf.Parser, java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.clearOneof(com.google.protobuf.Descriptors$OneofDescriptor)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.<init>(com.google.protobuf.GeneratedMessageV3$Builder)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.setRepeatedField(com.google.protobuf.Descriptors$FieldDescriptor, int, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.addRepeatedField(com.google.protobuf.Descriptors$FieldDescriptor, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringList.add(com.google.protobuf.ByteString)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.addMessage(int, com.google.protobuf.AbstractMessage)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadablePeriod.toPeriod()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.plus(org.joda.time.ReadablePeriod)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.addBuilder(com.google.protobuf.AbstractMessage)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.getBuilderList()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.getAttribute(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.equals(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.UnknownFieldSet.equals(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.getBuilder(int)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.http.HttpServletRequest.getParameter(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.http.HttpServletResponse.getWriter()",
+  "covered" : false
+}, {
+  "method" : "org.apache.commons.lang3.StringEscapeUtils.escapeHtml4(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.http.HttpServletResponse.addHeader(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Parser.parseFrom(byte[], com.google.protobuf.ExtensionRegistryLite)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.mult(org.ejml.simple.SimpleBase)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.plus(org.ejml.simple.SimpleBase)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.<init>(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.concatRows(org.ejml.simple.SimpleBase[])",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.numRows()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.elementSum()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.makeImmutable()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.parseWithIOException(com.google.protobuf.Parser, java.io.InputStream, com.google.protobuf.ExtensionRegistryLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.build()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.UnknownFieldSet.hashCode()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringList.size()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Parser.parseFrom(com.google.protobuf.ByteString, com.google.protobuf.ExtensionRegistryLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$DoubleList.addDouble(double)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Parser.parseFrom(java.nio.ByteBuffer, com.google.protobuf.ExtensionRegistryLite)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.transpose()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.ReadablePeriod.toMutablePeriod()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadablePeriod.size()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadablePeriod.getValue(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutablePeriod.setValue(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.remove(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.getMessageList()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.numCols()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.get(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$IntList.setInt(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.clear()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringList.add(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.<init>(com.google.protobuf.LazyStringList)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.mergeFrom(com.google.protobuf.AbstractMessage)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readUInt32()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.extractMatrix(int, int, int, int)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.random_DDRM(int, int, double, double, java.util.Random)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.setField(com.google.protobuf.Descriptors$FieldDescriptor, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.divide(double)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.UninitializedMessageException.asInvalidProtocolBufferException()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.InvalidProtocolBufferException.setUnfinishedMessage(com.google.protobuf.MessageLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.InvalidProtocolBufferException.<init>(java.io.IOException)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.getMessageOrBuilder()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.setField(com.google.protobuf.Descriptors$FieldDescriptor, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal.hashLong(long)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.setRepeatedField(com.google.protobuf.Descriptors$FieldDescriptor, int, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Element.appendChild(nu.xom.Node)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.LazyStringList.set(int, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.weeks()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.year()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.monthOfYear()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.dayOfMonth()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.months()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.getMonths()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Partial.withFieldAddWrapped(org.joda.time.DurationFieldType, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.withMonths(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.years()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.getYears()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.withYears(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.centuryOfEra()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Partial.get(org.joda.time.DateTimeFieldType)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Partial.withField(org.joda.time.DateTimeFieldType, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.equals(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.get(org.joda.time.DateTimeFieldType)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.mergeFrom(com.google.protobuf.Message)",
+  "covered" : false
+}, {
+  "method" : "javax.json.Json.createObjectBuilder()",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonObjectBuilder.add(java.lang.String, int)",
+  "covered" : true
+}, {
+  "method" : "javax.json.Json.createArrayBuilder()",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonArrayBuilder.add(javax.json.JsonValue)",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonArrayBuilder.build()",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonObjectBuilder.build()",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonArrayBuilder.add(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.Node.getTextContent()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Document.importNode(org.w3c.dom.Node, boolean)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.appendChild(org.w3c.dom.Node)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Document.adoptNode(org.w3c.dom.Node)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Document.appendChild(org.w3c.dom.Node)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.<init>(java.util.List, boolean, com.google.protobuf.AbstractMessage$BuilderParent, boolean)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Chronology.monthOfYear()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.field.OffsetDateTimeField.<init>(org.joda.time.DateTimeField, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.field.DividedDateTimeField.<init>(org.joda.time.DateTimeField, org.joda.time.DateTimeFieldType, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Descriptors$FileDescriptor.internalBuildGeneratedFileFrom(java.lang.String[], com.google.protobuf.Descriptors$FileDescriptor[])",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Descriptors$FileDescriptor.getMessageTypes()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$FieldAccessorTable.<init>(com.google.protobuf.Descriptors$Descriptor, java.lang.String[])",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringList.getUnmodifiableView()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.isModifiable()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$IntList.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$IntList.makeImmutable()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$IntList.addAll(java.util.Collection)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Parser.parseFrom(java.nio.ByteBuffer)",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonObjectBuilder.add(java.lang.String, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.getByteString(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$IntList.size()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.getRaw(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.ProtocolStringList.size()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeMessageSize(int, com.google.protobuf.MessageLite)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.UnknownFieldSet.getSerializedSize()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.centuries()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$Builder.setUnknownFields(com.google.protobuf.UnknownFieldSet)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.RepeatedFieldBuilderV3.getMessageOrBuilder(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.getMessage()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.elementMult(org.ejml.simple.SimpleBase)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.clearExtension(com.google.protobuf.GeneratedMessage$GeneratedExtension)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.ServletContext.getRealPath(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.setAttribute(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.setTextContent(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTime.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTime.getWeekyear()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTime.getYear()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.AbstractMessageLite$Builder.addAll(java.lang.Iterable, java.util.List)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.getElementsByTagName(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.Node.getAttributes()",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.NamedNodeMap.getLength()",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.NamedNodeMap.item(int)",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.Attr.getName()",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.Attr.getValue()",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.parseWithIOException(com.google.protobuf.Parser, com.google.protobuf.CodedInputStream)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$IntList.getInt(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.toDurationFrom(org.joda.time.ReadableInstant)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.writeInt32(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.writeDouble(int, double)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.<init>(org.ejml.simple.SimpleMatrix)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.getMillis()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeZone.getShortName(long, java.util.Locale)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeZone.getName(long, java.util.Locale)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$IntList.isModifiable()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Partial.withPeriodAdded(org.joda.time.ReadablePeriod, int)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Serializer.<init>(java.io.OutputStream, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.Serializer.setIndent(int)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.Serializer.setMaxLength(int)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.Serializer.write(nu.xom.Document)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.Serializer.flush()",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.add(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.field.RemainderDateTimeField.<init>(org.joda.time.DateTimeField, org.joda.time.DateTimeFieldType, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readBytes()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readBool()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.add(com.google.protobuf.ByteString)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readInt32()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readRawVarint32()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.pushLimit(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.getBytesUntilLimit()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.popLimit(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readUInt64()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.parseUnknownField(com.google.protobuf.CodedInputStream, com.google.protobuf.ExtensionRegistryLite, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Interval.<init>(org.joda.time.ReadableInstant, org.joda.time.ReadableInstant)",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.InputSource.<init>(java.io.InputStream)",
+  "covered" : true
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.loadBinary(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutableDateTime.<init>(long, org.joda.time.DateTimeZone)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutableDateTime.property(org.joda.time.DateTimeFieldType)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutableDateTime$Property.getMinimumValueOverall()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutableDateTime$Property.getMaximumValueOverall()",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Builder.<init>()",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Builder.build(java.io.File)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.xslt.XSLTransform.<init>(nu.xom.Document)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.ServletException.<init>(java.lang.Throwable)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.build()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableMessage.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3.computeStringSize(int, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Document.getDocumentElement()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.getChildNodes()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.getNodeName()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.NamedNodeMap.getNamedItem(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.getNodeValue()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Partial.isSupported(org.joda.time.DateTimeFieldType)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Instant.toInstant()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.weekOfWeekyear()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.with(org.joda.time.DateTimeFieldType, int)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.LazyStringList.getByteString(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.clear()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.toFormatter()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendDayOfWeek(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.dayOfWeek()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendClockhourOfHalfday(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.clockhourOfHalfday()",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Element.<init>(java.lang.String, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.Document.<init>(nu.xom.Element)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.ProcessingInstruction.<init>(java.lang.String, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.Document.insertChild(nu.xom.Node, int)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.Attribute.<init>(java.lang.String, java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.Element.addAttribute(nu.xom.Attribute)",
+  "covered" : true
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.getNumElements()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.identity(int)",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.config.Holiday.getDescriptionPropertiesKey()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendDayOfYear(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.dayOfYear()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$DoubleList.size()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.writeUInt64(int, long)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.get(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.ProtocolStringList.stream()",
+  "covered" : true
+}, {
+  "method" : "javax.servlet.ServletConfig.getInitParameter(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.ServletException.<init>(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.ServletConfig.getServletContext()",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.ServletContext.getResourceAsStream(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.fill(double)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.minus(org.ejml.simple.SimpleBase)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.size()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.getFieldType(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.getValue(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.<init>()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.withField(org.joda.time.DurationFieldType, int)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeInt32SizeNoTag(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendLiteral(char)",
+  "covered" : false
+}, {
+  "method" : "com.apple.eawt.Application.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.apple.eawt.Application.addApplicationListener(com.apple.eawt.ApplicationListener)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Document.createTextNode(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Chronology.weekOfWeekyear()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.ProtocolStringList.get(int)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.ProtocolStringList.iterator()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.getChildNodes()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Text.getWholeText()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.getNodeName()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.getTextContent()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendTwoDigitYear(int, boolean)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.yearOfCentury()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readDouble()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.<init>(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.getRangeDurationType()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$DoubleList.makeImmutable()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$DoubleList.getDouble(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendWeekOfWeekyear(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.isSupported(org.joda.time.DateTimeFieldType)",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonArrayBuilder.add(int)",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonObjectBuilder.add(java.lang.String, javax.json.JsonValue)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.set(int, int, double)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.insertIntoThis(int, int, org.ejml.simple.SimpleBase)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.scale(double)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$DoubleList.setDouble(int, double)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.clone()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.set(int, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendHalfdayOfDayText()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.halfdayOfDay()",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonArray.size()",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonArray.getJsonObject(int)",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonObject.keySet()",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonObject.getJsonObject(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.appendChild(org.w3c.dom.Node)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.<init>(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.clearOneof(com.google.protobuf.Descriptors$OneofDescriptor)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilderFactory.newDocumentBuilder()",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilder.parse(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeInt32Size(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeBoolSize(int, boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeUInt32Size(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.setUnknownFields(com.google.protobuf.UnknownFieldSet)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Partial.getChronology()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.size()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.getFieldType(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.getValue(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.without(org.joda.time.DateTimeFieldType)",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonObject.getString(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonObject.getJsonArray(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Chronology.years()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.field.ScaledDurationField.<init>(org.joda.time.DurationField, org.joda.time.DurationFieldType, int)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.getFirstChild()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.getNextSibling()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.SingleFieldBuilderV3.clear()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringList.getRaw(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeUInt32SizeNoTag(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeUInt64Size(int, long)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeZone.forOffsetHours(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeDoubleSize(int, double)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringArrayList.addAll(java.util.Collection)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.hourOfDay()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.minuteOfHour()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.secondOfMinute()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.millisOfSecond()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.<init>(org.joda.time.DateTimeFieldType[], int[])",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Instant.<init>(long)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Chronology.months()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadablePartial.isSupported(org.joda.time.DateTimeFieldType)",
+  "covered" : true
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilder.parse(java.io.File)",
+  "covered" : true
+}, {
+  "method" : "org.w3c.dom.Element.normalize()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.getPreviousSibling()",
+  "covered" : false
+}, {
+  "method" : "javax.json.Json.createReader(java.io.Reader)",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonReader.readObject()",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonArray.getValuesAs(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonObject.getInt(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "javax.json.JsonObject.getString(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatter.parseDateTime(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.toString()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.clearField(com.google.protobuf.Descriptors$FieldDescriptor)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.get(int)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.transform.TransformerFactory.newInstance()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.computeEnumSize(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.set(int, double)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.compareTo(org.joda.time.ReadableInstant)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.http.HttpServlet.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.getFirstChild()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.yearOfEra()",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.parameter.UrlManagerParameter.<init>(java.net.URL, java.util.Properties)",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.HolidayManager.getInstance(de.jollyday.ManagerParameter)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.<init>(double[][])",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonString.getString()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Duration.<init>(long)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadablePeriod.isSupported(org.joda.time.DurationFieldType)",
+  "covered" : true
+}, {
+  "method" : "org.xml.sax.SAXException.printStackTrace()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutablePeriod.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadablePeriod.getFieldType(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutablePeriod.add(org.joda.time.DurationFieldType, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.halfdays()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.hours()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.days()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.minutes()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.seconds()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.millis()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutablePeriod.size()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutablePeriod.getValue(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.writeEnum(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendEraText()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.era()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal.hashBoolean(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.SAXParseException.getMessage()",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.SAXParseException.getLineNumber()",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.SAXParseException.getColumnNumber()",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.SAXParseException.getSystemId()",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.SAXParseException.getPublicId()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.hasAttribute(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableMessage.equals(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedInputStream.readEnum()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableInstant.toString()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.dot(org.ejml.simple.SimpleBase)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.SAXParserFactory.newInstance()",
+  "covered" : true
+}, {
+  "method" : "javax.xml.parsers.SAXParserFactory.setFeature(java.lang.String, boolean)",
+  "covered" : true
+}, {
+  "method" : "javax.xml.parsers.SAXParserFactory.newSAXParser()",
+  "covered" : true
+}, {
+  "method" : "javax.xml.transform.TransformerFactory.newTransformer()",
+  "covered" : false
+}, {
+  "method" : "javax.xml.transform.Transformer.setOutputProperty(java.lang.String, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.transform.dom.DOMSource.<init>(org.w3c.dom.Node)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.transform.stream.StreamResult.<init>(java.io.File)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.transform.Transformer.transform(javax.xml.transform.Source, javax.xml.transform.Result)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableMessage.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.mergeFrom(com.google.protobuf.Message)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.toString()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendHourOfDay(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.clockhourOfDay()",
+  "covered" : false
+}, {
+  "method" : "com.apple.eawt.ApplicationEvent.setHandled(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.InputSource.<init>(java.io.Reader)",
+  "covered" : true
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilderFactory.setNamespaceAware(boolean)",
+  "covered" : true
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilder.setErrorHandler(org.xml.sax.ErrorHandler)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.getDurationType()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTime.<init>(int, int, int, int, int, int, int, org.joda.time.Chronology)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DateTime.toInstant()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.toDateTime(org.joda.time.ReadableInstant)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.Internal$DoubleList.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$DoubleList.addAll(java.util.Collection)",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonObject.get(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Descriptors$FileDescriptor.getEnumTypes()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendMinuteOfHour(int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Descriptors$EnumDescriptor.getValues()",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonObject.containsKey(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.hourOfHalfday()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendFractionOfSecond(int, int)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.SAXParser.parse(org.xml.sax.InputSource, org.xml.sax.helpers.DefaultHandler)",
+  "covered" : true
+}, {
+  "method" : "org.xml.sax.Attributes.getLength()",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.Attributes.getQName(int)",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.Attributes.getValue(int)",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.HolidayManager.getHolidays(int, java.lang.String[])",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.Holiday.getPropertiesKey()",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.Holiday.getDate()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Partial.<init>(org.joda.time.ReadablePartial)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneOffset(java.lang.String, java.lang.String, boolean, int, int)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilder.newDocument()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendMonthOfYear(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneShortName()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DurationFieldType.getField(org.joda.time.Chronology)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DurationField.compareTo(java.lang.Object)",
+  "covered" : true
+}, {
+  "method" : "com.google.protobuf.Descriptors$EnumValueDescriptor.getType()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Descriptors$EnumValueDescriptor.getIndex()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableInstant.toInstant()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutableDateTime$Property.set(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutableDateTime$Property.getAsShortText(java.util.Locale)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutableDateTime$Property.getAsText(java.util.Locale)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringList.get(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeZone.forOffsetMillis(int)",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonArray.getInt(int)",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.normF()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.getAttributeNode(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.withDurationAdded(org.joda.time.ReadableDuration, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.addRepeatedField(com.google.protobuf.Descriptors$FieldDescriptor, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendYearOfEra(int, int)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Internal$DoubleList.isModifiable()",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.http.HttpServletRequest.getCharacterEncoding()",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.http.HttpServletRequest.setCharacterEncoding(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.http.HttpServletResponse.setContentType(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.ServletContext.getRequestDispatcher(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.RequestDispatcher.include(javax.servlet.ServletRequest, javax.servlet.ServletResponse)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.setExtension(com.google.protobuf.GeneratedMessage$GeneratedExtension, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.Descriptors$Descriptor.getNestedTypes()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.<init>()",
+  "covered" : false
+}, {
+  "method" : "javax.xml.transform.stream.StreamResult.<init>(java.io.OutputStream)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendCenturyOfEra(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDuration.toDuration()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Duration.plus(org.joda.time.ReadableDuration)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendDayOfWeekText()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.clear()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.simple.SimpleMatrix.getMatrix()",
+  "covered" : false
+}, {
+  "method" : "org.ejml.ops.MatrixIO.print(java.io.PrintStream, org.ejml.data.DMatrix, java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormat.forPattern(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadablePeriod.get(org.joda.time.DurationFieldType)",
+  "covered" : true
+}, {
+  "method" : "com.apple.eawt.ApplicationAdapter.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.get(org.joda.time.DateTimeFieldType)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DateTimeZone.equals(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.helpers.DefaultHandler.<init>()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.minuteOfDay()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.setExtension(com.google.protobuf.GeneratedMessage$GeneratedExtension, int, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.secondOfDay()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.millisOfDay()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.hasChildNodes()",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.config.Configuration.getHolidays()",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.config.Configuration.getSubConfigurations()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDuration.getMillis()",
+  "covered" : false
+}, {
+  "method" : "de.jollyday.impl.DefaultHolidayManager.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.GeneratedMessageV3$ExtendableBuilder.addExtension(com.google.protobuf.GeneratedMessage$GeneratedExtension, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.CodedOutputStream.writeUInt32NoTag(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getYear()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getMonthOfYear()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getWeekOfWeekyear()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getDayOfMonth()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getHourOfDay()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getMinuteOfHour()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getSecondOfMinute()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getDayOfWeek()",
+  "covered" : false
+}, {
+  "method" : "javax.servlet.http.HttpServletRequest.setAttribute(java.lang.String, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.hasChildNodes()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.chrono.ISOChronology.getInstanceUTC()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DateTimeZone.forTimeZone(java.util.TimeZone)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.chrono.ISOChronology.getInstance(org.joda.time.DateTimeZone)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.ReadableDateTime.toDateTime()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DateTime.property(org.joda.time.DateTimeFieldType)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTime$Property.getMinimumValue()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendDayOfMonth(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.toMutableDateTime()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.MutableDateTime.setZone(org.joda.time.DateTimeZone)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendYear(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Duration.compareTo(org.joda.time.ReadableDuration)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeFieldType.weekyear()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Partial.<init>(org.joda.time.DateTimeFieldType, int)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Builder.build(java.io.Reader)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Document.getRootElement()",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Element.getFirstChildElement(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Element.getChildElements(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Elements.size()",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Elements.get(int)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Element.getChild(int)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Node.getValue()",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Element.getAttributeValue(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendSecondOfMinute(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendLiteral(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendDecimal(org.joda.time.DateTimeFieldType, int, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendYearOfCentury(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendWeekyear(int, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTime$Property.getMaximumValue()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendMonthOfYearText()",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Node.removeChild(org.w3c.dom.Node)",
+  "covered" : false
+}, {
+  "method" : "org.w3c.dom.Element.getTagName()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.isSupported(org.joda.time.DurationFieldType)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.field.ScaledDurationField.getWrappedField()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.DurationField.getType()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.field.ScaledDurationField.getScalar()",
+  "covered" : true
+}, {
+  "method" : "javax.xml.validation.SchemaFactory.newInstance(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "javax.xml.validation.SchemaFactory.setFeature(java.lang.String, boolean)",
+  "covered" : true
+}, {
+  "method" : "javax.xml.validation.SchemaFactory.newSchema(java.io.File)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilderFactory.setSchema(javax.xml.validation.Schema)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.isBefore(org.joda.time.ReadableInstant)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.isEqual(org.joda.time.ReadableInstant)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.isAfter(org.joda.time.ReadableInstant)",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.SAXParseException.<init>(java.lang.String, java.lang.String, java.lang.String, int, int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Duration.toPeriod()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDateTime.getMillis()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatter.print(org.joda.time.ReadablePartial)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatter.withZone(org.joda.time.DateTimeZone)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatter.print(long)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.years(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.days(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.weeks(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.months(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.millis(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.seconds(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.minutes(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.hours(int)",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.Period.normalizedStandard()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Instant.getChronology()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendMonthOfYearShortText()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendClockhourOfDay(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendMillisOfSecond(int)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilderFactory.setValidating(boolean)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilderFactory.setFeature(java.lang.String, boolean)",
+  "covered" : true
+}, {
+  "method" : "nu.xom.xslt.XSLTransform.transform(nu.xom.Document)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Nodes.size()",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Nodes.get(int)",
+  "covered" : false
+}, {
+  "method" : "nu.xom.Node.toXML()",
+  "covered" : false
+}, {
+  "method" : "com.apple.eawt.Application.setEnabledPreferencesMenu(boolean)",
+  "covered" : false
+}, {
+  "method" : "org.xml.sax.SAXException.getException()",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.ParserConfigurationException.printStackTrace()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendDayOfWeekShortText()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeZone.getAvailableIDs()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.DateTimeZone.forID(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "javax.xml.parsers.DocumentBuilderFactory.newInstance()",
+  "covered" : true
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneName()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Period.toDurationTo(org.joda.time.ReadableInstant)",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringList.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "com.google.protobuf.LazyStringList.addAll(java.util.Collection)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Interval.contains(org.joda.time.ReadableInstant)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.ReadableDuration.toPeriod()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.Chronology.yearOfCentury()",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonReader.readArray()",
+  "covered" : false
+}, {
+  "method" : "javax.json.JsonArray.isEmpty()",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendHourOfHalfday(int)",
+  "covered" : false
+}, {
+  "method" : "org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneId()",
+  "covered" : false
+} ]

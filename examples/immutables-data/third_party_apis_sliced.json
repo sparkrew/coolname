@@ -1,0 +1,549 @@
+{
+  "slicedPaths" : [ {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonLocation.getByteOffset",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getLocationInfo", "org.immutables.gson.stream.JsonParserReader.getLocationString" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.nextTokenBuffer",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.util.TokenBuffer.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind.util",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.nextTokenBuffer" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonReader.close",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.setSerializeNulls",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setWriterOptions" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.setSerializeNulls",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setWriterOptions" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonReader.setLenient",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setReaderOptions" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonReader.setLenient",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setReaderOptions" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonReader.<init>",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.createJsonReader" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.<init>",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonReader.<init>",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.read",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.read",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read", "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.read",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.read",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.peek",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonToken.ordinal",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.peek", "org.immutables.gson.stream.JsonParserReader.toGsonToken" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.reflect.TypeToken.get",
+    "thirdPartyPackage" : "com.google.gson.reflect",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.reflect.TypeToken.get",
+    "thirdPartyPackage" : "com.google.gson.reflect",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.reflect.TypeToken.get",
+    "thirdPartyPackage" : "com.google.gson.reflect",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.reflect.TypeToken.get",
+    "thirdPartyPackage" : "com.google.gson.reflect",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.disable",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.<init>",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.disable",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.<init>", "org.immutables.gson.stream.GsonMessageBodyProvider.createStreamer", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ "", "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.disable",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson",
+    "thirdPartyMethod" : "com.google.gson.GsonBuilder.registerTypeAdapterFactory",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.setLenient",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setWriterOptions" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.setLenient",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setWriterOptions" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.setHtmlSafe",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setWriterOptions" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.setHtmlSafe",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setWriterOptions" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonLocation.getColumnNr",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getLocationInfo", "org.immutables.gson.stream.JsonParserReader.getLocationString" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.type",
+    "thirdPartyPackage" : "javax.ws.rs.core.Response",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.onRead" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.inRoot",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.inRoot",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.createGenerator",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.<init>",
+    "thirdPartyMethod" : "com.google.gson.Gson.serializeNulls",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.<init>", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.<init>" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.flush",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.getCurrentName",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.getCurrentName",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonParser.getParsingContext",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getPath" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.entity",
+    "thirdPartyPackage" : "javax.ws.rs.core.Response",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.onRead" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.inArray",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.inArray",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.nextString",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonToken.isScalarValue",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.nextString" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.disable",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.<init>",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.disable",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.<init>", "org.immutables.gson.stream.GsonMessageBodyProvider.createStreamer", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ null, null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.disable",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonGenerator.useDefaultPrettyPrinter",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.getCurrentIndex",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.getCurrentIndex",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.nextString",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonReader.nextString",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.nextString" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build",
+    "thirdPartyPackage" : "javax.ws.rs.core.Response",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.onRead" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson",
+    "thirdPartyMethod" : "com.google.gson.GsonBuilder.<init>",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.<init>",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.<init>",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.<init>",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.<init>" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.write",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.write",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.write",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.value",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonGenerator.writeNull",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.value" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.nullValue",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonGenerator.writeNull",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.nullValue" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.value",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonGenerator.writeNull",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.value" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.inObject",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.inObject",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.setIndent",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setWriterOptions" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.setIndent",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.setWriterOptions" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonLocation.getLineNr",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getLocationInfo", "org.immutables.gson.stream.JsonParserReader.getLocationString" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.getParent",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonStreamContext.getParent",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getPath", "org.immutables.gson.stream.JsonParserReader.toJsonPath" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.peek",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonToken.values",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.peek", "org.immutables.gson.stream.JsonParserReader.toGsonToken", "org.immutables.gson.stream.JsonParserReader.<clinit>" ],
+    "methodSlices" : [ null, "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write",
+    "thirdPartyMethod" : "com.google.gson.stream.JsonWriter.nullValue",
+    "thirdPartyPackage" : "com.google.gson.stream",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.create",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.<init>",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.create", "org.immutables.gson.adapter.ExpectedSubtypesAdapter.<init>" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonGenerator.getOutputContext",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonGeneratorWriter.getPath" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.<init>",
+    "thirdPartyMethod" : "com.google.gson.Gson.htmlSafe",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.<init>", "org.immutables.gson.stream.GsonMessageBodyProvider.GsonOptions.<init>" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson",
+    "thirdPartyMethod" : "com.google.gson.GsonBuilder.create",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonParser.getCurrentToken",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getLocationInfo", "org.immutables.gson.stream.JsonParserReader.getTokenString" ],
+    "methodSlices" : [ "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod" : "javax.ws.rs.core.Response.status",
+    "thirdPartyPackage" : "javax.ws.rs.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.onRead" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.util.TokenBuffer.asParser",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind.util",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod" : "javax.ws.rs.WebApplicationException.<init>",
+    "thirdPartyPackage" : "javax.ws.rs",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.onRead" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.createParser",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.write",
+    "thirdPartyMethod" : "com.google.gson.Gson.toJson",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.Gson.getAdapter",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.Gson.getAdapter",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.google.gson.Gson.getAdapter",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.google.gson.Gson.getAdapter",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.create",
+    "thirdPartyMethod" : "com.google.gson.Gson.getAdapter",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.create", "org.immutables.gson.adapter.ExpectedSubtypesAdapter.<init>", "org.immutables.gson.adapter.ExpectedSubtypesAdapter.lookupAdapters" ],
+    "methodSlices" : [ null, "" ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.skipValue",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonParser.skipChildren",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.skipValue" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod" : "com.google.gson.JsonParseException.<init>",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.nextString",
+    "thirdPartyMethod" : "com.google.gson.JsonParseException.<init>",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.nextString" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.<init>",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.<init>", "org.immutables.gson.stream.GsonMessageBodyProvider.createStreamer", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ null, null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonFactory.<init>",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read", "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.<clinit>" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.nextTokenBuffer",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.util.TokenBuffer.copyCurrentStructure",
+    "thirdPartyPackage" : "com.fasterxml.jackson.databind.util",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.nextTokenBuffer" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod" : "com.google.gson.TypeAdapter.fromJsonTree",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read" ],
+    "methodSlices" : [ ]
+  }, {
+    "entryPoint" : "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonParser.getCurrentLocation",
+    "thirdPartyPackage" : "com.fasterxml.jackson.core",
+    "path" : [ "org.immutables.gson.stream.JsonParserReader.getLocationInfo", "org.immutables.gson.stream.JsonParserReader.getLocationString" ],
+    "methodSlices" : [ null ]
+  }, {
+    "entryPoint" : "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write",
+    "thirdPartyMethod" : "com.google.gson.Gson.toJson",
+    "thirdPartyPackage" : "com.google.gson",
+    "path" : [ "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write" ],
+    "methodSlices" : [ ]
+  } ]
+}

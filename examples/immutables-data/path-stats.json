@@ -1,0 +1,639 @@
+[
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonLocation.getByteOffset",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.nextTokenBuffer",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.util.TokenBuffer.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.stream.JsonReader.close",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.setSerializeNulls",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.setSerializeNulls",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.stream.JsonReader.setLenient",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.stream.JsonReader.setLenient",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.stream.JsonReader.\u003cinit\u003e",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.\u003cinit\u003e",
+    "thirdPartyMethod": "com.google.gson.stream.JsonReader.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.read",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.read",
+    "totalPaths": 2,
+    "shortestPathLength": 3,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.read",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.read",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.peek",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonToken.ordinal",
+    "totalPaths": 205,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.reflect.TypeToken.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.reflect.TypeToken.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.reflect.TypeToken.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.reflect.TypeToken.get",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.disable",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.\u003cinit\u003e",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.disable",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.disable",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson",
+    "thirdPartyMethod": "com.google.gson.GsonBuilder.registerTypeAdapterFactory",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.setLenient",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.setLenient",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.setHtmlSafe",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.setHtmlSafe",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonLocation.getColumnNr",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod": "javax.ws.rs.core.Response.ResponseBuilder.type",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.inRoot",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.inRoot",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.createGenerator",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.\u003cinit\u003e",
+    "thirdPartyMethod": "com.google.gson.Gson.serializeNulls",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.flush",
+    "totalPaths": 2,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.getCurrentName",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.getCurrentName",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonParser.getParsingContext",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod": "javax.ws.rs.core.Response.ResponseBuilder.entity",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.inArray",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.inArray",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.nextString",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonToken.isScalarValue",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.disable",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.\u003cinit\u003e",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.disable",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.disable",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonGenerator.useDefaultPrettyPrinter",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.getCurrentIndex",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.getCurrentIndex",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.nextString",
+    "thirdPartyMethod": "com.google.gson.stream.JsonReader.nextString",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod": "javax.ws.rs.core.Response.ResponseBuilder.build",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson",
+    "thirdPartyMethod": "com.google.gson.GsonBuilder.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.\u003cinit\u003e",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.write",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.write",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.write",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.value",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonGenerator.writeNull",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.nullValue",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonGenerator.writeNull",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.value",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonGenerator.writeNull",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.inObject",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.inObject",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.setIndent",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.setIndent",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonLocation.getLineNr",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.getParent",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonStreamContext.getParent",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.peek",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonToken.values",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write",
+    "thirdPartyMethod": "com.google.gson.stream.JsonWriter.nullValue",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.create",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonGeneratorWriter.getPath",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonGenerator.getOutputContext",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.\u003cinit\u003e",
+    "thirdPartyMethod": "com.google.gson.Gson.htmlSafe",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonProviderOptions.gson",
+    "thirdPartyMethod": "com.google.gson.GsonBuilder.create",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonParser.getCurrentToken",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod": "javax.ws.rs.core.Response.status",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.util.TokenBuffer.asParser",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.onRead",
+    "thirdPartyMethod": "javax.ws.rs.WebApplicationException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.createParser",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.write",
+    "thirdPartyMethod": "com.google.gson.Gson.toJson",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.Gson.getAdapter",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.Gson.getAdapter",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.google.gson.Gson.getAdapter",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.google.gson.Gson.getAdapter",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.create",
+    "thirdPartyMethod": "com.google.gson.Gson.getAdapter",
+    "totalPaths": 1,
+    "shortestPathLength": 4,
+    "longestPathLength": 4
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.skipValue",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonParser.skipChildren",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod": "com.google.gson.JsonParseException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.GsonStreamer.nextString",
+    "thirdPartyMethod": "com.google.gson.JsonParseException.\u003cinit\u003e",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.write",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.\u003cinit\u003e",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.\u003cinit\u003e",
+    "totalPaths": 17,
+    "shortestPathLength": 4,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.GsonMessageBodyProvider.JacksonStreamer.read",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonFactory.\u003cinit\u003e",
+    "totalPaths": 18,
+    "shortestPathLength": 3,
+    "longestPathLength": 20
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.nextTokenBuffer",
+    "thirdPartyMethod": "com.fasterxml.jackson.databind.util.TokenBuffer.copyCurrentStructure",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.read",
+    "thirdPartyMethod": "com.google.gson.TypeAdapter.fromJsonTree",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  },
+  {
+    "publicMethod": "org.immutables.gson.stream.JsonParserReader.getLocationInfo",
+    "thirdPartyMethod": "com.fasterxml.jackson.core.JsonParser.getCurrentLocation",
+    "totalPaths": 1,
+    "shortestPathLength": 3,
+    "longestPathLength": 3
+  },
+  {
+    "publicMethod": "org.immutables.gson.adapter.ExpectedSubtypesAdapter.write",
+    "thirdPartyMethod": "com.google.gson.Gson.toJson",
+    "totalPaths": 1,
+    "shortestPathLength": 2,
+    "longestPathLength": 2
+  }
+]

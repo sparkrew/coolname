@@ -1,0 +1,238 @@
+[ {
+  "method" : "com.google.gson.GsonBuilder.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.GsonBuilder.registerTypeAdapterFactory(com.google.gson.TypeAdapterFactory)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.GsonBuilder.create()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.getOutputContext()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeNumber(int)",
+  "covered" : true
+}, {
+  "method" : "com.google.gson.stream.JsonReader.<init>(java.io.Reader)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.flush()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.skipChildren()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.getBooleanValue()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeFieldName(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonFactory.createParser(java.io.InputStream)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.reflect.TypeToken.get(java.lang.reflect.Type)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.Gson.getAdapter(com.google.gson.reflect.TypeToken)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.TypeAdapter.read(com.google.gson.stream.JsonReader)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.stream.JsonReader.close()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.JsonParseException.<init>(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.google.gson.JsonParseException.addSuppressed(java.lang.Throwable)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonFactory.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonFactory.disable(com.fasterxml.jackson.core.JsonParser$Feature)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonFactory.disable(com.fasterxml.jackson.core.JsonGenerator$Feature)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.stream.JsonReader.nextString()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.getIntValue()",
+  "covered" : true
+}, {
+  "method" : "com.google.gson.stream.JsonWriter.<init>(java.io.Writer)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonFactory.createGenerator(java.io.OutputStream)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.useDefaultPrettyPrinter()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.TypeAdapter.write(com.google.gson.stream.JsonWriter, java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.close()",
+  "covered" : true
+}, {
+  "method" : "com.google.gson.TypeAdapter.fromJsonTree(com.google.gson.JsonElement)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.close()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.getParsingContext()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.getText()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.util.TokenBuffer.asParser()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeNull()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeString(java.lang.String)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeBoolean(boolean)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonStreamContext.inArray()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonStreamContext.getCurrentIndex()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonStreamContext.inObject()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonStreamContext.getCurrentName()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonStreamContext.inRoot()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonStreamContext.getParent()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.Gson.htmlSafe()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.Gson.serializeNulls()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.nextToken()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeEndObject()",
+  "covered" : true
+}, {
+  "method" : "com.google.gson.Gson.toJson(java.lang.Object, java.lang.Appendable)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeStartArray()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeStartObject()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonToken.ordinal()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.stream.JsonWriter.setSerializeNulls(boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.stream.JsonWriter.setLenient(boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.stream.JsonWriter.setHtmlSafe(boolean)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.stream.JsonWriter.setIndent(java.lang.String)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.Gson.getAdapter(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonGenerator.writeEndArray()",
+  "covered" : true
+}, {
+  "method" : "javax.ws.rs.core.StreamingOutput.write(java.io.OutputStream)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.getCurrentLocation()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonLocation.getLineNr()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonLocation.getColumnNr()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonLocation.getByteOffset()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.reflect.TypeToken.get(java.lang.Class)",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonToken.values()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.getCurrentToken()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.getDoubleValue()",
+  "covered" : true
+}, {
+  "method" : "com.google.gson.stream.JsonWriter.flush()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.stream.JsonWriter.nullValue()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.reflect.TypeToken.getRawType()",
+  "covered" : true
+}, {
+  "method" : "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type, com.google.gson.stream.JsonWriter)",
+  "covered" : false
+}, {
+  "method" : "javax.ws.rs.core.Response.status(javax.ws.rs.core.Response$Status)",
+  "covered" : false
+}, {
+  "method" : "javax.ws.rs.core.Response$ResponseBuilder.type(javax.ws.rs.core.MediaType)",
+  "covered" : false
+}, {
+  "method" : "javax.ws.rs.core.Response$ResponseBuilder.entity(java.lang.Object)",
+  "covered" : false
+}, {
+  "method" : "javax.ws.rs.core.Response$ResponseBuilder.build()",
+  "covered" : false
+}, {
+  "method" : "javax.ws.rs.WebApplicationException.<init>(javax.ws.rs.core.Response)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonParser.getLongValue()",
+  "covered" : true
+}, {
+  "method" : "com.fasterxml.jackson.databind.util.TokenBuffer.<init>(com.fasterxml.jackson.core.JsonParser)",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.databind.util.TokenBuffer.copyCurrentStructure(com.fasterxml.jackson.core.JsonParser)",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.TypeAdapter.<init>()",
+  "covered" : false
+}, {
+  "method" : "com.fasterxml.jackson.core.JsonToken.isScalarValue()",
+  "covered" : false
+}, {
+  "method" : "com.google.gson.stream.JsonReader.setLenient(boolean)",
+  "covered" : false
+} ]
