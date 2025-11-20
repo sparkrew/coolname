@@ -5,3 +5,4 @@ transformers
 sentencepiece
 accelerate
 bitsandbytes
+ollama
