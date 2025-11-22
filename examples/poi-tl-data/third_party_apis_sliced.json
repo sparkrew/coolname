@@ -1,5 +1,6 @@
 {
-  "slicedPaths" : [ {
+  "slicedPaths" : [ 
+    {
     "entryPoint" : "com.deepoove.poi.util.StyleUtils.retriveParagraphStyle",
     "thirdPartyMethod" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STShd.Enum.intValue",
     "thirdPartyPackage" : "org.openxmlformats.schemas.wordprocessingml.x2006.main.STShd",
