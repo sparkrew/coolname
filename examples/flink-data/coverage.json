@@ -1,42 +1,39 @@
 [ {
   "method" : "com.esotericsoftware.kryo.Kryo.newInstance(java.lang.Class)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.SerializerFactory$ReflectionSerializerFactory.newSerializer(com.esotericsoftware.kryo.Kryo, java.lang.Class, java.lang.Class)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.setReferences(boolean)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.addDefaultSerializer(java.lang.Class, com.esotericsoftware.kryo.Serializer)",
-  "covered" : false
-}, {
-  "method" : "com.esotericsoftware.kryo.Kryo.addDefaultSerializer(java.lang.Class, java.lang.Class)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.getNextRegistrationId()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.setRegistrationRequired(boolean)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.setClassLoader(java.lang.ClassLoader)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.compress.compressors.zstandard.ZstdCompressorInputStream.<init>(java.io.InputStream)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.lang3.math.NumberUtils.isNumber(java.lang.String)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.Mark.getName()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.Mark.getLine()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.Mark.getColumn()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.lang3.StringUtils.repeat(char, int)",
   "covered" : false
@@ -45,61 +42,58 @@
   "covered" : false
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContext()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getContextMark()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblemMark()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getProblem()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getCause()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.YamlEngineException.<init>(java.lang.String, java.lang.Throwable)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.MarkedYamlEngineException.getStackTrace()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.exceptions.YamlEngineException.setStackTrace(java.lang.StackTraceElement[])",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.readClassAndObject(com.esotericsoftware.kryo.io.Input)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.io.KryoBufferUnderflowException.getMessage()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.KryoException.getCause()",
-  "covered" : false
-}, {
-  "method" : "com.esotericsoftware.kryo.KryoException.<init>(java.lang.String)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.io.KryoBufferUnderflowException.<init>(java.lang.String)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.Load.loadFromInputStream(java.io.InputStream)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.<init>()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.<init>()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.objenesis.strategy.StdInstantiatorStrategy.<init>()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.util.DefaultInstantiatorStrategy.setFallbackInstantiatorStrategy(org.objenesis.strategy.InstantiatorStrategy)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.setInstantiatorStrategy(org.objenesis.strategy.InstantiatorStrategy)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.<init>(java.io.InputStream)",
   "covered" : false
@@ -111,19 +105,19 @@
   "covered" : false
 }, {
   "method" : "com.esotericsoftware.kryo.io.Output.<init>(java.io.OutputStream)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.io.Output.position()",
   "covered" : false
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.writeClassAndObject(com.esotericsoftware.kryo.io.Output, java.lang.Object)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.io.Output.flush()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.io.Output.reset()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Serializer.<init>()",
   "covered" : false
@@ -135,19 +129,19 @@
   "covered" : false
 }, {
   "method" : "org.snakeyaml.engine.v2.api.Load.loadFromString(java.lang.String)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.writeObject(com.esotericsoftware.kryo.io.Output, java.lang.Object)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.io.Output.close()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.io.Input.<init>(java.io.InputStream)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.readObject(com.esotericsoftware.kryo.io.Input, java.lang.Class)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.collections.map.AbstractHashedMap$HashEntry.getValue()",
   "covered" : false
@@ -156,13 +150,10 @@
   "covered" : false
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.register(java.lang.Class, com.esotericsoftware.kryo.Serializer, int)",
-  "covered" : false
-}, {
-  "method" : "com.esotericsoftware.kryo.Kryo.register(java.lang.Class, int)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.getRegistration(int)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.collections.map.AbstractHashedMap.<init>(int)",
   "covered" : false
@@ -174,25 +165,25 @@
   "covered" : false
 }, {
   "method" : "org.snakeyaml.engine.v2.api.Dump.dumpToString(java.lang.Object)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.DumpSettings.getBestLineBreak()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.lang3.exception.CloneFailedException.<init>(java.lang.String, java.lang.Throwable)",
   "covered" : false
 }, {
   "method" : "org.apache.commons.lang3.StringUtils.join(java.lang.Iterable, java.lang.String)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.representer.StandardRepresenter.<init>(org.snakeyaml.engine.v2.api.DumpSettings)",
   "covered" : false
 }, {
   "method" : "com.esotericsoftware.kryo.Kryo.register(java.lang.Class)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.lang3.ClassUtils.primitiveToWrapper(java.lang.Class)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getName()",
   "covered" : false
@@ -249,37 +240,37 @@
   "covered" : false
 }, {
   "method" : "org.snakeyaml.engine.v2.api.DumpSettings.builder()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setDefaultFlowStyle(org.snakeyaml.engine.v2.common.FlowStyle)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSplitLines(boolean)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.schema.CoreSchema.<init>()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.setSchema(org.snakeyaml.engine.v2.schema.Schema)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.DumpSettingsBuilder.build()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.Dump.<init>(org.snakeyaml.engine.v2.api.DumpSettings, org.snakeyaml.engine.v2.representer.BaseRepresenter)",
   "covered" : false
 }, {
   "method" : "org.snakeyaml.engine.v2.api.LoadSettings.builder()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.setSchema(org.snakeyaml.engine.v2.schema.Schema)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.LoadSettingsBuilder.build()",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.snakeyaml.engine.v2.api.Load.<init>(org.snakeyaml.engine.v2.api.LoadSettings)",
-  "covered" : false
+  "covered" : true
 }, {
   "method" : "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.<init>(java.io.InputStream)",
   "covered" : false
