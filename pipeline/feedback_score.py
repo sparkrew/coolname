@@ -81,10 +81,25 @@ class JaCoCoRunner:
         # Clean previous reports
         clean_cmd = ["mvn", "clean", "-f", str(self.project_dir / "pom.xml")]
         try:
-            subprocess.run(clean_cmd, check=True, capture_output=True, text=True)
+            result = subprocess.run(clean_cmd, check=True, capture_output=True, text=True)
             logger.info("Cleaned previous build artifacts")
+            # Print Maven clean output
+            print("\n" + "="*80)
+            print("MAVEN CLEAN OUTPUT")
+            print("="*80)
+            if result.stdout:
+                print(result.stdout)
+            if result.stderr:
+                print(result.stderr)
         except subprocess.CalledProcessError as e:
             logger.warning(f"Clean failed: {e.stderr}")
+            print("\n" + "="*80)
+            print("MAVEN CLEAN FAILED")
+            print("="*80)
+            if e.stdout:
+                print(e.stdout)
+            if e.stderr:
+                print(e.stderr)
 
         # Run test with JaCoCo
         test_cmd = [
@@ -92,15 +107,37 @@ class JaCoCoRunner:
             "test",
             f"-Dtest={test_class}",
             "jacoco:report",
+            "-Dcheckstyle.skip=true",
             "-f", str(self.project_dir / "pom.xml")
         ]
 
         try:
             result = subprocess.run(test_cmd, check=True, capture_output=True, text=True)
             logger.info("Test execution and JaCoCo report generation completed")
-            logger.debug(f"Maven output: {result.stdout}")
+            
+            # Print Maven test output
+            print("\n" + "="*80)
+            print("MAVEN TEST EXECUTION OUTPUT")
+            print("="*80)
+            if result.stdout:
+                print(result.stdout)
+            if result.stderr:
+                print(result.stderr)
+            print("="*80 + "\n")
+            
         except subprocess.CalledProcessError as e:
-            logger.error(f"Test execution failed: {e.stderr}")
+            logger.error(f"Test execution failed")
+            
+            # Print Maven test failure output
+            print("\n" + "="*80)
+            print("MAVEN TEST EXECUTION FAILED")
+            print("="*80)
+            if e.stdout:
+                print(e.stdout)
+            if e.stderr:
+                print(e.stderr)
+            print("="*80 + "\n")
+            
             raise RuntimeError(f"Failed to run test: {e.stderr}")
 
         # Return path to JaCoCo HTML report
@@ -288,3 +325,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
