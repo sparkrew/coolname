@@ -18,9 +18,6 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static io.github.chains_project.coolname.api_finder.MethodSlicer.fallbackCount;
-import static io.github.chains_project.coolname.api_finder.MethodSlicer.sliceCount;
-
 /**
  * Handles writing analysis results in three different formats:
  * Full methods - complete implementation of all methods in paths
@@ -37,15 +34,8 @@ public class PathWriter {
     public static void writeAllFormats(AnalysisResult result, String basePath, JavaView view, String sourceRootPath) {
         // Generate the three output file paths based on the base path
         String fullMethodsPath = basePath.replace(".json", "_full_methods.json");
-        String entryPointPath = basePath.replace(".json", "_entry_point.json");
-        String slicedPath = basePath.replace(".json", "_sliced.json");
-        // Full methods for all methods in the path
+        // Full methods for all methods in the path. Gives complete implementation details.
         writeFullMethodsFormat(result, fullMethodsPath, view, sourceRootPath);
-        // Entry point body only (only the outermost public method that we need to test)
-        writeEntryPointFormat(result, entryPointPath, view, sourceRootPath);
-        // Method slices (code slicing based on data/control flow)
-        // This one is more complex. We have a basic version for now.
-        writeSlicedFormat(result, slicedPath, sourceRootPath);
     }
 
     /**
@@ -72,23 +62,52 @@ public class PathWriter {
         try {
             List<FullMethodsPathData> fullMethodsPaths = new ArrayList<>();
             for (ThirdPartyPath tp : result.thirdPartyPaths()) {
-                // Extract full method bodies for all methods in the path
                 List<String> fullMethods = extractFullMethodBodies(view, tp.path(), sourceRootPath);
+                ClassMemberData classMembers =
+                        SourceCodeExtractor.extractClassMembers(tp.entryPoint(), sourceRootPath);
+                Set<String> importsSet = SourceCodeExtractor.extractRequiredImports(
+                        tp.entryPoint(), tp.path(), sourceRootPath);
+                List<String> imports = new ArrayList<>(importsSet);
+                Collections.sort(imports);
+                // This is for the test template generation.  This would be another prompt format if needed.
+                String testTemplate = TestTemplateGenerator.generateTestTemplate(tp, view);
+                // Count conditions in the path
+                int conditionCount = RecordCounter.countConditionsInPath(tp.path(), sourceRootPath);
+                log.debug("Path to {} has {} conditions",
+                        MethodExtractor.getFilteredMethodSignature(tp.thirdPartyMethod()),
+                        conditionCount);
                 // Build the path as strings
                 List<String> pathStrings = tp.path().stream()
-                        .map(MethodExtractor::getFilteredMethodSignature)
+                        .map(MethodExtractor:: getFilteredMethodSignature)
                         .collect(Collectors.toList());
-                String thirdPartyPackage = extractPackageName(
-                        MethodExtractor.getFilteredMethodSignature(tp.thirdPartyMethod())
-                );
                 FullMethodsPathData data = new FullMethodsPathData(
                         MethodExtractor.getFilteredMethodSignature(tp.entryPoint()),
                         MethodExtractor.getFilteredMethodSignature(tp.thirdPartyMethod()),
-                        thirdPartyPackage,
                         pathStrings,
-                        fullMethods
+                        fullMethods,
+                        classMembers.constructors(),
+                        classMembers.setters(),
+                        classMembers.getters(),
+                        imports,
+                        testTemplate,
+                        conditionCount
                 );
-                fullMethodsPaths.add(data);
+                // We don't want a record without any source code extracted. This could happen when the source code
+                // could not be retrieved and returned null instead.
+                // We skip all these paths, because we don't want any bias.
+                if (data.fullMethods().stream().noneMatch(Objects::isNull))
+                    fullMethodsPaths.add(data);
+            }
+            // Sort paths:  primary by condition count, secondary by path length (both ascending)
+            Collections.sort(fullMethodsPaths);
+            log.info("Sorted {} paths by condition count and path length", fullMethodsPaths.size());
+            if (! fullMethodsPaths.isEmpty()) {
+                log.info("Simplest path has {} conditions and {} methods",
+                        fullMethodsPaths.get(0).conditionCount(),
+                        fullMethodsPaths.get(0).path().size());
+                log.info("Most complex path has {} conditions and {} methods",
+                        fullMethodsPaths.get(fullMethodsPaths.size() - 1).conditionCount(),
+                        fullMethodsPaths.get(fullMethodsPaths.size() - 1).path().size());
             }
             File outputFile = new File(outputPath);
             mapper.writeValue(outputFile, Map.of("fullMethodsPaths", fullMethodsPaths));
@@ -96,84 +115,6 @@ public class PathWriter {
                     outputFile.getAbsolutePath());
         } catch (Exception e) {
             log.error("Failed to write full methods format to JSON", e);
-        }
-    }
-
-    /**
-     * Write paths with only the entry point public method body
-     * This is useful if we want to have a shorter prompt for generating tests. Also, as we only test this outermost
-     * method, maybe this is all we need.
-     */
-    private static void writeEntryPointFormat(AnalysisResult result, String outputPath, JavaView view, String sourceRootPath) {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        try {
-            List<EntryPointFocusedData> entryPointPaths = new ArrayList<>();
-            for (ThirdPartyPath tp : result.thirdPartyPaths()) {
-                // Extract only the entry point body
-                String entryPointBody = extractMethodBody(view, tp.entryPoint(), sourceRootPath);
-                // Build the path as strings
-                List<String> pathStrings = tp.path().stream()
-                        .map(MethodExtractor::getFilteredMethodSignature)
-                        .collect(Collectors.toList());
-                String thirdPartyPackage = extractPackageName(
-                        MethodExtractor.getFilteredMethodSignature(tp.thirdPartyMethod())
-                );
-                EntryPointFocusedData data = new EntryPointFocusedData(
-                        MethodExtractor.getFilteredMethodSignature(tp.entryPoint()),
-                        entryPointBody,
-                        MethodExtractor.getFilteredMethodSignature(tp.thirdPartyMethod()),
-                        thirdPartyPackage,
-                        pathStrings
-                );
-                entryPointPaths.add(data);
-            }
-            File outputFile = new File(outputPath);
-            mapper.writeValue(outputFile, Map.of("entryPointPaths", entryPointPaths));
-            log.info("Successfully wrote {} entry point paths to {}", entryPointPaths.size(),
-                    outputFile.getAbsolutePath());
-        } catch (Exception e) {
-            log.error("Failed to write entry point format to JSON", e);
-        }
-    }
-
-    /**
-     * Write paths with code slices
-     * This extracts only the relevant portions of each method needed to reach the third-party call
-     */
-    private static void writeSlicedFormat(AnalysisResult result, String outputPath, String sourceRootPath) {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        try {
-            List<SlicedMethodData> slicedPaths = new ArrayList<>();
-            for (ThirdPartyPath tp : result.thirdPartyPaths()) {
-                // Extract slices for each method in the path
-                // This is the complex part that uses data/control flow analysis
-                List<String> methodSlices = MethodSlicer.extractMethodSlices(tp.path(), sourceRootPath);
-                // Build the path as strings
-                List<String> pathStrings = tp.path().stream()
-                        .map(MethodExtractor::getFilteredMethodSignature)
-                        .collect(Collectors.toList());
-                String thirdPartyPackage = extractPackageName(
-                        MethodExtractor.getFilteredMethodSignature(tp.thirdPartyMethod())
-                );
-                SlicedMethodData data = new SlicedMethodData(
-                        MethodExtractor.getFilteredMethodSignature(tp.entryPoint()),
-                        MethodExtractor.getFilteredMethodSignature(tp.thirdPartyMethod()),
-                        thirdPartyPackage,
-                        pathStrings,
-                        methodSlices
-                );
-                slicedPaths.add(data);
-            }
-            File outputFile = new File(outputPath);
-            mapper.writeValue(outputFile, Map.of("slicedPaths", slicedPaths));
-            log.info("Method slicing completed with {} fallbacks to full extraction and {} successful slices",
-                    fallbackCount, sliceCount);
-            log.info("Successfully wrote {} sliced paths to {}", slicedPaths.size(),
-                    outputFile.getAbsolutePath());
-        } catch (Exception e) {
-            log.error("Failed to write sliced format to JSON", e);
         }
     }
 
@@ -212,7 +153,10 @@ public class PathWriter {
         // We decided to keep this bytecode fallback because we already implemented and did not want to go that effort
         // to waste. Also, in some cases, source code may not be available (e.g., third-party methods). If we decided
         // to add bytecode of third-party methods in the future, this would be useful.
-        return extractMethodBodyFromJimple(view, methodSig);
+        // return extractMethodBodyFromJimple(view, methodSig);
+
+        // We return null now because we don't want to deal with bytecode.
+        return null;
     }
 
     /**
@@ -240,17 +184,5 @@ public class PathWriter {
             log.warn("Failed to extract method body for {}: {}", methodSig, e.getMessage());
             return "// Error extracting method body: " + e.getMessage();
         }
-    }
-
-    /**
-     * Extract the package name from a fully qualified method signature
-     */
-    private static String extractPackageName(String method) {
-        int methodDot = method.lastIndexOf('.');
-        if (methodDot == -1) return null;
-        String className = method.substring(0, methodDot);
-        int classDot = className.lastIndexOf('.');
-        if (classDot == -1) return null;
-        return className.substring(0, classDot);
     }
 }

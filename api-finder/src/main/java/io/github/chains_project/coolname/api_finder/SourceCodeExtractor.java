@@ -1,5 +1,7 @@
 package io.github.chains_project.coolname.api_finder;
 
+import io.github.chains_project.coolname.api_finder.model.ClassMemberData;
+import io.github.chains_project.coolname.api_finder.utils.SpoonMethodFinder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sootup.core.signatures.MethodSignature;
@@ -9,9 +11,8 @@ import spoon.reflect.declaration.CtConstructor;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Extracts actual source code from Java files using Spoon.
@@ -29,9 +30,9 @@ public class SourceCodeExtractor {
     private static final Map<String, String> methodCache = new HashMap<>();
     // Type cache: maps class name to CtType for faster lookups
     private static final Map<String, CtType<?>> typeCache = new HashMap<>();
+    protected static String currentSourceRoot;
     // Model cache
     private static CtModel model;
-    protected static String currentSourceRoot;
 
     /**
      * Initialize or retrieve the Spoon model for the given source root.
@@ -134,92 +135,8 @@ public class SourceCodeExtractor {
      * Handles method overloading by matching the full signature.
      */
     private static String extractRegularMethod(CtType<?> ctType, String methodName, MethodSignature methodSig) {
-        // Get all methods with the matching name
-        var candidateMethods = ctType.getMethods().stream()
-                .filter(m -> m.getSimpleName().equals(methodName))
-                .toList();
-        if (candidateMethods.isEmpty()) {
-            return null;
-        }
-        // If there's only one method with this name, we are lucky, just return it
-        if (candidateMethods.size() == 1) {
-            return candidateMethods.get(0).prettyprint();
-        }
-        // Multiple methods with same name - not so lucky this time, need to match by parameter types,
-        // why? bcoz of overloading
-        int paramCount = methodSig.getParameterTypes().size();
-        var paramTypes = methodSig.getParameterTypes();
-        // Try to find exact match by parameter count and types
-        Optional<CtMethod<?>> exactMatch = candidateMethods.stream()
-                .filter(m -> m.getParameters().size() == paramCount)
-                .filter(m -> parametersMatch(m, paramTypes))
-                .findFirst();
-        if (exactMatch.isPresent()) {
-            return exactMatch.get().prettyprint();
-        }
-        // We are unlucky, Fall back to matching by parameter count only.
-        Optional<CtMethod<?>> countMatch = candidateMethods.stream()
-                .filter(m -> m.getParameters().size() == paramCount)
-                .findFirst();
-        if (countMatch.isPresent()) {
-            log.debug("Multiple overloaded methods found for {}, matched by parameter count", methodName);
-            return countMatch.get().prettyprint();
-        }
-        // We are really unlucky! After all this effort, we just have to return the first method.
-        log.debug("Multiple overloaded methods found for {}, returning first one", methodName);
-        return candidateMethods.get(0).prettyprint();
-    }
-
-    /**
-     * Check if a Spoon method's parameters match the SootUp method signature's parameter types.
-     * Compares type names (simple or qualified) to handle overloading.
-     */
-    private static boolean parametersMatch(CtMethod<?> spoonMethod,
-                                           java.util.List<sootup.core.types.Type> sootParams) {
-        var spoonParams = spoonMethod.getParameters();
-        if (spoonParams.size() != sootParams.size()) {
-            return false;
-        }
-        // Compare each parameter type
-        for (int i = 0; i < spoonParams.size(); i++) {
-            var spoonParam = spoonParams.get(i);
-            var sootParam = sootParams.get(i);
-            String spoonTypeName = spoonParam.getType().getQualifiedName();
-            String sootTypeName = sootParam.toString();
-            // Try to match by simple name or qualified name
-            if (!typesMatch(spoonTypeName, sootTypeName)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    /**
-     * Check if two type names match, handling both simple and qualified names.
-     * For example: "String" matches "java.lang.String", "int" matches "int"
-     */
-    private static boolean typesMatch(String spoonTypeName, String sootTypeName) {
-        // Direct match
-        if (spoonTypeName.equals(sootTypeName)) {
-            return true;
-        }
-        // Try matching simple names (last part after dot)
-        String spoonSimple = spoonTypeName.contains(".") ?
-                spoonTypeName.substring(spoonTypeName.lastIndexOf(".") + 1) :
-                spoonTypeName;
-        String sootSimple = sootTypeName.contains(".") ?
-                sootTypeName.substring(sootTypeName.lastIndexOf(".") + 1) :
-                sootTypeName;
-        if (spoonSimple.equals(sootSimple)) {
-            return true;
-        }
-        // Handle array types
-        if (spoonTypeName.endsWith("[]") && sootTypeName.endsWith("[]")) {
-            String spoonBase = spoonTypeName.substring(0, spoonTypeName.length() - 2);
-            String sootBase = sootTypeName.substring(0, sootTypeName.length() - 2);
-            return typesMatch(spoonBase, sootBase);
-        }
-        return false;
+        var method = SpoonMethodFinder.findRegularMethod(ctType, methodName, methodSig);
+        return method != null ? method.prettyprint() : null;
     }
 
     /**
@@ -228,31 +145,15 @@ public class SourceCodeExtractor {
      * Otherwise returns the first constructor.
      */
     private static String extractConstructor(CtType<?> ctType, MethodSignature methodSig) {
-        // Get all constructors
-        var constructors = ctType.getElements(
-                element -> element instanceof spoon.reflect.declaration.CtConstructor
-        );
-        if (constructors.isEmpty()) {
-            return null;
-        }
-        // If there's only one constructor, return it
-        if (constructors.size() == 1) {
-            return constructors.get(0).prettyprint();
-        }
-        // Try to match by parameter count
-        int paramCount = methodSig.getParameterTypes().size();
-        Optional<? extends CtConstructor<?>> matchingConstructor =
-                constructors.stream()
-                        .map(c -> (CtConstructor<?>) c)
-                        .filter(c -> c.getParameters().size() == paramCount)
-                        .findFirst();
-        if (matchingConstructor.isPresent()) {
-            // Get the pretty-printed source code for the matching constructor, toString does not give proper source
-            return matchingConstructor.get().prettyprint();
-        }
-        // Screw it, we give up, fall back to first constructor
-        log.debug("Multiple constructors found, returning first one for {}", ctType.getQualifiedName());
-        return constructors.get(0).prettyprint();
+        var constructor = SpoonMethodFinder.findConstructor(ctType, methodSig);
+        return constructor != null ? constructor.prettyprint() : null;
+    }
+
+    /**
+     * Find a type with caching to speed up repeated lookups.
+     */
+    private static CtType<?> findTypeCached(CtModel spoonModel, String fullyQualifiedName) {
+        return SpoonMethodFinder.findTypeCached(spoonModel, fullyQualifiedName);
     }
 
     /**
@@ -281,60 +182,248 @@ public class SourceCodeExtractor {
     }
 
     /**
-     * Find a type with caching to speed up repeated lookups.
-     */
-    private static CtType<?> findTypeCached(CtModel spoonModel, String fullyQualifiedName) {
-        // Check cache first
-        if (typeCache.containsKey(fullyQualifiedName)) {
-            return typeCache.get(fullyQualifiedName);
-        }
-        // Not in cache, do the lookup
-        CtType<?> type = findType(spoonModel, fullyQualifiedName);
-        // Cache the result (even if null)
-        typeCache.put(fullyQualifiedName, type);
-        return type;
-    }
-
-    /**
-     * Find a type in the Spoon model by its fully qualified name.
-     * Handles both regular classes and inner classes.
-     */
-    private static CtType<?> findType(CtModel spoonModel, String fullyQualifiedName) {
-        // Try direct lookup first
-        CtType<?> type = spoonModel.getAllTypes().stream()
-                .filter(t -> t.getQualifiedName().equals(fullyQualifiedName))
-                .findFirst()
-                .orElse(null);
-        if (type != null) {
-            return type;
-        }
-        // Handle inner classes - replace $ with . for Spoon's format
-        String spoonName = fullyQualifiedName.replace('$', '.');
-        type = spoonModel.getAllTypes().stream()
-                .filter(t -> t.getQualifiedName().equals(spoonName))
-                .findFirst()
-                .orElse(null);
-        if (type != null) {
-            return type;
-        }
-        // Try looking for the outer class and then finding the inner class, yeah, never gonna give you up.
-        if (fullyQualifiedName.contains("$")) {
-            String outerClassName = fullyQualifiedName.substring(0, fullyQualifiedName.indexOf("$"));
-            CtType<?> outerType = findTypeCached(spoonModel, outerClassName);
-            if (outerType != null) {
-                String innerClassName = fullyQualifiedName.substring(fullyQualifiedName.lastIndexOf("$") + 1);
-                return outerType.getNestedType(innerClassName);
-            }
-        }
-        return null;
-    }
-
-    /**
      * Get the Spoon model for use in other classes (like MethodSlicer).
      * This allows sharing the same parsed model across different operations.
      */
     public static CtModel getModel(String sourceRootPath) {
         return getOrCreateModel(sourceRootPath);
+    }
+
+    /**
+     * Extract all constructors, setters, and getters from a class.
+     *
+     * @param methodSig      A method signature from the class (to identify the class)
+     * @param sourceRootPath The root directory of the source code
+     * @return ClassMembersData containing constructors, setters, and getters
+     */
+    public static ClassMemberData extractClassMembers(MethodSignature methodSig, String sourceRootPath) {
+        try {
+            CtModel spoonModel = getOrCreateModel(sourceRootPath);
+            String className = methodSig.getDeclClassType().getFullyQualifiedName();
+            CtType<?> ctType = findTypeCached(spoonModel, className);
+            if (ctType == null) {
+                log.debug("Type not found in Spoon model: {}", className);
+                return new ClassMemberData(List.of(), List.of(), List.of());
+            }
+            List<String> constructors = extractAllConstructors(ctType);
+            List<String> setters = extractSetters(ctType);
+            List<String> getters = extractGetters(ctType);
+            return new ClassMemberData(constructors, setters, getters);
+        } catch (Exception e) {
+            log.warn("Error extracting class members for {}: {}", methodSig, e.getMessage());
+            return new ClassMemberData(List.of(), List.of(), List.of());
+        }
+    }
+
+    /**
+     * Extract all constructors from a type.
+     */
+    private static List<String> extractAllConstructors(CtType<?> ctType) {
+        var constructorElements = ctType.getElements(
+                element -> element instanceof spoon.reflect.declaration.CtConstructor
+        );
+        List<String> constructors = constructorElements.stream()
+                .map(c -> c.prettyprint())
+                .collect(Collectors.toList());
+        log.debug("Extracted {} constructors from {}", constructors.size(), ctType.getQualifiedName());
+        return constructors;
+    }
+
+    /**
+     * Extract all setter methods from a type.
+     * A setter is identified as a method that:
+     * - Starts with "set"
+     * - Has exactly one parameter
+     * - Returns void
+     */
+    private static List<String> extractSetters(CtType<?> ctType) {
+        List<String> setters = ctType.getMethods().stream()
+                .filter(m -> m.getSimpleName().startsWith("set") &&
+                        m.getParameters().size() == 1 &&
+                        m.getType().getSimpleName().equals("void"))
+                .map(CtMethod::prettyprint)
+                .collect(Collectors.toList());
+        log.debug("Extracted {} setters from {}", setters.size(), ctType.getQualifiedName());
+        return setters;
+    }
+
+    /**
+     * Extract all getter methods from a type.
+     * A getter is identified as a method that:
+     * - Starts with "get" or "is"
+     * - Has no parameters
+     * - Returns a non-void type
+     * This could be too general, but we are following general conventions.
+     */
+    private static List<String> extractGetters(CtType<?> ctType) {
+        List<String> getters = ctType.getMethods().stream()
+                .filter(m -> (m.getSimpleName().startsWith("get") || m.getSimpleName().startsWith("is")) &&
+                        m.getParameters().isEmpty() &&
+                        !m.getType().getSimpleName().equals("void"))
+                .map(CtMethod::prettyprint)
+                .collect(Collectors.toList());
+        log.debug("Extracted {} getters from {}", getters.size(), ctType.getQualifiedName());
+        return getters;
+    }
+
+    // ToDo: It should be possible to remove the duplicated parts within imports extraction and source code extraction.
+    //  Because they both need to find the same methods and constructors.
+    /**
+     * Extract all required imports for constructors and methods in the path.
+     * This includes parameter types, return types, and types used in method bodies.
+     *
+     * @param entryPointSig  The entry point method signature
+     * @param pathSignatures All method signatures in the path
+     * @param sourceRootPath The root directory of the source code
+     * @return Set of fully qualified import statements
+     */
+    public static Set<String> extractRequiredImports(MethodSignature entryPointSig,
+                                                     List<MethodSignature> pathSignatures,
+                                                     String sourceRootPath) {
+        Set<String> imports = new HashSet<>();
+        try {
+            CtModel spoonModel = getOrCreateModel(sourceRootPath);
+            String className = entryPointSig.getDeclClassType().getFullyQualifiedName();
+            CtType<?> ctType = findTypeCached(spoonModel, className);
+            if (ctType == null) {
+                log.debug("Type not found in Spoon model: {}", className);
+                return imports;
+            }
+            // Extract imports from constructors
+            var constructorElements = ctType.getElements(
+                    element -> element instanceof spoon.reflect.declaration.CtConstructor
+            );
+            for (var constructor : constructorElements) {
+                CtConstructor<?> ctConstructor = (CtConstructor<?>) constructor;
+                extractImportsFromExecutable(ctConstructor, imports);
+            }
+            // Extract imports from all methods in the path
+            for (MethodSignature methodSig : pathSignatures) {
+                extractImportsFromMethodSignature(spoonModel, methodSig, imports);
+            }
+            // Filter out primitive types, java.lang classes, and same-package classes
+            imports = filterImports(imports, className);
+            log.debug("Extracted {} imports for {}", imports.size(), className);
+        } catch (Exception e) {
+            log.warn("Error extracting imports: {}", e.getMessage());
+        }
+        return imports;
+    }
+
+    /**
+     * Extract imports from a specific method signature.
+     */
+    private static void extractImportsFromMethodSignature(CtModel spoonModel,
+                                                          MethodSignature methodSig,
+                                                          Set<String> imports) {
+        String className = methodSig.getDeclClassType().getFullyQualifiedName();
+        CtType<?> ctType = findTypeCached(spoonModel, className);
+        if (ctType == null) {
+            return;
+        }
+        String methodName = methodSig.getName();
+        if ("<init>".equals(methodName)) {
+            // Constructor
+            ctType.getElements(element -> element instanceof spoon.reflect.declaration.CtConstructor)
+                    .forEach(c -> extractImportsFromExecutable((CtConstructor<?>) c, imports));
+        } else if ("<clinit>".equals(methodName)) {
+            extractImportsFromStaticInitializer(ctType, imports);
+        } else {
+            // Regular method
+            ctType.getMethods().stream()
+                    .filter(m -> m.getSimpleName().equals(methodName))
+                    .forEach(m -> extractImportsFromExecutable(m, imports));
+        }
+    }
+
+    /**
+     * Extract imports from static initializer blocks.
+     */
+    private static void extractImportsFromStaticInitializer(CtType<?> ctType, Set<String> imports) {
+        // Get all anonymous executable blocks (static initializers)
+        var staticBlocks = ctType.getElements(
+                element -> element instanceof spoon.reflect.code.CtBlock &&
+                        element.getParent() instanceof CtType &&
+                        !element.isImplicit()
+        );
+        for (var block : staticBlocks) {
+            // Extract all type references from the static block
+            block.getElements(element -> element instanceof spoon.reflect.reference.CtTypeReference)
+                    .forEach(typeRef -> addTypeImport((spoon.reflect.reference.CtTypeReference<?>) typeRef, imports));
+        }
+    }
+
+    /**
+     * Extract imports from a constructor or method. Without this the model cannot figure out where to import the
+     * types from.
+     */
+    private static void extractImportsFromExecutable(spoon.reflect.declaration.CtExecutable<?> executable,
+                                                     Set<String> imports) {
+        // Extract parameter types
+        executable.getParameters().forEach(param -> addTypeImport(param.getType(), imports));
+        // Extract return type (for methods)
+        if (executable instanceof CtMethod<?> method) {
+            addTypeImport(method.getType(), imports);
+        }
+        // Extract types from thrown exceptions
+        executable.getThrownTypes().forEach(thrownType -> addTypeImport(thrownType, imports));
+        // Extract types used in the method body
+        if (executable.getBody() != null) {
+            executable.getBody().getElements(element -> element instanceof spoon.reflect.reference.CtTypeReference)
+                    .forEach(typeRef -> addTypeImport((spoon.reflect.reference.CtTypeReference<?>) typeRef, imports));
+        }
+    }
+
+    /**
+     * Add a type to the imports set if it needs to be imported.
+     */
+    private static void addTypeImport(spoon.reflect.reference.CtTypeReference<?> typeRef, Set<String> imports) {
+        if (typeRef == null) {
+            return;
+        }
+        String qualifiedName = typeRef.getQualifiedName();
+        if (qualifiedName != null && !qualifiedName.isEmpty()) {
+            // Handle generic types - extract the base type
+            if (qualifiedName.contains("<")) {
+                qualifiedName = qualifiedName.substring(0, qualifiedName.indexOf("<"));
+            }
+            // Handle array types
+            qualifiedName = qualifiedName.replace("[]", "");
+            imports.add(qualifiedName);
+            // Also add generic type arguments
+            typeRef.getActualTypeArguments().forEach(typeArg -> addTypeImport(typeArg, imports));
+        }
+    }
+
+    /**
+     * Filter out imports that don't need to be explicitly imported.
+     */
+    private static Set<String> filterImports(Set<String> imports, String currentClassName) {
+        String currentPackage = currentClassName.substring(0,
+                Math.max(currentClassName.lastIndexOf('.'), 0));
+        return imports.stream()
+                .filter(imp -> imp != null && !imp.isEmpty())
+                .filter(imp -> imp.contains(".")) // Has a package
+                .filter(imp -> !imp.startsWith("java.")) // Not from java.* packages
+                .filter(imp -> !isPrimitiveOrWrapper(imp)) // Not primitive
+                .filter(imp -> !imp.startsWith(currentPackage + ".") || imp.contains("$")) // Not same package unless inner class
+                .collect(Collectors.toSet());
+    }
+
+    /**
+     * Check if a type is a primitive type or primitive wrapper.
+     */
+    private static boolean isPrimitiveOrWrapper(String typeName) {
+        // Check for primitive types
+        Set<String> primitives = Set.of(
+                "int", "long", "short", "byte", "char", "float", "double", "boolean", "void"
+        );
+        if (primitives.contains(typeName)) {
+            return true;
+        }
+        // Check if it's from java.* packages (java.lang, java.util, java.io, etc.). For these we consider the model
+        // would know where to import them from.
+        return typeName.startsWith("java.");
     }
 
     /**
@@ -345,7 +434,7 @@ public class SourceCodeExtractor {
         model = null;
         currentSourceRoot = null;
         methodCache.clear();
-        typeCache.clear();
+        SpoonMethodFinder.clearCache();
         log.debug("Cleared all caches");
     }
 
@@ -353,7 +442,10 @@ public class SourceCodeExtractor {
      * Get cache statistics for monitoring/debugging.
      */
     public static String getCacheStats() {
-        return String.format("Method cache: %d entries, Type cache: %d entries",
-                methodCache.size(), typeCache.size());
+        return String.format("Method cache: %d entries, %s",
+                methodCache.size(), SpoonMethodFinder.getCacheStats());
     }
+
+
+
 }

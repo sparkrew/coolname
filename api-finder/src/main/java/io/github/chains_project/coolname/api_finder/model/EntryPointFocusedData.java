@@ -12,6 +12,9 @@ public record EntryPointFocusedData(
         String entryPointBody,
         String thirdPartyMethod,
         String thirdPartyPackage,
-        List<String> path
+        List<String> path,
+        List<String> constructors,
+        List<String> setters,
+        List<String> getters
 ) {
 }
