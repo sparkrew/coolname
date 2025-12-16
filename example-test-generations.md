@@ -46,7 +46,7 @@ imports - imports that might be relevant for implementing the test - this includ
 All provided data are extracted directly from the project in which the generated test will be integrated.
 
 Output Requirements
-Produce a single Java file containing a valid JUnit 5 test class with the name "<entryPointClassName>_<entryPointMethodName>_<thirdPartyMethodName>_BrollTest".
+Produce a single Java file containing a valid JUnit 5 test class with the name "<entryPointClassName>_<entryPointMethodName>_<thirdPartyMethodName>_FikaTest".
 The file must include a package declaration consistent with the entryPoint, all required imports, and at least one executable test method.
 Ensure the test compiles in a standard Maven project.
 Output only the Java test code inside a java block.
@@ -73,7 +73,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 @ExtendWith(MockitoExtension.class)
-public class SubstitutingCmapLookup_getCharCodes_Log_warn_BrollTest {
+public class SubstitutingCmapLookup_getCharCodes_Log_warn_FikaTest {
 
     @Mock
     private CmapSubtable cmap;
@@ -136,7 +136,7 @@ import java.util.List;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class SubstitutingCmapLookup_getCharCodes_Log_warn_BrollTest {
+class SubstitutingCmapLookup_getCharCodes_Log_warn_FikaTest {
 
     @Test
     void testThirdPartyMethodInvocation() {
@@ -214,7 +214,7 @@ imports - imports that might be relevant for implementing the test - this includ
 All provided data are extracted directly from the project in which the generated test will be integrated.
 
 Output Requirements
-Produce a single Java file containing a valid JUnit 5 test class with the name "<entryPointClassName>_<entryPointMethodName>_<thirdPartyMethodName>_BrollTest".
+Produce a single Java file containing a valid JUnit 5 test class with the name "<entryPointClassName>_<entryPointMethodName>_<thirdPartyMethodName>_FikaTest".
 The file must include a package declaration consistent with the entryPoint, all required imports, and at least one executable test method.
 Ensure the test compiles in a standard Maven project.
 Output only the Java test code inside a java block.
@@ -241,7 +241,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 
-class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest {
+class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest {
 
   @Test
   void testCreateProxyCallsEnhancerSetInterfaces() {
@@ -302,7 +302,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest {
+class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest {
 
     @Test
     void testCreateProxyCallsEnhancerSetInterfaces() {
@@ -366,9 +366,9 @@ Execution Result / Prompt:
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
-[ERROR] /Users/yogyagamage/Documents/UdeM/Courses/Testing/project/eval/mybatis-3/src/test/java/org/apache/ibatis/executor/loader/CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest.java:[54,33] cannot find symbol
+[ERROR] /Users/yogyagamage/Documents/UdeM/Courses/Testing/project/eval/mybatis-3/src/test/java/org/apache/ibatis/executor/loader/CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest.java:[54,33] cannot find symbol
   symbol: class Properties
-[ERROR] /Users/yogyagamage/Documents/UdeM/Courses/Testing/project/eval/mybatis-3/src/test/java/org/apache/ibatis/executor/loader/CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest.java:[67,22] method createProxy in class org.apache.ibatis.executor.loader.cglib.CglibProxyFactory cannot be applied to given types;
+[ERROR] /Users/yogyagamage/Documents/UdeM/Courses/Testing/project/eval/mybatis-3/src/test/java/org/apache/ibatis/executor/loader/CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest.java:[67,22] method createProxy in class org.apache.ibatis.executor.loader.cglib.CglibProxyFactory cannot be applied to given types;
   required: java.lang.Object,org.apache.ibatis.executor.loader.ResultLoaderMap,org.apache.ibatis.session.Configuration,org.apache.ibatis.reflection.factory.ObjectFactory,java.util.List<java.lang.Class<?>>,java.util.List<java.lang.Object>
   found:    java.lang.Object,java.util.Map<java.lang.String,org.apache.ibatis.executor.loader.ResultLoaderMap.LoadPair>,org.apache.ibatis.reflection.factory.ObjectFactory,java.util.List<java.lang.Class<?>>,java.util.List<java.lang.Object>
   reason: actual and formal argument lists differ in length
@@ -399,7 +399,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest {
+class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest {
 
     @Test
     void testCreateProxyCallsEnhancerSetInterfaces() {
@@ -464,7 +464,7 @@ Execution Result / Prompt:
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
-[ERROR] /Users/yogyagamage/Documents/UdeM/Courses/Testing/project/eval/mybatis-3/src/test/java/org/apache/ibatis/executor/loader/CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest.java:[68,22] non-static method createProxy(java.lang.Object,org.apache.ibatis.executor.loader.ResultLoaderMap,org.apache.ibatis.session.Configuration,org.apache.ibatis.reflection.factory.ObjectFactory,java.util.List<java.lang.Class<?>>,java.util.List<java.lang.Object>) cannot be referenced from a static context
+[ERROR] /Users/yogyagamage/Documents/UdeM/Courses/Testing/project/eval/mybatis-3/src/test/java/org/apache/ibatis/executor/loader/CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest.java:[68,22] non-static method createProxy(java.lang.Object,org.apache.ibatis.executor.loader.ResultLoaderMap,org.apache.ibatis.session.Configuration,org.apache.ibatis.reflection.factory.ObjectFactory,java.util.List<java.lang.Class<?>>,java.util.List<java.lang.Object>) cannot be referenced from a static context
 
 ---
 
@@ -491,7 +491,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest {
+class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest {
 
     @Test
     void testCreateProxyCallsEnhancerSetInterfaces() {
@@ -555,11 +555,11 @@ Execution Result / Prompt:
 
 ---
 
-[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.430 s <<< FAILURE! -- in org.apache.ibatis.executor.loader.cglib.CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest
-[ERROR] org.apache.ibatis.executor.loader.cglib.CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest.testCreateProxyCallsEnhancerSetInterfaces -- Time elapsed: 0.333 s <<< ERROR!
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.430 s <<< FAILURE! -- in org.apache.ibatis.executor.loader.cglib.CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest
+[ERROR] org.apache.ibatis.executor.loader.cglib.CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest.testCreateProxyCallsEnhancerSetInterfaces -- Time elapsed: 0.333 s <<< ERROR!
 java.lang.IllegalStateException: Cannot enable lazy loading because CGLIB is not available. Add CGLIB to your classpath.
         at org.apache.ibatis.executor.loader.cglib.CglibProxyFactory.<init>(CglibProxyFactory.java:58)
-        at org.apache.ibatis.executor.loader.cglib.CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest.testCreateProxyCallsEnhancerSetInterfaces(CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest.java:66)
+        at org.apache.ibatis.executor.loader.cglib.CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest.testCreateProxyCallsEnhancerSetInterfaces(CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest.java:66)
 Caused by: java.lang.ExceptionInInitializerError
         at java.base/java.lang.Class.forName0(Native Method)
         at java.base/java.lang.Class.forName(Class.java:467)
@@ -617,7 +617,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_BrollTest {
+class CglibProxyFactory_EnhancedDeserializationProxyImpl_createProxy_Enhancer_setInterfaces_FikaTest {
 
     @Test
     void testCreateProxyCallsEnhancerSetInterfaces() {
@@ -737,7 +737,7 @@ imports - imports that might be relevant for implementing the test - this includ
 All provided data are extracted directly from the project in which the generated test will be integrated.
 
 Output Requirements
-Produce a single Java file containing a valid JUnit 5 test class with the name "<entryPointClassName>_<entryPointMethodName>_<thirdPartyMethodName>_BrollTest".
+Produce a single Java file containing a valid JUnit 5 test class with the name "<entryPointClassName>_<entryPointMethodName>_<thirdPartyMethodName>_FikaTest".
 The file must include a package declaration consistent with the entryPoint, all required imports, and at least one executable test method.
 Ensure the test compiles in a standard Maven project.
 Output only the Java test code inside a java block.
@@ -796,7 +796,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class LoopRowTableRenderPolicy_render_getShortClassName_BrollTest {
+class LoopRowTableRenderPolicy_render_getShortClassName_FikaTest {
 
     @Spy
     private RenderDataComputeFactory renderDataComputeFactory;
@@ -900,13 +900,13 @@ Execution Result / Prompt:
 [INFO] -------------------------------------------------------------
 [ERROR] [65,9] cannot find symbol
   symbol:   class Configure
-  location: class com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest
+  location: class com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest
 [ERROR] [65,37] cannot find symbol
   symbol:   class Configure
-  location: class com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest
+  location: class com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest
 [ERROR] [71,16] cannot find symbol
   symbol:   class IBody
-  location: class com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest
+  location: class com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest
 
 ---
 
@@ -962,7 +962,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class LoopRowTableRenderPolicy_render_getShortClassName_BrollTest {
+class LoopRowTableRenderPolicy_render_getShortClassName_FikaTest {
 
     @Spy
     private RenderDataComputeFactory renderDataComputeFactory;
@@ -1050,7 +1050,7 @@ Execution Result:
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
-[ERROR] /Users/yogyagamage/Documents/UdeM/Courses/Testing/project/eval/poi-tl/poi-tl/src/test/java/com/deepoove/poi/tl/plugin/LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.java:[71,37] cannot find symbol
+[ERROR] /Users/yogyagamage/Documents/UdeM/Courses/Testing/project/eval/poi-tl/poi-tl/src/test/java/com/deepoove/poi/tl/plugin/LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.java:[71,37] cannot find symbol
   symbol:   method getBody()
   location: interface org.apache.poi.xwpf.usermodel.IBody
 
@@ -1107,7 +1107,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class LoopRowTableRenderPolicy_render_getShortClassName_BrollTest {
+class LoopRowTableRenderPolicy_render_getShortClassName_FikaTest {
 
     @Spy
     private RenderDataComputeFactory renderDataComputeFactory;
@@ -1206,7 +1206,7 @@ Due to the nature of the syntax above problem might occur because:
 2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
    - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
 
-        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.java:77)
+        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.java:77)
 
 ---
 
@@ -1254,7 +1254,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class LoopRowTableRenderPolicy_render_getShortClassName_BrollTest {
+class LoopRowTableRenderPolicy_render_getShortClassName_FikaTest {
 
     @Spy
     private RenderDataComputeFactory renderDataComputeFactory;
@@ -1336,15 +1336,15 @@ Execution Result:
 
 ---
 
-[INFO] Running com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest
-[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.737 s <<< FAILURE! - in com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest
+[INFO] Running com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.737 s <<< FAILURE! - in com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest
 [ERROR] testThirdPartyMethodInvocation  Time elapsed: 10.707 s  <<< ERROR!
 org.mockito.exceptions.misusing.NotAMockException: 
 
 Argument passed to when() is not a mock!
 Example of correct stubbing:
     doThrow(new RuntimeException()).when(mock).someMethod();
-        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.java:70)
+        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.java:70)
 
 ---
 
@@ -1392,7 +1392,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class LoopRowTableRenderPolicy_render_getShortClassName_BrollTest {
+class LoopRowTableRenderPolicy_render_getShortClassName_FikaTest {
 
     @Spy
     private RenderDataComputeFactory renderDataComputeFactory;
@@ -1490,9 +1490,9 @@ Execution Result:
 
 ---
 
-[INFO] Running com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest
+[INFO] Running com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.867 s <<< FAILURE! - in com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.867 s <<< FAILURE! - in com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest
 [ERROR] testThirdPartyMethodInvocation  Time elapsed: 8.8 s  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
@@ -1515,9 +1515,9 @@ You are seeing this disclaimer because Mockito is configured to create inlined m
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
 Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow, interface org.apache.xmlbeans.XmlObject, interface org.apache.xmlbeans.XmlTokenSource]
-        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.java:88)
+        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.java:88)
 Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRow, interface org.apache.xmlbeans.XmlObject, interface org.apache.xmlbeans.XmlTokenSource]
-        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.java:88)
+        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.java:88)
 Caused by: java.lang.IllegalStateException: 
 
 Byte Buddy could not instrument all classes within the mock's type hierarchy
@@ -1525,9 +1525,9 @@ Byte Buddy could not instrument all classes within the mock's type hierarchy
 This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
  - Compiled by older versions of scalac
  - Classes that are part of the Android distribution
-        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.java:88)
+        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.java:88)
 Caused by: java.lang.NoClassDefFoundError: [Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/CTCustomXmlCell;
-        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.java:88)
+        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.java:88)
 Caused by: java.lang.ClassNotFoundException: org.openxmlformats.schemas.wordprocessingml.x2006.main.CTCustomXmlCell
-        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_BrollTest.java:88)
+        at com.deepoove.poi.plugin.table.LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.testThirdPartyMethodInvocation(LoopRowTableRenderPolicy_render_getShortClassName_FikaTest.java:88)
 
