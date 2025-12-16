@@ -1,3 +1,6 @@
+
+# Moved to - [Fika](https://github.com/sparkrew/fika)
+
 # Coolname (We really need to find a cool name) 
 
 Coolname is a tool for augmenting test suites of projects with specific focus on increasing coverage of third party API
