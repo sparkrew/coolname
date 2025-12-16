@@ -16,7 +16,6 @@ import sootup.java.bytecode.frontend.inputlocation.JavaClassPathAnalysisInputLoc
 import sootup.java.core.views.JavaView;
 
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -79,17 +78,19 @@ public class MethodExtractor {
             // third-party methods to public methods to find all paths. This is because we expect this would be more
             // efficient than doing it the other way round, as there are usually much fewer third-party methods than
             // public methods.
-            Set<MethodSignature> allThirdPartyMethods = findAllThirdPartyMethods(cg, packageMapPath, jacocoHtmlDirs);
-            log.info("Found {} third-party methods in call graph", allThirdPartyMethods.size());
+            Set<Map.Entry<MethodSignature, MethodSignature>> thirdPartyPairs = findAllThirdPartyMethodPairs(cg, packageMapPath, jacocoHtmlDirs);
+            log.info("Found {} third-party method call pairs in call graph", thirdPartyPairs.size());
             // Build reverse call graph for efficient backward traversal. Otherwise, it takes painfully long time to
             // run with the forward graph (from public methods to third party methods).
             Map<MethodSignature, Set<MethodSignature>> reverseCallGraph = buildReverseCallGraph(cg);
             // For each third-party method, find all public methods that can reach it
-            for (MethodSignature thirdPartyMethod : allThirdPartyMethods) {
+            for (Map.Entry<MethodSignature, MethodSignature> pair : thirdPartyPairs) {
+                MethodSignature directCaller = pair.getKey();
+                MethodSignature thirdPartyMethod = pair.getValue();
                 // Find all methods that can reach this third-party method by traversing backwards
                 Set<MethodSignature> reachingMethods = findReachingMethods(
                         reverseCallGraph,
-                        thirdPartyMethod,
+                        directCaller,
                         entryPoints,
                         packageMapPath
                 );
@@ -149,11 +150,11 @@ public class MethodExtractor {
     }
 
     /**
-     * Find all third-party methods that are actually called in the call graph
+     * Find all third-party method call pairs (caller -> third-party method) in the call graph
      */
-    private static Set<MethodSignature> findAllThirdPartyMethods(CallGraph cg, Path packageMapPath,
-                                                                 List<File> jacocoHtmlDirs) {
-        Set<MethodSignature> thirdPartyMethods = new HashSet<>();
+    private static Set<Map.Entry<MethodSignature, MethodSignature>> findAllThirdPartyMethodPairs(
+            CallGraph cg, Path packageMapPath, List<File> jacocoHtmlDirs) {
+        Set<Map.Entry<MethodSignature, MethodSignature>> thirdPartyPairs = new HashSet<>();
         // Iterate through all calls in the call graph
         for (MethodSignature method : cg.getMethodSignatures()) {
             for (CallGraph.Call call : cg.callsFrom(method)) {
@@ -162,11 +163,11 @@ public class MethodExtractor {
                     if (isAlreadyCoveredByTests(method, target, jacocoHtmlDirs)) {
                         continue;
                     }
-                    thirdPartyMethods.add(target);
+                    thirdPartyPairs.add(Map.entry(method, target));
                 }
             }
         }
-        return thirdPartyMethods;
+        return thirdPartyPairs;
     }
 
     /**

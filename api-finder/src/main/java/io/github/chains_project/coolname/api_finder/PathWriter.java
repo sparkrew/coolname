@@ -95,7 +95,7 @@ public class PathWriter {
                 // We don't want a record without any source code extracted. This could happen when the source code
                 // could not be retrieved and returned null instead.
                 // We skip all these paths, because we don't want any bias.
-                if (data.fullMethods().stream().noneMatch(Objects::isNull))
+                if (data.methodSources().stream().noneMatch(Objects::isNull))
                     fullMethodsPaths.add(data);
             }
             // Sort paths:  primary by condition count, secondary by path length (both ascending)

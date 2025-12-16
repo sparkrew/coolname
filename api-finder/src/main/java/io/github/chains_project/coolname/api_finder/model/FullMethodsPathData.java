@@ -10,7 +10,7 @@ public record FullMethodsPathData(
         String entryPoint,
         String thirdPartyMethod,
         List<String> path,
-        List<String> fullMethods,
+        List<String> methodSources,
         List<String> constructors,
         List<String> setters,
         List<String> getters,
