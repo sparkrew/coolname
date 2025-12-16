@@ -39,7 +39,7 @@ public class TestTemplateGenerator {
             String entryPointPackage = extractPackageName(entryPoint.getDeclClassType().getFullyQualifiedName());
             String entryPointMethodName = entryPoint.getName();
             // ToDo: Change the test class name when a proper name is decided.
-            String testClassName = entryPointClassName + "Broll" + "Test";
+            String testClassName = entryPointClassName + "Fika" + "Test";
             String testMethodName = "test" + capitalizeFirstLetter(entryPointMethodName);
             String entryPointVarName = decapitalizeFirstLetter(entryPointClassName);
             // Check if the entry point method is static
