@@ -24,14 +24,14 @@ Only use mockito-core, mockito-junit-jupiter, and junit-jupiter libraries.
 
 You are provided with:
 
-entryPoint - the fully qualified name of the public method that ultimately triggers the third-party library method.
-thirdPartyMethod - the fully qualified name of the third-party method that must be invoked.
-path - an ordered list of method calls from the entry point to the third-party method.
-methodSources - the complete source code of all relevant methods in the call chain.
-constructors - all constructors of the class that contains the entry-point method.
-setters - all setters of the class that contains the entry-point method, if any.
-getters - all getters of the class that contains the entry-point method, if any.
-imports - imports that might be relevant for implementing the test - this includes all non-java imports that are involved in any method along the path, if any.
+entryPoint - the fully qualified name of the public method that ultimately triggers the third-party library method.    
+thirdPartyMethod - the fully qualified name of the third-party method that must be invoked.    
+path - an ordered list of method calls from the entry point to the third-party method.    
+methodSources - the complete source code of all relevant methods in the call chain.    
+constructors - all constructors of the class that contains the entry-point method.    
+setters - all setters of the class that contains the entry-point method, if any.    
+getters - all getters of the class that contains the entry-point method, if any.    
+imports - imports that might be relevant for implementing the test - this includes all non-java imports that are involved in any method along the path, if any.    
 
 
 {
